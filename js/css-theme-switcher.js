@@ -8,6 +8,10 @@
   const getStoredCss = () => localStorage.getItem('css-theme');
   const setStoredCss = css => localStorage.setItem('css-theme', css);
 
+  const getStoredColors = () => localStorage.getItem('css-colors');
+  const setStoredColors = colors => localStorage.setItem('css-colors', colors);
+  const removeStoredColors = () => localStorage.removeItem('css-colors');
+
   const setCss = css => {
       if (css) {
         const link = linkRegex(/.*\.min\.css/)[0];
@@ -34,6 +38,26 @@
           link.setAttribute("href", css);
         }
       }
+  };
+
+  const setColors = colors => {
+    const link = linkRegex(/.*\.min\.css/)[0];
+    const existing = document.querySelector('link[data-colors]');
+
+    if (colors) {
+      if (existing && existing.getAttribute('href') === colors) {
+        return;
+      }
+      const target = existing || document.createElement('link');
+      target.setAttribute('rel', 'stylesheet');
+      target.setAttribute('data-colors', '');
+      target.setAttribute('href', colors);
+      if (link) {
+        link.insertAdjacentElement('afterend', target);
+      }
+    } else if (existing) {
+      existing.remove();
+    }
   };
 
   const linkRegex = (regex) => {
@@ -71,14 +95,34 @@
     }
   };
 
-  window.addEventListener('DOMContentLoaded', () => {    
-    setCss( getStoredCss());
-    showActiveCss(getStoredCss());
+  window.addEventListener('DOMContentLoaded', () => {
+    const stored = getStoredCss();
+    const isAvailable = stored && Array.from(document.querySelectorAll('[data-bs-css-href]'))
+      .some(toggle => toggle.getAttribute('data-bs-css-href') === stored);
+    if (isAvailable) {
+      showActiveCss(stored);
+    }
+
+    const storedColors = getStoredColors();
+    if (storedColors) {
+      setColors(storedColors);
+    }
+
     document.querySelectorAll('[data-bs-css-href]').forEach(toggle => {
       toggle.addEventListener('click', () => {
         const css = toggle.getAttribute('data-bs-css-href');
+        const colors = toggle.getAttribute('data-colors');
+
         setStoredCss(css);
         setCss(css);
+
+        if (colors) {
+          setStoredColors(colors);
+        } else {
+          removeStoredColors();
+        }
+        setColors(colors);
+
         showActiveCss(css, true);
       });
     });
