@@ -119,7 +119,7 @@
       (@color,
        substring-after(tokenize(@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'))[1]"
     />
-    <xsl:if test="exists($theme)">
+    <xsl:if test="normalize-space($theme) != ''">
       <xsl:value-of select="concat('table-', $theme, ' ')"/>
     </xsl:if>
     <xsl:if test="@striped = 'yes'">
@@ -162,7 +162,7 @@
        $table/@color,
        substring-after(tokenize($table/@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'))[1]"
     />
-    <xsl:if test="exists($theme)">
+    <xsl:if test="normalize-space($theme) != ''">
       <xsl:value-of select="concat('table-', $theme, ' ')"/>
     </xsl:if>
     <xsl:next-match/>
@@ -181,7 +181,7 @@
        $table/@color,
        substring-after(tokenize($table/@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'))[1]"
     />
-    <xsl:if test="exists($theme)">
+    <xsl:if test="normalize-space($theme) != ''">
       <xsl:value-of select="concat('table-', $theme, ' ')"/>
     </xsl:if>
     <xsl:next-match/>
@@ -203,7 +203,7 @@
        $table/@color,
        substring-after(tokenize($table/@outputclass, ' ')[starts-with(., 'table-')][1], 'table-'))[1]"
     />
-    <xsl:if test="exists($theme)">
+    <xsl:if test="normalize-space($theme) != ''">
       <xsl:value-of select="concat('table-', $theme, ' ')"/>
     </xsl:if>
     <xsl:next-match/>
