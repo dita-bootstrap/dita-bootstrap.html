@@ -4,6 +4,9 @@ name: CI
     branches:
       - master
       - develop
+      - v5
+      - v6
+      - bootswatch
   workflow_dispatch:
 
 jobs:
@@ -26,7 +29,46 @@ jobs:
         env:
           SHA: ${{ env.SHA }}
 
+      # 1. Resolve Plugin URLs dynamically with fallback
+      - name: Resolve Plugin URLs 🔗
+        id: plugins
+        if: github.ref_name != 'bootswatch'
+        run: |
+          owner="${{ github.repository_owner }}"
+          ref="${{ github.ref_name }}"
+
+          # Function to check URL existence and return fallback on failure
+          get_plugin_url() {
+            local repo=$1
+            local target_url="https://github.com/${owner}/${repo}/archive/${ref}.zip"
+
+            # -s (silent), -f (fail on 4xx), -I (HEAD request), -L (follow redirects)
+            if curl -sfIL "$target_url" >/dev/null; then
+              echo "$target_url"
+            else
+              echo "https://github.com/dita-bootstrap/${repo}/archive/develop.zip"
+            fi
+          }
+
+          HTML_URL=$(get_plugin_url "dita-bootstrap.html")
+          LUNR_URL=$(get_plugin_url "dita-bootstrap.lunr")
+          THEME_URL=$(get_plugin_url "dita-bootstrap.theme-switcher")
+
+          # Generate multiline output list for the plugins
+          EOF=$(dd if=/dev/urandom bs=15 count=1 2>/dev/null | base64 | tr -dc 'a-zA-Z0-9')
+          echo "list<<$EOF" >> $GITHUB_OUTPUT
+          echo "fox.jason.extend.css" >> $GITHUB_OUTPUT
+          echo "$HTML_URL" >> $GITHUB_OUTPUT
+          echo "$LUNR_URL" >> $GITHUB_OUTPUT
+          echo "https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip" >> $GITHUB_OUTPUT
+          echo "fox.jason.favicon" >> $GITHUB_OUTPUT
+          echo "fox.jason.open-graph" >> $GITHUB_OUTPUT
+          echo "$THEME_URL" >> $GITHUB_OUTPUT
+          echo "$EOF" >> $GITHUB_OUTPUT
+
+      # 2. Build Bootstrap using the resolved list
       - name: Build Bootstrap
+        if: github.ref_name != 'bootswatch'
         uses: dita-ot/dita-ot-action@4.4
         with:
           install: |
@@ -34,22 +76,37 @@ jobs:
             export DEBIAN_FRONTEND=noninteractive
             apt-get install -qy --no-install-recommends nodejs
             nodejs -v
-          plugins: |
-            fox.jason.extend.css
-            https://github.com/dita-bootstrap/dita-bootstrap.html/archive/develop.zip
-            https://github.com/dita-bootstrap/dita-bootstrap.lunr/archive/develop.zip
-            https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip
-            fox.jason.favicon
-            fox.jason.open-graph
-            https://github.com/dita-bootstrap/dita-bootstrap.theme-switcher/archive/develop.zip
+          plugins: ${{ steps.plugins.outputs.list }}
           project: .github/dita-ot/html.xml
 
+      # 2b. The bootswatch branch skips the DITA-OT doc build entirely — it just carries
+      # static CSS files (e.g. a Bootswatch theme ported to v6 tokens) to publish
+      # at a stable URL for the theme switcher to reference.
+      - name: Copy CSS output
+        if: github.ref_name == 'bootswatch'
+        run: |
+          mkdir -p out/html
+          cp -r css/. out/html/
+
+      # 3. Determine target folder dynamically based on current branch
+      - name: Determine target folder 📁
+        id: set-target
+        run: |
+          if [ "${{ github.ref_name }}" = "master" ] || [ "${{ github.ref_name }}" = "develop" ]; then
+            echo "target_dir=" >> $GITHUB_OUTPUT
+            printf 'clean_exclude<<EOF\nv5\nv6\nbootswatch\nEOF\n' >> $GITHUB_OUTPUT
+          else
+            echo "target_dir=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+          fi
+
+      # 4. Deploy to the dynamically resolved folder
       - name: Deploy HTML 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.9.0
+        uses: JamesIves/github-pages-deploy-action@v4.8.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages # The branch the action should deploy to.
-          folder: out/html # The folder the action should deploy.
-          commit-message: '🚀 Deploy ${{ env.SHA }} to GitHub Pages'
+          branch: gh-pages
+          folder: out/html
+          target-folder: ${{ steps.set-target.outputs.target_dir }}
+          commit-message: '🚀 Deploy ${{ env.SHA }} to GitHub Pages (${{ github.ref_name }})'
           git-config-name: 'GitHub Action'
-          git-config-email: 'action@github.com'
+          clean-exclude: ${{ steps.set-target.outputs.clean_exclude }}
