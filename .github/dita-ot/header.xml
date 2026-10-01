@@ -175,7 +175,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/brite/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/brite/bootstrap.min.css"
                 >
               Brite
             </button>
@@ -184,7 +184,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/cerulean/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/cerulean/bootstrap.min.css"
                 >
               Cerulean
             </button>
@@ -193,7 +193,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/cosmo/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/cosmo/bootstrap.min.css"
                 >
               Cosmo
             </button>
@@ -205,8 +205,8 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/cyborg/bootstrap.min.css"
-                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/css/static.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/cyborg/bootstrap.min.css"
+                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/static.css"
                 >
               Cyborg
             </button>
@@ -215,8 +215,8 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/darkly/bootstrap.min.css"
-                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/css/static.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/darkly/bootstrap.min.css"
+                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/static.css"
                 >
               Darkly
             </button>
@@ -225,7 +225,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/flatly/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/flatly/bootstrap.min.css"
                 >
               Flatly
             </button>
@@ -237,7 +237,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/journal/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/journal/bootstrap.min.css"
                 >
               Journal
             </button>
@@ -246,7 +246,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/litera/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/litera/bootstrap.min.css"
                 >
               Litera
             </button>
@@ -255,7 +255,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/lumen/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/lumen/bootstrap.min.css"
                 >
               Lumen
             </button>
@@ -267,7 +267,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/lux/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/lux/bootstrap.min.css"
                 >
               Lux
             </button>
@@ -276,7 +276,7 @@
              <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/materia/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/materia/bootstrap.min.css"
                 >
               Materia
             </button>
@@ -285,7 +285,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/minty/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/minty/bootstrap.min.css"
                 >
               Minty
             </button>
@@ -297,7 +297,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/morph/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/morph/bootstrap.min.css"
                 >
               Morph
             </button>
@@ -306,7 +306,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/pulse/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/pulse/bootstrap.min.css"
                 >
               Pulse
             </button>
@@ -315,7 +315,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/quartz/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/quartz/bootstrap.min.css"
                 >
               Quartz
             </button>
@@ -327,7 +327,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/sandstone/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/sandstone/bootstrap.min.css"
                 >
               Sandstone
             </button>
@@ -336,7 +336,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/simplex/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/simplex/bootstrap.min.css"
                 >
               Simplex
             </button>
@@ -345,7 +345,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/sketchy/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/sketchy/bootstrap.min.css"
                 >
               Sketchy
             </button>
@@ -357,8 +357,8 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/slate/bootstrap.min.css"
-                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/css/static.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/slate/bootstrap.min.css"
+                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/static.css"
                 >
               Slate
             </button>
@@ -367,8 +367,8 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/solar/bootstrap.min.css"
-                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/css/static.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/solar/bootstrap.min.css"
+                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/static.css"
                 >
               Solar
             </button>
@@ -377,7 +377,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/spacelab/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/spacelab/bootstrap.min.css"
                 >
               SpaceLab
             </button>
@@ -389,8 +389,8 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/superhero/bootstrap.min.css"
-                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/css/static.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/superhero/bootstrap.min.css"
+                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/static.css"
                 >
               Superhero
             </button>
@@ -399,7 +399,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/united/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/united/bootstrap.min.css"
                 >
               United
             </button>
@@ -408,8 +408,8 @@
              <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/vapor/bootstrap.min.css"
-                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/css/static.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/vapor/bootstrap.min.css"
+                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/static.css"
                 >
               Vapor
             </button>
@@ -420,8 +420,8 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/yeti/bootstrap.min.css"
-                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/css/static.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/yeti/bootstrap.min.css"
+                  data-colors="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/static.css"
                 >
               Yeti
             </button>
@@ -430,7 +430,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/css/zephyr/bootstrap.min.css"
+                  data-bs-css-href="https://jason-fox.github.io/dita-bootstrap.html/bootswatch/zephyr/bootstrap.min.css"
                 >
               Zephyr
             </button>

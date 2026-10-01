@@ -6,7 +6,7 @@ name: CI
       - develop
       - v5
       - v6
-      - css
+      - bootswatch
   workflow_dispatch:
 
 jobs:
@@ -32,7 +32,7 @@ jobs:
       # 1. Resolve Plugin URLs dynamically with fallback
       - name: Resolve Plugin URLs 🔗
         id: plugins
-        if: github.ref_name != 'css'
+        if: github.ref_name != 'bootswatch'
         run: |
           owner="${{ github.repository_owner }}"
           ref="${{ github.ref_name }}"
@@ -68,7 +68,7 @@ jobs:
 
       # 2. Build Bootstrap using the resolved list
       - name: Build Bootstrap
-        if: github.ref_name != 'css'
+        if: github.ref_name != 'bootswatch'
         uses: dita-ot/dita-ot-action@4.4
         with:
           install: |
@@ -79,14 +79,14 @@ jobs:
           plugins: ${{ steps.plugins.outputs.list }}
           project: .github/dita-ot/html.xml
 
-      # 2b. The css branch skips the DITA-OT doc build entirely — it just carries
+      # 2b. The bootswatch branch skips the DITA-OT doc build entirely — it just carries
       # static CSS files (e.g. a Bootswatch theme ported to v6 tokens) to publish
       # at a stable URL for the theme switcher to reference.
       - name: Copy CSS output
-        if: github.ref_name == 'css'
+        if: github.ref_name == 'bootswatch'
         run: |
           mkdir -p out/html
-          cp css/*.css out/html/
+          cp -r css/. out/html/
 
       # 3. Determine target folder dynamically based on current branch
       - name: Determine target folder 📁
@@ -94,6 +94,7 @@ jobs:
         run: |
           if [ "${{ github.ref_name }}" = "master" ] || [ "${{ github.ref_name }}" = "develop" ]; then
             echo "target_dir=" >> $GITHUB_OUTPUT
+            printf 'clean_exclude<<EOF\nv5\nv6\nbootswatch\nEOF\n' >> $GITHUB_OUTPUT
           else
             echo "target_dir=${{ github.ref_name }}" >> $GITHUB_OUTPUT
           fi
@@ -108,7 +109,4 @@ jobs:
           target-folder: ${{ steps.set-target.outputs.target_dir }}
           commit-message: '🚀 Deploy ${{ env.SHA }} to GitHub Pages (${{ github.ref_name }})'
           git-config-name: 'GitHub Action'
-          clean-exclude: |
-            v5
-            v6
-            css
+          clean-exclude: ${{ steps.set-target.outputs.clean_exclude }}
