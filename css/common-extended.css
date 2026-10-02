@@ -395,7 +395,7 @@ article [tabindex='0'] {
   --prism-maintext: var(--bs-theme-fg-emphasis, var(--bs-secondary-text-emphasis, #000));
   --prism-background: color-mix(
     in srgb,
-    var(--bs-theme-bg, var(--bs-bg-transparent, var(--bs-secondary-bg-subtle, #f5f2f0))) 60%,
+    var(--bs-theme-bg, var(--bs-bg-transparent, var(--bs-secondary-bg-subtle, #f5f2f0))) 85%,
     var(--prism-bg-skew)
   );
   --prism-text: color-mix(in srgb, var(--bs-gray-500, #999) 70%, var(--prism-skew));
