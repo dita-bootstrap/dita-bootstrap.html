@@ -237,6 +237,7 @@
     <property name="popovers.include" value="yes"/>
     <property name="dark.mode.include" value="yes"/>
     <property name="dita-bootstrap.css.add" value="yes"/>
+    <property name="prism.use.theme" value="bootstrap"/>
 
     <!--
       Load alternate Bootstrap CSS for RTL languages such as Arabic,
