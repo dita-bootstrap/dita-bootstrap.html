@@ -1,0 +1,11 @@
+<ol outputclass="carousel">
+  <li otherprops="interval(2000)">
+    <image href="..." />
+  </li>
+  <li otherprops="interval(1000)">
+    <image href="..." />
+  </li>
+  <li otherprops="interval(3000)">
+    <image href="..." />
+  </li>
+</ol>

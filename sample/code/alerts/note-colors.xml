@@ -1,0 +1,10 @@
+<note type="note" outputclass="alert-primary">
+  This is a primary note.</note>
+<note type="note" outputclass="alert-secondary">
+  This is a secondary note.</note>
+<note type="note" outputclass="alert-light">
+  This is light note.
+</note>
+<note type="note" outputclass="alert-dark">
+  This is dark note.
+</note>

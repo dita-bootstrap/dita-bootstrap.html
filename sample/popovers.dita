@@ -56,24 +56,7 @@
         <data name="title">Popover title</data>
         <desc>And here’s some amazing content. It’s very engaging. Right?</desc> Click to toggle popover </xref>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock> &lt;xref href="#" outputclass="btn-lg btn-danger popover-top"&gt;
-  &lt;data name="title"&gt;Popover title&lt;/data&gt;
-  &lt;desc&gt;And here’s some amazing content. It’s very engaging. Right?&lt;/desc&gt;
-  Click to toggle popover
-&lt;/xref&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock> &lt;popover outputclass="btn-lg btn-danger"&gt;
-  &lt;data name="title"&gt;Popover title&lt;/data&gt;
-  &lt;desc&gt;And here’s some amazing content. It’s very engaging. Right?&lt;/desc&gt;
-  Click to toggle popover
-&lt;/popover&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/popovers/examples.xml"/></codeblock>
 
     <section>
       <title>Four directions</title>
@@ -93,46 +76,7 @@
       <xref href="#" outputclass="btn-secondary popover-left">
         <desc>Left popover</desc> Popover on left </xref>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref href="#" outputclass="btn-secondary popover-top"&gt;
-  &lt;desc&gt;Top popover&lt;/desc&gt;
-  Popover on top
-&lt;/xref&gt;
-&lt;xref href="#" outputclass="btn-secondary popover-right"&gt;
-  &lt;desc&gt;Right Popover&lt;/desc&gt;
-  Popover on right
-&lt;/xref&gt;
-&lt;xref href="#" outputclass="btn-secondary popover-bottom"&gt;
-  &lt;desc&gt;Bottom popover&lt;/desc&gt;
-  Popover on bottom
-&lt;/xref&gt;
-&lt;xref href="#" outputclass="btn-secondary popover-left"&gt;
-  &lt;desc&gt;Left popover&lt;/desc&gt;
-  Popover on left
-&lt;/xref&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;popover outputclass="btn-secondary" position="top"&gt;
-  &lt;desc&gt;Top popover&lt;/desc&gt;
-  Popover on top
-&lt;/popover&gt;
-&lt;popover outputclass="btn-secondary" position="right"&gt;
-  &lt;desc&gt;Right Popover&lt;/desc&gt;
-  Popover on right
-&lt;/popover&gt;
-&lt;popover outputclass="btn-secondary" position="bottom"&gt;
-  &lt;desc&gt;Bottom popover&lt;/desc&gt;
-  Popover on bottom
-&lt;/popover&gt;
-&lt;popover outputclass="btn-secondary" position="left"&gt;
-  &lt;desc&gt;Left popover&lt;/desc&gt;
-  Popover on left
-&lt;/popover&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/popovers/four-directions.xml"/></codeblock>
     <section>
       <title>Custom popovers</title>
       <p>You can customize the appearance of popovers using CSS variables.
@@ -154,25 +98,6 @@
           <data name="class">custom-popover</data>
           <desc>And here’s some amazing content. It’s very engaging. Right?</desc>Custom popover</xref>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref href="#" outputclass="btn-lg btn-danger popover-top"&gt;
-  &lt;data name="title"&gt;Popover title&lt;/data&gt;
-  &lt;data name="class"&gt;custom-popover&lt;/data&gt;
-  &lt;desc&gt;And here’s some amazing content. It’s very engaging. Right?&lt;/desc&gt;
-  Custom popover
-&lt;/xref&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;popover outputclass="btn-lg btn-danger"&gt;
-  &lt;data name="title"&gt;Popover title&lt;/data&gt;
-  &lt;data name="class"&gt;custom-popover&lt;/data&gt;
-  &lt;desc&gt;And here’s some amazing content. It’s very engaging. Right?&lt;/desc&gt;
-  Custom popover
-&lt;/popover&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/popovers/custom-popovers.xml"/></codeblock>
   </body>
 </topic>

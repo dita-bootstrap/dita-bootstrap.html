@@ -38,18 +38,7 @@
         <p outputclass="h6">Example heading <ph outputclass="badge text-bg-primary">New</ph></p>
       </section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;title&gt;Example Heading &lt;ph outputclass="bg-secondary"&gt;New&lt;/ph&gt;&lt;/title&gt;
-&lt;p&gt;Example Text &lt;ph outputclass="bg-secondary"&gt;New&lt;/ph&gt;&lt;/p&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;title&gt;Example Heading &lt;badge&gt;New&lt;/badge&gt;&lt;/title&gt;
-&lt;p&gt;Example Text &lt;badge&gt;New&lt;/badge&gt;&lt;/p&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/badge/example.xml"/></codeblock>
     <section>
       <title>Background colors</title>
       <p>Set a background-color with contrasting foreground color with Bootstrap’s <codeph
@@ -69,29 +58,6 @@
         <ph outputclass="badge text-bg-dark">Dark</ph>
       </p>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ph outputclass="badge text-bg-primary"&gt;Primary&lt;/ph&gt;
-&lt;ph outputclass="badge text-bg-secondary"&gt;Secondary&lt;/ph&gt;
-&lt;ph outputclass="badge text-bg-success"&gt;Success&lt;/ph&gt;
-&lt;ph outputclass="badge text-bg-danger"&gt;Danger&lt;/ph&gt;
-&lt;ph outputclass="badge text-bg-warning"&gt;Warning&lt;/ph&gt;
-&lt;ph outputclass="badge text-bg-info"&gt;Info&lt;/ph&gt;
-&lt;ph outputclass="badge text-bg-light"&gt;Light&lt;/ph&gt;
-&lt;ph outputclass="badge text-bg-dark"&gt;Dark&lt;/ph&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;badge&gt;Primary&lt;/badge&gt;
-&lt;badge color="secondary"&gt;Secondary&lt;/badge&gt;
-&lt;badge color="success"&gt;Success&lt;/badge&gt;
-&lt;badge color="danger"&gt;Danger&lt;/badge&gt;
-&lt;badge color="warning"&gt;Warning&lt;/badge&gt;
-&lt;badge color="info"&gt;Info&lt;/badge&gt;
-&lt;badge color="light"&gt;Light&lt;/badge&gt;
-&lt;badge color="dark"&gt;Dark&lt;/badge&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/badge/background-colors.xml"/></codeblock>
   </body>
 </topic>

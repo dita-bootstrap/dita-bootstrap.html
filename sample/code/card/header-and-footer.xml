@@ -1,0 +1,6 @@
+<section outputclass="card w-50">
+  <div outputclass="card-header">Featured</div>
+  <title outputclass="h5">Special title treatment</title>
+  <p>With supporting text below as a natural lead-in to additional content.</p>
+  <xref href="#" outputclass="btn-primary">Go somewhere</xref>
+</section>

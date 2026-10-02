@@ -1,0 +1,8 @@
+<xref href="#" outputclass="btn-primary">Primary</xref>
+<xref href="#" outputclass="btn-secondary">Secondary</xref>
+<xref href="#" outputclass="btn-success">Success</xref>
+<xref href="#" outputclass="btn-danger">Danger</xref>
+<xref href="#" outputclass="btn-warning">Warning</xref>
+<xref href="#" outputclass="btn-info">Info</xref>
+<xref href="#" outputclass="btn-light">Light</xref>
+<xref href="#" outputclass="btn-dark">Dark</xref>

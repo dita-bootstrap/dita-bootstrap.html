@@ -1,0 +1,16 @@
+<xref href="#" outputclass="btn-secondary popover-top">
+  <desc>Top popover</desc>
+  Popover on top
+</xref>
+<xref href="#" outputclass="btn-secondary popover-right">
+  <desc>Right Popover</desc>
+  Popover on right
+</xref>
+<xref href="#" outputclass="btn-secondary popover-bottom">
+  <desc>Bottom popover</desc>
+  Popover on bottom
+</xref>
+<xref href="#" outputclass="btn-secondary popover-left">
+  <desc>Left popover</desc>
+  Popover on left
+</xref>

@@ -33,22 +33,7 @@
       <div outputclass="m-3 p-3 shadow-lg text-bg-light">Larger shadow</div>
     </bodydiv>
 
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="shadow-none m-3 p-3 text-bg-light"&gt;No shadow&lt;/div&gt;
-&lt;div outputclass="shadow-sm m-3 p-3 text-bg-light"&gt;Small shadow&lt;/div&gt;
-&lt;div outputclass="shadow m-3 p-3 text-bg-light"&gt;Regular shadow&lt;/div&gt;
-&lt;div outputclass="shadow-lg m-3 p-3 text-bg-light"&gt;Larger shadow&lt;/div&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;div shadow="none" margin="3" padding="3" color="light"&gt;No shadow&lt;/div&gt;
-&lt;div shadow="sm" margin="3" padding="3" color="light"&gt;Small shadow&lt;/div&gt;
-&lt;div shadow="yes" margin="3" padding="3" color="light"&gt;Regular shadow&lt;/div&gt;
-&lt;div shadow="lg" margin="3" padding="3" color="light"&gt;Larger shadow&lt;/div&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/shadows/shadow-utilities.xml"/></codeblock>
 
     <section>
       <title>Applied Shadow</title>
@@ -63,27 +48,6 @@
       <section outputclass="alert alert-light shadow-sm">Alert with small shadow</section>
     </bodydiv>
 
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;section outputclass="card shadow-lg m-3 text-bg-light"&gt;
-  &lt;div outputclass="card-body"&gt;
-    &lt;div outputclass="card-title h5"&gt;Shadowed Card&lt;/div&gt;
-    &lt;p outputclass="card-text"&gt;This card has a large shadow.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-
-&lt;div outputclass="alert alert-light shadow-sm"&gt;Alert with small shadow&lt;/div&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;card shadow="lg" margin="3" color="light"&gt;
-  &lt;title&gt;Shadowed Card&lt;/title&gt;
-  &lt;p&gt;This card has a large shadow.&lt;/p&gt;
-&lt;/card&gt;
-
-&lt;alert shadow="sm" color="light"&gt;Alert with small shadow&lt;/alert&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/shadows/applied-shadow.xml"/></codeblock>
   </body>
 </topic>

@@ -73,41 +73,7 @@
       </ol>
     </bodydiv>
 
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;section outputclass="border p-2"&gt;
-  ...
-&lt;/section&gt;
-
-&lt;div outputclass="border rounded p-2 m-2"&gt;
-  ...
-&lt;/div&gt;
-
-&lt;ul outputclass="carousel border rounded m-2 w-50"&gt;
-  ...
-&lt;/ul&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;section border="yes" padding="2"&gt;
-  ...
-&lt;/section&gt;
-
-&lt;div border="yes" rounded="yes" padding="2" margin="2"&gt;
-  ...
-&lt;/div&gt;
-
-&lt;carousel border="yes" rounded="yes" margin="2" width="50"&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..."/&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..."/&gt;
-  &lt;/carousel-item&gt;
-&lt;/carousel&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/borders/bordered-section.xml"/></codeblock>
     <section>
       <title>Border Styling</title>
       <p>The <xmlatt>border</xmlatt> attribute also accepts numeric values 1-5 for width. The <xmlatt
@@ -125,24 +91,7 @@
         <ph outputclass="me-2 p-2 border border-5">Width 5</ph>
       </div>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;ph outputclass="border border-1"&gt;Width 1&lt;/ph&gt;
-&lt;ph outputclass="border border-2"&gt;Width 2&lt;/ph&gt;
-&lt;ph outputclass="border border-3"&gt;Width 3&lt;/ph&gt;
-&lt;ph outputclass="border border-4"&gt;Width 4&lt;/ph&gt;
-&lt;ph outputclass="border border-5"&gt;Width 5&lt;/ph&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;ph border="1"&gt;Width 1&lt;/ph&gt;
-&lt;ph border="2"&gt;Width 2&lt;/ph&gt;
-&lt;ph border="3"&gt;Width 3&lt;/ph&gt;
-&lt;ph border="4"&gt;Width 4&lt;/ph&gt;
-&lt;ph border="5"&gt;Width 5&lt;/ph&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/borders/border-styling.xml"/></codeblock>
 
     <bodydiv outputclass="mt-3 p-3 border">
       <div outputclass="mb-3">
@@ -152,22 +101,7 @@
         <ph outputclass="me-2 p-2 border-danger">Danger</ph>
       </div>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;ph outputclass="border border-primary"&gt;Primary&lt;/ph&gt;
-&lt;ph outputclass="border border-primary-subtle"&gt;Primary subtle&lt;/ph&gt;
-&lt;ph outputclass="border border-success"&gt;Success&lt;/ph&gt;
-&lt;ph outputclass="border border-danger"&gt;Danger&lt;/ph&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;ph bordercolor="primary"&gt;Primary&lt;/ph&gt;
-&lt;ph bordercolor="primary-subtle"&gt;Primary subtle&lt;/ph&gt;
-&lt;ph bordercolor="success"&gt;Success&lt;/ph&gt;
-&lt;ph bordercolor="danger"&gt;Danger&lt;/ph&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/borders/border-colors.xml"/></codeblock>
 
     <bodydiv outputclass="mt-3 p-3 border">
       <div outputclass="mb-3">
@@ -179,26 +113,7 @@
         <ph outputclass="me-2 p-2 border rounded-5">Rounded 5</ph>
       </div>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;ph outputclass="border rounded-0"&gt;Rounded 0&lt;/ph&gt;
-&lt;ph outputclass="border rounded-1"&gt;Rounded 1&lt;/ph&gt;
-&lt;ph outputclass="border rounded-2"&gt;Rounded 2&lt;/ph&gt;
-&lt;ph outputclass="border rounded-3"&gt;Rounded 3&lt;/ph&gt;
-&lt;ph outputclass="border rounded-4"&gt;Rounded 4&lt;/ph&gt;
-&lt;ph outputclass="border rounded-5"&gt;Rounded 5&lt;/ph&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;ph border="yes" rounded="0"&gt;Rounded 0&lt;/ph&gt;
-&lt;ph border="yes" rounded="1"&gt;Rounded 1&lt;/ph&gt;
-&lt;ph border="yes" rounded="2"&gt;Rounded 2&lt;/ph&gt;
-&lt;ph border="yes" rounded="3"&gt;Rounded 3&lt;/ph&gt;
-&lt;ph border="yes" rounded="4"&gt;Rounded 4&lt;/ph&gt;
-&lt;ph border="yes" rounded="5"&gt;Rounded 5&lt;/ph&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/borders/border-rounding.xml"/></codeblock>
 
     <bodydiv outputclass="mt-3 p-3 border">
       <div outputclass="mb-3 pt-3">
@@ -206,18 +121,7 @@
         <ph outputclass="me-2 px-4 py-2 border border-dark rounded-pill">Pill</ph>
       </div>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;ph outputclass="border rounded-circle border-info"&gt;Circle&lt;/ph&gt;
-&lt;ph outputclass="border rounded-pill border-dark"&gt;Pill&lt;/ph&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;ph border="yes" rounded="circle" bordercolor="info"&gt;Circle&lt;/ph&gt;
-&lt;ph border="yes" rounded="pill" bordercolor="dark"&gt;Pill&lt;/ph&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/borders/border-circle.xml"/></codeblock>
 
     <section id="frames">
       <title>Frame attribute support</title>

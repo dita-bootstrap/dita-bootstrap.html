@@ -1,0 +1,19 @@
+<bodydiv outputclass="row">
+  <bodydiv outputclass="col">
+    <p>One of two columns</p>
+  </bodydiv>
+  <bodydiv outputclass="col">
+    <p>One of two columns</p>
+  </bodydiv>
+</bodydiv>
+<bodydiv outputclass="row">
+  <bodydiv outputclass="col">
+    <p>One of three columns</p>
+  </bodydiv>
+  <bodydiv outputclass="col">
+    <p>One of three columns</p>
+  </bodydiv>
+  <bodydiv outputclass="col">
+    <p>One of three columns</p>
+  </bodydiv>
+</bodydiv>
