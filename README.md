@@ -243,7 +243,7 @@ The generated HTML created by this software includes the following additional so
 - Bootswatch Themes – https://github.com/thomaspark/bootswatch – **MIT license**
 
 > [!NOTE]
->  Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
+> Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
 > directly from the official [Bootstrap 5.3 documentation][2], however DITA markup is used throughout the examples describing
 > how to implement these components correctly using `outputclass`. The text is therefore a derivative of "Bootstrap 5.3 docs"
 > by Twitter, Inc. and the Bootstrap Authors, and used under CC BY 3.0.
