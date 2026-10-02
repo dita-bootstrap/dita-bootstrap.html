@@ -5,3 +5,5 @@ build_dita2html5-bootstrap.xml
 cfg/common/vars/strings.xml
 css/custom.css
 out
+
+sample/code

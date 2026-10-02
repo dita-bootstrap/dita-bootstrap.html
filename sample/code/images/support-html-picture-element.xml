@@ -1,0 +1,7 @@
+<div outputclass="d-picture">
+  <image otherprops="media(min-width: 700px)" href="..."/>
+  <image otherprops="media(min-width: 450px)" href="..."/>
+  <image otherprops="type(image/jpeg)" href="..."/>
+  <image otherprops="type(image/webp)" href="..."/>
+  <image href="..."/>
+</div>

@@ -1,0 +1,32 @@
+<bodydiv outputclass="accordion">
+  <section id="accordion1" outputclass="show">
+    <title>Accordion Item #1</title>
+    <p>
+      <b>This is the first item’s accordion body.</b> It is shown by default,
+        until the collapse plugin adds the appropriate classes that we use to style each element.
+        These classes control the overall appearance, as well as the showing and hiding via CSS
+        transitions. You can modify any of this with custom CSS or overriding Bootstrap’s default
+        variables.
+    </p>
+  </section>
+  <section id="accordion2">
+    <title>Accordion Item #2</title>
+    <p>
+      <b>This is the second item’s accordion body.</b> It is hidden by default,
+        until the collapse plugin adds the appropriate classes that we use to style each element.
+        These classes control the overall appearance, as well as the showing and hiding via CSS
+        transitions. You can modify any of this with custom CSS or overriding Bootstrap’s default
+        variables.
+    </p>
+  </section>
+  <section id="accordion3">
+    <title>Accordion Item #3</title>
+    <p>
+      <b>This is the third item’s accordion body.</b> It is hidden by default,
+        until the collapse plugin adds the appropriate classes that we use to style each element.
+        These classes control the overall appearance, as well as the showing and hiding via CSS
+        transitions. You can modify any of this with custom CSS or overriding Bootstrap’s default
+        variables.
+    </p>
+  </section>
+</bodydiv>

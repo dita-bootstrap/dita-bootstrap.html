@@ -1,0 +1,12 @@
+<note outputclass="alert-info d-none d-lg-block">
+  Resize your browser to show the responsive offcanvas toggle.
+</note>
+<xref outputclass="btn-primary d-lg-none" props="offcanvas-toggle" href="#offcanvas4">
+  Toggle offcanvas
+</xref>
+<section outputclass="offcanvas-lg" id="offcanvas4">
+  <title>Offcanvas</title>
+  <p>
+    This is content within an <xmlatt>outputclass="offcanvas-lg"</xmlatt>.
+  </p>
+</section>

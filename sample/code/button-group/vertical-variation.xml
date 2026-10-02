@@ -1,0 +1,5 @@
+<div outputclass="btn-group-vertical">
+  <xref outputclass="btn-primary" href="#">Top</xref>
+  <xref outputclass="btn-primary" href="#">Middle</xref>
+  <xref outputclass="btn-primary" href="#">Bottom</xref>
+</div>

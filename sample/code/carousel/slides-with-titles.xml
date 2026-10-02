@@ -1,0 +1,17 @@
+<ol outputclass="carousel">
+  <li>
+    <image href="..." />
+    <image href="..." />
+    <image href="..." />
+  </li>
+  <li>
+    <image href="..." />
+    <image href="..." />
+    <image href="..." />
+  </li>
+  <li>
+    <image href="..." />
+    <image href="..." />
+    <image href="..." />
+  </li>
+</ol>

@@ -29,11 +29,6 @@
   --bs-tooltip-bg: var(--bs-primary);
 }
 
-/* override part of the Bootstrap color scheme */
-:root {
-  --bs-code-color: var(--bs-secondary-color);
-}
-
 /* Make all CSS themes scrollable */
 .css-themes-list {
   height: calc(100vh - 6rem);

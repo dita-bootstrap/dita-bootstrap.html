@@ -57,34 +57,7 @@
         </ol>
       </section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;section&gt;
-  &lt;title&gt;Page navigation example&lt;/title&gt;
-  &lt;ol outputclass="pagination"&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/section&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;pagination&gt;
-  &lt;title&gt;Page navigation example&lt;/title&gt;
-  &lt;ol&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/pagination&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/pagination/example.xml"/></codeblock>
     <section>
       <title>Sizing</title>
       <p>Fancy larger or smaller pagination? Use <xmlatt>size="large"</xmlatt> or
@@ -112,34 +85,7 @@
         </ol>
       </section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;section&gt;
-  &lt;title&gt;Page navigation example&lt;/title&gt;
-  &lt;ol outputclass="pagination pagination-lg"&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/section&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;pagination size="large"&gt;
-  &lt;title&gt;Page navigation example&lt;/title&gt;
-  &lt;ol&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/pagination&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/pagination/sizing.xml"/></codeblock>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
       <section outputclass="pagination pagination-sm">
         <title>Page navigation example</title>
@@ -162,34 +108,7 @@
         </ol>
       </section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;section&gt;
-  &lt;title&gt;Page navigation example&lt;/title&gt;
-  &lt;ol outputclass="pagination pagination-sm"&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/section&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;pagination size="small"&gt;
-  &lt;title&gt;Page navigation example&lt;/title&gt;
-  &lt;ol&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/pagination&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/pagination/small-pagination.xml"/></codeblock>
     <section>
       <title>Alignment</title>
       <p>Change the alignment of pagination component by appending Bootstrap
@@ -223,34 +142,7 @@
         </ol>
       </section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;section&gt;
-  &lt;title&gt;Page navigation example&lt;/title&gt;
-  &lt;ol outputclass="pagination justify-content-center"&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/section&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;pagination outputclass="justify-content-center"&gt;
-  &lt;title&gt;Page navigation example&lt;/title&gt;
-  &lt;ol&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/pagination&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/pagination/alignment.xml"/></codeblock>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
       <section outputclass="justify-content-end pagination">
         <title>Page navigation example</title>
@@ -273,33 +165,6 @@
         </ol>
       </section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;section&gt;
-  &lt;title&gt;Page navigation example&lt;/title&gt;
-  &lt;ol outputclass="pagination justify-content-end"&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/section&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;pagination outputclass="justify-content-end"&gt;
-  &lt;title&gt;Page navigation example&lt;/title&gt;
-  &lt;ol&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Previous&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;1&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;2&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;3&lt;/xref&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;xref href="#"&gt;Next&lt;/xref&gt;&lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/pagination&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/pagination/alignment-end.xml"/></codeblock>
   </body>
 </topic>

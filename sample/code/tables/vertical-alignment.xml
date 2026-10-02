@@ -1,0 +1,26 @@
+<table outputclass="align-middle">
+  <tgroup cols="4">
+    <thead>
+      <row>
+        <entry valign="top">...</entry>
+        <entry valign="bottom">...</entry>
+        <entry valign="middle">...</entry>
+        <entry>...</entry>
+      </row>
+    </thead>
+    <tbody>
+      <row>
+        ...
+      </row>
+      <row valign="bottom">
+        ...
+      </row>
+      <row>
+        <entry>...</entry>
+        <entry>...</entry>
+        <entry valign="top">...</entry>
+        <entry>...</entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>

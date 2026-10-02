@@ -1,0 +1,11 @@
+<ol outputclass="carousel" otherprops="touch(false)">
+  <li>
+    <image href="..." />
+  </li>
+  <li>
+    <image href="..." />
+  </li>
+  <li>
+    <image href="..." />
+  </li>
+</ol>

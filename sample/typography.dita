@@ -355,39 +355,6 @@
         </dlentry>
       </dl>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;dl otherprops="cols(2)"&gt;
-  &lt;dlentry&gt;
-    &lt;dt&gt;Description lists&lt;/dt&gt;
-    &lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;
-  &lt;/dlentry&gt;
-  &lt;dlentry&gt;
-    &lt;dt&gt;Term&lt;/dt&gt;
-    &lt;dd&gt;
-      &lt;p&gt;Definition for the term.&lt;/p&gt;
-      &lt;p&gt;And some more placeholder definition text.&lt;/p&gt;
-    &lt;/dd&gt;
-  &lt;/dlentry&gt;
-&lt;/dl&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;dl colspan="2"&gt;
-  &lt;dlentry&gt;
-    &lt;dt&gt;Description lists&lt;/dt&gt;
-    &lt;dd&gt;A description list is perfect for defining terms.&lt;/dd&gt;
-  &lt;/dlentry&gt;
-  &lt;dlentry&gt;
-    &lt;dt&gt;Term&lt;/dt&gt;
-    &lt;dd&gt;
-      &lt;p&gt;Definition for the term.&lt;/p&gt;
-      &lt;p&gt;And some more placeholder definition text.&lt;/p&gt;
-    &lt;/dd&gt;
-  &lt;/dlentry&gt;
-&lt;/dl&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/typography/alignment.xml"/></codeblock>
   </body>
 </topic>
