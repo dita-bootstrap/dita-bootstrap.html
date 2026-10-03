@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <topic id="navigation">
@@ -25,7 +25,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="sidebar">
       <title>Sidebar</title>
       <p>The plug-in extends the standard HTML5 table of contents (ToC)
         <xref
@@ -42,15 +42,15 @@
         contents entirely.</p>
       <p>As of version 5.3.1, the plug-in provides five new options to style the table of contents navigation with
         either the Bootstrap
-        <xref href="https://getbootstrap.com/docs/5.3/components/list-group/" format="html" scope="external">list
+        <xref href="https://getbootstrap.com/docs/6.0/components/list-group/" format="html" scope="external">list
           group</xref> component,
         <xref
-          href="https://getbootstrap.com/docs/5.3/components/navs-tabs/#pills"
+          href="https://getbootstrap.com/docs/6.0/components/navs-tabs/#pills"
           format="html"
           scope="external"
         >nav-pills</xref>, or
          <xref
-          href="https://getbootstrap.com/docs/5.3/components/collapse/"
+          href="https://getbootstrap.com/docs/6.0/components/collapse/"
           format="html"
           scope="external"
         >collapsible</xref> menus.
@@ -76,7 +76,7 @@
      <parmname>--format</parmname>=<option>html5-bootstrap</option> \
      <parmname>--nav-toc</parmname>=<option>&lt;sidebar-style&gt;</option></codeblock>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ol outputclass="carousel" otherprops="cols(1)">
         <li id="full">
           <fig>
@@ -121,17 +121,17 @@
           </fig>
         </li>
       </ol>
-    </bodydiv>
+    </example>
 
     <section>
       <p>
         The sidebar is hidden by default on mobile. To ensure that the sidebar content can be accessed, the header file must include the following toggle with <xmlatt
         >data-bs-target="#bdSidebar"</xmlatt>
-        and <xmlatt>data-bs-toggle="offcanvas"</xmlatt>:
+        and <xmlatt>data-bs-toggle="drawer"</xmlatt>:
       </p>
       <codeblock outputclass="language-xml" deliveryTarget="html">&lt;div class="bd-navbar-toggle"&gt;
-  &lt;button class="navbar-toggler p-2" type="button"
-    data-bs-toggle="offcanvas" data-bs-target="#bdSidebar"
+  &lt;button class="lg:d-none p-2" type="button"
+    data-bs-toggle="drawer" data-bs-target="#bdSidebar"
     aria-controls="bdSidebar" aria-label="Toggle docs navigation"&gt;
     &lt;i class="bi bi-list"/&gt;
   &lt;/button&gt;
@@ -169,7 +169,7 @@
 
 
     </section>
-    <section>
+    <section id="menu-bar">
       <title>Menu bar</title>
       <p>Additionally, the first-level navigation menu can be switched to a horizontal Bootstrap navbar to reduce the
         depth of the ToC. To use this option, add the <parmname>--menubar-toc.include</parmname>=<option
@@ -183,8 +183,19 @@
       <fig>
         <image scalefit="yes" href="./src/menubar-toc.png"/>
       </fig>
+      <p>The menu bar's CSS class defaults to Bootstrap's <option>sticky-top</option> and
+        <option>bg-body</option> utility classes, keeping it pinned to the top of the viewport
+        while scrolling, with an opaque background so content doesn't show through as it scrolls
+        underneath. This can be overridden using the <parmname>--bootstrap.css.menubar.toc</parmname>
+        parameter, for example to use a plain background tint instead of sticky positioning:</p>
+      <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
+        >path/to/your.ditamap</filepath> \
+     <parmname>--format</parmname>=<option>html5-bootstrap</option> \
+     <parmname>--nav-toc</parmname>=<option>list-group-partial</option> \
+     <parmname>--menubar-toc.include</parmname>=<option>yes</option> \
+     <parmname>--bootstrap.css.menubar.toc</parmname>=<option>bg-3</option></codeblock>
     </section>
-    <section>
+    <section id="top-bar">
       <title>Top bar</title>
       <p>A collapsible menu placed above the main menu can be included
         by adding the <parmname>--bootstrap.topbar.hdr</parmname> parameter to the
@@ -204,11 +215,11 @@
           scope="external"
         >custom header</xref>.</p>
     </section>
-    <section>
+    <section id="dividers">
       <title>Dividers</title>
       <p>
         <xref
-          href="https://getbootstrap.com/docs/5.3/components/dropdowns/#dividers"
+          href="https://getbootstrap.com/docs/6.0/components/dropdowns/#dividers"
           format="html"
           scope="external"
         >Dividers</xref> can be added to items rendered in collapsible sidebars and menus by adding the

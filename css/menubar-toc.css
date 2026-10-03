@@ -3,17 +3,18 @@
  *  See the accompanying LICENSE file for applicable licenses.
  */
 
-/*! This value keeps the sidebar-nav below the menubar-toc
- *  main content window compared with the sidebar-nav
+/*! This value keeps the menubar-toc below the nav-bar
  */
-@media (min-width: 992px) {
-  .bs-sidebar {
-    top: 9rem;
-    height: calc(100vh - 13rem);
-  }
+.bs-menubar-toc.sticky-top {
+  top: calc(var(--bs-navbar-min-height, 3.5rem) + 0px);
+}
+
+@media (min-width: 1024px) {
+  .bs-sidebar,
   .bs-scrollspy {
-    top: 9rem;
-    height: calc(100vh - 13rem);
+    --bs-menubar-toc-offset: calc(2 * var(--bs-navbar-min-height, 3.5rem) + 2rem);
+    top: var(--bs-menubar-toc-offset);
+    height: calc(100vh - var(--bs-menubar-toc-offset) - 4rem);
   }
 }
 
@@ -28,6 +29,6 @@ article h3,
 article h4,
 article [tabindex='0'],
 section {
-  scroll-margin-top: 9rem;
+  scroll-margin-top: calc(2 * var(--bs-navbar-min-height, 3.5rem) + 2rem);
   scroll-margin-bottom: 100px;
 }

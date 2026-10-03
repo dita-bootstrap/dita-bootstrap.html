@@ -16,7 +16,9 @@
   <!-- Whether to include a scrollspy Toc -->
   <xsl:param name="BOOTSTRAP_SCROLLSPY_TOC" select="'none'"/>
   <!-- Defines container class for main layout and menubar-TOC -->
-  <xsl:param name="BOOTSTRAP_CSS_CONTAINER_SIZE" select="'container-xxl'"/>
+  <xsl:param name="BOOTSTRAP_CSS_CONTAINER_SIZE" select="'2xl:container'"/>
+  <!-- Defines the CSS class for the menubar-TOC -->
+  <xsl:param name="BOOTSTRAP_CSS_MENUBAR_TOC" select="'sticky-top bg-body'"/>
 
   <xsl:import href="plugin:org.dita.base:xsl/common/output-message.xsl"/>
   <xsl:import href="plugin:org.dita.base:xsl/common/dita-utilities.xsl"/>
@@ -52,9 +54,9 @@
   <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/card.xsl"/>
   <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/carousel.xsl"/>
   <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/collapse.xsl"/>
+  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/drawer.xsl"/>
   <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/hi-d.xsl"/>
   <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/nav.xsl"/>
-  <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/offcanvas.xsl"/>
   <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/pagination.xsl"/>
   <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/popovers.xsl"/>
   <xsl:import href="plugin:org.dita-bootstrap.html:Customization/xsl/scrollspy.xsl"/>

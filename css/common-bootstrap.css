@@ -6,7 +6,7 @@
 .list-group-item.active,
 .nav-link.active,
 [data-bs-theme='dark'] {
-  --dita-violet: #cc99cd;
+  --dita-violet: color-mix(in oklch, var(--bs-purple-400), var(--bs-white) 30%);
 }
 
 .list-group-item {
@@ -40,11 +40,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --dita-violet: #cc99cd;
+    --dita-violet: color-mix(in oklch, var(--bs-purple-400), var(--bs-white) 30%);
   }
 
   [data-bs-theme='light'] {
-    --dita-violet: var(--bs-purple);
+    --dita-violet: var(--bs-purple-400);
   }
 }
 
@@ -59,7 +59,7 @@
 .xmlelement,
 .xmlnsname,
 .xmlpi {
-  font-family: var(--bs-font-monospace);
+  font-family: var(--bs-font-mono);
   color: var(--dita-violet);
   overflow-wrap: break-word;
 }
@@ -69,7 +69,7 @@
 .filepath,
 .option,
 .parmname {
-  font-family: var(--bs-font-monospace);
+  font-family: var(--bs-font-mono);
   color: var(--bs-code-color);
   overflow-wrap: break-word;
 }
@@ -96,11 +96,11 @@
 }
 
 .boolean {
-  color: var(--bs-green);
+  color: var(--bs-green-400);
 }
 
 .state {
-  color: var(--bs-red);
+  color: var(--bs-red-400);
 }
 
 .navbar-brand > svg {
@@ -109,29 +109,58 @@
 }
 
 .bs-container {
-  margin: 3rem auto;
+  margin: 1rem auto;
 }
 
-.bs-sidebar-nav {
-  overflow: auto;
+#bs-sidebar-nav .navbar-brand {
+  color: var(--bs-fg-body);
+}
+
+#bs-sidebar-nav a {
+  color: var(--bs-fg-body);
+}
+
+#bs-sidebar-nav .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: var(--bs-theme-fg-contrast, var(--bs-nav-pills-link-active-color));
+  background-color: var(--bs-theme-base, var(--bs-nav-pills-link-active-bg));
+}
+
+#bs-sidebar-nav .list-group-item.active {
+  color: var(--bs-list-group-active-color);
+  background-color: var(--bs-theme-fg-emphasis, var(--bs-list-group-active-bg));
+  border-color: var(--bs-theme-base, var(--bs-list-group-active-border-color));
 }
 
 [type='search']::placeholder {
-  color: rgba(var(--bs-body-color-rgb), 0.3);
-}
-
-.search-box:hover,
-.search-box:focus-visible {
-  outline: -webkit-focus-ring-color auto 1px;
+  color: color-mix(in oklch, var(--bs-fg-body) 35%, transparent);
 }
 
 .note {
   border-left: 6px solid;
-  border-left-color: var(--bs-alert-color, transparent);
+  border-left-color: var(--bs-alert-border-color, transparent);
 }
 
 [dir='rtl'] .note {
   border-right: 6px solid;
-  border-right-color: var(--bs-alert-color, transparent);
+  border-right-color: var(--bs-alert-border-color, transparent);
   border-left: 0;
+}
+
+.navbar .menu {
+  --bs-theme-fg: initial;
+  --bs-theme-base: initial;
+  --bs-theme-bg: initial;
+  --bs-theme-bg-subtle: initial;
+  --bs-theme-bg-muted: initial;
+  --bs-theme-border: initial;
+  --bs-theme-contrast: initial;
+}
+
+.card .card-body pre {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
 }

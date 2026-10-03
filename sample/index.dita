@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <topic id="index">
@@ -13,7 +13,7 @@
   <shortdesc>A plug-in for
     <xref href="http://www.dita-ot.org" format="html" scope="external">DITA Open Toolkit</xref> that extends the default
     HTML5 output with a
-    <xref href="https://getbootstrap.com/docs/5.3" format="html" scope="external">Bootstrap 5.3</xref> template and
+    <xref href="https://getbootstrap.com/docs/6.0" format="html" scope="external">Bootstrap 5.3</xref> template and
     components.
   </shortdesc>
   <prolog>
@@ -26,11 +26,11 @@
     </metadata>
   </prolog>
   <body>
-    <section>
+    <section id="installing">
       <title>Installing</title>
       <p>Use the <cmdname>dita</cmdname> command to add this plug-in to your DITA Open Toolkit installation:</p>
     </section>
-    <bodydiv outputclass="accordion">
+    <bodydiv outputclass="accordion theme-primary">
       <section id="install-35" outputclass="show">
         <title>DITA-OT 3.5 and newer:</title>
           <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
@@ -51,14 +51,14 @@
           >--install</parmname> https://github.com/dita-bootstrap/dita-bootstrap.html/archive/master.zip</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="using">
       <title>Using</title>
       <p>Specify the <option>html5-bootstrap</option> format when building output with the <cmdname>dita</cmdname>
         command:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
         >--input</parmname>=path/to/your.ditamap <parmname>--format</parmname>=html5-bootstrap</codeblock>
     </section>
-    <section>
+    <section id="bootswatch-themes">
       <title>Bootswatch themes</title>
       <indexterm><parmname>--bootstrap.theme</parmname></indexterm>
       <p>Alternate Bootstrap themes can be downloaded directly from
@@ -72,20 +72,18 @@
      <parmname>--args.hdr</parmname>=<filepath>path/to/your-header.xml</filepath> \
      <parmname>--bootstrap.theme</parmname>=<option>&lt;theme-name&gt;</option></codeblock>
 
-      <ol outputclass="carousel pt-2" deliveryTarget="html" otherprops="indicators(true)">
+      <ol outputclass="carousel pt-2" deliveryTarget="html" otherprops="indicators(true) cols(1)">
         <li>
           <div outputclass="row">
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/brite/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/brite/"
-                    format="html"
-                    scope="external"
-                  ><option>brite</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/brite/"
+                  format="html"
+                  scope="external"
+                ><option>brite</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
@@ -95,27 +93,23 @@
                   scope="external"
                   href="https://bootswatch.com/cerulean/thumbnail.png"
                 />
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/cerulean/"
-                    format="html"
-                    scope="external"
-                  ><option>cerulean</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/cerulean/"
+                  format="html"
+                  scope="external"
+                ><option>cerulean</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/cosmo/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/cosmo/"
-                    format="html"
-                    scope="external"
-                  ><option>cosmo</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/cosmo/"
+                  format="html"
+                  scope="external"
+                ><option>cosmo</option></xref>
               </div>
             </div>
           </div>
@@ -125,40 +119,34 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/cyborg/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/cyborg/"
-                    format="html"
-                    scope="external"
-                  ><option>cyborg</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/cyborg/"
+                  format="html"
+                  scope="external"
+                ><option>cyborg</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/darkly/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/darkly/"
-                    format="html"
-                    scope="external"
-                  ><option>darkly</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/darkly/"
+                  format="html"
+                  scope="external"
+                ><option>darkly</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/flatly/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/flatly/"
-                    format="html"
-                    scope="external"
-                  ><option>flatly</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/flatly/"
+                  format="html"
+                  scope="external"
+                ><option>flatly</option></xref>
               </div>
             </div>
           </div>
@@ -168,40 +156,34 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/journal/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/journal/"
-                    format="html"
-                    scope="external"
-                  ><option>journal</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/journal/"
+                  format="html"
+                  scope="external"
+                ><option>journal</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/litera/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/litera/"
-                    format="html"
-                    scope="external"
-                  ><option>litera</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/litera/"
+                  format="html"
+                  scope="external"
+                ><option>litera</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/lumen/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/lumen/"
-                    format="html"
-                    scope="external"
-                  ><option>lumen</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/lumen/"
+                  format="html"
+                  scope="external"
+                ><option>lumen</option></xref>
               </div>
             </div>
           </div>
@@ -211,40 +193,34 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/lux/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/lux/"
-                    format="html"
-                    scope="external"
-                  ><option>lux</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/lux/"
+                  format="html"
+                  scope="external"
+                ><option>lux</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/materia/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/materia/"
-                    format="html"
-                    scope="external"
-                  ><option>materia</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/materia/"
+                  format="html"
+                  scope="external"
+                ><option>materia</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/minty/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/minty/"
-                    format="html"
-                    scope="external"
-                  ><option>minty</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/minty/"
+                  format="html"
+                  scope="external"
+                ><option>minty</option></xref>
               </div>
             </div>
           </div>
@@ -254,40 +230,34 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/morph/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/morph/"
-                    format="html"
-                    scope="external"
-                  ><option>morph</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/morph/"
+                  format="html"
+                  scope="external"
+                ><option>morph</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/pulse/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/pulse/"
-                    format="html"
-                    scope="external"
-                  ><option>pulse</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/pulse/"
+                  format="html"
+                  scope="external"
+                ><option>pulse</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/quartz/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/quartz/"
-                    format="html"
-                    scope="external"
-                  ><option>quartz</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/quartz/"
+                  format="html"
+                  scope="external"
+                ><option>quartz</option></xref>
               </div>
             </div>
           </div>
@@ -301,40 +271,34 @@
                   scope="external"
                   href="https://bootswatch.com/sandstone/thumbnail.png"
                 />
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/sandstone/"
-                    format="html"
-                    scope="external"
-                  ><option>sandstone</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/sandstone/"
+                  format="html"
+                  scope="external"
+                ><option>sandstone</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/simplex/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/simplex/"
-                    format="html"
-                    scope="external"
-                  ><option>simplex</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/simplex/"
+                  format="html"
+                  scope="external"
+                ><option>simplex</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/sketchy/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/sketchy/"
-                    format="html"
-                    scope="external"
-                  ><option>sketchy</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/sketchy/"
+                  format="html"
+                  scope="external"
+                ><option>sketchy</option></xref>
               </div>
             </div>
           </div>
@@ -344,27 +308,23 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/slate/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/slate/"
-                    format="html"
-                    scope="external"
-                  ><option>slate</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/slate/"
+                  format="html"
+                  scope="external"
+                ><option>slate</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/solar/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/solar/"
-                    format="html"
-                    scope="external"
-                  ><option>solar</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/solar/"
+                  format="html"
+                  scope="external"
+                ><option>solar</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
@@ -374,14 +334,12 @@
                   scope="external"
                   href="https://bootswatch.com/spacelab/thumbnail.png"
                 />
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/spacelab/"
-                    format="html"
-                    scope="external"
-                  ><option>spacelab</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/spacelab/"
+                  format="html"
+                  scope="external"
+                ><option>spacelab</option></xref>
               </div>
             </div>
           </div>
@@ -395,40 +353,34 @@
                   scope="external"
                   href="https://bootswatch.com/superhero/thumbnail.png"
                 />
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/superhero/"
-                    format="html"
-                    scope="external"
-                  ><option>superhero</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/superhero/"
+                  format="html"
+                  scope="external"
+                ><option>superhero</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/united/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/united/"
-                    format="html"
-                    scope="external"
-                  ><option>united</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/united/"
+                  format="html"
+                  scope="external"
+                ><option>united</option></xref>
               </div>
             </div>
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/vapor/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/vapor/"
-                    format="html"
-                    scope="external"
-                  ><option>vapor</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/vapor/"
+                  format="html"
+                  scope="external"
+                ><option>vapor</option></xref>
               </div>
             </div>
           </div>
@@ -438,14 +390,12 @@
             <div outputclass="col-4">
               <div outputclass="card w-100">
                 <image outputclass="card-img-top" scope="external" href="https://bootswatch.com/yeti/thumbnail.png"/>
-                <p outputclass="text-center">
-                  <xref
-                    outputclass="link stretched-link link-underline link-underline-opacity-0"
-                    href="https://bootswatch.com/yeti/"
-                    format="html"
-                    scope="external"
-                  ><option>yeti</option></xref>
-                </p>
+                <xref
+                  outputclass="text-center w-100 link stretched-link text-decoration-none"
+                  href="https://bootswatch.com/yeti/"
+                  format="html"
+                  scope="external"
+                ><option>yeti</option></xref>
               </div>
             </div>
           </div>
@@ -455,7 +405,7 @@
         <xref href="https://dita-bootstrap.github.io/" format="html" scope="external">dita-bootstrap.github.io</xref>.
       </note>
     </section>
-    <section>
+    <section id="custom-css">
       <title>Custom CSS</title>
       <indexterm><parmname>--args.css</parmname></indexterm>
       <indexterm><parmname>--args.copycss</parmname></indexterm>
@@ -483,18 +433,18 @@
           scope="external"
         >dita-bootstrap.sass</xref> plug-in.</note>
     </section>
-    <section>
+    <section id="customizing-headers-footers-and-sidebars">
       <title>Customizing headers, footers and sidebars</title>
       <indexterm><parmname>--args.hdr</parmname></indexterm>
       <indexterm><parmname>--args.ftr</parmname></indexterm>
       <p>The plug-in includes a default static navigation menu with a project name and global link placeholders.</p>
       <p>The default header file <filepath>includes/hdr.navbar.default.xml</filepath> uses the Bootstrap primary
         (blue) background color for the
-        <xref href="https://getbootstrap.com/docs/5.3/examples/navbars/" format="html" scope="external">navbar
+        <xref href="https://getbootstrap.com/docs/6.0/examples/navbars/" format="html" scope="external">navbar
           component</xref>, and provides a theme menu to toggle <xref
           href="./dark-mode.dita"
         >dark mode</xref>.  Bootstrap itself offers additional <xref
-          href="https://getbootstrap.com/docs/5.3/examples/headers/"
+          href="https://getbootstrap.com/docs/6.0/examples/headers/"
           format="html"
           scope="external"
         >header examples</xref>.</p>
@@ -517,7 +467,7 @@
           format="html"
           scope="external"
         >footer file</xref> and Bootstrap also offers additional <xref
-          href="https://getbootstrap.com/docs/5.3/examples/footers/"
+          href="https://getbootstrap.com/docs/6.0/examples/footers/"
           format="html"
           scope="external"
         >examples</xref>. To add a footer to the generated output, pass a custom
@@ -542,15 +492,15 @@
       <p>As of version 5.3.1, the plug-in provides five new <parmname
         >--nav-toc</parmname> options to style the table of contents navigation with
         either the Bootstrap
-        <xref href="https://getbootstrap.com/docs/5.3/components/list-group/" format="html" scope="external">list
+        <xref href="https://getbootstrap.com/docs/6.0/components/list-group/" format="html" scope="external">list
           group</xref> component,
         <xref
-          href="https://getbootstrap.com/docs/5.3/components/navs-tabs/#pills"
+          href="https://getbootstrap.com/docs/6.0/components/navs-tabs/#pills"
           format="html"
           scope="external"
         >nav-pills</xref>, or
          <xref
-          href="https://getbootstrap.com/docs/5.3/components/collapse/"
+          href="https://getbootstrap.com/docs/6.0/components/collapse/"
           format="html"
           scope="external"
         >collapsible</xref> menus. The following new options are available:
@@ -589,58 +539,126 @@
           scope="external"
         >dita-bootstrap.github.io</xref>. </note>
     </section>
-    <section>
-      <title>Common Bootstrap utility classes</title>
-      <indexterm><parmname>--bootstrap.css.shortdesc</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.codeblock</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.topic.title</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.section.title</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.card</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.carousel</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.carousel.caption</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.carousel.indicators</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.footer</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.table</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.tabs</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.tabs.vertical</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.thead</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.accordion</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.accessibility.nav</parmname></indexterm>
+    <section id="bootstrap-themes">
+      <title>Layout Color Themes</title>
       <indexterm><parmname>--bootstrap.css.accessibility.link</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.figure</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.figure.caption</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.figure.image</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.dl</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.dt</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.dd</parmname></indexterm>
-      <indexterm><parmname>--bootstrap.css.nav.parent</parmname></indexterm>
-      <p>The HTML output for the following DITA elements can be annotated with common Bootstrap utility classes for
-        <xref href="https://getbootstrap.com/docs/5.3/utilities/borders" format="html" scope="external">borders</xref>,
-        <xref
-          href="https://getbootstrap.com/docs/5.3/utilities/background"
-          format="html"
-          scope="external"
-        >background</xref>,
-        <xref href="https://getbootstrap.com/docs/5.3/utilities/text" format="html" scope="external">text</xref>,
-        <xref href="https://getbootstrap.com/docs/5.3/utilities/spacing" format="html" scope="external">spacing</xref>,
-        etc. using additional command line parameters:</p>
+      <indexterm><parmname>--bootstrap.theme.accessibility</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.theme.body</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.theme.content</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.theme.footer</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.theme.header</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.theme.scrollspy</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.theme.sidebar</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.theme.topbar</parmname></indexterm>
+      <p
+      >Layout regions can be styled with Bootstrap theme color classes to set color and background-color pairings the chosen element using additional command line parameters. See
+        <xref href="theme.dita"/> for details on how theme values are built up.</p>
       <parml otherprops="cols(4)">
         <plentry>
           <pt>
             <parmname>--bootstrap.css&#8203;.accessibility&#8203;.link</parmname>
           </pt>
           <pd>
-            Common Bootstrap utility classes for accessibility links
+            Common Bootstrap CSS classes for accessibility links
           </pd>
         </plentry>
         <plentry>
           <pt>
-            <parmname>--bootstrap.css&#8203;.accessibility&#8203;.nav</parmname>
+            <parmname>--bootstrap.theme&#8203;.accessibility</parmname>
           </pt>
           <pd>
-            Common Bootstrap utility classes for accessibility navigation
+            Bootstrap theme color classes for accessibility navigation
           </pd>
         </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.theme&#8203;.body</parmname>
+          </pt>
+          <pd>
+            Bootstrap theme color classes for the page <xmlelement>body</xmlelement>.
+            Defaults to <option>none</option>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.theme&#8203;.content</parmname>
+          </pt>
+          <pd>
+            Bootstrap theme color classes for the main content area. Defaults to <option>none</option>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.theme&#8203;.footer</parmname>
+          </pt>
+          <pd>
+            Bootstrap theme color classes for the page footer. Defaults to <option>none</option>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.theme&#8203;.header</parmname>
+          </pt>
+          <pd>
+            Bootstrap theme color classes for the page header. Defaults to <option>primary-contrast</option>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.theme&#8203;.scrollspy</parmname>
+          </pt>
+          <pd>
+            Bootstrap theme color classes for the scrollspy menu. Defaults to <option>none</option>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.theme&#8203;.sidebar</parmname>
+          </pt>
+          <pd>
+            Bootstrap theme color classes for the sidebar navigation. Defaults to <option>none</option>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.theme&#8203;.topbar</parmname>
+          </pt>
+          <pd>
+            Bootstrap theme color classes for the collapsible top header. Defaults to <option>none</option>
+          </pd>
+        </plentry>
+      </parml>
+    </section>
+    <section id="bootstrap-component-utility-classes">
+      <title>Bootstrap component utility classes</title>
+      <indexterm><parmname>--bootstrap.css.badge</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.button</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.card</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.carousel</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.carousel.caption</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.carousel.indicators</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.container.size</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.menubar.toc</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.nav.parent</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.pagination</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.popover</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.tabs</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.tabs.vertical</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.thead</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.tooltip</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.accordion</parmname></indexterm>
+      <p
+      >The HTML output for the following Bootstrap components can be annotated with common Bootstrap utility classes for
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/borders" format="html" scope="external">borders</xref>,
+        <xref
+          href="https://getbootstrap.com/docs/6.0/utilities/background"
+          format="html"
+          scope="external"
+        >background</xref>,
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/text" format="html" scope="external">text</xref>,
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/spacing" format="html" scope="external">spacing</xref>,
+        etc. using additional command line parameters:</p>
+      <parml otherprops="cols(4)">
         <plentry>
           <pt>
             <parmname>--bootstrap.css&#8203;.accordion</parmname>
@@ -648,6 +666,24 @@
           <pd>
             Common utility classes for Bootstrap
             <xref href="./accordion.dita" format="dita">accordion components</xref>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.badge</parmname>
+          </pt>
+          <pd>
+            Common utility classes for Bootstrap
+            <xref href="./badge.dita" format="dita">badge components</xref>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.button</parmname>
+          </pt>
+          <pd>
+            Common utility classes for Bootstrap
+            <xref href="./buttons.dita" format="dita">button components</xref>
           </pd>
         </plentry>
         <plentry>
@@ -688,22 +724,112 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>--bootstrap.css&#8203;.codeblock</parmname>
-          </pt>
-          <pd>
-            Common Bootstrap utility classes for DITA
-            <xmlelement>codeblock</xmlelement> elements
-          </pd>
-        </plentry>
-        <plentry>
-          <pt>
             <parmname>--bootstrap.css&#8203;.container&#8203;.size</parmname>
           </pt>
           <pd>
             Bootstrap <xref
               href="./containers.dita"
               format="dita"
-            >container class</xref> for main layout and menubar-TOC
+            >container class</xref> for main layout and menubar-TOC.
+            Defaults to <option>2xl:container</option>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.menubar&#8203;.toc</parmname>
+          </pt>
+          <pd>
+            CSS class for the <xref href="./nav.dita" format="dita">menu bar</xref>. Defaults to
+            <option>sticky-top bg-body</option>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.nav&#8203;.parent</parmname>
+          </pt>
+          <pd>
+            Common Bootstrap utility classes for ancestors of active nav-pill elements
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.pagination</parmname>
+          </pt>
+          <pd>
+            Common utility classes for Bootstrap
+            <xref href="./pagination.dita" format="dita">pagination components</xref>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.popover</parmname>
+          </pt>
+          <pd>
+            Common utility classes for Bootstrap
+            <xref href="./popovers.dita" format="dita">popover components</xref>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.tabs</parmname>
+          </pt>
+          <pd>
+            Common utility classes for Bootstrap
+            <xref href="./tabs.dita" format="dita">tabbed dialog components</xref>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.tabs&#8203;.vertical</parmname>
+          </pt>
+          <pd>
+            Common utility classes for Bootstrap
+            <xref href="./tabs.dita" format="dita">vertical tabbed dialog components</xref>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.tooltip</parmname>
+          </pt>
+          <pd>
+            Common utility classes for Bootstrap
+            <xref href="./tooltips.dita" format="dita">tooltip components</xref>
+          </pd>
+        </plentry>
+      </parml>
+    </section>
+    <section id="dita-element-utility-classes">
+      <title>DITA element utility classes</title>
+      <indexterm><parmname>--bootstrap.css.shortdesc</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.codeblock</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.topic.title</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.section.title</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.table</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.figure</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.figure.caption</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.figure.image</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.dl</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.dt</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.dd</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.example</parmname></indexterm>
+      <p>The HTML output for the following DITA elements can be annotated with common Bootstrap utility classes for
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/borders" format="html" scope="external">borders</xref>,
+        <xref
+          href="https://getbootstrap.com/docs/6.0/utilities/background"
+          format="html"
+          scope="external"
+        >background</xref>,
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/text" format="html" scope="external">text</xref>,
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/spacing" format="html" scope="external">spacing</xref>,
+        etc. using additional command line parameters:</p>
+      <parml otherprops="cols(4)">
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.codeblock</parmname>
+          </pt>
+          <pd>
+            Common Bootstrap utility classes for DITA
+            <xmlelement>codeblock</xmlelement> elements
           </pd>
         </plentry>
         <plentry>
@@ -732,6 +858,15 @@
         </plentry>
         <plentry>
           <pt>
+            <parmname>--bootstrap.css&#8203;.example</parmname>
+          </pt>
+          <pd>
+            Common Bootstrap utility classes for DITA
+            <xmlelement>example</xmlelement> elements
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
             <parmname>--bootstrap.css&#8203;.figure</parmname>
           </pt>
           <pd>Common Bootstrap utility classes for DITA
@@ -754,32 +889,6 @@
           <pd>
             Common Bootstrap utility classes for DITA
             <xmlelement>image</xmlelement> elements within <xmlelement>fig</xmlelement> elements
-          </pd>
-        </plentry>
-        <plentry>
-          <pt>
-            <parmname>--bootstrap.css&#8203;.footer</parmname>
-          </pt>
-          <pd>
-            Common utility classes for the HTML
-            <xmlelement>footer</xmlelement> element
-          </pd>
-        </plentry>
-        <plentry>
-          <pt>
-            <parmname>--bootstrap.css&#8203;.nav&#8203;.parent</parmname>
-          </pt>
-          <pd>
-            Common Bootstrap utility classes for ancestors of active nav-pill elements
-          </pd>
-        </plentry>
-        <plentry>
-          <pt>
-            <parmname>--bootstrap.css&#8203;.pagination</parmname>
-          </pt>
-          <pd>
-            Common utility classes for Bootstrap
-            <xref href="./pagination.dita" format="dita">pagination components</xref>
           </pd>
         </plentry>
         <plentry>
@@ -811,24 +920,6 @@
         </plentry>
         <plentry>
           <pt>
-            <parmname>--bootstrap.css&#8203;.tabs</parmname>
-          </pt>
-          <pd>
-            Common utility classes for Bootstrap
-            <xref href="./tabs.dita" format="dita">tabbed dialog components</xref>
-          </pd>
-        </plentry>
-        <plentry>
-          <pt>
-            <parmname>--bootstrap.css&#8203;.tabs&#8203;.vertical</parmname>
-          </pt>
-          <pd>
-            Common utility classes for Bootstrap
-            <xref href="./tabs.dita" format="dita">vertical tabbed dialog components</xref>
-          </pd>
-        </plentry>
-        <plentry>
-          <pt>
             <parmname>--bootstrap.css&#8203;.thead</parmname>
           </pt>
           <pd>Common Bootstrap utility classes for DITA
@@ -846,7 +937,7 @@
         </plentry>
       </parml>
     </section>
-    <section>
+    <section id="bootstrap-icons-for-dita-notes">
       <title>Bootstrap icons for DITA notes</title>
       <indexterm><parmname>--bootstrap.icon.note</parmname></indexterm>
       <indexterm><parmname>--bootstrap.icon.attention</parmname></indexterm>
@@ -961,7 +1052,7 @@
         </plentry>
       </parml>
     </section>
-    <section>
+    <section id="optional-elements">
       <title>Optional elements</title>
       <indexterm><parmname>--args.breadcrumbs</parmname></indexterm>
       <indexterm><parmname>--icons.include</parmname></indexterm>
@@ -1003,7 +1094,7 @@
           <pd>
             Whether to include support for a
             <xref
-              href="https://getbootstrap.com/docs/5.3/customize/color-modes/#dark-mode"
+              href="https://getbootstrap.com/docs/6.0/customize/color-modes/#dark-mode"
               format="html"
               scope="external"
             >dark mode</xref> toggler
@@ -1063,7 +1154,7 @@
     <section>
       <note type="note">Within the sample documentation, the texts describing the usage of each component have been
         copied directly from the
-        <xref href="https://getbootstrap.com/docs/5.3" format="html" scope="external">official Bootstrap 5.3
+        <xref href="https://getbootstrap.com/docs/6.0" format="html" scope="external">official Bootstrap 5.3
           documentation</xref>, however DITA markup is used throughout the examples describing how to implement these
         components correctly using the DITA <xmlatt>outputclass</xmlatt> attribute. This text is therefore a derivative
         of <cite>Bootstrap 5 docs</cite> by Twitter, Inc. and the Bootstrap Authors, and used under

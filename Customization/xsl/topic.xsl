@@ -13,8 +13,43 @@
 >
   <xsl:param name="defaultLanguage" select="'en'" as="xs:string"/>
   <xsl:param name="BIDIRECTIONAL_DOCUMENT" select="'no'" as="xs:string"/>
-  <xsl:param name="BOOTSTRAP_CSS_FOOTER" select="'border-top bg-primary-subtle'"/>
+  <xsl:param name="BOOTSTRAP_THEME_FOOTER" select="'none'"/>
+  <xsl:param name="BOOTSTRAP_THEME_HEADER" select="'primary-contrast'"/>
+  <xsl:param name="BOOTSTRAP_THEME_SIDEBAR" select="'none'"/>
+  <xsl:param name="BOOTSTRAP_THEME_TOPBAR" select="'none'"/>
+  <xsl:param name="BOOTSTRAP_THEME_CONTENT" select="'none'"/>
+  <xsl:param name="BOOTSTRAP_THEME_BODY" select="'none'"/>
+  <xsl:param name="BOOTSTRAP_THEME_SCROLLSPY" select="'none'"/>
   <xsl:param name="BOOTSTRAP_TOPBAR_HDR"/>
+
+  <!-- Splits a hyphenated theme value (e.g. 'warning-subtle-border') into
+       prefixed classes. $prefix (default 'theme') applies to the first
+       token (the color, e.g. 'theme-warning'); $suffix-prefix (default
+       'theme') applies to every token after it (e.g. 'theme-subtle
+       theme-border'). Pass a component-specific $suffix-prefix (e.g.
+       'badge', 'btn', 'table') when that component has its own scoped
+       modifier classes instead of the generic 'theme-{suffix}' ones.
+       'none' returns ''. -->
+  <xsl:template name="theme-classes">
+    <xsl:param name="value" as="xs:string"/>
+    <xsl:param name="prefix" select="'theme'" as="xs:string"/>
+    <xsl:param name="suffix-prefix" select="'theme'" as="xs:string"/>
+    <xsl:choose>
+      <xsl:when test="$value = 'none'">
+        <xsl:sequence select="''"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:variable name="parts" select="tokenize($value, '-')" as="xs:string*"/>
+        <xsl:sequence
+          select="
+            string-join(
+              (concat($prefix, '-', $parts[1]),
+               for $part in $parts[position() > 1] return concat($suffix-prefix, '-', $part)),
+              ' ')"
+        />
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
 
   <!--Check the file Url Definition of the TOP HDR FTR-->
   <xsl:variable name="TOPHDFFILE">
@@ -96,7 +131,13 @@
 
     <!-- ↓ Add collapsible top header ↓ -->
     <xsl:if test="string-length($TOPHDFFILE) > 0">
-      <div class="d-none d-lg-block">
+      <div>
+        <xsl:variable name="topbar-theme-classes">
+          <xsl:call-template name="theme-classes">
+            <xsl:with-param name="value" select="$BOOTSTRAP_THEME_TOPBAR"/>
+          </xsl:call-template>
+        </xsl:variable>
+        <xsl:attribute name="class" select="concat('d-none lg:d-block ', $topbar-theme-classes)"/>
         <xsl:copy-of select="document($TOPHDFFILE, /)"/>
       </div>
     </xsl:if>
@@ -105,11 +146,14 @@
     <xsl:if test="exists($header-content)">
       <header xsl:use-attribute-sets="banner">
         <!-- ↓ Add Bootstrap class attributes template ↓ -->
+        <xsl:variable name="header-theme-classes">
+          <xsl:call-template name="theme-classes">
+            <xsl:with-param name="value" select="$BOOTSTRAP_THEME_HEADER"/>
+          </xsl:call-template>
+        </xsl:variable>
         <xsl:attribute
           name="class"
-          select="
-            if ($BOOTSTRAP_MENUBAR_TOC = 'yes') then 'sticky-top bg-body-tertiary'
-            else 'sticky-top'"
+          select="concat('navbar lg:navbar-expand bd-navbar border-bottom border-inverse border-20 sticky-top ', $header-theme-classes)"
         />
         <!-- ↑ End customization · Continue with DITA-OT defaults ↓ -->
         <xsl:sequence select="$header-content"/>
@@ -175,14 +219,14 @@
       <xsl:if test="$BOOTSTRAP_SCROLLSPY_TOC != 'none'">
         <xsl:choose>
           <xsl:when test="count(*[contains(@class, ' topic/topic ')])&gt;0">
-            <div class="bs-scrollspy mt-3 mb-5 my-lg-0 mb-lg-5 px-sm-1 text-body-secondary">
+            <div class="bs-scrollspy mt-3 mb-5 lg:my-0 lg:mb-5 sm:px-1 fg-2">
               <xsl:call-template name="scrollspy-content"/>
             </div>
           </xsl:when>
           <xsl:when
             test="count(*/*[@id and (contains(@class, ' topic/section ') or contains(@class, ' topic/example '))])&gt;0"
           >
-            <div class="bs-scrollspy mt-3 mb-5 my-lg-0 mb-lg-5 px-sm-1 text-body-secondary">
+            <div class="bs-scrollspy mt-3 mb-5 lg:my-0 lg:mb-5 sm:px-1 fg-2">
               <xsl:call-template name="scrollspy-content"/>
             </div>
           </xsl:when>
@@ -192,6 +236,11 @@
   </xsl:template>
 
   <xsl:template match="*" mode="addAttributesToBody" priority="5.0">
+    <xsl:variable name="body-theme-classes">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="$BOOTSTRAP_THEME_BODY"/>
+      </xsl:call-template>
+    </xsl:variable>
     <xsl:attribute name="class">
       <xsl:text>d-flex flex-column min-vh-100</xsl:text>
       <xsl:if test="*[contains(@class, ' topic/body ')]/@outputclass">
@@ -206,7 +255,15 @@
           />
         </xsl:if>
       </xsl:if>
+      <xsl:if test="$body-theme-classes != ''">
+        <xsl:value-of select="concat(' ', $body-theme-classes)"/>
+      </xsl:if>
     </xsl:attribute>
+    <xsl:if test="$BOOTSTRAP_THEME_BODY != 'none' and count(tokenize($BOOTSTRAP_THEME_BODY, '-')) = 1">
+      <xsl:attribute
+        name="style"
+      >background-color: color-mix(in srgb, var(--bs-theme-bg-muted, var(--bs-gray-100)) 10%, transparent);</xsl:attribute>
+    </xsl:if>
   </xsl:template>
 
   <!-- Override to add Bootstrap classes and roles -->
@@ -286,7 +343,7 @@
   <xsl:template match="/ | @* | node()" mode="gen-user-bootstrap-attrs" priority="-10"/>
 
   <!-- Override to add Bootstrap Alert classes and roles to Note elements -->
-  <!-- https://getbootstrap.com/docs/5.3/components/alerts/ -->
+  <!-- https://getbootstrap.com/docs/6.0/components/alerts/ -->
   <xsl:template match="*" mode="process.note.common-processing">
     <xsl:param name="type" select="@type"/>
     <xsl:param name="title">
@@ -296,9 +353,7 @@
     </xsl:param>
     <!-- ↓ Add Bootstrap class attributes template ↓ -->
     <xsl:variable name="bootstrap-class">
-      <xsl:if test="not(contains(@outputclass, 'alert-'))">
-        <xsl:call-template name="bootstrap-note"/>
-      </xsl:if>
+      <xsl:call-template name="bootstrap-note"/>
     </xsl:variable>
     <div role="alert">
       <xsl:call-template name="commonattributes">
@@ -309,6 +364,7 @@
       <xsl:call-template name="setidaname"/>
       <!-- Normal flags go before the generated title; revision flags only go on the content. -->
       <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]/prop" mode="ditaval-outputflag"/>
+      <div>
       <span class="note__title">
         <!-- ↓ Add Bootstrap icon ↓ -->
         <xsl:if test="$BOOTSTRAP_ICONS_INCLUDE = 'yes'">
@@ -322,12 +378,13 @@
       </span>
       <xsl:text> </xsl:text>
       <xsl:apply-templates
-        select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]/revprop"
-        mode="ditaval-outputflag"
-      />
+          select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]/revprop"
+          mode="ditaval-outputflag"
+        />
       <xsl:apply-templates/>
       <!-- Normal end flags and revision end flags both go out after the content. -->
       <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-endprop ')]" mode="out-of-line"/>
+    </div>
     </div>
   </xsl:template>
 
@@ -356,7 +413,7 @@
   </xsl:template>
 
   <!-- Customization to add Bootstrap Figure Content -->
-  <!-- https://getbootstrap.com/docs/5.3/content/figures/ -->
+  <!-- https://getbootstrap.com/docs/6.0/content/figures/ -->
   <xsl:template
     match="*[contains(@class, ' topic/fig ') and not(contains(@class,' pr-d/syntaxdiagram ')) and not(contains(@class,' ut-d/imagemap '))]"
     name="topic.fig"
@@ -389,6 +446,7 @@
   <!-- Figure caption -->
   <xsl:template name="place-fig-lbl">
     <xsl:param name="stringName"/>
+    <xsl:param name="suppress-title-label" select="false()" tunnel="yes"/>
     <!-- Number of fig/title's including this one -->
     <xsl:variable
       name="fig-count-actual"
@@ -419,30 +477,32 @@
             />
           </xsl:apply-templates>
           <!-- ↑ End customization · Continue with DITA-OT defaults ↓ -->
-          <span class="fig--title-label">
-            <xsl:choose>
-              <!-- Blockquote - figure -->
-              <xsl:when test="*[contains(@class, ' topic/lq ')]">
-              </xsl:when>
-              <!-- Hungarian: "1. Figure " -->
-              <xsl:when test="$ancestorlang = ('hu', 'hu-hu')">
-                <xsl:value-of select="$fig-count-actual"/>
-                <xsl:text>. </xsl:text>
-                <xsl:call-template name="getVariable">
-                  <xsl:with-param name="id" select="'Figure'"/>
-                </xsl:call-template>
-                <xsl:text> </xsl:text>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:call-template name="getVariable">
-                  <xsl:with-param name="id" select="'Figure'"/>
-                </xsl:call-template>
-                <xsl:text> </xsl:text>
-                <xsl:value-of select="$fig-count-actual"/>
-                <xsl:text>. </xsl:text>
-              </xsl:otherwise>
-            </xsl:choose>
-          </span>
+          <xsl:if test="not($suppress-title-label)">
+            <span class="fig--title-label">
+              <xsl:choose>
+                <!-- Blockquote - figure -->
+                <xsl:when test="*[contains(@class, ' topic/lq ')]">
+                </xsl:when>
+                <!-- Hungarian: "1. Figure " -->
+                <xsl:when test="$ancestorlang = ('hu', 'hu-hu')">
+                  <xsl:value-of select="$fig-count-actual"/>
+                  <xsl:text>. </xsl:text>
+                  <xsl:call-template name="getVariable">
+                    <xsl:with-param name="id" select="'Figure'"/>
+                  </xsl:call-template>
+                  <xsl:text> </xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:call-template name="getVariable">
+                    <xsl:with-param name="id" select="'Figure'"/>
+                  </xsl:call-template>
+                  <xsl:text> </xsl:text>
+                  <xsl:value-of select="$fig-count-actual"/>
+                  <xsl:text>. </xsl:text>
+                </xsl:otherwise>
+              </xsl:choose>
+            </span>
+          </xsl:if>
           <xsl:apply-templates select="*[contains(@class, ' topic/title ')]" mode="figtitle"/>
           <xsl:if test="*[contains(@class, ' topic/desc ')]">
             <xsl:text>. </xsl:text>
@@ -468,7 +528,7 @@
   </xsl:template>
 
   <!-- Customization to add Bootstrap Borders to Codeblock elements-->
-  <!-- https://getbootstrap.com/docs/5.3/utilities/borders/ -->
+  <!-- https://getbootstrap.com/docs/6.0/utilities/borders/ -->
   <xsl:template match="*[contains(@class, ' topic/pre ') and @frame]">
     <xsl:variable name="default-fig-class">
       <xsl:apply-templates select="." mode="dita2html:get-default-fig-class"/>
@@ -495,7 +555,7 @@
   </xsl:template>
 
   <!-- Customization to add Bootstrap Borders to Lines elements-->
-  <!-- https://getbootstrap.com/docs/5.3/utilities/borders/ -->
+  <!-- https://getbootstrap.com/docs/6.0/utilities/borders/ -->
   <xsl:template match="*[contains(@class, ' topic/lines ') and @frame]">
     <xsl:variable name="default-fig-class">
       <xsl:apply-templates select="." mode="dita2html:get-default-fig-class"/>
@@ -522,11 +582,11 @@
   <xsl:template match="*" mode="dita2html:get-default-fig-class">
     <xsl:value-of
       select="
-        if (@frame = 'all') then 'border'
-        else if (@frame = 'sides') then 'border-start border-end'
-        else if (@frame = 'top') then 'border-top'
-        else if (@frame = 'bottom') then 'border-bottom'
-        else if (@frame = 'topbot') then 'border-top border-bottom'
+        if (@frame = 'all') then 'p-3 border'
+        else if (@frame = 'sides') then 'px-3 border-start border-end'
+        else if (@frame = 'top') then 'pt-3 border-top'
+        else if (@frame = 'bottom') then 'pb-3 border-bottom'
+        else if (@frame = 'topbot') then 'py-3 border-top border-bottom'
         else ''"
     />
   </xsl:template>
@@ -564,8 +624,13 @@
     <xsl:if test="exists($footer-content)">
       <footer xsl:use-attribute-sets="footer">
         <!-- ↓ Add Bootstrap CSS ↓ -->
+        <xsl:variable name="footer-theme-classes">
+          <xsl:call-template name="theme-classes">
+            <xsl:with-param name="value" select="$BOOTSTRAP_THEME_FOOTER"/>
+          </xsl:call-template>
+        </xsl:variable>
         <xsl:attribute name="class">
-          <xsl:value-of select="concat('mt-auto ', $BOOTSTRAP_CSS_FOOTER)"/>
+          <xsl:value-of select="concat('mt-auto ', $footer-theme-classes)"/>
           <xsl:if test="not($TOC_SPACER_PADDING = '0')">
             <xsl:value-of select="concat(' py-', $TOC_SPACER_PADDING)"/>
           </xsl:if>
@@ -775,13 +840,19 @@
 
   <!-- Hidden accessibility buttons for screen readers and keyboard navigation-->
   <xsl:template name="gen-skip-to-main">
+    <xsl:variable name="skip-to-main-theme-classes">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="$BOOTSTRAP_THEME_ACCESSIBILITY"/>
+      </xsl:call-template>
+    </xsl:variable>
     <div>
       <xsl:attribute
         name="class"
-        select="concat('visually-hidden-focusable overflow-hidden p-2 ', $BOOTSTRAP_CSS_ACCESSIBILITY_NAV)"
+        select="concat('visually-hidden-focusable overflow-hidden p-2 ', $skip-to-main-theme-classes)"
       />
 
-      <div class="container-xl">
+      <div>
+        <xsl:attribute name="class" select="$BOOTSTRAP_CSS_CONTAINER_SIZE"/>
         <a>
           <xsl:attribute name="class" select="concat('d-inline-flex m-1 ', $BOOTSTRAP_CSS_ACCESSIBILITY_LINK)"/>
           <xsl:apply-templates mode="scrollspy-href" select="*[contains(@class, ' topic/title ')][1]"/>
@@ -795,7 +866,7 @@
             <a href="#bs-menubar-nav">
               <xsl:attribute
                 name="class"
-                select="concat('d-none d-md-inline-flex m-1 ', $BOOTSTRAP_CSS_ACCESSIBILITY_LINK)"
+                select="concat('d-none md:d-inline-flex m-1 ', $BOOTSTRAP_CSS_ACCESSIBILITY_LINK)"
               />
               <xsl:call-template name="getVariable">
                 <xsl:with-param name="id" select="'Skip to docs navigation'"/>
@@ -810,7 +881,7 @@
             <a href="#bs-sidebar-nav">
               <xsl:attribute
                 name="class"
-                select="concat('d-none d-md-inline-flex m-1 ', $BOOTSTRAP_CSS_ACCESSIBILITY_LINK)"
+                select="concat('d-none md:d-inline-flex m-1 ', $BOOTSTRAP_CSS_ACCESSIBILITY_LINK)"
               />
               <xsl:call-template name="getVariable">
                 <xsl:with-param name="id" select="'Skip to docs navigation'"/>
@@ -826,14 +897,36 @@
     Overrides to add CSS classes to use a CSS Grid for the navigation layout
   -->
   <xsl:attribute-set name="main">
-    <xsl:attribute name="class">bs-main me-3</xsl:attribute>
+    <xsl:attribute name="class">
+      <xsl:variable name="content-theme-classes">
+        <xsl:call-template name="theme-classes">
+          <xsl:with-param name="value" select="$BOOTSTRAP_THEME_CONTENT"/>
+        </xsl:call-template>
+      </xsl:variable>
+      <xsl:value-of select="'bs-main me-3'"/>
+      <xsl:if test="$content-theme-classes != ''">
+        <xsl:value-of select="concat(' ', $content-theme-classes)"/>
+      </xsl:if>
+      <xsl:if test="'border' = tokenize($BOOTSTRAP_THEME_CONTENT, '-')">
+        <xsl:text> p-2</xsl:text>
+      </xsl:if>
+    </xsl:attribute>
     <xsl:attribute name="role">main</xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="toc">
     <xsl:attribute name="role">navigation</xsl:attribute>
     <xsl:attribute name="id">bs-sidebar-nav</xsl:attribute>
-    <xsl:attribute name="class">d-flex flex-align-start flex-column h-100 overflow-y-auto</xsl:attribute>
+    <xsl:attribute name="class">
+      <xsl:variable name="sidebar-theme-parts" select="tokenize($BOOTSTRAP_THEME_SIDEBAR, '-')" as="xs:string*"/>
+      <xsl:text>d-flex align-items-start flex-column h-100 </xsl:text>
+      <xsl:if test="$BOOTSTRAP_THEME_SIDEBAR != 'none' and $nav-toc = 'collapsible'">
+        <xsl:value-of select="concat('theme-', $sidebar-theme-parts[1])"/>
+        <xsl:if test="'border' = $sidebar-theme-parts">
+          <xsl:text> theme-border p-2</xsl:text>
+        </xsl:if>
+      </xsl:if>
+    </xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="menubar-toc">

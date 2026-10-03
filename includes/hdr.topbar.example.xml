@@ -1,19 +1,19 @@
 <nav class="navbar bg-black p-0">
-  <!-- Modify -xxl to change container size -->
-  <div class="container-xxl px-4">
+  <!-- Modify the sm:/md:/lg:/xl: prefix to change container breakpoint -->
+  <div class="xl:container px-4">
     <a class="btn mx-1" href="#!" role="button">
-      <i class="bi bi-github text-white"/>
+      <i class="bi bi-github fg-white"/>
     </a>
     <a class="btn mx-1" href="#!" role="button">
-      <i class="bi bi-linkedin text-white"/>
+      <i class="bi bi-linkedin fg-white"/>
     </a>
     <a class="btn mx-1" href="#!" role="button">
-      <i class="bi bi-mastodon text-white"/>
+      <i class="bi bi-mastodon fg-white"/>
     </a>
-    <a class="nav-link text-white ms-auto" href="#">
+    <a class="nav-link fg-white ms-auto" href="#">
       Log In
     </a>
-    <a class="nav-link text-white ms-4" href="#">
+    <a class="nav-link fg-white ms-4" href="#">
       Sign Up
     </a>
   </div>

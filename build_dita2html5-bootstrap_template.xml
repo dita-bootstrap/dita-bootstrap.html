@@ -5,7 +5,7 @@
   <target
     name="dita2html5-bootstrap"
     dita:depends="{bootstrap.process.pre},bootstrap.theme.init,dita2html5-bootstrap.init,
-             dita2html5,{bootstrap.process.post}"
+             bootstrap.prism.init,dita2html5,{bootstrap.process.post}"
     dita:extension="depends org.dita.dost.platform.InsertDependsAction"
   />
 
@@ -177,6 +177,34 @@
         includes="dark-mode-toggler.js"
       />
     </copy>
+  </target>
+
+  <target name="bootstrap.prism.init" unless="prism.use.theme">
+    <condition
+      property="prism.css.theme"
+      value="${dita.plugin.fox.jason.prismjs.dir}/css/solarize-theme.css"
+    >
+      <equals arg1="${bootstrap.theme}" arg2="solar"/>
+    </condition>
+    <condition
+      property="dita-bootstrap.prism.css.file"
+      value="prism-static.css"
+    >
+      <or>
+        <equals arg1="${bootstrap.theme}" arg2="cyborg"/>
+        <equals arg1="${bootstrap.theme}" arg2="darkly"/>
+        <equals arg1="${bootstrap.theme}" arg2="slate"/>
+        <equals arg1="${bootstrap.theme}" arg2="superhero"/>
+      </or>
+    </condition>
+    <condition property="dita-bootstrap.prism.css.file" value="prism-vapor.css">
+      <equals arg1="${bootstrap.theme}" arg2="vapor"/>
+    </condition>
+    <property name="dita-bootstrap.prism.css.file" value="prism.css"/>
+    <property
+      name="prism.css.theme"
+      value="${dita.plugin.org.dita-bootstrap.html.dir}/css/${dita-bootstrap.prism.css.file}"
+    />
   </target>
 
   <target name="dita2html5-bootstrap.init">

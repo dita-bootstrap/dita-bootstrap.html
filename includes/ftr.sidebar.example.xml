@@ -1,7 +1,7 @@
-<div class="alert alert-success d-flex justify-content-center p-1">
+<div class="mt-4 theme-success theme-border justify-content-center p-2">
   <div class="align-self-center">
     <p class="text-center mb-0">
-      <button type="button" class="btn btn-success btn-sm">FOOTER</button>
+      <button type="button" class="btn btn-sm">FOOTER</button>
     </p>
   </div>
 </div>

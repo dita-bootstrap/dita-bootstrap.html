@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
@@ -39,7 +39,7 @@
         they’re not explicitly required. Add and customize as you see fit.</p>
       <p>Here is an example with slides</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ol outputclass="carousel">
         <li>
           <image scope="external" href="https://picsum.photos/1200/600?a"/>
@@ -51,7 +51,7 @@
           <image scope="external" href="https://picsum.photos/1200/600?c"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -87,7 +87,7 @@
       <p> Set <xmlatt>indicators="yes"</xmlatt> to add indicators to the carousel, alongside the
         previous/next controls. The indicators let users jump directly to a particular slide.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ol outputclass="carousel" otherprops="indicators(true)">
         <li>
           <image scope="external" href="https://picsum.photos/1200/600?d"/>
@@ -99,7 +99,7 @@
           <image scope="external" href="https://picsum.photos/1200/600?f"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -134,7 +134,7 @@
       <title>With captions</title>
       <p>Add captions by using <xmlelement>fig</xmlelement> elements</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ol outputclass="carousel">
         <li>
           <fig>
@@ -155,7 +155,7 @@
           </fig>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -210,13 +210,13 @@
         >grid-row</xmlelement> element to add them within a carousel.
         Additional structure and spacing can be added by using the <xmlelement>grid-col</xmlelement> element.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ol outputclass="carousel">
         <li>
           <div outputclass="row">
             <div outputclass="col-1"/>
             <div outputclass="col-10">
-              <lines outputclass="text-bg-secondary">Is it for fear to wet a widow’s eye
+              <lines outputclass="p-1 theme-secondary theme-muted theme-border">Is it for fear to wet a widow’s eye
 That thou consum’st thyself in single life?
 Ah, if thou issueless shalt hap to die,
 The world will wail thee like a makeless wife;</lines>
@@ -227,7 +227,9 @@ The world will wail thee like a makeless wife;</lines>
           <div outputclass="row">
             <div outputclass="col-1"/>
             <div outputclass="col-10">
-              <lines outputclass="text-bg-secondary">The world will be thy widow and still weep
+              <lines
+                outputclass="p-1 theme-secondary theme-muted theme-border"
+              >The world will be thy widow and still weep
 That thou no form of thee hast left behind,
 When every private widow well may keep,
 By children’s eyes, her husband’s shape in mind.</lines>
@@ -238,7 +240,9 @@ By children’s eyes, her husband’s shape in mind.</lines>
           <div outputclass="row">
             <div outputclass="col-1"/>
             <div outputclass="col-10">
-              <lines outputclass="text-bg-secondary">Look what an unthrift in the world doth spend
+              <lines
+                outputclass="p-1 theme-secondary theme-muted theme-border"
+              >Look what an unthrift in the world doth spend
 Shifts but his place, for still the world enjoys it;
 But beauty’s waste hath in the world an end,
 And, kept unused, the user so destroys it.</lines>
@@ -249,7 +253,9 @@ And, kept unused, the user so destroys it.</lines>
           <div outputclass="row">
             <div outputclass="col-1"/>
             <div outputclass="col-10">
-              <lines outputclass="text-bg-secondary"> No love toward others in that bosom sits
+              <lines
+                outputclass="p-1 theme-secondary theme-muted theme-border"
+              > No love toward others in that bosom sits
  That on himself such murd’rous shame commits.
 
             <b>Sonnet 9 - William Shakespeare</b></lines>
@@ -257,7 +263,7 @@ And, kept unused, the user so destroys it.</lines>
           </div>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -323,7 +329,7 @@ And, kept unused, the user so destroys it.</lines>
       <title>Multiple slides side-by-side</title>
       <p>Add multiple <xmlelement>image</xmlelement> elements within each <xmlelement>carousel-item</xmlelement></p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ol outputclass="carousel">
         <li>
           <image scope="external" href="https://picsum.photos/400/200?a"/>
@@ -341,7 +347,7 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/400/200?i"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -391,7 +397,7 @@ And, kept unused, the user so destroys it.</lines>
         >carousel-item</xmlelement> and include a
           <xmlelement>grid-row</xmlelement> element for title texts.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ol outputclass="carousel">
         <li>
           <image scope="external" href="https://picsum.photos/400/200?j"/>
@@ -399,13 +405,13 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/400/200?l"/>
           <div outputclass="row">
             <div outputclass="col-4">
-              <p outputclass="text-center">First Image</p>
+              <p outputclass="text-center figure figure-caption">First Image</p>
             </div>
             <div outputclass="col-4">
-              <p outputclass="text-center">Second Image</p>
+              <p outputclass="text-center figure figure-caption">Second Image</p>
             </div>
             <div outputclass="col-4">
-              <p outputclass="text-center">Third Image</p>
+              <p outputclass="text-center figure figure-caption">Third Image</p>
             </div>
           </div>
         </li>
@@ -415,13 +421,13 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/400/200?o"/>
           <div outputclass="row">
             <div outputclass="col-4">
-              <p outputclass="text-center">Fourth Image</p>
+              <p outputclass="text-center figure figure-caption">Fourth Image</p>
             </div>
             <div outputclass="col-4">
-              <p outputclass="text-center">Fifth Image</p>
+              <p outputclass="text-center figure figure-caption">Fifth Image</p>
             </div>
             <div outputclass="col-4">
-              <p outputclass="text-center">Sixth Image</p>
+              <p outputclass="text-center figure figure-caption">Sixth Image</p>
             </div>
           </div>
         </li>
@@ -431,18 +437,18 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/400/200?r"/>
           <div outputclass="row">
             <div outputclass="col-4">
-              <p outputclass="text-center">Seventh Image</p>
+              <p outputclass="text-center figure figure-caption">Seventh Image</p>
             </div>
             <div outputclass="col-4">
-              <p outputclass="text-center">Eighth Image</p>
+              <p outputclass="text-center figure figure-caption">Eighth Image</p>
             </div>
             <div outputclass="col-4">
-              <p outputclass="text-center">Ninth Image</p>
+              <p outputclass="text-center figure figure-caption">Ninth Image</p>
             </div>
           </div>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <codeblock>&lt;carousel&gt;
   &lt;carousel-item&gt;
     &lt;image href="..." /&gt;
@@ -450,13 +456,13 @@ And, kept unused, the user so destroys it.</lines>
     &lt;image href="..." /&gt;
     &lt;grid-row deliveryTarget="html"&gt;
       &lt;grid-col colspan="4"&gt;
-        &lt;p outputclass="text-center"&gt;...&lt;/p&gt;
+        &lt;p outputclass="text-center figure figure-caption"&gt;...&lt;/p&gt;
       &lt;/grid-col&gt;
       &lt;grid-col colspan="4"&gt;
-        &lt;p outputclass="text-center"&gt;...&lt;/p&gt;
+        &lt;p outputclass="text-center figure figure-caption"&gt;...&lt;/p&gt;
       &lt;/grid-col&gt;
       &lt;grid-col colspan="4"&gt;
-        &lt;p outputclass="text-center"&gt;...&lt;/p&gt;
+        &lt;p outputclass="text-center figure figure-caption"&gt;...&lt;/p&gt;
       &lt;/grid-col&gt;
     &lt;/grid-row&gt;
   &lt;/carousel-item&gt;
@@ -469,7 +475,7 @@ And, kept unused, the user so destroys it.</lines>
           <xmlelement>div outputclass="bg-body"</xmlelement> or some custom CSS to the carousel items for proper
         crossfading.</p>
     </section>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <example deliveryTarget="html">
       <ol outputclass="carousel-fade">
         <li>
           <image scope="external" href="https://picsum.photos/1200/600?a"/>
@@ -481,7 +487,7 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/1200/600?c"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -520,7 +526,7 @@ And, kept unused, the user so destroys it.</lines>
       <p>When <xmlatt>autoplay="no"</xmlatt> is set, the carousel won’t automatically start to cycle on
         page load. Instead, it will only start after the first user interaction.</p>
     </section>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <example deliveryTarget="html">
       <ol outputclass="carousel" otherprops="autoplay(false)">
         <li>
           <image scope="external" href="https://picsum.photos/1200/600?d"/>
@@ -532,7 +538,7 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/1200/600?f"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -570,7 +576,7 @@ And, kept unused, the user so destroys it.</lines>
         >carousel</xmlelement> to change the amount of time to delay
         between automatically cycling to the next item.</p>
     </section>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <example deliveryTarget="html">
       <ol outputclass="carousel">
         <li>
           <image scope="external" href="https://picsum.photos/1200/600?a"/>
@@ -579,7 +585,7 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/1200/600?b"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <codeblock>&lt;carousel interval="2000"&gt;
   ...
 &lt;/carousel&gt;</codeblock>
@@ -590,7 +596,7 @@ And, kept unused, the user so destroys it.</lines>
         >carousel-item</xmlelement> to change the amount of time to delay
         between automatically cycling to the next item.</p>
     </section>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <example deliveryTarget="html">
       <ol outputclass="carousel">
         <li otherprops="interval(2000)">
           <image scope="external" href="https://picsum.photos/1200/600?g"/>
@@ -602,7 +608,7 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/1200/600?i"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -638,7 +644,7 @@ And, kept unused, the user so destroys it.</lines>
       <p>Carousels support swiping left/right on touchscreen devices to move between slides. Add
           <xmlatt>touch="no"</xmlatt> to disable this option.</p>
     </section>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+    <example deliveryTarget="html">
       <ol outputclass="carousel" otherprops="touch(false)">
         <li>
           <image scope="external" href="https://picsum.photos/1200/600?j"/>
@@ -650,7 +656,7 @@ And, kept unused, the user so destroys it.</lines>
           <image scope="external" href="https://picsum.photos/1200/600?l"/>
         </li>
       </ol>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>

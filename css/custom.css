@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
-/* 
+@import url('https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/dist/css/bootstrap.min.css');
+/*
  * Material Design Theme for DITA Bootstrap
  * Based on Material Design 3 principles.
  * See https://m3.material.io/
@@ -14,35 +14,26 @@
 :root,
 [data-bs-theme='light'] {
     /* MDB Modern Color Palette */
-    --bs-primary: #3B71CA;
-    --bs-primary-rgb: 59, 113, 202;
-    --bs-secondary: #9FA6B2;
-    --bs-secondary-rgb: 159, 166, 178;
-    --bs-success: #14A44D;
-    --bs-success-rgb: 20, 164, 77;
-    --bs-info: #54B4D3;
-    --bs-info-rgb: 84, 180, 211;
-    --bs-warning: #E4A11B;
-    --bs-warning-rgb: 228, 161, 27;
-    --bs-danger: #DC4C64;
-    --bs-danger-rgb: 220, 76, 100;
-    --bs-light: #FBFBFB;
-    --bs-light-rgb: 251, 251, 251;
-    --bs-dark: #332D2D;
-    --bs-dark-rgb: 51, 45, 45;
+    --bs-primary-base: #3b71ca;
+    --bs-secondary-base: #9fa6b2;
+    --bs-success-base: #14a44d;
+    --bs-info-base: #54b4d3;
+    --bs-warning-base: #e4a11b;
+    --bs-danger-base: #dc4c64;
+    --bs-inverse-base: #332d2d;
 
     /* Mapping Standard Bootstrap Color Names to MDB */
-    --bs-blue: var(--bs-primary);
-    --bs-red: var(--bs-danger);
-    --bs-green: var(--bs-success);
-    --bs-yellow: var(--bs-warning);
-    --bs-cyan: var(--bs-info);
-    --bs-gray: var(--bs-secondary);
-    --bs-teal: #20c997;
-    --bs-orange: #fd7e14;
-    --bs-pink: #d63384;
-    --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1;
+    --bs-blue-500: var(--bs-primary-base);
+    --bs-red-500: var(--bs-danger-base);
+    --bs-green-500: var(--bs-success-base);
+    --bs-yellow-500: var(--bs-warning-base);
+    --bs-cyan-500: var(--bs-info-base);
+    --bs-gray-500: var(--bs-secondary-base);
+    --bs-teal-500: #20c997;
+    --bs-orange-500: #fd7e14;
+    --bs-pink-500: #d63384;
+    --bs-indigo-500: #6610f2;
+    --bs-purple-500: #6f42c1;
 
     --bs-body-font-family: 'Roboto', sans-serif;
     --bs-body-font-size: 1rem;
@@ -55,89 +46,127 @@
     --shadow-3: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     --shadow-4: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 
-    /* MDB Border Radii */
+    /* MDB Border Radii (pinned to v6's own --bs-radius-* scale steps) */
     --bs-border-width: 1px;
-    --bs-border-radius: 0.25rem;
-    --bs-border-radius-sm: 0.125rem;
-    --bs-border-radius-lg: 0.5rem;
+    --bs-radius-1: 0.125rem;
+    --bs-radius-3: 0.25rem;
+    --bs-radius-5: 0.5rem;
+
+    /* Override Bootstrap v6 theme color variables for MDB */
+    --bs-primary-bg: var(--bs-primary-base);
+    --bs-primary-fg: var(--bs-primary-base);
+    --bs-primary-border: var(--bs-primary-base);
+
+    --bs-secondary-bg: var(--bs-secondary-base);
+    --bs-secondary-fg: var(--bs-secondary-base);
+    --bs-secondary-border: var(--bs-secondary-base);
+    --bs-secondary-contrast: var(--bs-white);
+
+    --bs-success-bg: var(--bs-success-base);
+    --bs-success-fg: var(--bs-success-base);
+    --bs-success-border: var(--bs-success-base);
+
+    --bs-danger-bg: var(--bs-danger-base);
+    --bs-danger-fg: var(--bs-danger-base);
+    --bs-danger-border: var(--bs-danger-base);
+
+    --bs-warning-bg: var(--bs-warning-base);
+    --bs-warning-fg: var(--bs-warning-base);
+    --bs-warning-border: var(--bs-warning-base);
+
+    --bs-info-bg: var(--bs-info-base);
+    --bs-info-fg: var(--bs-info-base);
+    --bs-info-border: var(--bs-info-base);
+
+    --bs-accent-base: color-mix(in oklch, var(--bs-primary-base), var(--bs-warning-base));
+    --bs-accent-bg: var(--bs-accent-base);
+    --bs-accent-fg: var(--bs-accent-base);
+    --bs-accent-border: var(--bs-accent-base);
+    --bs-accent-contrast: var(--bs-white);
+
+    --bs-inverse-bg: var(--bs-inverse-base);
+    --bs-inverse-fg: var(--bs-inverse-base);
+    --bs-inverse-border: var(--bs-inverse-base);
+
+    /* Explicit Contrast Colors for Light Theme */
+    --bs-primary-contrast: var(--bs-white);
+    --bs-secondary-contrast: var(--bs-white);
+    --bs-success-contrast: var(--bs-white);
+    --bs-danger-contrast: var(--bs-white);
+    --bs-warning-contrast: #000;
+    --bs-info-contrast: #000;
+    --bs-inverse-contrast: var(--bs-white);
 }
 
-[data-bs-theme='dark'] {
-    --bs-body-bg: #121212;
-    --bs-body-color: #eee;
-    --bs-secondary-color: #b2b2b2;
-    --bs-tertiary-color: #757575;
-    --bs-emphasis-color: #fff;
+:root[data-bs-theme='dark'] {
+    --bs-bg-body: #121212;
+    --bs-fg-body: #eee;
+    --bs-secondary-fg: #b2b2b2;
+    --bs-fg-3: #757575;
+    --bs-fg-1: #fff;
     --bs-border-color: #404040;
 
-    --bs-primary: #8ab4f8;
-    /* Lighter variant of MDB Primary #3B71CA */
-    --bs-primary-rgb: 138, 180, 248;
+    /* Lighter MDB palette, tuned for contrast against #121212 / #262626 card bg */
+    --bs-primary-base: #8ab4f8;
+    --bs-secondary-base: #ced4da;
+    --bs-success-base: #66bb6a;
+    --bs-info-base: #4fc3f7;
+    --bs-warning-base: #ffca28;
+    --bs-danger-base: #f06292;
+    --bs-accent-base: #e699c2;
+    --bs-inverse-base: #eeeeee;
 
-    --bs-card-bg: #262626;
-    --bs-card-border-color: #404040;
-    --bs-card-cap-bg: #2d2d2d;
+    --bs-primary-bg: var(--bs-primary-base);
+    --bs-primary-fg: var(--bs-primary-base);
+    --bs-primary-border: var(--bs-primary-base);
 
-    --bs-list-group-bg: #262626;
-    --bs-list-group-border-color: #404040;
-    --bs-list-group-action-hover-bg: #333;
+    --bs-secondary-bg: var(--bs-secondary-base);
+    --bs-secondary-fg: var(--bs-secondary-base);
+    --bs-secondary-border: var(--bs-secondary-base);
 
-    --bs-nav-link-color: #eee;
-    --bs-nav-link-hover-color: #fff;
+    --bs-success-bg: var(--bs-success-base);
+    --bs-success-fg: var(--bs-success-base);
+    --bs-success-border: var(--bs-success-base);
+
+    --bs-danger-bg: var(--bs-danger-base);
+    --bs-danger-fg: var(--bs-danger-base);
+    --bs-danger-border: var(--bs-danger-base);
+
+    --bs-warning-bg: var(--bs-warning-base);
+    --bs-warning-fg: var(--bs-warning-base);
+    --bs-warning-border: var(--bs-warning-base);
+
+    --bs-info-bg: var(--bs-info-base);
+    --bs-info-fg: var(--bs-info-base);
+    --bs-info-border: var(--bs-info-base);
+
+    --bs-accent-bg: var(--bs-accent-base);
+    --bs-accent-fg: var(--bs-accent-base);
+    --bs-accent-border: var(--bs-accent-base);
+
+    --bs-inverse-bg: var(--bs-inverse-base);
+    --bs-inverse-fg: var(--bs-inverse-base);
+    --bs-inverse-border: var(--bs-inverse-base);
+
+    /* All dark bases are light tints, so they need dark (not white) contrast text */
+    --bs-primary-contrast: #000;
+    --bs-secondary-contrast: #000;
+    --bs-success-contrast: #000;
+    --bs-danger-contrast: #000;
+    --bs-accent-contrast: #000;
+    --bs-inverse-contrast: #212121;
 
     /* Dark mode specific shadows - deeper and darker */
     --shadow-1: 0 2px 5px 0 rgba(0, 0, 0, 0.5), 0 2px 10px 0 rgba(0, 0, 0, 0.4);
     --shadow-2: 0 5px 11px 0 rgba(0, 0, 0, 0.6), 0 4px 15px 0 rgba(0, 0, 0, 0.5);
 
-    background-color: var(--bs-body-bg);
-    color: var(--bs-body-color);
-}
-
-[data-bs-theme='dark'] .alert-primary,
-[data-bs-theme='dark'] .note.note-primary {
-    background-color: rgba(59, 113, 202, 0.2);
-    color: #8ab4f8;
-    border: 1px solid rgba(59, 113, 202, 0.4) !important;
-}
-
-[data-bs-theme='dark'] .alert-secondary,
-[data-bs-theme='dark'] .note.note-secondary {
-    background-color: rgba(159, 166, 178, 0.2);
-    color: #ced4da;
-    border: 1px solid rgba(159, 166, 178, 0.4) !important;
-}
-
-[data-bs-theme='dark'] .alert-success,
-[data-bs-theme='dark'] .note.note-success {
-    background-color: rgba(20, 164, 77, 0.2);
-    color: #66bb6a;
-    border: 1px solid rgba(20, 164, 77, 0.4) !important;
-}
-
-[data-bs-theme='dark'] .alert-danger,
-[data-bs-theme='dark'] .note.note-danger {
-    background-color: rgba(220, 76, 100, 0.2);
-    color: #f06292;
-    border: 1px solid rgba(220, 76, 100, 0.4) !important;
-}
-
-[data-bs-theme='dark'] .alert-warning,
-[data-bs-theme='dark'] .note.note-warning {
-    background-color: rgba(228, 161, 27, 0.2);
-    color: #ffca28;
-    border: 1px solid rgba(228, 161, 27, 0.4) !important;
-}
-
-[data-bs-theme='dark'] .alert-info,
-[data-bs-theme='dark'] .note.note-info {
-    background-color: rgba(84, 180, 211, 0.2);
-    color: #4fc3f7;
-    border: 1px solid rgba(84, 180, 211, 0.4) !important;
+    background-color: var(--bs-bg-body);
+    color: var(--bs-fg-body);
 }
 
 body {
-    background-color: var(--bs-body-bg, #fafafa);
-    color: var(--bs-body-color, #212121);
+    background-color: var(--bs-bg-body, #fafafa);
+    color: var(--bs-fg-body, #212121);
 }
 
 /* 2. Typography Enhancements */
@@ -158,7 +187,15 @@ h6 {
     background-color: var(--bs-card-bg, #fff);
     box-shadow: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
     transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 0.5rem;
+    --bs-card-border-radius: 0.5rem;
+    --bs-card-inner-border-radius: calc(0.5rem - var(--bs-border-width, 1px));
+    border-radius: var(--bs-card-border-radius);
+}
+
+/* v6's card-body is a flex column, which blockifies inline children like
+   .card-link — forcing each link onto its own row. Revert to block flow. */
+.card-body {
+    display: block;
 }
 
 .card:hover {
@@ -167,14 +204,12 @@ h6 {
 
 .card-header {
     padding: 0.75rem 1.5rem !important;
-    background-color: transparent !important;
     border-bottom: 2px solid #f5f5f5 !important;
     font-weight: 400 !important;
 }
 
 .card-footer {
     padding: 0.75rem 1.5rem !important;
-    background-color: transparent !important;
     border-top: 2px solid #f5f5f5 !important;
 }
 
@@ -186,8 +221,32 @@ h6 {
     border-top-color: rgba(255, 255, 255, 0.1) !important;
 }
 
+/* 3a. Themed Cards overrides for theme-* and alert-* output classes */
+.card[class*="theme-"],
+.card[class*="alert-"] {
+    border: 1px solid var(--bs-theme-border) !important;
+}
+
+.card[class*="theme-"] .card-header,
+.card[class*="alert-"] .card-header {
+    background-color: var(--bs-theme-bg) !important;
+    color: var(--bs-theme-contrast) !important;
+    border-bottom: none !important;
+}
+
+.card[class*="theme-"] .card-footer,
+.card[class*="alert-"] .card-footer {
+    background-color: var(--bs-theme-bg-subtle) !important;
+    color: var(--bs-theme-fg) !important;
+    border-top: 1px solid var(--bs-theme-border) !important;
+}
+
+
 /* 4. Material Buttons */
-.btn {
+.btn,
+.btn-solid,
+.btn-outline {
+    min-height: 2.25rem;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 0.75rem;
@@ -196,109 +255,39 @@ h6 {
     box-shadow: var(--shadow-1);
     transition: all 0.2s ease-in-out;
     border: none;
-    border-radius: var(--bs-border-radius);
+    border-radius: var(--bs-radius-3);
+}
+.btn.btn-icon,
+.btn-icon {
+    padding: 0;
+    width: var(--bs-btn-min-height, 2.375rem);
+    height: var(--bs-btn-min-height, 2.375rem);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn-outline-primary {
-    --bs-btn-color: var(--bs-primary);
-    --bs-btn-border-color: var(--bs-primary);
-    --bs-btn-hover-color: var(--bs-primary);
-    --bs-btn-hover-bg: rgba(59, 113, 202, 0.1);
-    --bs-btn-hover-border-color: var(--bs-primary);
-    --bs-btn-active-bg: rgba(59, 113, 202, 0.2);
-    --bs-btn-active-color: var(--bs-primary);
-    border: 2px solid var(--bs-primary) !important;
+/* .theme-* classes set --bs-theme-base natively (Bootstrap), so one rule covers
+   every color instead of a hand-copied block per color. */
+.btn-outline[class*="theme-"] {
+    --bs-btn-color: var(--bs-theme-base);
+    --bs-btn-border-color: var(--bs-theme-base);
+    --bs-btn-hover-color: var(--bs-theme-base);
+    --bs-btn-hover-bg: color-mix(in srgb, var(--bs-theme-base) 10%, transparent);
+    --bs-btn-hover-border-color: var(--bs-theme-base);
+    --bs-btn-active-bg: color-mix(in srgb, var(--bs-theme-base) 20%, transparent);
+    --bs-btn-active-color: var(--bs-theme-base);
+    border: 2px solid var(--bs-theme-base) !important;
 }
 
-.btn-outline-secondary {
-    --bs-btn-color: var(--bs-secondary);
-    --bs-btn-border-color: var(--bs-secondary);
-    --bs-btn-hover-color: var(--bs-secondary);
-    --bs-btn-hover-bg: rgba(159, 166, 178, 0.1);
-    --bs-btn-active-color: var(--bs-secondary);
-    --bs-btn-active-bg: rgba(159, 166, 178, 0.2);
-    border: 2px solid var(--bs-secondary) !important;
-}
-
-.btn-outline-success {
-    --bs-btn-color: var(--bs-success);
-    --bs-btn-border-color: var(--bs-success);
-    --bs-btn-hover-color: var(--bs-success);
-    --bs-btn-hover-bg: rgba(20, 164, 77, 0.1);
-    --bs-btn-active-color: var(--bs-success);
-    --bs-btn-active-bg: rgba(20, 164, 77, 0.2);
-    border: 2px solid var(--bs-success) !important;
-}
-
-.btn-outline-danger {
-    --bs-btn-color: var(--bs-danger);
-    --bs-btn-border-color: var(--bs-danger);
-    --bs-btn-hover-color: var(--bs-danger);
-    --bs-btn-hover-bg: rgba(220, 76, 100, 0.1);
-    --bs-btn-active-color: var(--bs-danger);
-    --bs-btn-active-bg: rgba(220, 76, 100, 0.2);
-    border: 2px solid var(--bs-danger) !important;
-}
-
-.btn-outline-warning {
-    --bs-btn-color: var(--bs-warning);
-    --bs-btn-border-color: var(--bs-warning);
-    --bs-btn-hover-color: var(--bs-warning);
-    --bs-btn-hover-bg: rgba(228, 161, 27, 0.1);
-    --bs-btn-active-color: var(--bs-warning);
-    --bs-btn-active-bg: rgba(228, 161, 27, 0.2);
-    border: 2px solid var(--bs-warning) !important;
-}
-
-.btn-outline-info {
-    --bs-btn-color: var(--bs-info);
-    --bs-btn-border-color: var(--bs-info);
-    --bs-btn-hover-color: var(--bs-info);
-    --bs-btn-hover-bg: rgba(84, 180, 211, 0.1);
-    --bs-btn-active-color: var(--bs-info);
-    --bs-btn-active-bg: rgba(84, 180, 211, 0.2);
-    border: 2px solid var(--bs-info) !important;
-}
-
-.btn-outline-light {
-    --bs-btn-color: #616161;
-    --bs-btn-border-color: #eee;
-    --bs-btn-hover-color: #616161;
-    --bs-btn-hover-bg: rgba(0, 0, 0, 0.02);
-    --bs-btn-active-color: #616161;
-    --bs-btn-active-bg: rgba(0, 0, 0, 0.04);
-    border: 2px solid #eee !important;
-}
-
-[data-bs-theme='dark'] .btn-outline-light {
-    --bs-btn-color: #fbfbfb;
-    --bs-btn-border-color: #fbfbfb;
-}
-
-.btn-outline-dark {
-    --bs-btn-color: var(--bs-dark);
-    --bs-btn-border-color: var(--bs-dark);
-    --bs-btn-hover-color: var(--bs-dark);
-    --bs-btn-hover-bg: rgba(0, 0, 0, 0.05);
-    --bs-btn-active-color: var(--bs-dark);
-    --bs-btn-active-bg: rgba(0, 0, 0, 0.1);
-    border: 2px solid var(--bs-dark) !important;
-}
-
-.btn-outline-primary:hover,
-.btn-outline-secondary:hover,
-.btn-outline-success:hover,
-.btn-outline-danger:hover,
-.btn-outline-warning:hover,
-.btn-outline-info:hover,
-.btn-outline-light:hover,
-.btn-outline-dark:hover {
+.btn-outline[class*="theme-"]:hover,
+[class^="btn-outline-"]:hover {
     box-shadow: 0 8px 9px -4px rgba(0, 0, 0, 0.15), 0 4px 18px 0 rgba(0, 0, 0, 0.1) !important;
     transform: translateY(0);
     /* MDB outline buttons don't usually lift as much as solid */
 }
 
-/* 12. Badges */
+/* 5. Badges */
 .badge {
     padding: 0.35em 0.65em;
     font-size: 0.75em;
@@ -306,33 +295,11 @@ h6 {
     border-radius: 0.27rem;
     text-transform: uppercase;
     letter-spacing: 0.02rem;
+    color: var(--bs-theme-contrast, inherit);
+    background-color: var(--bs-theme-bg, var(--bs-badge-bg));
 }
 
-.badge-pill {
-    border-radius: 10rem;
-    padding-left: 0.8em;
-    padding-right: 0.8em;
-}
-
-/* 13. Carousel (MDB Style Indicators & Captions) */
-.carousel-indicators [data-bs-target] {
-    width: 30px;
-    height: 4px;
-    border-radius: 0;
-    background-color: #fff;
-    opacity: 0.5;
-    transition: opacity 0.6s ease;
-}
-
-.carousel-indicators .active {
-    opacity: 1;
-}
-
-.carousel-caption {
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-}
-
-/* 14. List Group (Material Style) */
+/* 6. List Group (Material Style) */
 .list-group {
     border-radius: 0.5rem;
     border: 1px solid #eee;
@@ -355,11 +322,11 @@ h6 {
 }
 
 .list-group-item.active {
-    background-color: var(--bs-primary) !important;
-    border-color: var(--bs-primary) !important;
+    background-color: var(--bs-primary-base) !important;
+    border-color: var(--bs-primary-base) !important;
 }
 
-list-group-flush {
+.list-group-flush {
     border: none;
 }
 
@@ -375,18 +342,18 @@ list-group-flush {
     transform: translateY(0);
 }
 
-.btn-lg {
+.btn-lg:not(.btn-icon) {
     padding: 0.75rem 1.625rem 0.625rem;
     font-size: 0.875rem;
     line-height: 1.5;
-    border-radius: var(--bs-border-radius-lg);
+    border-radius: var(--bs-radius-5);
 }
 
-.btn-sm {
+.btn-sm:not(.btn-icon) {
     padding: 0.375rem 1rem 0.3125rem;
     font-size: 0.625rem;
     line-height: 1.5;
-    border-radius: var(--bs-border-radius-sm);
+    border-radius: var(--bs-radius-1);
 }
 
 .btn-link {
@@ -399,38 +366,25 @@ list-group-flush {
     transform: none;
 }
 
-/* 5. FIX: Carousel Icons (Restoring standard Bootstrap SVGs) */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-    background-size: 60%;
-}
 
-.carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
-}
-
-.carousel-control-next-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-}
-
-/* 6. FIX: Offcanvas (Ensuring clean Material slide-out) */
-.offcanvas {
+/* 7. FIX: Offcanvas (Ensuring clean Material slide-out) */
+.drawer {
     box-shadow: var(--shadow-3);
     border: none;
 }
 
-/* 7. Navs (Pills & Tabs) */
+/* 8. Navs (Pills & Tabs) */
 .nav-pills,
 .nav-tabs {
     --bs-nav-link-color: #616161;
     --bs-nav-link-hover-color: #757575;
     --bs-nav-link-disabled-color: #9e9e9e;
     --bs-nav-pills-link-active-color: #fff;
-    --bs-nav-pills-link-active-bg: var(--bs-primary);
+    --bs-nav-pills-link-active-bg: var(--bs-primary-base);
+    /* v6 defaults both of these to var(--bs-radius-9) (1.5rem, a full pill shape) for
+       the track and the active link alike. Match our own button radius instead. */
+    --bs-nav-pills-border-radius: var(--bs-radius-3);
+    --bs-nav-pills-link-border-radius: var(--bs-radius-3);
 }
 
 .nav-pills .nav-link {
@@ -440,12 +394,12 @@ list-group-flush {
     letter-spacing: 0.02rem !important;
     padding: 0.625rem 1.5rem 0.5rem !important;
     transition: all 0.2s ease-in-out !important;
-    border-radius: var(--bs-border-radius) !important;
+    border-radius: var(--bs-radius-3) !important;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-    background-color: var(--bs-primary) !important;
+    background-color: var(--bs-primary-base) !important;
     box-shadow: var(--shadow-1) !important;
     color: #fff !important;
 }
@@ -483,10 +437,6 @@ list-group-flush {
     /* Increased gap to content */
 }
 
-.carousel-indicators .btn {
-   box-shadow: none;
-}
-
 .nav-tabs .nav-link {
     text-transform: uppercase !important;
     font-weight: 500 !important;
@@ -509,9 +459,9 @@ list-group-flush {
 }
 
 .nav-tabs .nav-link.active {
-    color: var(--bs-primary) !important;
+    color: var(--bs-primary-base) !important;
     background-color: transparent !important;
-    border-bottom: 2px solid var(--bs-primary) !important;
+    border-bottom: 2px solid var(--bs-primary-base) !important;
 }
 
 [data-bs-theme='dark'] .nav-pills .nav-link.active {
@@ -519,7 +469,7 @@ list-group-flush {
 }
 
 [data-bs-theme='dark'] .nav-tabs .nav-link.active {
-    color: var(--bs-primary) !important;
+    color: var(--bs-primary-base) !important;
 }
 
 /* 9. Alerts & Notes (DITA Notes) */
@@ -527,7 +477,7 @@ list-group-flush {
 .note {
     padding: 1.25rem 1.5rem;
     margin-bottom: 1.5rem;
-    border: none !important;
+    border: 1px solid !important;
 }
 
 .alert:not(.card),
@@ -540,63 +490,23 @@ list-group-flush {
 }
 
 .note {
-    border-left: 6px solid !important
+    /* Width only, not the `border-left` shorthand — that would reset
+       border-left-color back to currentColor and fight the rule below. */
+    border-left-width: 6px !important;
 }
 
-.alert-primary,
-.note.note-primary {
-    background-color: #E2EAF7;
-    color: #2F5AA2;
-    border-left-color: #2F5AA2 !important;
-}
-
-.alert-secondary,
-.note.note-secondary {
-    background-color: #f5f5f5;
-    color: #424242;
-    border-left-color: #424242 !important;
-}
-
-.alert-success,
-.note.note-success {
-    background-color: #E1F0E5;
-    color: #1B5E20;
-    border-left-color: #1B5E20 !important;
-}
-
-.alert-danger,
-.note.note-danger {
-    background-color: #F9E3E8;
-    color: #B71C1C;
-    border-left-color: #B71C1C !important;
-}
-
-.alert-warning,
-.note.note-warning {
-    background-color: #FBF1DD;
-    color: #896110;
-    border-left-color: #896110 !important;
-}
-
-.alert-info,
-.note.note-info {
-    background-color: #E8F5FD;
-    color: #0D47A1;
-    border-left-color: #0D47A1 !important;
-}
-
-.alert-light,
-.note.note-light {
-    background-color: #fafafa;
-    color: #616161;
-    border-left-color: #bdbdbd !important;
-}
-
-.alert-dark,
-.note.note-dark {
-    background-color: #eeeeee;
-    color: #212121;
-    border-left-color: #212121 !important;
+/* v6's native .theme-* classes (and our own for accent/inverse) already expose
+   --bs-theme-base, so one formula covers every color instead of a hardcoded block
+   per color per theme. light-dark() picks the right shape for each: light mode
+   darkens the base for text/border against a near-white tint; dark mode's base is
+   already a light, legible tint (see the palettes above), so it's used as-is. */
+.alert[class*="theme-"],
+.note[class*="theme-"],
+.alert[class*="alert-"],
+.note[class*="alert-"] {
+    background-color: color-mix(in srgb, var(--bs-theme-base) 12%, var(--bs-bg-body, #fafafa));
+    color: light-dark(color-mix(in srgb, var(--bs-theme-base) 60%, #000), var(--bs-theme-base));
+    border-color: light-dark(color-mix(in srgb, var(--bs-theme-base) 60%, #000), var(--bs-theme-base)) !important;
 }
 
 .alert-heading {
@@ -606,14 +516,21 @@ list-group-flush {
 /* 10. Navigation & App Bar */
 .navbar {
     box-shadow: var(--shadow-1);
-    background-color: var(--bs-primary) !important;
+    background-color: var(--bs-primary-base) !important;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.85);
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 0.875rem;
+/* .navbar always sits on --bs-primary-base regardless of theme, but Bootstrap's own
+   nav-link/brand colors (default and hover) are tuned for a dark-mode navbar that's
+   actually dark, and a light-mode navbar bg that's white. Ours never is either, since
+   it always carries the brand color, so pin both states to the color already tuned to
+   read well against --bs-primary-base: --bs-primary-contrast. */
+.navbar .nav-link,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: var(--bs-primary-contrast);
 }
 
 .navbar-brand {
@@ -621,28 +538,24 @@ list-group-flush {
     letter-spacing: 0.05em;
 }
 
-/* 8. Floating Labels (Material Style) */
+/* 11. Floating Labels (Material Style) */
 .form-floating>.form-control:focus~label,
 .form-floating>.form-control:not(:placeholder-shown)~label,
 .form-floating>.form-select~label {
-    color: var(--bs-primary);
+    color: var(--bs-primary-base);
     opacity: 1;
 }
 
 .form-control:focus {
-    border-color: var(--bs-primary);
-    box-shadow: inset 0 0 0 1px var(--bs-primary);
+    border-color: var(--bs-primary-base);
+    box-shadow: inset 0 0 0 1px var(--bs-primary-base);
 }
 
-/* 9. Selection & Focus */
-::selection {
-    background: rgba(var(--bs-primary-rgb), 0.2);
-}
 
-/* 10. Table Enhancements */
+/* 12. Table Enhancements */
 .table {
     background: #fff;
-    border-radius: var(--bs-border-radius);
+    border-radius: var(--bs-radius-3);
     overflow: hidden;
 }
 
@@ -653,85 +566,59 @@ list-group-flush {
     letter-spacing: 0.05em;
 }
 
-/* 11. Explicit Color Overrides to ensure MDB colors take precedence */
-.btn-primary {
-    --bs-btn-bg: var(--bs-primary);
-    --bs-btn-border-color: var(--bs-primary);
-    --bs-btn-hover-bg: #0b51c5;
-    --bs-btn-hover-border-color: #0a4ab4;
+/* 13. Explicit Color Overrides to ensure MDB colors take precedence */
+.btn-solid[class*="theme-"] {
+    --bs-btn-bg: var(--bs-theme-base);
+    --bs-btn-border-color: var(--bs-theme-base);
+    --bs-btn-color: var(--bs-theme-contrast);
+    --bs-btn-hover-bg: color-mix(in oklch, var(--bs-theme-base), #000 12%);
+    --bs-btn-hover-border-color: color-mix(in oklch, var(--bs-theme-base), #000 16%);
 }
 
-.btn-secondary {
-    --bs-btn-bg: var(--bs-secondary);
-    --bs-btn-border-color: var(--bs-secondary);
+/* Specificity overrides for links styled as buttons to prevent default/visited link color leakage and underlines */
+a.btn-solid,
+a.btn-solid:visited,
+a.btn-solid:hover,
+a.btn-outline,
+a.btn-outline:visited,
+a.btn-outline:hover,
+a.btn-primary,
+a.btn-primary:visited,
+a.btn-primary:hover,
+a.btn-secondary,
+a.btn-secondary:visited,
+a.btn-secondary:hover,
+a.btn-success,
+a.btn-success:visited,
+a.btn-success:hover,
+a.btn-danger,
+a.btn-danger:visited,
+a.btn-danger:hover,
+a.btn-warning,
+a.btn-warning:visited,
+a.btn-warning:hover,
+a.btn-info,
+a.btn-info:visited,
+a.btn-info:hover,
+a.btn-accent,
+a.btn-accent:visited,
+a.btn-accent:hover,
+a.btn-inverse,
+a.btn-inverse:visited,
+a.btn-inverse:hover {
+    color: var(--bs-btn-color);
+    text-decoration: none !important;
 }
 
-.btn-success {
-    --bs-btn-bg: var(--bs-success);
-    --bs-btn-border-color: var(--bs-success);
+/* 14. Accordion Caret Alignment Fix & Header Font Reset */
+.accordion-header {
+    display: flex !important;
+    align-items: center !important;
 }
 
-.btn-danger {
-    --bs-btn-bg: var(--bs-danger);
-    --bs-btn-border-color: var(--bs-danger);
-}
-
-.btn-warning {
-    --bs-btn-bg: var(--bs-warning);
-    --bs-btn-border-color: var(--bs-warning);
-    --bs-btn-color: #000;
-}
-
-.btn-info {
-    --bs-btn-bg: var(--bs-info);
-    --bs-btn-border-color: var(--bs-info);
-    --bs-btn-color: #000;
-}
-
-.bg-primary {
-    background-color: var(--bs-primary) !important;
-}
-
-.bg-secondary {
-    background-color: var(--bs-secondary) !important;
-}
-
-.bg-success {
-    background-color: var(--bs-success) !important;
-}
-
-.bg-danger {
-    background-color: var(--bs-danger) !important;
-}
-
-.bg-warning {
-    background-color: var(--bs-warning) !important;
-}
-
-.bg-info {
-    background-color: var(--bs-info) !important;
-}
-
-.text-primary {
-    color: var(--bs-primary) !important;
-}
-
-.text-secondary {
-    color: var(--bs-secondary) !important;
-}
-
-.text-success {
-    color: var(--bs-success) !important;
-}
-
-.text-danger {
-    color: var(--bs-danger) !important;
-}
-
-.text-warning {
-    color: var(--bs-warning) !important;
-}
-
-.text-info {
-    color: var(--bs-info) !important;
+.accordion-header h2,
+.accordion-header .title {
+    margin: 0 !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
 }

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
+  markup is used throughout the examples describing how to implement these components correctly using outputclass.
+
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
+  and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
+-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="drawer">
+  <title>Drawer</title>
+  <shortdesc>Build hidden sidebars into your project for navigation, shopping carts, and more with a few classes and
+    Bootstrap’s JavaScript plugin.</shortdesc>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>Drawer</indexterm>
+        <indexterm>CSS
+          <indexterm><xmlatt>outputclass</xmlatt></indexterm>
+        </indexterm>
+        <indexterm><xmlelement>section</xmlelement></indexterm>
+        <indexterm><xmlelement>xref</xmlelement></indexterm>
+        <indexterm><xmlatt>props</xmlatt></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <body outputclass="language-markup">
+    <section id="how-it-works">
+      <title>How it works</title>
+      <p>Drawer is a sidebar component that can be toggled via JavaScript to appear from the left, right, or bottom
+        edge of the viewport. Buttons or anchors are used as triggers that are attached to specific elements you toggle,
+        and data attributes are used to invoke Bootstrap’s JavaScript.</p>
+      <ul>
+        <li>Drawer shares some of the same JavaScript code as modals. Conceptually, they are quite similar, but they
+          are separate plugins.</li>
+        <li>Similarly, some source Sass variables for drawer’s styles and dimensions are inherited from the modal’s
+          variables.</li>
+        <li>When shown, drawer includes a default backdrop that can be clicked to hide the drawer.</li>
+        <li>Similar to modals, only one drawer can be shown at a time.</li>
+      </ul>
+      <p>Heads up! Given how CSS handles animations, you cannot use margin or translate in a Bootstrap drawer
+        element. Instead, use the class as an independent wrapping element.</p>
+    </section>
+    <section id="drawer-components">
+      <title>Drawer components</title>
+      <p>Below is an drawer example that is displayed when the button is clicked. Add
+          <xmlatt>props="drawer-toggle"</xmlatt> to an <xmlelement>xref</xmlelement> element to associate a button to
+        an drawer</p>
+    </section>
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+            <xref
+        props="drawer-toggle"
+        href="#drawer1"
+        outputclass="btn-solid theme-primary"
+      >Click here to display drawer</xref>
+      <section id="drawer1" outputclass="drawer drawer-start">
+        <title>Drawer</title>
+        <p>Content for the drawer goes here. You can place just about any section elements here.</p>
+      </section>
+    </bodydiv>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;xref outputclass="btn-solid theme-primary" props="drawer-toggle" href="#drawer1"&gt;
+  Click here
+&lt;/xref&gt;
+&lt;section outputclass="drawer-start" id="drawer1"&gt;
+  &lt;title&gt;Drawer&lt;/title&gt;
+  &lt;p&gt;
+    Content for the drawer goes here. You can place just about any section elements here.
+  &lt;/p&gt;
+&lt;/section&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;button props="drawer-toggle" href="#drawer1"&gt;
+  Click here
+&lt;/button&gt;
+&lt;drawer id="drawer1" position="start"&gt;
+  &lt;title&gt;Drawer&lt;/title&gt;
+  &lt;p&gt;
+    Content for the drawer goes here. You can place just about any section elements here.
+  &lt;/p&gt;
+&lt;/drawer&gt;</codeblock>
+        </section>
+      </bodydiv>
+    <section id="placement">
+      <title>Placement</title>
+      <p>There’s no default placement for drawer components, so you must add one of the modifier outputclasses
+        below</p>
+      <ul>
+        <li>Setting <xmlatt>position="start"</xmlatt> or <xmlatt
+          >outputclass="drawer-start"</xmlatt> places drawer on the left of the
+          viewport (shown above)</li>
+        <li>Setting <xmlatt>position="end"</xmlatt> or <xmlatt
+          >outputclass="drawer-end"</xmlatt> places drawer on the right of the
+          viewport</li>
+        <li>Setting <xmlatt>position="bottom"</xmlatt> or <xmlatt
+          >outputclass="drawer-bottom"</xmlatt> places drawer on the bottom of
+          the viewport</li>
+        <li>Setting <xmlatt>position="top"</xmlatt> or <xmlatt
+          >outputclass="drawer-top"</xmlatt> places drawer on the top of
+          the viewport</li>
+      </ul>
+    </section>
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+            <xref props="drawer-toggle" href="#drawer2" outputclass="btn-solid theme-primary">Toggle right drawer</xref>
+      <section id="drawer2" outputclass="drawer drawer-end">
+        <title>Drawer</title>
+        <p>Content for the drawer goes here. You can place just about any section elements here.</p>
+      </section>
+    </bodydiv>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;section outputclass="drawer-end" id="drawer2"&gt;
+  ...etc
+&lt;/section&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;drawer position="end"&gt;
+  ...etc
+&lt;/drawer&gt;</codeblock>
+        </section>
+      </bodydiv>
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+            <xref
+        props="drawer-toggle"
+        href="#drawer3"
+        outputclass="btn-solid theme-primary"
+      >Toggle bottom drawer</xref>
+      <section id="drawer3" outputclass="drawer drawer-bottom">
+        <title>Drawer</title>
+        <p>Content for the drawer goes here. You can place just about any section elements here.</p>
+      </section>
+    </bodydiv>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;section outputclass="drawer-bottom" id="drawer3"&gt;
+  ...etc
+&lt;/section&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;drawer position="bottom"&gt;
+  ...etc
+&lt;/drawer&gt;</codeblock>
+        </section>
+      </bodydiv>
+    <section id="responsive">
+      <title>Responsive</title>
+      <p
+      >Responsive drawer outputclasses hide content outside the viewport from a specified breakpoint and down. Above that breakpoint, the contents within will behave as usual. For example, <xmlatt
+        >outputclass="drawer-lg"</xmlatt> hides content in an drawer below the <codeph
+        >lg</codeph> breakpoint, but shows the content above the <codeph>lg</codeph> breakpoint.</p>
+    </section>
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+      <note outputclass="d-none lg:d-block">Resize your browser to show the responsive drawer toggle.</note>
+            <xref
+        outputclass="lg:d-none btn-solid theme-primary"
+        props="drawer-toggle"
+        href="#drawer4"
+      >Toggle drawer</xref>
+      <section outputclass="drawer-lg drawer drawer-start" id="drawer4">
+        <title>Drawer</title>
+        <p>This is content within an <xmlatt>outputclass="drawer-lg"</xmlatt>.</p>
+      </section>
+    </bodydiv>
+    <p>Responsive drawer classes are available across for each breakpoint.</p>
+    <ul>
+      <li><xmlatt>outputclass="drawer"</xmlatt></li>
+      <li><xmlatt>outputclass="drawer-sm"</xmlatt></li>
+      <li><xmlatt>outputclass="drawer-md"</xmlatt></li>
+      <li><xmlatt>outputclass="drawer-lg"</xmlatt></li>
+      <li><xmlatt>outputclass="drawer-xl"</xmlatt></li>
+      <li><xmlatt>outputclass="drawer-xxl"</xmlatt></li>
+    </ul>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;note outputclass="d-none lg:d-block"&gt;
+  Resize your browser to show the responsive drawer toggle.
+&lt;/note&gt;
+&lt;xref outputclass="btn-solid theme-primary lg:d-none" props="drawer-toggle" href="#drawer4"&gt;
+  Toggle drawer
+&lt;/xref&gt;
+&lt;section outputclass="drawer-lg" id="drawer4"&gt;
+  &lt;title&gt;Drawer&lt;/title&gt;
+  &lt;p&gt;
+    This is content within an &lt;xmlatt&gt;outputclass="drawer-lg"&lt;/xmlatt&gt;.
+  &lt;/p&gt;
+&lt;/section&gt;</codeblock>
+        </section>
+         <section>
+        <title>Specialization</title>
+          <codeblock>&lt;note theme="info-contrast" outputclass="d-none lg:d-block"&gt;
+  Resize your browser to show the responsive drawer toggle.
+&lt;/note&gt;
+&lt;button outputclass="lg:d-none" props="drawer-toggle" href="#drawer4"&gt;
+  Toggle drawer
+&lt;/button&gt;
+&lt;drawer outputclass="drawer-lg" id="drawer4"&gt;
+  &lt;title&gt;Drawer&lt;/title&gt;
+  &lt;p&gt;
+    This is content within an &lt;xmlatt&gt;outputclass="drawer-lg"&lt;/xmlatt&gt;.
+  &lt;/p&gt;
+&lt;/drawer&gt;</codeblock>
+        </section>
+      </bodydiv>
+  </body>
+</topic>

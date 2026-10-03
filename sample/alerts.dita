@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <topic id="alerts">
@@ -26,85 +26,109 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
-      <title>Example</title>
-      <p>Alerts are available for any length of text, as well as an optional close button. For proper styling, use one
-        of the eight required contextual classes (e.g., set <xmlatt>outputclass</xmlatt> to
-          <codeph>alert-success</codeph>).</p>
+    <section id="default-alert">
+      <title>Default alert</title>
+      <p>Alerts are available for any length of text, as well as an optional close button. Alerts are designed to be
+        used with theme colors, but have neutral fallback colors for when no theme color is applied.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <section outputclass="alert alert-primary">A simple primary alert—check it out!</section>
-      <section outputclass="alert alert-secondary">A simple secondary alert—check it out!</section>
-      <section outputclass="alert alert-success">A simple success alert—check it out!</section>
-      <section outputclass="alert alert-danger">A simple danger alert—check it out!</section>
-      <section outputclass="alert alert-warning">A simple warning alert—check it out!</section>
-      <section outputclass="alert alert-info">A simple info alert—check it out!</section>
-      <section outputclass="alert alert-light">A simple light alert—check it out!</section>
-      <section outputclass="alert alert-dark">A simple dark alert—check it out!</section>
+      <section outputclass="alert">A simple alert — check it out!</section>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-            <codeblock>&lt;section outputclass="alert-primary"&gt;
-  A simple primary alert—check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert-secondary"&gt;
-  A simple secondary alert—check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert-success"&gt;
-  A simple success alert—check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert-danger"&gt;
-  A simple danger alert—check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert-warning"&gt;
-  A simple warning alert—check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert-info"&gt;
-  A simple info alert—check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert-light"&gt;
-  A simple light alert—check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert-dark"&gt;
-  A simple dark alert—check it out!
+        <codeblock>&lt;section outputclass="alert"&gt;
+  A simple alert — check it out!
 &lt;/section&gt;</codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;alert color="primary"&gt;
-  A simple primary alert—check it out!
-&lt;/alert&gt;
-&lt;alert color="secondary"&gt;
-  A simple secondary alert—check it out!
-&lt;/alert&gt;
-&lt;alert color="success"&gt;
-  A simple success alert—check it out!
-&lt;/alert&gt;
-&lt;alert color="danger"&gt;
-  A simple danger alert—check it out!
-&lt;/alert&gt;
-&lt;alert color="warning"&gt;
-  A simple warning alert—check it out!
-&lt;/alert&gt;
-&lt;alert color="info"&gt;
-  A simple info alert—check it out!
-&lt;/alert&gt;
-&lt;alert color="light"&gt;
-  A simple light alert—check it out!
-&lt;/alert&gt;
-&lt;alert color="dark"&gt;
-  A simple dark alert—check it out!
+        <codeblock>&lt;alert&gt;
+  A simple alert — check it out!
 &lt;/alert&gt;</codeblock>
       </section>
     </bodydiv>
 
-    <section>
+    <section id="variants">
+      <title>Variants</title>
+      <p>Use any of the eight variant theme classes for color mode adaptive, contextual styling (e.g., set
+          <xmlatt>outputclass</xmlatt> to <codeph>alert theme-success</codeph>).</p>
+    </section>
+    <bodydiv outputclass="p-3 border">
+      <section outputclass="alert theme-primary fg-emphasis-primary">A simple primary alert — check it out!</section>
+      <section
+        outputclass="alert theme-secondary fg-emphasis-secondary"
+      >A simple secondary alert — check it out!</section>
+      <section outputclass="alert theme-success fg-emphasis-success">A simple success alert — check it out!</section>
+      <section outputclass="alert theme-danger fg-emphasis-danger">A simple danger alert — check it out!</section>
+      <section outputclass="alert theme-warning fg-emphasis-warning">A simple warning alert — check it out!</section>
+      <section outputclass="alert theme-info fg-emphasis-info">A simple info alert — check it out!</section>
+      <section outputclass="alert theme-accent fg-emphasis-accent">A simple accent alert — check it out!</section>
+      <section outputclass="alert theme-inverse fg-emphasis-inverse">A simple inverse alert — check it out!</section>
+    </bodydiv>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;section outputclass="alert theme-primary fg-emphasis-primary"&gt;
+  A simple primary alert — check it out!
+&lt;/section&gt;
+&lt;section outputclass="alert theme-secondary fg-emphasis-secondary"&gt;
+  A simple secondary alert — check it out!
+&lt;/section&gt;
+&lt;section outputclass="alert theme-success fg-emphasis-success"&gt;
+  A simple success alert — check it out!
+&lt;/section&gt;
+&lt;section outputclass="alert theme-danger fg-emphasis-danger"&gt;
+  A simple danger alert — check it out!
+&lt;/section&gt;
+&lt;section outputclass="alert theme-warning fg-emphasis-warning"&gt;
+  A simple warning alert — check it out!
+&lt;/section&gt;
+&lt;section outputclass="alert theme-info fg-emphasis-info"&gt;
+  A simple info alert — check it out!
+&lt;/section&gt;
+&lt;section outputclass="alert theme-accent fg-emphasis-accent"&gt;
+  A simple accent alert — check it out!
+&lt;/section&gt;
+&lt;section outputclass="alert theme-inverse fg-emphasis-inverse"&gt;
+  A simple inverse alert — check it out!
+&lt;/section&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;alert theme="primary-subtle-border"&gt;
+  A simple primary alert — check it out!
+&lt;/alert&gt;
+&lt;alert theme="secondary-subtle-border"&gt;
+  A simple secondary alert — check it out!
+&lt;/alert&gt;
+&lt;alert theme="success-subtle-border"&gt;
+  A simple success alert — check it out!
+&lt;/alert&gt;
+&lt;alert theme="danger-subtle-border"&gt;
+  A simple danger alert — check it out!
+&lt;/alert&gt;
+&lt;alert theme="warning-subtle-border"&gt;
+  A simple warning alert — check it out!
+&lt;/alert&gt;
+&lt;alert theme="info-subtle-border"&gt;
+  A simple info alert — check it out!
+&lt;/alert&gt;
+&lt;alert theme="accent-subtle-border"&gt;
+  A simple accent alert — check it out!
+&lt;/alert&gt;
+&lt;alert theme="inverse-subtle-border"&gt;
+  A simple inverse alert — check it out!
+&lt;/alert&gt;</codeblock>
+      </section>
+    </bodydiv>
+
+    <section id="additional-content">
       <title>Additional content</title>
       <p>Alerts can also contain additional HTML elements like headings, paragraphs, icons and links.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <section outputclass="alert alert-success">
+      <section id="well-done" outputclass="alert theme-success vstack">
         <title><ph outputclass="bi bi-emoji-smile pe-2"/>Well done!</title>
         <p>Aww yeah, you successfully read this important alert message. This example text with a
           <xref href="#">link</xref> is going to run a bit longer so that you can see how spacing within an alert works
@@ -115,7 +139,7 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;section outputclass="alert alert-success"&gt;
+        <codeblock>&lt;section outputclass="alert theme-success vstack"&gt;
   &lt;title&gt;&lt;i outputclass="bi bi-emoji-smile pe-2"/&gt;Well done!&lt;/title&gt;
   &lt;p&gt;
     Aww yeah, you successfully read this important alert message. This example text with a
@@ -129,7 +153,7 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;alert color="success"&gt;
+        <codeblock>&lt;alert theme="success-contrast" outputclass="vstack"&gt;
   &lt;title&gt;&lt;icon outputclass="bi-emoji-smile" padding="e2"/&gt;Well done!&lt;/title&gt;
   &lt;p&gt;
     Aww yeah, you successfully read this important alert message. This example text with a
@@ -143,13 +167,40 @@
       </section>
     </bodydiv>
 
-    <section>
+    <section id="with-icons">
+      <title>With icons</title>
+      <p>Similarly, you can use flexbox utilities and Bootstrap Icons to create alerts with icons. Depending on your
+        icons and content, you may want to add more utilities or custom styles.</p>
+    </section>
+    <bodydiv outputclass="p-3 border">
+      <section outputclass="alert theme-primary d-flex align-items-center">
+        <ph outputclass="bi bi-exclamation-triangle-fill flex-shrink-0 pe-2"/>An example alert with an icon
+      </section>
+    </bodydiv>
+    <bodydiv outputclass="nav-pills mt-3">
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;section outputclass="alert theme-primary d-flex align-items-center"&gt;
+  &lt;ph outputclass="bi bi-exclamation-triangle-fill flex-shrink-0 pe-2"/&gt;An example alert with an icon
+&lt;/section&gt;</codeblock>
+      </section>
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;alert theme="primary-subtle-border"&gt;
+  &lt;div&gt;
+    &lt;icon outputclass="bi-exclamation-triangle-fill flex-shrink-0" padding="e2"/&gt;An example alert with an icon
+  &lt;/div&gt;
+&lt;/alert&gt;</codeblock>
+      </section>
+    </bodydiv>
+
+    <section id="notes">
       <title>Notes</title>
       <p>DITA <xmlelement>note</xmlelement> elements are displayed as alerts according to the <xmlatt>type</xmlatt>
         attribute. With the exception <xmlatt>type="othertype"</xmlatt>, an icon is added if <xmlatt
         >type</xmlatt> is present.</p>
     </section>
-    <div outputclass="bd-example">
+    <example>
       <note type="note">This is just a note.</note>
       <note type="notice">Notice this piece of information.</note>
       <note type="fastpath">This note will speed you on your way.</note>
@@ -161,7 +212,7 @@
       <note type="restriction">You can't do what this note says.</note>
       <note type="danger">You may hurt yourself!</note>
       <note type="other" othertype="Another note">This is something other than a normal note.</note>
-    </div>
+    </example>
     <codeblock>&lt;note type="note"&gt;
   This is just a note.
 &lt;/note&gt;
@@ -195,53 +246,53 @@
 &lt;note type="other" othertype="Another note"&gt;
   This is something other than a normal note.
 &lt;/note&gt;</codeblock>
-    <p>The default colors can be overridden by using a <xmlatt>color</xmlatt> attribute or an <xmlatt
+    <p>The default colors can be overridden by using a <xmlatt>theme</xmlatt> attribute or an <xmlatt
       >outputclass</xmlatt>.</p>
-    <bodydiv outputclass="p-3 border">
-      <note outputclass="text-bg-primary">This is a primary note.</note>
-      <note outputclass="text-bg-secondary">This is a secondary note.</note>
-      <note outputclass="text-bg-light">This is light note.</note>
-      <note outputclass="text-bg-dark">This is dark note.</note>
-    </bodydiv>
+    <example>
+      <note outputclass="theme-primary">This is a primary note.</note>
+      <note outputclass="theme-secondary">This is a secondary note.</note>
+      <note outputclass="theme-accent">This is accent note.</note>
+      <note outputclass="theme-inverse">This is inverse note.</note>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;note type="note" outputclass="alert-primary"&gt;
+        <codeblock>&lt;note type="note" outputclass="theme-primary"&gt;
   This is a primary note.&lt;/note&gt;
-&lt;note type="note" outputclass="alert-secondary"&gt;
+&lt;note type="note" outputclass="theme-secondary"&gt;
   This is a secondary note.&lt;/note&gt;
-&lt;note type="note" outputclass="alert-light"&gt;
-  This is light note.
+&lt;note type="note" outputclass="theme-accent"&gt;
+  This is accent note.
 &lt;/note&gt;
-&lt;note type="note" outputclass="alert-dark"&gt;
-  This is dark note.
+&lt;note type="note" outputclass="theme-inverse"&gt;
+  This is inverse note.
 &lt;/note&gt;</codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;note color="primary"&gt;
-  This is a primary note.
+        <codeblock>&lt;note theme="primary-contrast"&gt;
+  This is a high contrast primary note.
 &lt;/note&gt;
-&lt;note color="secondary"&gt;
-  This is a secondary note.
+&lt;note theme="secondary-contrast"&gt;
+  This is a high contrast secondary note.
 &lt;/note&gt;
-&lt;note color="light"&gt;
-  This is light note.
+&lt;note theme="accent-contrast"&gt;
+  This is a high contrast accent note.
 &lt;/note&gt;
-&lt;note color="dark"&gt;
-  This is dark note.
+&lt;note theme="inverse-contrast"&gt;
+  This is a high contrast inverse note.
 &lt;/note&gt;</codeblock>
       </section>
     </bodydiv>
 
     <p>Use an additional <xmlatt>icon</xmlatt> attribute or <xmlatt>otherprops</xmlatt> to alter the default icon.</p>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <note type="other" othertype="Search" otherprops="icon(bi-search)">This note has a search icon.</note>
       <note
         type="note"
         otherprops="icon(bi bi-emoji-smile) style(font-size: 2rem; color: cornflowerblue;)"
       >This note uses a styled smile emoji.</note>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>

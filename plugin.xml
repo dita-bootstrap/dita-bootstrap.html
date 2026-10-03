@@ -143,6 +143,16 @@
       desc="Common Bootstrap classes for DITA &lt;title&gt; elements within &lt;section&gt; elements"
     />
     <param
+      name="bootstrap.css.badge"
+      type="string"
+      desc="Bootstrap classes for badge components"
+    />
+    <param
+      name="bootstrap.css.button"
+      type="string"
+      desc="Bootstrap classes for button components"
+    />
+    <param
       name="bootstrap.css.card"
       type="string"
       desc="Bootstrap classes for card components"
@@ -173,9 +183,9 @@
       desc="Bootstrap classes for carousel indicators"
     />
     <param
-      name="bootstrap.css.footer"
+      name="bootstrap.css.menubar.toc"
       type="string"
-      desc="Bootstrap classes for footers"
+      desc="CSS class for the menu bar. Defaults to sticky-top bg-body"
     />
     <param
       name="bootstrap.css.tabs"
@@ -198,7 +208,288 @@
       desc="Bootstrap classes for flush accordion components"
     />
     <param
-      name="bootstrap.css.accessibility.nav"
+      name="bootstrap.theme.header"
+      type="enum"
+      desc="Bootstrap theme utility class for the page header"
+    >
+      <val>accent-border</val>
+      <val>accent-contrast</val>
+      <val>accent-muted</val>
+      <val>accent-subtle</val>
+      <val>accent-subtle-border</val>
+      <val>danger-border</val>
+      <val>danger-contrast</val>
+      <val>danger-muted</val>
+      <val>danger-subtle</val>
+      <val>danger-subtle-border</val>
+      <val>info-border</val>
+      <val>info-contrast</val>
+      <val>info-muted</val>
+      <val>info-subtle</val>
+      <val>info-subtle-border</val>
+      <val>inverse-border</val>
+      <val>inverse-contrast</val>
+      <val>inverse-muted</val>
+      <val>inverse-subtle</val>
+      <val>inverse-subtle-border</val>
+      <val>none</val>
+      <val>primary-border</val>
+      <val default="true">primary-contrast</val>
+      <val>primary-muted</val>
+      <val>primary-subtle</val>
+      <val>primary-subtle-border</val>
+      <val>secondary-border</val>
+      <val>secondary-contrast</val>
+      <val>secondary-muted</val>
+      <val>secondary-subtle</val>
+      <val>secondary-subtle-border</val>
+      <val>success-border</val>
+      <val>success-contrast</val>
+      <val>success-muted</val>
+      <val>success-subtle</val>
+      <val>success-subtle-border</val>
+      <val>warning-border</val>
+      <val>warning-contrast</val>
+      <val>warning-muted</val>
+      <val>warning-subtle</val>
+      <val>warning-subtle-border</val>
+    </param>
+    <param
+      name="bootstrap.theme.footer"
+      type="enum"
+      desc="Bootstrap theme utility class for the page footer"
+    >
+      <val>accent-border</val>
+      <val>accent-contrast</val>
+      <val>accent-muted</val>
+      <val>accent-subtle</val>
+      <val>accent-subtle-border</val>
+      <val>danger-border</val>
+      <val>danger-contrast</val>
+      <val>danger-muted</val>
+      <val>danger-subtle</val>
+      <val>danger-subtle-border</val>
+      <val>info-border</val>
+      <val>info-contrast</val>
+      <val>info-muted</val>
+      <val>info-subtle</val>
+      <val>info-subtle-border</val>
+      <val>inverse-border</val>
+      <val>inverse-contrast</val>
+      <val>inverse-muted</val>
+      <val>inverse-subtle</val>
+      <val>inverse-subtle-border</val>
+      <val default="true">none</val>
+      <val>primary-border</val>
+      <val>primary-contrast</val>
+      <val>primary-muted</val>
+      <val>primary-subtle</val>
+      <val>primary-subtle-border</val>
+      <val>secondary-border</val>
+      <val>secondary-contrast</val>
+      <val>secondary-muted</val>
+      <val>secondary-subtle</val>
+      <val>secondary-subtle-border</val>
+      <val>success-border</val>
+      <val>success-contrast</val>
+      <val>success-muted</val>
+      <val>success-subtle</val>
+      <val>success-subtle-border</val>
+      <val>warning-border</val>
+      <val>warning-contrast</val>
+      <val>warning-muted</val>
+      <val>warning-subtle</val>
+      <val>warning-subtle-border</val>
+    </param>
+    <param
+      name="bootstrap.theme.sidebar"
+      type="enum"
+      desc="Bootstrap theme utility class for the sidebar navigation"
+    >
+      <val>accent</val>
+      <val>accent-border</val>
+      <val>danger</val>
+      <val>danger-border</val>
+      <val>info</val>
+      <val>info-border</val>
+      <val>inverse</val>
+      <val>inverse-border</val>
+      <val default="true">none</val>
+      <val>primary</val>
+      <val>primary-border</val>
+      <val>secondary</val>
+      <val>secondary-border</val>
+      <val>success</val>
+      <val>success-border</val>
+      <val>warning</val>
+      <val>warning-border</val>
+    </param>
+    <param
+      name="bootstrap.theme.topbar"
+      type="enum"
+      desc="Bootstrap theme utility class for the collapsible top header"
+    >
+      <val>accent-border</val>
+      <val>accent-contrast</val>
+      <val>accent-muted</val>
+      <val>accent-subtle</val>
+      <val>accent-subtle-border</val>
+      <val>danger-border</val>
+      <val>danger-contrast</val>
+      <val>danger-muted</val>
+      <val>danger-subtle</val>
+      <val>danger-subtle-border</val>
+      <val>info-border</val>
+      <val>info-contrast</val>
+      <val>info-muted</val>
+      <val>info-subtle</val>
+      <val>info-subtle-border</val>
+      <val>inverse-border</val>
+      <val>inverse-contrast</val>
+      <val>inverse-muted</val>
+      <val>inverse-subtle</val>
+      <val>inverse-subtle-border</val>
+      <val default="true">none</val>
+      <val>primary-border</val>
+      <val>primary-contrast</val>
+      <val>primary-muted</val>
+      <val>primary-subtle</val>
+      <val>primary-subtle-border</val>
+      <val>secondary-border</val>
+      <val>secondary-contrast</val>
+      <val>secondary-muted</val>
+      <val>secondary-subtle</val>
+      <val>secondary-subtle-border</val>
+      <val>success-border</val>
+      <val>success-contrast</val>
+      <val>success-muted</val>
+      <val>success-subtle</val>
+      <val>success-subtle-border</val>
+      <val>warning-border</val>
+      <val>warning-contrast</val>
+      <val>warning-muted</val>
+      <val>warning-subtle</val>
+      <val>warning-subtle-border</val>
+    </param>
+    <param
+      name="bootstrap.theme.content"
+      type="enum"
+      desc="Bootstrap theme utility class for the main content area"
+    >
+      <val>accent</val>
+      <val>accent-border</val>
+      <val>accent-contrast</val>
+      <val>accent-muted</val>
+      <val>accent-subtle</val>
+      <val>accent-subtle-border</val>
+      <val>danger</val>
+      <val>danger-border</val>
+      <val>danger-contrast</val>
+      <val>danger-muted</val>
+      <val>danger-subtle</val>
+      <val>danger-subtle-border</val>
+      <val>info</val>
+      <val>info-border</val>
+      <val>info-contrast</val>
+      <val>info-muted</val>
+      <val>info-subtle</val>
+      <val>info-subtle-border</val>
+      <val>inverse</val>
+      <val>inverse-border</val>
+      <val>inverse-contrast</val>
+      <val>inverse-muted</val>
+      <val>inverse-subtle</val>
+      <val>inverse-subtle-border</val>
+      <val default="true">none</val>
+      <val>primary</val>
+      <val>primary-border</val>
+      <val>primary-contrast</val>
+      <val>primary-muted</val>
+      <val>primary-subtle</val>
+      <val>primary-subtle-border</val>
+      <val>secondary</val>
+      <val>secondary-border</val>
+      <val>secondary-contrast</val>
+      <val>secondary-muted</val>
+      <val>secondary-subtle</val>
+      <val>secondary-subtle-border</val>
+      <val>success</val>
+      <val>success-border</val>
+      <val>success-contrast</val>
+      <val>success-muted</val>
+      <val>success-subtle</val>
+      <val>success-subtle-border</val>
+      <val>warning</val>
+      <val>warning-border</val>
+      <val>warning-contrast</val>
+      <val>warning-muted</val>
+      <val>warning-subtle</val>
+      <val>warning-subtle-border</val>
+    </param>
+    <param
+      name="bootstrap.theme.body"
+      type="enum"
+      desc="Bootstrap theme utility class for the page body"
+    >
+      <val>accent</val>
+      <val>accent-contrast</val>
+      <val>accent-muted</val>
+      <val>accent-subtle</val>
+      <val>danger</val>
+      <val>danger-contrast</val>
+      <val>danger-muted</val>
+      <val>danger-subtle</val>
+      <val>info</val>
+      <val>info-contrast</val>
+      <val>info-muted</val>
+      <val>info-subtle</val>
+      <val>inverse</val>
+      <val>inverse-contrast</val>
+      <val>inverse-muted</val>
+      <val>inverse-subtle</val>
+      <val default="true">none</val>
+      <val>primary</val>
+      <val>primary-contrast</val>
+      <val>primary-muted</val>
+      <val>primary-subtle</val>
+      <val>secondary</val>
+      <val>secondary-contrast</val>
+      <val>secondary-muted</val>
+      <val>secondary-subtle</val>
+      <val>success</val>
+      <val>success-contrast</val>
+      <val>success-muted</val>
+      <val>success-subtle</val>
+      <val>warning</val>
+      <val>warning-contrast</val>
+      <val>warning-muted</val>
+      <val>warning-subtle</val>
+    </param>
+    <param
+      name="bootstrap.theme.scrollspy"
+      type="enum"
+      desc="Bootstrap theme utility class for the scrollspy menu"
+    >
+      <val>accent</val>
+      <val>accent-border</val>
+      <val>danger</val>
+      <val>danger-border</val>
+      <val>info</val>
+      <val>info-border</val>
+      <val>inverse</val>
+      <val>inverse-border</val>
+      <val default="true">none</val>
+      <val>primary</val>
+      <val>primary-border</val>
+      <val>secondary</val>
+      <val>secondary-border</val>
+      <val>success</val>
+      <val>success-border</val>
+      <val>warning</val>
+      <val>warning-border</val>
+    </param>
+    <param
+      name="bootstrap.theme.accessibility"
       type="string"
       desc="Bootstrap classes for accessibility navigation"
     />
@@ -206,6 +497,11 @@
       name="bootstrap.css.accessibility.link"
       type="string"
       desc="Bootstrap classes for accessibility links"
+    />
+    <param
+      name="bootstrap.css.example"
+      type="string"
+      desc="Bootstrap classes for examples"
     />
     <param
       name="bootstrap.css.figure"
@@ -241,6 +537,16 @@
       name="bootstrap.css.pagination"
       type="string"
       desc="Bootstrap classes for pagination components"
+    />
+    <param
+      name="bootstrap.css.popover"
+      type="string"
+      desc="Bootstrap classes for popover components"
+    />
+    <param
+      name="bootstrap.css.tooltip"
+      type="string"
+      desc="Bootstrap classes for tooltip components"
     />
     <param
       name="bootstrap.css.nav.parent"
@@ -372,11 +678,10 @@
       desc="Defines Bootstrap container class for main layout and menubar-TOC."
     >
       <val>container</val>
-      <val>container-sm</val>
-      <val>container-md</val>
-      <val>container-lg</val>
-      <val>container-xl</val>
-      <val default="true">container-xxl</val>
+      <val>sm:container</val>
+      <val>md:container</val>
+      <val>lg:container</val>
+      <val default="true">xl:container</val>
       <val>container-fluid</val>
     </param>
   </transtype>

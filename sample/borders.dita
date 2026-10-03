@@ -2,11 +2,11 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!-- Within the sample documentation, where necessary, the texts describing the
    usage of each component have been copied directly from the official Bootstrap
-   5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+   6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
    markup is used throughout the examples describing how to implement these
    components correctly using outputclass.
 
-   This work, is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc.
+   This work, is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc.
    and the Bootstrap Authors, and used under CC BY 3.0.
 
     -->
@@ -32,29 +32,29 @@
       <title>Borders</title>
       <p>Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <div outputclass="p-3">
-        <ph outputclass="border p-3 border-secondary">&#xA0;border&#xA0;</ph>&#xA0;
-        <ph outputclass="border-top p-3 border-secondary">&#xA0;border-top</ph>&#xA0;
-        <ph outputclass="border-end p-3 border-secondary">&#xA0;border-end</ph>&#xA0;
-        <ph outputclass="border-bottom p-3 border-secondary">&#xA0;border-bottom</ph>&#xA0;
-        <ph outputclass="border-start p-3 border-secondary">&#xA0;border-start</ph>
+        <ph outputclass="border p-3 border-accent">&#xA0;border&#xA0;</ph>&#xA0;
+        <ph outputclass="border-top p-3 border-accent">&#xA0;border-top</ph>&#xA0;
+        <ph outputclass="border-end p-3 border-accent">&#xA0;border-end</ph>&#xA0;
+        <ph outputclass="border-bottom p-3 border-accent">&#xA0;border-bottom</ph>&#xA0;
+        <ph outputclass="border-start p-3 border-accent">&#xA0;border-start</ph>
       </div>
-    </bodydiv>
+    </example>
     <codeblock>&lt;ph outputclass="border"&gt;...&lt;/ph&gt;
 &lt;ph outputclass="border-top"&gt;...&lt;/ph&gt;
 &lt;ph outputclass="border-end"&gt;...&lt;/ph&gt;
 &lt;ph outputclass="border-bottom"&gt;...&lt;/ph&gt;
 &lt;ph outputclass="border-start"&gt;...&lt;/ph&gt;</codeblock>
 
-    <section>
+    <section id="border-specialization">
       <title>Border Specialization</title>
       <p>The <xmlatt>border</xmlatt> and <xmlatt
         >rounded</xmlatt> attributes provide a semantic way to add borders and rounded corners.</p>
     </section>
 
     <bodydiv outputclass="p-3 border">
-      <section outputclass="p-2 border">
+      <section id="bordered-section" outputclass="p-2 border">
         <title>Bordered Section</title>
         <p>This section has a border.</p>
       </section>
@@ -90,15 +90,15 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;section border="yes" padding="2"&gt;
+        <codeblock>&lt;section border="1" padding="2"&gt;
   ...
 &lt;/section&gt;
 
-&lt;div border="yes" rounded="yes" padding="2" margin="2"&gt;
+&lt;div border="1" rounded="yes" padding="2" margin="2"&gt;
   ...
 &lt;/div&gt;
 
-&lt;carousel border="yes" rounded="yes" margin="2" width="50"&gt;
+&lt;carousel border="1" rounded="yes" margin="2" width="50"&gt;
   &lt;carousel-item&gt;
     &lt;image href="..."/&gt;
   &lt;/carousel-item&gt;
@@ -108,15 +108,16 @@
 &lt;/carousel&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="border-styling">
       <title>Border Styling</title>
       <p>The <xmlatt>border</xmlatt> attribute also accepts numeric values 1-5 for width. The <xmlatt
         >rounded</xmlatt> attribute 
         supports values 0-5, <codeph>circle</codeph> and <codeph>pill</codeph>.
-        The <xmlatt>bordercolor</xmlatt> attribute can be used to set the color of the border.</p>
+        The <codeph>-border</codeph> theme suffix (e.g. <codeph>theme="primary-border"</codeph>) can be used to set
+        the color of the border.</p>
     </section>
 
-    <bodydiv outputclass="p-3 border">
+    <example>
       <div outputclass="mb-3">
         <ph outputclass="me-2 p-2 border border-1">Width 1</ph>
         <ph outputclass="me-2 p-2 border border-2">Width 2</ph>
@@ -124,7 +125,7 @@
         <ph outputclass="me-2 p-2 border border-4">Width 4</ph>
         <ph outputclass="me-2 p-2 border border-5">Width 5</ph>
       </div>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -144,14 +145,14 @@
       </section>
     </bodydiv>
 
-    <bodydiv outputclass="mt-3 p-3 border">
+    <example outputclass="mt-3">
       <div outputclass="mb-3">
         <ph outputclass="me-2 p-2 border-primary">Primary</ph>
         <ph outputclass="me-2 p-2 border-primary-subtle">Primary subtle</ph>
         <ph outputclass="me-2 p-2 border-success">Success</ph>
         <ph outputclass="me-2 p-2 border-danger">Danger</ph>
       </div>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -162,14 +163,14 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;ph bordercolor="primary"&gt;Primary&lt;/ph&gt;
-&lt;ph bordercolor="primary-subtle"&gt;Primary subtle&lt;/ph&gt;
-&lt;ph bordercolor="success"&gt;Success&lt;/ph&gt;
-&lt;ph bordercolor="danger"&gt;Danger&lt;/ph&gt;</codeblock>
+        <codeblock>&lt;ph theme="primary-border"&gt;Primary&lt;/ph&gt;
+&lt;ph theme="primary-subtle-border"&gt;Primary subtle&lt;/ph&gt;
+&lt;ph theme="success-border"&gt;Success&lt;/ph&gt;
+&lt;ph theme="danger-border"&gt;Danger&lt;/ph&gt;</codeblock>
       </section>
     </bodydiv>
 
-    <bodydiv outputclass="mt-3 p-3 border">
+    <example outputclass="mt-3">
       <div outputclass="mb-3">
         <ph outputclass="me-2 p-2 border rounded-0">Rounded 0</ph>
         <ph outputclass="me-2 p-2 border rounded-1">Rounded 1</ph>
@@ -178,7 +179,7 @@
         <ph outputclass="me-2 p-2 border rounded-4">Rounded 4</ph>
         <ph outputclass="me-2 p-2 border rounded-5">Rounded 5</ph>
       </div>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -191,31 +192,31 @@
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;ph border="yes" rounded="0"&gt;Rounded 0&lt;/ph&gt;
-&lt;ph border="yes" rounded="1"&gt;Rounded 1&lt;/ph&gt;
-&lt;ph border="yes" rounded="2"&gt;Rounded 2&lt;/ph&gt;
-&lt;ph border="yes" rounded="3"&gt;Rounded 3&lt;/ph&gt;
-&lt;ph border="yes" rounded="4"&gt;Rounded 4&lt;/ph&gt;
-&lt;ph border="yes" rounded="5"&gt;Rounded 5&lt;/ph&gt;</codeblock>
+        <codeblock>&lt;ph border="1" rounded="0"&gt;Rounded 0&lt;/ph&gt;
+&lt;ph border="1" rounded="1"&gt;Rounded 1&lt;/ph&gt;
+&lt;ph border="1" rounded="2"&gt;Rounded 2&lt;/ph&gt;
+&lt;ph border="1" rounded="3"&gt;Rounded 3&lt;/ph&gt;
+&lt;ph border="1" rounded="4"&gt;Rounded 4&lt;/ph&gt;
+&lt;ph border="1" rounded="5"&gt;Rounded 5&lt;/ph&gt;</codeblock>
       </section>
     </bodydiv>
 
-    <bodydiv outputclass="mt-3 p-3 border">
+    <example outputclass="mt-3">
       <div outputclass="mb-3 pt-3">
         <ph outputclass="me-5 p-4 border border-info rounded-circle">Circle</ph>
-        <ph outputclass="me-2 px-4 py-2 border border-dark rounded-pill">Pill</ph>
+        <ph outputclass="me-2 px-4 py-2 border border-warning rounded-pill">Pill</ph>
       </div>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;ph outputclass="border rounded-circle border-info"&gt;Circle&lt;/ph&gt;
-&lt;ph outputclass="border rounded-pill border-dark"&gt;Pill&lt;/ph&gt;</codeblock>
+&lt;ph outputclass="border rounded-pill border-warning"&gt;Pill&lt;/ph&gt;</codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;ph border="yes" rounded="circle" bordercolor="info"&gt;Circle&lt;/ph&gt;
-&lt;ph border="yes" rounded="pill" bordercolor="dark"&gt;Pill&lt;/ph&gt;</codeblock>
+        <codeblock>&lt;ph border="1" rounded="circle" theme="info-border"&gt;Circle&lt;/ph&gt;
+&lt;ph border="1" rounded="pill" theme="warning-border"&gt;Pill&lt;/ph&gt;</codeblock>
       </section>
     </bodydiv>
 
@@ -224,7 +225,7 @@
       <p>For DITA elements which support the <xmlatt>frame</xmlatt> attribute, such as <xmlelement>lines</xmlelement>
         and <xmlelement>codeblock</xmlelement>, additional frame borders are automatically added as shown:</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <p/>
       <codeblock outputclass="language-cpp" frame="sides">// Simple C++ program to display "Hello World"
 
@@ -242,7 +243,10 @@ int main()
     return 0;
 } </codeblock>
       <p/>
-      <lines outputclass="alert-secondary" frame="topbot">Shall I compare thee to a summer’s day?
+      <lines
+        outputclass="bg-subtle-accent fg-emphasis-accent p-3"
+        frame="topbot"
+      >Shall I compare thee to a summer’s day?
 Thou art more lovely and more temperate:
 Rough winds do shake the darling buds of May,
 and summer’s lease hath all too short a date:
@@ -279,9 +283,9 @@ and summer’s lease hath all too short a date:
         </tgroup>
       </table>
       <p/>
-    </bodydiv>
+    </example>
     <codeblock>&lt;codeblock frame="sides"&gt;...&lt;/codeblock&gt;
-&lt;lines frame="topbot" outputclass="bg-secondary-subtle p-3 border rounded"&gt;...&lt;/lines&gt;
+&lt;lines frame="topbot" outputclass="..."&gt;...&lt;/lines&gt;
 &lt;table frame="all"&gt;...&lt;/table&gt;</codeblock>
   </body>
 </topic>

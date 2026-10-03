@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <topic id="extension-points">
@@ -26,7 +26,7 @@
     </metadata>
   </prolog>
   <body>
-    <section>
+    <section id="extending-bootstrap">
       <title>Extending Bootstrap</title>
       <p>Bootstrap is designed to be extensible. Additional CSS and JavaScript libraries can be added to the generated
         HTML pages to allow for new Bootstrap components and extend Bootstrap classes. Similarly, the <term>DITA

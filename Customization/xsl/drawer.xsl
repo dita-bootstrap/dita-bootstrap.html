@@ -12,10 +12,10 @@
   exclude-result-prefixes="xs xhtml dita-ot"
 >
   <!-- Customization to add Bootstrap Offcanvas Component -->
-  <!-- https://getbootstrap.com/docs/5.3/components/offcanvas/ -->
+  <!-- https://getbootstrap.com/docs/6.0/components/drawer/ -->
 
   <xsl:template
-    match="*[contains(@class, ' bootstrap-d/offcanvas ')] | *[contains(@class,' topic/section ') and contains(@outputclass, 'offcanvas-')]"
+    match="*[contains(@class, ' bootstrap-d/drawer ')] | *[contains(@class,' topic/section ') and contains(@outputclass, 'drawer-')]"
   >
     <xsl:param name="headLevel">
       <xsl:variable name="headCount" select="count(ancestor::*[contains(@class, ' topic/topic ')])+1"/>
@@ -25,34 +25,34 @@
       </xsl:choose>
     </xsl:param>
     <xsl:variable name="id" select="dita-ot:generate-html-id(.)"/>
-    <div>
+    <dialog>
       <xsl:call-template name="commonattributes"/>
       <xsl:attribute name="tabindex" select="'-1'"/>
       <xsl:attribute name="id" select="$id"/>
-      <xsl:attribute name="aria-labelledby" select="concat('offcanvasLabel_', $id)"/>
-      <div class="offcanvas-header">
+      <xsl:attribute name="aria-labelledby" select="concat('drawerLabel_', $id)"/>
+      <div class="drawer-header">
         <xsl:element name="{$headLevel}">
-          <xsl:attribute name="id" select="concat('offcanvasLabel_' ,$id)"/>
-          <xsl:attribute name="class" select='offcanvas-title'/>
+          <xsl:attribute name="id" select="concat('drawerLabel_' ,$id)"/>
+          <xsl:attribute name="class" select='drawer-title'/>
           <xsl:value-of select="*[contains(@class, ' topic/title ')]"/>
         </xsl:element>
-        <button type="button" class="btn-close text-reset" aria-label="Close" data-bs-dismiss="offcanvas"/>
+        <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="drawer"/>
       </div>
-      <div class="offcanvas-body">
+      <div class="drawer-body">
         <xsl:apply-templates select="*[not(contains(@class, ' topic/title '))]"/>
       </div>
-    </div>
+    </dialog>
   </xsl:template>
 
-  <!-- Override to connect an offcanvas to a button -->
-  <xsl:template match="*[contains(@class,' topic/xref ') and contains(@props, 'offcanvas-toggle')]">
+  <!-- Override to connect an drawer to a button -->
+  <xsl:template match="*[contains(@class,' topic/xref ') and contains(@props, 'drawer-toggle')]">
     <xsl:variable name="href" select="substring-after(@href, '#')"/>
     <xsl:variable
       name="id"
       select="if(//*[@id=$href]) then dita-ot:generate-html-id(//*[@id=$href]) else generate-id(//*[@id=$href])"
     />
 
-    <a data-bs-toggle="offcanvas">
+    <a data-bs-toggle="drawer">
       <xsl:call-template name="commonattributes"/>
       <xsl:attribute name="href" select="concat('#',$id)"/>
       <xsl:apply-templates/>

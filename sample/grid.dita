@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <topic id="grid">
@@ -25,7 +25,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="example">
       <title>Example</title>
       <p>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built
         with flexbox and is fully responsive. Below is an example and an in-depth explanation for how the grid system
@@ -34,13 +34,13 @@
     </section>
     <bodydiv outputclass="p-3 border">
       <bodydiv outputclass="row">
-        <bodydiv outputclass="col-sm-3">
+        <bodydiv outputclass="sm:col-3">
           <p>One of three columns</p>
         </bodydiv>
-        <bodydiv outputclass="col-sm-3">
+        <bodydiv outputclass="sm:col-3">
           <p>One of three columns</p>
         </bodydiv>
-        <bodydiv outputclass="col-sm-3">
+        <bodydiv outputclass="sm:col-3">
           <p>One of three columns</p>
         </bodydiv>
       </bodydiv>
@@ -49,13 +49,13 @@
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;bodydiv outputclass="row"&gt;
-  &lt;bodydiv outputclass="col-sm-3"&gt;
+  &lt;bodydiv outputclass="sm:col-3"&gt;
     &lt;p&gt;One of three columns&lt;/p&gt;
   &lt;/bodydiv&gt;
-  &lt;bodydiv outputclass="col-sm-3"&gt;
+  &lt;bodydiv outputclass="sm:col-3"&gt;
     &lt;p&gt;One of three columns&lt;/p&gt;
   &lt;/bodydiv&gt;
-  &lt;bodydiv outputclass="col-sm-3"&gt;
+  &lt;bodydiv outputclass="sm:col-3"&gt;
     &lt;p&gt;One of three columns&lt;/p&gt;
   &lt;/bodydiv&gt;
 &lt;/bodydiv&gt;</codeblock>
@@ -75,7 +75,7 @@
 &lt;/grid-row&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="equal-width">
       <title>Equal-width</title>
       <p>For example, here are two grid layouts that apply to every device and viewport, from <codeph>xs</codeph> to
           <codeph>xxl</codeph>. Add any number of unit-less classes for each breakpoint you need and every column will

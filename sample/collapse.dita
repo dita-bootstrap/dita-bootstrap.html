@@ -18,14 +18,14 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="how-it-works">
       <title>How it works</title>
       <p>The collapse JavaScript plugin is used to show and hide content. Buttons or anchors are used as triggers that
         are mapped to specific elements you toggle. Collapsing an element will animate the height from its current value
         to 0. Given how CSS handles animations, you cannot use padding on a .collapse element. Instead, use the class as
         an independent wrapping element.</p>
     </section>
-    <section>
+    <section id="example">
       <title>Example</title>
       <p>Below is a collapsed example that is displayed when the button is clicked. Add
           <xmlatt>props="collapse-toggle"</xmlatt> to an <xmlelement>xref</xmlelement> element to associate a button to
@@ -33,7 +33,7 @@
     </section>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
       <p>
-        <xref props="collapse-toggle" href="#collapse1" outputclass="btn-primary">Toggle Collapse</xref>
+        <xref props="collapse-toggle" href="#collapse1" outputclass="btn-solid theme-primary">Toggle Collapse</xref>
       </p>
       <bodydiv id="collapse1" outputclass="collapse">
         <section outputclass="card-body card">
@@ -46,7 +46,7 @@
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;p&gt;
-  &lt;xref outputclass="btn-primary" props="collapse-toggle" href="#collapse1"&gt;
+  &lt;xref outputclass="btn-solid theme-primary" props="collapse-toggle" href="#collapse1"&gt;
     Toggle Collapse
   &lt;/xref&gt;
 &lt;/p&gt;
@@ -70,7 +70,7 @@
 &lt;/collapse&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="horizontal">
       <title>Horizontal</title>
       <p>The collapse plugin also supports horizontal collapsing. Add <xmlatt>outputclass="collapse-horizontal"</xmlatt>
         to transition the width instead of height and set an <xmlatt>otherprops="style(width: ...)</xmlatt> on the
@@ -78,7 +78,11 @@
     </section>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
       <p>
-        <xref props="collapse-toggle" href="#collapse2" outputclass="btn-primary">Toggle Width Collapse</xref>
+        <xref
+          props="collapse-toggle"
+          href="#collapse2"
+          outputclass="btn-solid theme-primary"
+        >Toggle Width Collapse</xref>
       </p>
       <bodydiv outputclass="collapse-horizontal collapse" id="collapse2" otherprops="style(min-height: 120px;)">
       <bodydiv outputclass="card card-body" otherprops="style(width: 300px;)">
@@ -91,7 +95,7 @@
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;p&gt;
-  &lt;xref outputclass="btn-primary" props="collapse-toggle" href="#collapse2"&gt;Toggle Width Collapse&lt;/xref&gt;
+  &lt;xref outputclass="btn-solid theme-primary" props="collapse-toggle" href="#collapse2"&gt;Toggle Width Collapse&lt;/xref&gt;
 &lt;/p&gt;
 &lt;bodydiv outputclass="collapse-horizontal" id="collapse2" otherprops="style(min-height: 120px;)"&gt;
   &lt;div outputclass="card card-body" otherprops="style(width: 300px;)"&gt;

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
@@ -23,7 +23,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="loading-the-right-to-left-stylesheet">
       <title>Loading the Right-to-Left stylesheet</title>
       <p>By default the Bootstrap plugin loads standard left-to-right CSS. To enable support for right-to-left
         languages, DITA-OT must load the RTL version of the Bootstrap CSS. This is done automatically if the
@@ -34,7 +34,7 @@
      <parmname>--format</parmname>=<option>html5-bootstrap</option> \
      <parmname>--bidi.include</parmname>=<option>yes</option></codeblock>
     </section>
-    <section>
+    <section id="using-ltr-and-rtl-languages-in-the-same-topic">
       <title>Using LTR and RTL languages in the same topic</title>
       <p>The overall layout is always defined by the <parmname>--defaultLanguage</parmname> parameter.</p>
       <p>To render an article as RTL across the page, set the <xmlelement>topic xml:lang=".."</xmlelement> to an RTL
@@ -50,7 +50,7 @@
             <title>عنوان البطاقة</title>
             <image scope="external" href="https://picsum.photos/400/200?a"/>
             <p>بعض الأمثلة السريعة للنص الذي سيتم بناؤه على عنوان البطاقة وتشكيل الجزء الأكبر من محتوى البطاقة.</p>
-            <xref href="#" outputclass="btn-primary">اذهب لمكان ما</xref>
+            <xref href="#" outputclass="btn-solid theme-primary">اذهب لمكان ما</xref>
           </section>
         </bodydiv>
       </bodydiv>
@@ -64,7 +64,7 @@
       &lt;title outputclass="h5"&gt;عنوان البطاقة&lt;/title&gt;
       &lt;image outputclass="card-img-top" href="..." /&gt;
       &lt;p&gt;بعض الأمثلة السريعة للنص الذي سيتم بناؤه على عنوان البطاقة وتشكيل الجزء الأكبر من محتوى البطاقة.&lt;/p&gt;
-      &lt;xref href="#" outputclass="btn-primary"&gt;اذهب لمكان ما&lt;/xref&gt;
+      &lt;xref href="#" outputclass="btn theme-primary"&gt;اذهب لمكان ما&lt;/xref&gt;
     &lt;/section&gt;
   &lt;/bodydiv&gt;
 &lt;/bodydiv&gt;</codeblock>
@@ -77,7 +77,7 @@
       &lt;title&gt;عنوان البطاقة&lt;/title&gt;
       &lt;image href="..." /&gt;
       &lt;p&gt;بعض الأمثلة السريعة للنص الذي سيتم بناؤه على عنوان البطاقة وتشكيل الجزء الأكبر من محتوى البطاقة.&lt;/p&gt;
-      &lt;button href="#"&gt;اذهب لمكان ما&lt;/button&gt;
+      &lt;button href="#"  theme="primary"&gt;اذهب لمكان ما&lt;/button&gt;
     &lt;/card&gt;
   &lt;/grid-col&gt;
 &lt;/grid-row&gt;</codeblock>

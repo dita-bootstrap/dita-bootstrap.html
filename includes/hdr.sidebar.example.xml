@@ -1,5 +1,8 @@
-<div class="offcanvas-header bg-primary border-start border-top">
-  <div class="container navbar-dark text-center">
+<div
+  class="drawer-header bg-primary border-start border-top"
+  data-bs-theme="dark"
+>
+  <div class="container text-center">
     <a class="navbar-brand" href="/">
         <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -21,8 +24,8 @@
   </div>
   <button
     type="button"
-    class="btn-close btn-close-white"
-    data-bs-dismiss="offcanvas"
+    class="btn-close"
+    data-bs-dismiss="drawer"
     aria-label="Close"
     data-bs-target="#bdSidebar"
   />

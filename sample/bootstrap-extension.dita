@@ -33,7 +33,7 @@
       <image scalefit="yes" href="./src/extensions.png"/>
     </fig>
 
-    <section>
+    <section id="installing-the-dita-bootstrap-extension-plug-in">
       <title>Installing the <term>DITA Bootstrap Extension</term> plug-in</title>
       <p>Use the <cmdname>dita</cmdname> command to add the <term>DITA Bootstrap Extension</term>
        plug-in to your DITA Open Toolkit installation:</p>

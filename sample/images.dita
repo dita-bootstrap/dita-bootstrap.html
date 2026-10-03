@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <topic id="images">
@@ -25,26 +25,26 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="responsive-images">
       <title>Responsive images</title>
       <p>Images in DITA Bootstrap are made responsive with <xmlatt>scalefit="yes"</xmlatt>. This applies
           <codeph>max-width: 100%;</codeph> and <codeph>height: auto;</codeph> to the image so that it scales with the
         parent element.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <image scalefit="yes" scope="external" href="https://picsum.photos/1200/600?a"/>
-    </bodydiv>
+    </example>
         <codeblock>&lt;image scalefit="yes" href="..." /&gt;</codeblock>
-    <section>
+    <section id="image-thumbnails">
       <title>Image thumbnails</title>
       <p>In addition to Bootstrap’s
-        <xref href="https://getbootstrap.com/docs/5.3/utilities/borders/" format="html" scope="external">border-radius
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/borders/" format="html" scope="external">border-radius
           utilities</xref>, you can use the specialized <xmlelement>thumbnail</xmlelement> element to give an image
         a rounded 1px border appearance.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <image scope="external" href="https://picsum.photos/100/100?a" outputclass="img-thumbnail"/>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -55,13 +55,13 @@
         <codeblock>&lt;thumbnail href="..." /&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="separate-images-for-dark-and-light-mode">
       <title>Separate images for dark and light mode</title>
       <p>Use the <xmlatt>outputclass="d-auto"</xmlatt>, <xmlatt>outputclass="d-light"</xmlatt>,
         and <xmlatt>outputclass="d-dark"</xmlatt> attributes on <xmlelement>image</xmlelement> elements
         to display different images when in <xref href="./dark-mode.dita">dark mode</xref>.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <fig>
         <image outputclass="d-auto img-thumbnail" scope="external" href="https://picsum.photos/id/730/300/200"/>
         <image
@@ -77,7 +77,7 @@
           deliveryTarget="html"
         />
       </fig>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -96,7 +96,7 @@
 &lt;/fig&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="support-lazy-loading">
       <title>Support Lazy Loading</title>
       <p>Use the <xmlatt>loading="lazy"</xmlatt> attribute on <xmlelement>image</xmlelement> elements
         to wait until an image is on screen before loading.
@@ -112,14 +112,14 @@
         <codeblock>&lt;image loading="lazy" href="..."/&gt;</codeblock>
       </section>
     </bodydiv>
-    <section>
+    <section id="support-html-picture-element">
       <title>Support HTML <xmlelement>picture</xmlelement> element</title>
       <p>Use the specialized <xmlelement>picture</xmlelement> element
       holding multiple <xmlelement>image</xmlelement> elements to display different images on
       different media. The <xmlatt>media</xmlatt> attribute defines the media query and/or
       <xmlatt>type</xmlatt> the image MIME type. The final <xmlelement>image</xmlelement> is the default.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <p>Change the width of the browser to view different images:</p>
       <div outputclass="d-picture">
         <image scope="external" href="https://picsum.photos/id/1/800/400" otherprops="media(min-width: 700px)"/>
@@ -128,7 +128,7 @@
         <image scope="external" href="https://picsum.photos/id/5/200/200.webp" otherprops="type(image/webp)"/>
         <image scope="external" href="https://picsum.photos/id/3/200/200"/>
       </div>
-    </bodydiv>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>

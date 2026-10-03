@@ -12,7 +12,7 @@
   exclude-result-prefixes="xs dita-ot ditamsg"
 >
   <!-- Override to add Bootstrap breadcrumb component -->
-  <!-- https://getbootstrap.com/docs/5.3/components/breadcrumb/ -->
+  <!-- https://getbootstrap.com/docs/6.0/components/breadcrumb/ -->
 
   <!-- Whether include a bootstrap breadcrumb component on each page.  values are 'yes' or 'no' -->
   <xsl:param name="BREADCRUMBS" select="'no'"/>

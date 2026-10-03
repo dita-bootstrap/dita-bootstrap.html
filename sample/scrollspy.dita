@@ -2,7 +2,7 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!-- Within the sample documentation, where necessary, the texts describing the
    usage of each component have been copied directly from the official Bootstrap
-   5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+   6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
    markup is used throughout the examples describing how to implement these
    components correctly using outputclass. -->
 <topic id="scrollspy">
@@ -109,9 +109,9 @@
       <p>
         Omit the <xmlatt>id</xmlatt> to ignore a <xmlelement>section</xmlelement>, or wrap the <xmlelement
         >section</xmlelement> in a <xmlelement>bodydiv</xmlelement> element. Any <xref
-          href="./offcanvas.dita"
+          href="./drawer.dita"
           format="dita"
-        >offcanvas components</xref> are ignored automatically.
+        >drawer components</xref> are ignored automatically.
       </p>
       <codeblock>&lt;bodydiv&gt;
   &lt;section id="section-1"&gt;

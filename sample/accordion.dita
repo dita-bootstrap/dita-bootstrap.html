@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
@@ -26,17 +26,17 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="how-it-works">
       <title>How it works</title>
       <p>The accordion uses
         <xref
-          href="https://getbootstrap.com/docs/5.3/components/collapse/"
+          href="https://getbootstrap.com/docs/6.0/components/collapse/"
           format="html"
           scope="external"
         >collapse</xref> internally to make it collapsible. To render an accordion that’s expanded, add
         <xmlatt>open="yes"</xmlatt> to expand the relevant <xmlelement>accordion-item</xmlelement> .</p>
     </section>
-    <section>
+    <section id="example">
       <title>Example</title>
       <p>Click the accordions below to expand/collapse the accordion content.</p>
     </section>
@@ -140,7 +140,7 @@
 &lt;/accordion&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="flush">
       <title>Flush</title>
       <p>Set <xmlatt>flush="yes"</xmlatt> to remove the default
         background-color, some borders, and some rounded corners to render accordions edge-to-edge with their parent
@@ -183,7 +183,7 @@
         </section>
       </bodydiv>
 
-    <section>
+    <section id="always-open">
       <title>Always open</title>
       <p>Set <xmlatt>open="yes"</xmlatt> to make accordion items stay open when another item is opened.</p>
     </section>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
@@ -23,132 +23,132 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="basic-example">
       <title>Basic example</title>
       <p>Wrap a series of buttons with <xmlelement>xref outputclass="btn-*"</xmlelement> in a <xmlelement>div
           outputclass="btn-group"</xmlelement>
       </p>
     </section>
-    <bodydiv outputclass="p-3 border">
-      <bodydiv outputclass="btn-group">
-        <xref href="#" outputclass="btn-primary">Left</xref>
-        <xref href="#" outputclass="btn-primary">Middle</xref>
-        <xref href="#" outputclass="btn-primary">Right</xref>
-      </bodydiv>
-    </bodydiv>
+    <example>
+      <div outputclass="btn-group">
+        <xref href="#" outputclass="btn theme-primary">Left</xref>
+        <xref href="#" outputclass="btn theme-primary">Middle</xref>
+        <xref href="#" outputclass="btn theme-primary">Right</xref>
+      </div>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;div outputclass="btn-group"&gt;
-  &lt;xref outputclass="btn-primary" href="#"&gt;Left&lt;/xref&gt;
-  &lt;xref outputclass="btn-primary" href="#"&gt;Middle&lt;/xref&gt;
-  &lt;xref outputclass="btn-primary" href="#"&gt;Right&lt;/xref&gt;
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;div outputclass="btn-group"&gt;
+  &lt;xref outputclass="btn theme-primary" href="#"&gt;Left&lt;/xref&gt;
+  &lt;xref outputclass="btn theme-primary" href="#"&gt;Middle&lt;/xref&gt;
+  &lt;xref outputclass="btn theme-primary" href="#"&gt;Right&lt;/xref&gt;
 &lt;/div&gt;</codeblock>
-        </section>
-         <section>
+      </section>
+      <section>
         <title>Specialization</title>
-          <codeblock>&lt;button-group&gt;
-  &lt;button href="#"&gt;Left&lt;/button&gt;
-  &lt;button href="#"&gt;Middle&lt;/button&gt;
-  &lt;button href="#"&gt;Right&lt;/button&gt;
+        <codeblock>&lt;button-group&gt;
+  &lt;button theme="primary" href="#"&gt;Left&lt;/button&gt;
+  &lt;button theme="primary" href="#"&gt;Middle&lt;/button&gt;
+  &lt;button theme="primary" href="#"&gt;Right&lt;/button&gt;
 &lt;/button-group&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
-      <title>Mixed styles</title>
+    <section id="theme-variants">
+      <title>Theme variants</title>
     </section>
-    <bodydiv deliveryTarget="html" outputclass="p-3 border">
-      <bodydiv outputclass="btn-group">
-        <xref href="#" outputclass="btn-danger">Left</xref>
-        <xref href="#" outputclass="btn-warning">Middle</xref>
-        <xref href="#" outputclass="btn-success">Right</xref>
-      </bodydiv>
-    </bodydiv>
+    <example>
+      <div outputclass="btn-group">
+        <xref href="#" outputclass="btn theme-danger">Left</xref>
+        <xref href="#" outputclass="btn theme-warning">Middle</xref>
+        <xref href="#" outputclass="btn theme-success">Right</xref>
+      </div>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;div outputclass="btn-group"&gt;
-  &lt;xref outputclass="btn-danger" href="#"&gt;Left&lt;/xref&gt;
-  &lt;xref outputclass="btn-warning" href="#"&gt;Middle&lt;/xref&gt;
-  &lt;xref outputclass="btn-success" href="#"&gt;Right&lt;/xref&gt;
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;div outputclass="btn-group"&gt;
+  &lt;xref outputclass="btn theme-danger" href="#"&gt;Left&lt;/xref&gt;
+  &lt;xref outputclass="btn theme-warning" href="#"&gt;Middle&lt;/xref&gt;
+  &lt;xref outputclass="btn theme-success" href="#"&gt;Right&lt;/xref&gt;
 &lt;/div&gt;</codeblock>
         </section>
-         <section>
+        <section>
         <title>Specialization</title>
-          <codeblock>&lt;button-group&gt;
-  &lt;button color="danger" href="#"&gt;Left&lt;/button&gt;
-  &lt;button color="warning" href="#"&gt;Middle&lt;/button&gt;
-  &lt;button color="success" href="#"&gt;Right&lt;/button&gt;
+        <codeblock>&lt;button-group&gt;
+  &lt;button theme="danger" href="#"&gt;Left&lt;/button&gt;
+  &lt;button theme="warning" href="#"&gt;Middle&lt;/button&gt;
+  &lt;button theme="success" href="#"&gt;Right&lt;/button&gt;
 &lt;/button-group&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
-      <title>Outlined styles</title>
+    <section id="style-variants">
+      <title>Style variants</title>
     </section>
-    <bodydiv outputclass="p-3 border">
-      <bodydiv outputclass="btn-group">
-        <xref href="#" outputclass="btn-outline-primary">Left</xref>
-        <xref href="#" outputclass="btn-outline-primary">Middle</xref>
-        <xref href="#" outputclass="btn-outline-primary">Right</xref>
-      </bodydiv>
-    </bodydiv>
+    <example>
+      <div outputclass="btn-group">
+        <xref href="#" outputclass="btn-outline theme-primary">Left</xref>
+        <xref href="#" outputclass="btn-outline theme-primary">Middle</xref>
+        <xref href="#" outputclass="btn-outline theme-primary">Right</xref>
+      </div>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;div outputclass="btn-group"&gt;
-  &lt;xref outputclass="btn-outline-primary" href="#"&gt;Left&lt;/xref&gt;
-  &lt;xref outputclass="btn-outline-primary" href="#"&gt;Middle&lt;/xref&gt;
-  &lt;xref outputclass="btn-outline-primary" href="#"&gt;Right&lt;/xref&gt;
+  &lt;xref outputclass="btn-outline theme-primary" href="#"&gt;Left&lt;/xref&gt;
+  &lt;xref outputclass="btn-outline theme-primary" href="#"&gt;Middle&lt;/xref&gt;
+  &lt;xref outputclass="btn-outline theme-primary" href="#"&gt;Right&lt;/xref&gt;
 &lt;/div&gt;</codeblock>
         </section>
-         <section>
+        <section>
         <title>Specialization</title>
           <codeblock>&lt;button-group&gt;
-  &lt;button outline="yes" href="#"&gt;Left&lt;/button&gt;
-  &lt;button outline="yes" href="#"&gt;Middle&lt;/button&gt;
-  &lt;button outline="yes" href="#"&gt;Right&lt;/button&gt;
+  &lt;button theme="primary-outline" href="#"&gt;Left&lt;/button&gt;
+  &lt;button theme="primary-outline" href="#"&gt;Middle&lt;/button&gt;
+  &lt;button theme="primary-outline" href="#"&gt;Right&lt;/button&gt;
 &lt;/button-group&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="button-toolbar">
       <title>Button toolbar</title>
       <p>Combine sets of button groups into button toolbars for more complex components.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
-      <bodydiv outputclass="btn-toolbar">
-        <bodydiv outputclass="me-2 btn-group">
-          <xref href="#" outputclass="btn-primary">1</xref>
-          <xref href="#" outputclass="btn-primary">2</xref>
-          <xref href="#" outputclass="btn-primary">3</xref>
-          <xref href="#" outputclass="btn-primary">4</xref>
-        </bodydiv>
-        <bodydiv outputclass="me-2 btn-group">
-          <xref href="#" outputclass="btn-secondary">5</xref>
-          <xref href="#" outputclass="btn-secondary">6</xref>
-          <xref href="#" outputclass="btn-secondary">7</xref>
-        </bodydiv>
-        <bodydiv outputclass="me-2 btn-group">
-          <xref href="#" outputclass="btn-info">8</xref>
-        </bodydiv>
-      </bodydiv>
-    </bodydiv>
+    <example>
+      <div outputclass="btn-toolbar">
+        <div outputclass="me-2 btn-group">
+          <xref href="#" outputclass="btn theme-primary">1</xref>
+          <xref href="#" outputclass="btn theme-primary">2</xref>
+          <xref href="#" outputclass="btn theme-primary">3</xref>
+          <xref href="#" outputclass="btn theme-primary">4</xref>
+        </div>
+        <div outputclass="me-2 btn-group">
+          <xref href="#" outputclass="btn theme-secondary">5</xref>
+          <xref href="#" outputclass="btn theme-secondary">6</xref>
+          <xref href="#" outputclass="btn theme-secondary">7</xref>
+        </div>
+        <div outputclass="me-2 btn-group">
+          <xref href="#" outputclass="btn theme-info">8</xref>
+        </div>
+      </div>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;div outputclass="btn-toolbar"&gt;
   &lt;div outputclass="btn-group me-2"&gt;
-    &lt;xref outputclass="btn-primary" href="#"&gt;1&lt;/xref&gt;
-    &lt;xref outputclass="btn-primary" href="#"&gt;2&lt;/xref&gt;
-    &lt;xref outputclass="btn-primary" href="#"&gt;3&lt;/xref&gt;
-    &lt;xref outputclass="btn-primary" href="#"&gt;4&lt;/xref&gt;
+    &lt;xref outputclass="btn theme-primary" href="#"&gt;1&lt;/xref&gt;
+    &lt;xref outputclass="btn theme-primary" href="#"&gt;2&lt;/xref&gt;
+    &lt;xref outputclass="btn theme-primary" href="#"&gt;3&lt;/xref&gt;
+    &lt;xref outputclass="btn theme-primary" href="#"&gt;4&lt;/xref&gt;
   &lt;/div&gt;
   &lt;div outputclass="btn-group me-2"&gt;
-    &lt;xref outputclass="btn-secondary" href="#"&gt;5&lt;/xref&gt;
-    &lt;xref outputclass="btn-secondary" href="#"&gt;6&lt;/xref&gt;
-    &lt;xref outputclass="btn-secondary" href="#"&gt;7&lt;/xref&gt;
+    &lt;xref outputclass="btn theme-secondary" href="#"&gt;5&lt;/xref&gt;
+    &lt;xref outputclass="btn theme-secondary" href="#"&gt;6&lt;/xref&gt;
+    &lt;xref outputclass="btn theme-secondary" href="#"&gt;7&lt;/xref&gt;
   &lt;/div&gt;
   &lt;div outputclass="btn-group me-2"&gt;
-    &lt;xref outputclass="btn-info" href="#"&gt;8&lt;/xref&gt;
+    &lt;xref outputclass="btn theme-info" href="#"&gt;8&lt;/xref&gt;
   &lt;/div&gt;
 &lt;/div&gt;</codeblock>
         </section>
@@ -156,50 +156,50 @@
         <title>Specialization</title>
           <codeblock>&lt;button-toolbar&gt;
   &lt;button-group outputclass="me-2"&gt;
-    &lt;button href="#"&gt;1&lt;/button&gt;
-    &lt;button href="#"&gt;2&lt;/button&gt;
-    &lt;button href="#"&gt;3&lt;/button&gt;
-    &lt;button href="#"&gt;4&lt;/button&gt;
+    &lt;button theme="primary" href="#"&gt;1&lt;/button&gt;
+    &lt;button theme="primary" href="#"&gt;2&lt;/button&gt;
+    &lt;button theme="primary" href="#"&gt;3&lt;/button&gt;
+    &lt;button theme="primary" href="#"&gt;4&lt;/button&gt;
   &lt;/button-group&gt;
   &lt;button-group outputclass="me-2"&gt;
-    &lt;button color="secondary" href="#"&gt;5&lt;/button&gt;
-    &lt;button color="secondary" href="#"&gt;6&lt;/button&gt;
-    &lt;button color="secondary" href="#"&gt;7&lt;/button&gt;
+    &lt;button theme="secondary" href="#"&gt;5&lt;/button&gt;
+    &lt;button theme="secondary" href="#"&gt;6&lt;/button&gt;
+    &lt;button theme="secondary" href="#"&gt;7&lt;/button&gt;
   &lt;/button-group&gt;
   &lt;button-group outputclass="me-2"&gt;
-    &lt;button color="info" href="#"&gt;8&lt;/button&gt;
+    &lt;button theme="info" href="#"&gt;8&lt;/button&gt;
   &lt;/button-group&gt;
 &lt;/button-toolbar&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="vertical-variation">
       <title>Vertical variation</title>
       <p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
-      <bodydiv outputclass="btn-group-vertical">
-        <xref href="#" outputclass="btn-primary">Top</xref>
-        <xref href="#" outputclass="btn-primary">Middle</xref>
-        <xref href="#" outputclass="btn-primary">Bottom</xref>
-      </bodydiv>
-    </bodydiv>
+    <example>
+      <div outputclass="btn-group-vertical">
+        <xref href="#" outputclass="btn theme-primary">Top</xref>
+        <xref href="#" outputclass="btn theme-primary">Middle</xref>
+        <xref href="#" outputclass="btn theme-primary">Bottom</xref>
+      </div>
+    </example>
     <bodydiv outputclass="nav-pills mt-3">
       <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;div outputclass="btn-group-vertical"&gt;
-  &lt;xref outputclass="btn-primary" href="#"&gt;Top&lt;/xref&gt;
-  &lt;xref outputclass="btn-primary" href="#"&gt;Middle&lt;/xref&gt;
-  &lt;xref outputclass="btn-primary" href="#"&gt;Bottom&lt;/xref&gt;
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;div outputclass="btn-group-vertical"&gt;
+  &lt;xref outputclass="btn theme-primary" href="#"&gt;Top&lt;/xref&gt;
+  &lt;xref outputclass="btn theme-primary" href="#"&gt;Middle&lt;/xref&gt;
+  &lt;xref outputclass="btn theme-primary" href="#"&gt;Bottom&lt;/xref&gt;
 &lt;/div&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;button-group vertical="yes"&gt;
-  &lt;button href="#"&gt;Top&lt;/button&gt;
-  &lt;button href="#"&gt;Middle&lt;/button&gt;
-  &lt;button href="#"&gt;Bottom&lt;/button&gt;
+      </section>
+      <section>
+      <title>Specialization</title>
+      <codeblock>&lt;button-group vertical="yes"&gt;
+  &lt;button theme="primary" href="#"&gt;Top&lt;/button&gt;
+  &lt;button theme="primary" href="#"&gt;Middle&lt;/button&gt;
+  &lt;button theme="primary" href="#"&gt;Bottom&lt;/button&gt;
 &lt;/button-group&gt;</codeblock>
-        </section>
-      </bodydiv>
+      </section>
+    </bodydiv>
   </body>
 </topic>

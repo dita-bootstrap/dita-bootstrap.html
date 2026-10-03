@@ -3,7 +3,7 @@
 <topic id="color">
   <title>Color</title>
   <shortdesc>Convey meaning through <codeph>color</codeph> with a handful of color utility classes. Includes support for
-    styling text and background colors via the semantic <xmlatt>color</xmlatt> attribute.</shortdesc>
+    styling text and background colors via the semantic <xmlatt>theme</xmlatt> attribute.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -12,78 +12,78 @@
         <indexterm>CSS
           <indexterm><xmlatt>outputclass</xmlatt></indexterm>
         </indexterm>
-        <indexterm><xmlatt>color</xmlatt></indexterm>
+        <indexterm><xmlatt>theme</xmlatt></indexterm>
       </keywords>
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="colors">
       <title>Colors</title>
       <p>Colorize text and backgrounds with color utilities. The <xmlatt
-        >color</xmlatt> attribute provides a semantic way to apply standard Bootstrap color themes.</p>
+        >theme</xmlatt> attribute provides a semantic way to apply standard Bootstrap color themes.</p>
     </section>
 
-    <bodydiv outputclass="p-3 border">
-      <div outputclass="text-bg-primary">.text-bg-primary</div>
-      <div outputclass="text-bg-secondary">.text-bg-secondary</div>
-      <div outputclass="text-bg-success">.text-bg-success</div>
-      <div outputclass="text-bg-danger">.text-bg-danger</div>
-      <div outputclass="text-bg-warning">.text-bg-warning</div>
-      <div outputclass="text-bg-info">.text-bg-info</div>
-      <div outputclass="text-bg-light">.text-bg-light</div>
-      <div outputclass="text-bg-dark">.text-bg-dark</div>
-    </bodydiv>
+    <example>
+      <div outputclass="bg-primary fg-contrast-primary">bg-primary</div>
+      <div outputclass="bg-secondary fg-contrast-secondary">bg-secondary</div>
+      <div outputclass="bg-success fg-contrast-success">bg-success</div>
+      <div outputclass="bg-danger fg-contrast-danger">bg-danger</div>
+      <div outputclass="bg-warning fg-contrast-warning">bg-warning</div>
+      <div outputclass="bg-info fg-contrast-info">bg-info</div>
+      <div outputclass="bg-accent fg-contrast-accent">bg-accent</div>
+      <div outputclass="bg-inverse fg-contrast-inverse">bg-inverse</div>
+    </example>
 
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="text-bg-primary"&gt;.text-bg-primary&lt;/div&gt;
-&lt;div outputclass="text-bg-secondary"&gt;.text-bg-secondary&lt;/div&gt;
-&lt;div outputclass="text-bg-success"&gt;.text-bg-success&lt;/div&gt;
-&lt;div outputclass="text-bg-danger"&gt;.text-bg-danger&lt;/div&gt;
-&lt;div outputclass="text-bg-warning"&gt;.text-bg-warning&lt;/div&gt;
-&lt;div outputclass="text-bg-info"&gt;.text-bg-info&lt;/div&gt;
-&lt;div outputclass="text-bg-light"&gt;.text-bg-light&lt;/div&gt;
-&lt;div outputclass="text-bg-dark"&gt;.text-bg-dark&lt;/div&gt;</codeblock>
+        <codeblock>&lt;div outputclass="bg-primary fg-contrast-primary"&gt;bg-primary&lt;/div&gt;
+&lt;div outputclass="bg-secondary fg-contrast-secondary"&gt;bg-secondary&lt;/div&gt;
+&lt;div outputclass="bg-success fg-contrast-success"&gt;bg-success&lt;/div&gt;
+&lt;div outputclass="bg-danger fg-contrast-danger"&gt;bg-danger&lt;/div&gt;
+&lt;div outputclass="bg-warning fg-contrast-warning"&gt;bg-warning&lt;/div&gt;
+&lt;div outputclass="bg-info fg-contrast-info" &gt;bg-info&lt;/div&gt;
+&lt;div outputclass="bg-accent fg-contrast-accent"&gt;bg-accent&lt;/div&gt;
+&lt;div outputclass="bg-inverse fg-contrast-inverse"&gt;bg-inverse&lt;/div&gt;</codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div color="primary"&gt;.text-bg-primary&lt;/div&gt;
-&lt;div color="secondary"&gt;.text-bg-secondary&lt;/div&gt;
-&lt;div color="success"&gt;.text-bg-success&lt;/div&gt;
-&lt;div color="danger"&gt;.text-bg-danger&lt;/div&gt;
-&lt;div color="warning"&gt;.text-bg-warning&lt;/div&gt;
-&lt;div color="info"&gt;.text-bg-info&lt;/div&gt;
-&lt;div color="light"&gt;.text-bg-light&lt;/div&gt;
-&lt;div color="dark"&gt;.text-bg-dark&lt;/div&gt;</codeblock>
+        <codeblock>&lt;div theme="primary-contrast"&gt;bg-primary&lt;/div&gt;
+&lt;div theme="secondary-contrast"&gt;bg-secondary&lt;/div&gt;
+&lt;div theme="success-contrast"&gt;bg-success&lt;/div&gt;
+&lt;div theme="danger-contrast"&gt;bg-danger&lt;/div&gt;
+&lt;div theme="warning-contrast"&gt;bg-warning&lt;/div&gt;
+&lt;div theme="info-contrast"&gt;bg-info&lt;/div&gt;
+&lt;div theme="accent-contrast"&gt;bg-accent&lt;/div&gt;
+&lt;div theme="inverse-contrast"&gt;bg-inverse&lt;/div&gt;</codeblock>
       </section>
     </bodydiv>
 
-    <section>
+    <section id="base-dita-elements">
       <title>Base DITA Elements</title>
       <p
       >Decoration attributes can be applied to many base DITA elements to add background color and contrasting text.</p>
     </section>
 
     <bodydiv outputclass="p-3 border">
-      <section outputclass="mt-2 text-bg-primary">
+      <section id="section-decoration" outputclass="mt-2 bg-primary fg-contrast-primary">
         <title>Section Decoration</title>
         <p>This section has a primary color background.</p>
       </section>
 
-      <div outputclass="mt-2 p-3 text-bg-success">
+      <div outputclass="mt-2 p-3 bg-success fg-contrast-success">
         <p>This div has a success color background.</p>
       </div>
 
-      <pre outputclass="mt-2 text-bg-warning">
+      <pre outputclass="mt-2 bg-warning fg-contrast-warning">
         This pre has a warning color background.
       </pre>
 
-      <lq outputclass="mt-2 p-1 text-bg-danger">
+      <lq outputclass="mt-2 p-1 bg-danger fg-contrast-danger">
         This is a long quote with a danger color background.
       </lq>
 
-      <table outputclass="mt-2 p-1 w-100 table-primary">
+      <table outputclass="mt-2 p-1 w-100 theme-primary">
         <tgroup cols="2">
           <thead>
             <row>
@@ -92,17 +92,17 @@
             </row>
           </thead>
           <tbody>
-            <row outputclass="table-info">
+            <row outputclass="theme-info">
               <entry>Elephant (African and Asian)</entry>
               <entry>19-22 months</entry>
             </row>
-            <row outputclass="table-success">
+            <row outputclass="theme-success">
               <entry>Giraffe</entry>
               <entry>15 months</entry>
             </row>
             <row>
               <entry>Rhinoceros</entry>
-              <entry outputclass="table-danger">14-16 months</entry>
+              <entry outputclass="theme-danger">14-16 months</entry>
             </row>
             <row>
               <entry>Hippopotamus</entry>
@@ -112,7 +112,7 @@
         </tgroup>
       </table>
 
-      <note outputclass="mt-2 text-bg-primary">
+      <note outputclass="mt-2 theme-primary">
         This is a note with a primary color theme.
       </note>
     </bodydiv>
@@ -120,24 +120,24 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;section outputclass="text-bg-primary"&gt;
+        <codeblock>&lt;section outputclass="bg-primary fg-contrast-primary"&gt;
   &lt;title&gt;Section Decoration&lt;/title&gt;
   &lt;p&gt;This section has a primary color background.&lt;/p&gt;
 &lt;/section&gt;
 
-&lt;div outputclass="text-bg-success p-3"&gt;
+&lt;div outputclass="bg-success fg-contrast-success p-3"&gt;
   &lt;p&gt;This div has a success color background.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;pre outputclass="text-bg-warning"&gt;
+&lt;pre outputclass="bg-warning fg-contrast-warning"&gt;
   This pre has a warning color background.
 &lt;/pre&gt;
 
-&lt;lq outputclass="text-bg-danger p-1"&gt;
+&lt;lq outputclass="bg-danger fg-contrast-danger p-1"&gt;
   ...
 &lt;/lq&gt;
 
-&lt;table outputclass="table-primary p-1 w-100"&gt;
+&lt;table outputclass="theme-primary p-1 w-100"&gt;
   &lt;tgroup cols="2"&gt;
     &lt;thead&gt;
       &lt;row&gt;
@@ -146,15 +146,15 @@
       &lt;/row&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
-      &lt;row outputclass="table-info"&gt;
+      &lt;row outputclass="theme-info"&gt;
        ...
       &lt;/row&gt;
-      &lt;row outputclass="table-success"&gt;
+      &lt;row outputclass="theme-success"&gt;
        ...
       &lt;/row&gt;
       &lt;row&gt;
         &lt;entry&gt;...&lt;/entry&gt;
-        &lt;entry outputclass="table-danger"&gt;...&lt;/entry&gt;
+        &lt;entry outputclass="theme-danger"&gt;...&lt;/entry&gt;
       &lt;/row&gt;
       &lt;row&gt;
         &lt;entry&gt;...&lt;/entry&gt;
@@ -164,30 +164,30 @@
   &lt;/tgroup&gt;
 &lt;/table&gt;
 
-&lt;note color="primary"&gt;
+&lt;note outputclass="theme-primary theme-contrast"&gt;
   ...
 &lt;/note&gt;</codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;section color="primary"&gt;
+        <codeblock>&lt;section theme="primary-contrast"&gt;
   &lt;title&gt;Section Decoration&lt;/title&gt;
   &lt;p&gt;This section has a primary color background.&lt;/p&gt;
 &lt;/section&gt;
 
-&lt;div color="success" padding="3"&gt;
+&lt;div theme="success-contrast" padding="3"&gt;
   &lt;p&gt;This div has a success color background.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;pre color="warning"&gt;
+&lt;pre theme="warning-contrast"&gt;
   This pre has a warning color background.
 &lt;/pre&gt;
 
-&lt;lq color="danger" padding="1"&gt;
+&lt;lq theme="danger-contrast" padding="1"&gt;
   This is a long quote with a danger color background.
 &lt;/lq&gt;
 
-&lt;table color="primary" padding="1" width="100"&gt;
+&lt;table theme="primary" padding="1" width="100"&gt;
   &lt;tgroup cols="2"&gt;
     &lt;thead&gt;
       &lt;row&gt;
@@ -196,15 +196,15 @@
       &lt;/row&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
-      &lt;row color="info"&gt;
+      &lt;row theme="info"&gt;
         ...
       &lt;/row&gt;
-      &lt;row color="success"&gt;
+      &lt;row theme="success"&gt;
         ...
       &lt;/row&gt;
       &lt;row&gt;
         &lt;entry&gt;...&lt;/entry&gt;
-        &lt;entry color="danger"&gt;...&lt;/entry&gt;
+        &lt;entry theme="danger"&gt;...&lt;/entry&gt;
       &lt;/row&gt;
       &lt;row&gt;
         ...
@@ -213,38 +213,39 @@
   &lt;/tgroup&gt;
 &lt;/table&gt;
 
-&lt;note color="primary"&gt;
+&lt;note theme="primary-contrast"&gt;
   This is a note with a primary color theme.
 &lt;/note&gt;</codeblock>
       </section>
     </bodydiv>
 
-    <section>
+    <section id="specialized-elements">
       <title>Specialized Elements</title>
-      <p>Many specialized components also support the <xmlatt>color</xmlatt> attribute for consistent theming.</p>
+      <p>Many specialized components also support the <xmlatt>theme</xmlatt> attribute for consistent theming.</p>
     </section>
 
     <bodydiv outputclass="p-3 border">
 
       <image scope="external" href="https://picsum.photos/100/100?a" outputclass="img-thumbnail bg-warning"/>
-      <section outputclass="card text-bg-success mt-2 w-50">
+      <section id="card-title" outputclass="card theme-success mt-2 w-50">
         <title>Card Title</title>
+        <div outputclass="card-header">Success Card</div>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
       </section>
 
-      <bodydiv outputclass="accordion mt-2 text-bg-info">
+      <bodydiv outputclass="accordion mt-2 theme-info">
         <section id="accordion_color_1" outputclass="show">
           <title>Accordion Item #1</title>
           <p>This is the first item's accordion body.</p>
         </section>
       </bodydiv>
 
-      <ul outputclass="list-group list-group-item-danger mt-2 w-50">
+      <ul outputclass="list-group theme-danger mt-2 w-50">
         <li>An item</li>
         <li>A second item</li>
       </ul>
 
-      <ol outputclass="carousel mt-2 w-50 text-bg-dark" otherprops="indicators(true)">
+      <ol outputclass="carousel mt-2 w-50 theme-inverse theme-muted" otherprops="indicators(true)">
         <li>
           <image scope="external" href="https://picsum.photos/1200/600?a"/>
         </li>
@@ -262,44 +263,44 @@
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;img src="..." class="img-thumbnail bg-warning"/&gt;
 
-&lt;section outputclass="card text-bg-success w-50"&gt;
+&lt;section outputclass="card theme-success w-50"&gt;
   ...
 &lt;/section&gt;
 
-&lt;bodydiv outputclass="accordion accordion-info"&gt;
+&lt;bodydiv outputclass="accordion theme-info"&gt;
   ...
 &lt;/bodydiv&gt;
 
-&lt;ul outputclass="list-group list-group-item-danger w-50"&gt;
+&lt;ul outputclass="list-group theme-danger w-50"&gt;
   ...
 &lt;/ul&gt;
 
-&lt;ul outputclass="carousel carousel-dark w-50"&gt;
+&lt;ul outputclass="carousel theme-inverse theme-muted w-50"&gt;
   ...
 &lt;/ul&gt;</codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;thumbnail href="..." color="warning"/&gt;
+        <codeblock>&lt;thumbnail href="..." theme="warning"/&gt;
 
-&lt;card color="success" width="50"&gt;
+&lt;card theme="success" width="50"&gt;
   &lt;title&gt;Card Title&lt;/title&gt;
   &lt;p&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
 &lt;/card&gt;
 
-&lt;accordion color="info"&gt;
+&lt;accordion theme="info"&gt;
   &lt;accordion-item open="yes"&gt;
     &lt;title&gt;Accordion Item #1&lt;/title&gt;
     &lt;p&gt;This is the first item's accordion body.&lt;/p&gt;
   &lt;/accordion-item&gt;
 &lt;/accordion&gt;
 
-&lt;list-group width="50" color="danger"&gt;
+&lt;list-group width="50" theme="danger"&gt;
   &lt;li&gt;An item&lt;/li&gt;
   &lt;li&gt;A second item&lt;/li&gt;
 &lt;/list-group&gt;
 
-&lt;carousel color="dark" width="50" indicators="yes"&gt;
+&lt;carousel theme="inverse-muted" width="50" indicators="yes"&gt;
   &lt;carousel-item&gt;
     &lt;image href="..."/&gt;
   &lt;/carousel-item&gt;
@@ -313,25 +314,25 @@
       </section>
     </bodydiv>
 
-    <section>
+    <section id="text-color">
       <title>Text Color</title>
       <p>For text-only colorization, the <xmlatt>outputclass</xmlatt> attribute remains the primary method.</p>
     </section>
 
-    <bodydiv outputclass="p-3 border">
-      <p outputclass="text-primary">.text-primary</p>
-      <p outputclass="text-secondary">.text-secondary</p>
-      <p outputclass="text-success">.text-success</p>
-      <p outputclass="text-danger">.text-danger</p>
-      <p outputclass="text-warning bg-dark">.text-warning</p>
-      <p outputclass="text-info bg-dark">.text-info</p>
-    </bodydiv>
+    <example>
+      <p outputclass="fg-primary">fg-primary</p>
+      <p outputclass="fg-secondary">fg-secondary</p>
+      <p outputclass="fg-success">fg-success</p>
+      <p outputclass="fg-danger">fg-danger</p>
+      <p outputclass="fg-warning">fg-warning</p>
+      <p outputclass="fg-info">fg-info</p>
+    </example>
 
-    <codeblock>&lt;p outputclass="text-primary"&gt;.text-primary&lt;/p&gt;
-&lt;p outputclass="text-secondary"&gt;.text-secondary&lt;/p&gt;
-&lt;p outputclass="text-success"&gt;.text-success&lt;/p&gt;
-&lt;p outputclass="text-danger"&gt;.text-danger&lt;/p&gt;
-&lt;p outputclass="text-warning bg-dark"&gt;.text-warning&lt;/p&gt;
-&lt;p outputclass="text-info bg-dark"&gt;.text-info&lt;/p&gt;</codeblock>
+    <codeblock>&lt;p outputclass="fg-primary"&gt;fg-primary&lt;/p&gt;
+&lt;p outputclass="fg-secondary"&gt;fg-secondary&lt;/p&gt;
+&lt;p outputclass="fg-success"&gt;fg-success&lt;/p&gt;
+&lt;p outputclass="fg-danger"&gt;fg-danger&lt;/p&gt;
+&lt;p outputclass="fg-warning"&gt;fg-warning&lt;/p&gt;
+&lt;p outputclass="fg-info"&gt;fg-info&lt;/p&gt;</codeblock>
   </body>
 </topic>

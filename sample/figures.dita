@@ -6,7 +6,7 @@
    markup is used throughout the examples describing how to implement these
    components correctly using outputclass.
 
-   This work, is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc.
+   This work, is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc.
    and the Bootstrap Authors, and used under CC BY 3.0. See the accompanying LICENSE
    file for applicable licenses.-->
 <topic id="figures">
@@ -32,42 +32,42 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="example">
       <title>Example</title>
       <p>By default <xmlelement>figure</xmlelement> elements are styled as shown: </p>
     </section>
-    <bodydiv outputclass="bd-example">
+    <example>
       <fig>
         <title>A caption for the image.</title>
         <image scope="external" href="https://picsum.photos/1200/600?a"/>
       </fig>
-    </bodydiv>
+    </example>
     <codeblock>&lt;fig&gt;
   &lt;title&gt;A caption for the image.&lt;/title&gt;
   &lt;image href="..."/&gt;
 &lt;/fig&gt;</codeblock>
-    <section>
+    <section id="aligning-text">
       <title>Aligning text</title>
       <p>The figure’s caption can be aligned using the Bootstrap
         <xref href="./color.dita" format="dita">text utilities</xref>.</p>
     </section>
-    <bodydiv outputclass="bd-example">
+    <example>
       <fig>
         <title outputclass="text-end">A caption for the image.</title>
         <image scope="external" href="https://picsum.photos/1200/600?b"/>
       </fig>
-    </bodydiv>
+    </example>
     <codeblock>&lt;fig&gt;
   &lt;title outputclass="text-end"&gt;A caption for the image.&lt;/title&gt;
   &lt;image href="..."/&gt;
 &lt;/fig&gt;</codeblock>
 
-    <section>
+    <section id="adding-borders">
       <title>Adding borders</title>
       <p>Use the DITA <xmlatt>frame</xmlatt> attribute to add
         <xref href="./borders.dita" format="dita">borders</xref> to a <xmlelement>fig</xmlelement>.</p>
     </section>
-    <bodydiv outputclass="bd-example">
+    <example>
       <fig frame="all">
         <title>All Borders</title>
         <codeblock>frame="all"</codeblock>
@@ -92,7 +92,7 @@
         <title>Bottom Border Only</title>
         <codeblock>frame="bottom"</codeblock>
       </fig>
-    </bodydiv>
+    </example>
     <codeblock>&lt;fig frame="all"&gt;
   ...
 &lt;/fig&gt;

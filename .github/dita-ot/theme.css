@@ -1,5 +1,5 @@
 /*
-  This sample applies the default Bootstrap 5 theme and any additional CSS overrides
+  This sample applies the default Bootstrap 6 theme and any additional CSS overrides
    ↓ For a custom look-and-feel, a generated Bootstrap theme could be added below ↓
 */
 
@@ -7,31 +7,22 @@
 
 /* ↓  Additional custom overrides  ↓ */
 
-/* Add Bootstrap’s own documentation example highlight */
-
-.bd-example {
-  position: relative;
-  padding: 1rem;
-  margin: 1rem -0.75rem 0;
-  border: solid #dee2e6 1px;
-}
-
 .custom-popover {
   --bs-popover-max-width: 200px;
-  --bs-popover-border-color: var(--bs-primary);
-  --bs-popover-header-bg: var(--bs-primary);
+  --bs-popover-border-color: var(--bs-primary-border);
+  --bs-popover-header-bg: var(--bs-primary-bg);
   --bs-popover-header-color: var(--bs-white);
   --bs-popover-body-padding-x: 1rem;
   --bs-popover-body-padding-y: 0.5rem;
 }
 
 .custom-tooltip {
-  --bs-tooltip-bg: var(--bs-primary);
+  --bs-tooltip-bg: var(--bs-primary-bg);
 }
 
-/* override part of the Bootstrap color scheme */
+/* override parts of the Bootstrap color scheme */
 :root {
-  --bs-code-color: var(--bs-secondary-color);
+  --bs-code-color: light-dark(var(--bs-gray-900), var(--bs-white));
 }
 
 /* Make all CSS themes scrollable */
@@ -39,7 +30,7 @@
   height: calc(100vh - 6rem);
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1023.98px) {
   .css-themes-list {
     height: calc(100vh - 25rem);
   }

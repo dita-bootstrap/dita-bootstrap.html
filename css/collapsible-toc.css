@@ -8,7 +8,7 @@
  */
 
 .bd-links {
-  padding-left: none;
+  padding-left: 0;
   overflow: auto;
   font-weight: 600;
 }
@@ -16,24 +16,24 @@
 .bd-links a {
   padding: 0.1875rem 0.5rem;
   margin-top: 0.125rem;
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
   text-decoration: none;
 }
 
 .bd-links a:hover {
-  color: var(--bs-link-hover-color);
+  color: var(--bs-theme-fg-emphasis, var(--bs-link-hover-color)) !important;
+}
+
+.bd-links a:focus-visible {
+  outline: var(--bs-focus-ring);
 }
 
 .bd-links span {
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
 }
 
-.bd-links span:hover {
-  color: var(--bs-link-hover-color);
-}
-
-.bd-links span.bd-divider:hover {
-  color: var(--bs-body-color);
+.bd-links span:not(.bd-divider):hover {
+  color: var(--bs-theme-fg-emphasis, var(--bs-link-hover-color)) !important;
 }
 
 @media (min-width: 768px) {
@@ -47,7 +47,7 @@
 @media (max-width: 767.98px) {
   .bd-links > ul {
     padding: 1.5rem 0.75rem;
-    background-color: var(--bs-body-bg);
+    background-color: var(--bs-bg-body);
   }
 }
 
@@ -63,13 +63,14 @@
 .bd-links .btn {
   padding: 0.25rem !important;
   font-weight: 600;
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
   background-color: transparent;
+  border: 0;
   box-shadow: none;
 }
 
 .bd-links svg:hover {
-  color: var(--bs-link-hover-color);
+  color: var(--bs-theme-fg-emphasis, var(--bs-link-hover-color)) !important;
 }
 
 .bd-links .ps-2 {
@@ -107,11 +108,7 @@
   transform: rotate(90deg);
 }
 
-.bd-links .btn:focus-visible {
-  outline: -webkit-focus-ring-color auto 1px;
-}
-
 .bd-links .active {
   font-weight: 600;
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
 }

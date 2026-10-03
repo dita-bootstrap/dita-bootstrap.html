@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <topic id="offline">
@@ -30,7 +30,7 @@
     >This offline approach deliberately avoids the use of online CDNs and minimises the opportunity for browsers to
       cache files, and therefore is not recommended for production of documents placed online.</note>
 
-    <section>
+    <section id="procedure">
       <title>Procedure</title>
       <ol>
         <li>
@@ -130,7 +130,7 @@
         </li>
       </ol>
     </section>
-    <section>
+    <section id="results">
       <title>Results</title>
       <p>The plug-in directory has the following layout and files:</p>
       <codeblock outputclass="language-bash">com.example.bootstrap-offline
@@ -141,7 +141,7 @@
 └── process_offline.xml</codeblock>
     </section>
 
-    <section>
+    <section id="what-to-do-next">
       <title>What to do next</title>
       <ol>
         <li>Run <cmdname>dita</cmdname>

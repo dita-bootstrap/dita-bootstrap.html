@@ -72,3 +72,5 @@ xsl/dita2html5-legacy-3.0.xsl
 node_modules
 
 out
+.gstack/
+.husky/

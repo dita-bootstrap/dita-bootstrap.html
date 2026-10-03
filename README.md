@@ -11,7 +11,9 @@ A plug-in for [DITA Open Toolkit][1] that extends the default HTML5 output with 
   - [Custom CSS](#custom-css)
   - [Headers and footers](#headers-and-footers)
   - [Navigation menu](#navigation-menu)
-  - [Common Bootstrap utility classes](#common-bootstrap-utility-classes)
+  - [Bootstrap Themes](#bootstrap-themes)
+  - [Bootstrap component utility classes](#bootstrap-component-utility-classes)
+  - [DITA element utility classes](#dita-element-utility-classes)
   - [Bootstrap icons for DITA notes](#bootstrap-icons-for-dita-notes)
   - [Optional elements](#optional-elements)
 - [Feedback](#feedback)
@@ -158,33 +160,55 @@ dita --input=path/to/your.ditamap \
      --menubar-toc.include=yes
 ```
 
-### Common Bootstrap utility classes
+### Bootstrap Themes
 
-The HTML output for the following DITA elements can be annotated with common Bootstrap utility classes for borders, background, text, spacing, etc. using additional command line parameters:
+Several layout regions can be styled with a Bootstrap theme color using additional command line parameters. Each parameter accepts a color (`accent`, `danger`, `info`, `inverse`, `primary`, `secondary`, `success`, `warning`) combined with a suffix (`-border`, `-contrast`, `-muted`, `-subtle`, `-subtle-border`), or `none` to disable theming:
 
 - `bootstrap.css.accessibility.link` – Common Bootstrap utility classes for accessibility links
-- `bootstrap.css.accessibility.nav` – Common Bootstrap utility classes for accessibility navigation
+- `bootstrap.theme.accessibility` – Common Bootstrap utility classes for accessibility navigation
+- `bootstrap.theme.body` – Theme utility class for the page `<body>`. Same options, excluding the `-border` and `-subtle-border` suffixes. Default: `none`
+- `bootstrap.theme.content` – Theme utility class for the main content area. Default: `none`
+- `bootstrap.theme.footer` – Theme utility class for the page footer. Default: `none`
+- `bootstrap.theme.header` – Theme utility class for the page header. Default: `primary-contrast`
+- `bootstrap.theme.scrollspy` – Theme utility class for the scrollspy menu. Default: `none`
+- `bootstrap.theme.sidebar` – Theme utility class for the sidebar navigation. Default: `none`
+- `bootstrap.theme.topbar` – Theme utility class for the collapsible top header. Default: `none`
+
+### Bootstrap component utility classes
+
+The HTML output for the following Bootstrap components can be annotated with common Bootstrap utility classes for borders, background, text, spacing, etc. using additional command line parameters:
+
 - `bootstrap.css.accordion` – Common utility classes for Bootstrap accordion components
+- `bootstrap.css.badge` – Common utility classes for Bootstrap badge components
+- `bootstrap.css.button` – Common utility classes for Bootstrap button components
 - `bootstrap.css.card` – Common utility classes for Bootstrap card components
 - `bootstrap.css.carousel` – Common utility classes for Bootstrap carousel components
 - `bootstrap.css.carousel.caption` – Common utility classes for Bootstrap carousel captions
 - `bootstrap.css.carousel.indicators` – Common utility classes for Bootstrap carousel indicators
+- `bootstrap.css.container.size` – Bootstrap container class for main layout and menubar-TOC. Options: `container`, `container-fluid`, `sm:container`, `md:container`, `lg:container`, `xl:container` (default)
+- `bootstrap.css.menubar.toc` – CSS class for the menu bar. Defaults to `sticky-top bg-body`
+- `bootstrap.css.nav.parent` – Common utility classes for ancestors of active nav-pill elements
+- `bootstrap.css.pagination` – Common utility classes for Bootstrap pagination components
+- `bootstrap.css.popover` – Common utility classes for Bootstrap popover components
+- `bootstrap.css.tabs` – Common utility classes for Bootstrap horizontal tab components
+- `bootstrap.css.tabs.vertical` – Common utility classes for Bootstrap vertical tabs
+- `bootstrap.css.tooltip` – Common utility classes for Bootstrap tooltip components
+
+### DITA element utility classes
+
+The HTML output for the following DITA elements can be annotated with common Bootstrap utility classes for borders, background, text, spacing, etc. using additional command line parameters:
+
 - `bootstrap.css.codeblock` – Common Bootstrap utility classes for DITA `<codeblock>` elements
-- `bootstrap.css.container.size` – Bootstrap container class for main layout and menubar-TOC. Options: `container`, `container-fluid`, `container-sm`, `container-md`, `container-lg`, `container-xl`, `container-xxl` (default)
 - `bootstrap.css.dd` – Common utility classes for DITA `<dd>` elements
 - `bootstrap.css.dl` – Common utility classes for DITA `<dl>` elements
 - `bootstrap.css.dt` – Common utility classes for DITA `<dt>` elements
+- `bootstrap.css.example` – Common utility classes for DITA `<example>` elements
 - `bootstrap.css.figure` – Common utility classes for DITA `<fig>` elements
 - `bootstrap.css.figure.caption` – Common utility classes for DITA figure titles
 - `bootstrap.css.figure.image` – Common utility classes for images within DITA`<fig>` elements
-- `bootstrap.css.footer` – Common utility classes for the HTML `<footer>` element
-- `bootstrap.css.nav.parent` – Common utility classes for ancestors of active nav-pill elements
-- `bootstrap.css.pagination` – Common utility classes for Bootstrap pagination components
 - `bootstrap.css.section.title` – Common Bootstrap utility classes for DITA `<section>` titles
 - `bootstrap.css.shortdesc` – Common Bootstrap utility classes for DITA`<shortdesc>` elements
 - `bootstrap.css.table` – Common utility classes for DITA `<table>` elements
-- `bootstrap.css.tabs` – Common utility classes for Bootstrap horizontal tab components
-- `bootstrap.css.tabs.vertical` – Common utility classes for Bootstrap vertical tabs
 - `bootstrap.css.thead` – Common utility classes for DITA `<thead>` elements
 - `bootstrap.css.topic.title` – Common Bootstrap utility classes for DITA `<topic>` titles
 
@@ -249,22 +273,22 @@ The generated HTML created by this software includes the following additional so
 > by Twitter, Inc. and the Bootstrap Authors, and used under CC BY 3.0.
 
 [1]: http://www.dita-ot.org
-[2]: https://getbootstrap.com/docs/5.3
+[2]: https://getbootstrap.com/docs/6.0
 [3]: https://bootswatch.com
 [4]: https://sass-lang.com
 [5]: https://github.com/dita-bootstrap/dita-bootstrap.sass
-[6]: https://getbootstrap.com/docs/5.3/examples/navbars/
-[7]: https://getbootstrap.com/docs/5.3/examples/headers/
+[6]: https://getbootstrap.com/docs/6.0/examples/navbars/
+[7]: https://getbootstrap.com/docs/6.0/examples/headers/
 [8]: ./includes/hdr.navbar.example.xml
 [9]: ./includes/ftr.content.example.xml
-[10]: https://getbootstrap.com/docs/5.3/examples/footers/
+[10]: https://getbootstrap.com/docs/6.0/examples/footers/
 [11]: https://www.dita-ot.org/dev/parameters/parameters-html5.html#html5__nav-toc
-[12]: https://getbootstrap.com/docs/5.3/components/list-group/
-[13]: https://getbootstrap.com/docs/5.3/components/collapse/
-[14]: https://getbootstrap.com/docs/5.3/customize/color-modes/#dark-mode
+[12]: https://getbootstrap.com/docs/6.0/components/list-group/
+[13]: https://getbootstrap.com/docs/6.0/components/collapse/
+[14]: https://getbootstrap.com/docs/6.0/customize/color-modes/#dark-mode
 [15]: https://dita-bootstrap.github.io
 [16]: ./xsl/html5-bootstrap-template.xsl
-[17]: https://getbootstrap.com/docs/5.3/components/scrollspy/
+[17]: https://getbootstrap.com/docs/6.0/components/scrollspy/
 [18]: https://indieweb.social/@infotexture
 [19]: https://github.com/dita-bootstrap/dita-bootstrap.html/issues/new
 [20]: https://help.github.com/articles/using-pull-requests/

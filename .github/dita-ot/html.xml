@@ -28,6 +28,8 @@
       <param name="popovers.include" value="yes"/>
       <param name="dark.mode.include" value="yes"/>
       <param name="css.theme.switcher" value="yes"/>
+      <param name="bootstrap.theme.search.card" value="secondary-border"/>
+      <param name="bootstrap.theme.footer" value="primary-subtle-border"/>
       <param name="open-graph.url" value="https://dita-bootstrap.github.io"/>
       <param name="twitter.site" value="@infotexture"/>
     </publication>

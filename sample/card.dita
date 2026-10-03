@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
@@ -24,35 +24,35 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="about">
       <title>About</title>
       <p>A <b>card</b> is a flexible and extensible content container. It includes options for headers and footers, a
         wide variety of content, contextual background colors, and powerful display options. If you’re familiar with
         Bootstrap 3, cards replace Bootstrap 4.0’s panels, wells, and thumbnails. Similar functionality to those
         components is available as modifier classes for cards.</p>
     </section>
-    <section>
+    <section id="example">
       <title>Example</title>
       <p>Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and
         customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They
         have no <xmlatt>margin</xmlatt> by default, so use
-        <xref href="https://getbootstrap.com/docs/5.3/utilities/spacing/" format="html" scope="external">spacing
+        <xref href="https://getbootstrap.com/docs/6.0/utilities/spacing/" format="html" scope="external">spacing
           utilities</xref> as needed.</p>
       <p
       >Below is an example of a basic card with mixed content and a default width. Card widths are easily customized with Bootstrap’s various
           <xref
-          href="https://getbootstrap.com/docs/5.3/components/card/#sizing"
+          href="https://getbootstrap.com/docs/6.0/components/card/#sizing"
           format="html"
           scope="external"
         >sizing options.</xref>
       </p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <section outputclass="card">
+      <section id="card-title" outputclass="card">
         <title>Card Title</title>
         <image scope="external" href="https://picsum.photos/400/200?a"/>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        <xref href="#" outputclass="btn-primary">Go Somewhere</xref>
+        <xref href="#" outputclass="btn-solid theme-primary">Go Somewhere</xref>
       </section>
     </bodydiv>
     <bodydiv outputclass="nav-pills mt-3">
@@ -62,7 +62,7 @@
   &lt;title outputclass="h5"&gt;Card Title&lt;/title&gt;
   &lt;image outputclass="card-img-top" href="..." /&gt;
   &lt;p&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
-  &lt;xref outputclass="btn-primary" href="#"&gt;Go Somewhere&lt;/xref&gt;
+  &lt;xref outputclass="btn-solid theme-primary" href="#"&gt;Go Somewhere&lt;/xref&gt;
 &lt;/section&gt;</codeblock>
         </section>
          <section>
@@ -75,14 +75,14 @@
 &lt;/card&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="titles-text-and-links">
       <title>Titles, text, and links</title>
       <p>Links are added and placed next to each other by altering the <xmlatt>outputclass</xmlatt> and adding
           <codeph>card-link</codeph> to an <xmlelement>xref</xmlelement> tag.</p>
       <p>Subtitles are used by adding a <xmlelement>div</xmlelement> element.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <section outputclass="card">
+      <section id="card-title-1" outputclass="card">
         <title>Card Title</title>
         <div outputclass="h6">Card Subtitle</div>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
@@ -112,7 +112,7 @@
 &lt;/card&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="images">
       <title>Images</title>
       <p>The first <xmlelement>image</xmlelement> within a <xmlelement
         >card</xmlelement> places an image to the top of the card
@@ -144,18 +144,18 @@
 &lt;/card&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="header-and-footer">
       <title>Header and footer</title>
       <p>Add an optional header and/or footer within a card using the <xmlelement
         >card-header</xmlelement> and <xmlelement>card-footer</xmlelement> elements.
       </p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <section outputclass="card">
+      <section id="special-title-treatment" outputclass="card">
         <title>Special title treatment</title>
         <div outputclass="card-header">Featured</div>
         <p>With supporting text below as a natural lead-in to additional content.</p>
-        <xref href="#" outputclass="btn-primary">Go somewhere</xref>
+        <xref href="#" outputclass="btn-solid theme-primary">Go somewhere</xref>
         <div outputclass="card-footer">2 days ago</div>
       </section>
     </bodydiv>
@@ -166,7 +166,7 @@
   &lt;div outputclass="card-header"&gt;Featured&lt;/div&gt;
   &lt;title outputclass="h5"&gt;Special title treatment&lt;/title&gt;
   &lt;p&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
-  &lt;xref href="#" outputclass="btn-primary"&gt;Go somewhere&lt;/xref&gt;
+  &lt;xref href="#" outputclass="btn-solid theme-primary"&gt;Go somewhere&lt;/xref&gt;
 &lt;/section&gt;</codeblock>
         </section>
          <section>
@@ -180,22 +180,22 @@
 &lt;/card&gt;</codeblock>
         </section>
       </bodydiv>
-    <section>
+    <section id="card-colors">
       <title>Card Colors</title>
-      <p>A card can be colorized by adding a <xmlatt>color</xmlatt> attribute. This
+      <p>A card can be colorized by adding a <xmlatt>theme</xmlatt> attribute. This
         applies a contextual background color.</p>
     </section>
     <bodydiv outputclass="p-3 border">
-      <section outputclass="card text-bg-success">
+      <section id="card-title-2" outputclass="card theme-success">
         <title>Card Title</title>
-        <image scope="external" href="https://picsum.photos/400/200?a"/>
+        <div outputclass="card-header">Success Card</div>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-        <xref href="#" outputclass="btn-primary">Go Somewhere</xref>
+        <xref href="#" outputclass="btn-solid theme-primary">Go Somewhere</xref>
       </section>
     </bodydiv>
-    <codeblock>&lt;card color="success"&gt;
+    <codeblock>&lt;card theme="success"&gt;
   &lt;title&gt;Card Title&lt;/title&gt;
-  &lt;image href="..." /&gt;
+  &lt;div outputclass="card-header"&gt;Success Card&lt;/div&gt;
   &lt;p&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
   &lt;button href="#"&gt;Go Somewhere&lt;/button&gt;
 &lt;/card&gt;</codeblock>
