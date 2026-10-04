@@ -1,0 +1,4 @@
+<fig>
+  <title outputclass="text-end">A caption for the image.</title>
+  <image href="..."/>
+</fig>

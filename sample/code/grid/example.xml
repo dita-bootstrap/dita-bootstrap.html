@@ -1,0 +1,11 @@
+<bodydiv outputclass="row">
+  <bodydiv outputclass="sm:col-3">
+    <p>One of three columns</p>
+  </bodydiv>
+  <bodydiv outputclass="sm:col-3">
+    <p>One of three columns</p>
+  </bodydiv>
+  <bodydiv outputclass="sm:col-3">
+    <p>One of three columns</p>
+  </bodydiv>
+</bodydiv>

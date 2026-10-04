@@ -129,13 +129,7 @@
         >data-bs-target="#bdSidebar"</xmlatt>
         and <xmlatt>data-bs-toggle="drawer"</xmlatt>:
       </p>
-      <codeblock outputclass="language-xml" deliveryTarget="html">&lt;div class="bd-navbar-toggle"&gt;
-  &lt;button class="lg:d-none p-2" type="button"
-    data-bs-toggle="drawer" data-bs-target="#bdSidebar"
-    aria-controls="bdSidebar" aria-label="Toggle docs navigation"&gt;
-    &lt;i class="bi bi-list"/&gt;
-  &lt;/button&gt;
-&lt;/div&gt;</codeblock>
+      <codeblock outputclass="language-xml" deliveryTarget="html"><coderef href="code/nav/collapsible-styled-full-toc-with-collapsible-elements.xml"/></codeblock>
 
       <p>The look and feel of the mobile sidebar header can be altered using the <parmname
         >--bootstrap.sidebar.hdr</parmname> parameter and supplying an HTML header file:</p>
@@ -231,10 +225,6 @@
     <codeblock
       outputclass="language-xml"
       deliveryTarget="html"
-    >&lt;topicref navtitle="Search Box" format="dita" type="topic" href="search-box.dita">
-  &lt;topicmeta&gt;
-    &lt;othermeta name="divider" content="Additional Plug-ins"/&gt;
-  &lt;/topicmeta&gt;
-&lt;/topicref&gt;</codeblock>
+    ><coderef href="code/nav/dividers.xml"/></codeblock>
   </body>
 </topic>

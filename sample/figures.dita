@@ -42,10 +42,7 @@
         <image scope="external" href="https://picsum.photos/1200/600?a"/>
       </fig>
     </example>
-    <codeblock>&lt;fig&gt;
-  &lt;title&gt;A caption for the image.&lt;/title&gt;
-  &lt;image href="..."/&gt;
-&lt;/fig&gt;</codeblock>
+    <codeblock><coderef href="code/figures/a-caption-for-the-image.xml"/></codeblock>
     <section id="aligning-text">
       <title>Aligning text</title>
       <p>The figure’s caption can be aligned using the Bootstrap
@@ -57,10 +54,7 @@
         <image scope="external" href="https://picsum.photos/1200/600?b"/>
       </fig>
     </example>
-    <codeblock>&lt;fig&gt;
-  &lt;title outputclass="text-end"&gt;A caption for the image.&lt;/title&gt;
-  &lt;image href="..."/&gt;
-&lt;/fig&gt;</codeblock>
+    <codeblock><coderef href="code/figures/a-caption-for-the-image-2.xml"/></codeblock>
 
     <section id="adding-borders">
       <title>Adding borders</title>
@@ -70,44 +64,29 @@
     <example>
       <fig frame="all">
         <title>All Borders</title>
-        <codeblock>frame="all"</codeblock>
+        <codeblock><coderef href="code/figures/all-borders.xml"/></codeblock>
       </fig>
       <p/>
       <fig frame="topbot">
         <title>Top and Bottom Borders</title>
-        <codeblock>frame="topbot"</codeblock>
+        <codeblock><coderef href="code/figures/top-and-bottom-borders.xml"/></codeblock>
       </fig>
       <p/>
       <fig frame="sides">
         <title>Side Borders</title>
-        <codeblock>frame="sides"</codeblock>
+        <codeblock><coderef href="code/figures/side-borders.xml"/></codeblock>
       </fig>
       <p/>
       <fig frame="top">
         <title>Top Border only</title>
-        <codeblock>frame="top"</codeblock>
+        <codeblock><coderef href="code/figures/top-border-only.xml"/></codeblock>
       </fig>
       <p/>
       <fig frame="bottom">
         <title>Bottom Border Only</title>
-        <codeblock>frame="bottom"</codeblock>
+        <codeblock><coderef href="code/figures/bottom-border-only.xml"/></codeblock>
       </fig>
     </example>
-    <codeblock>&lt;fig frame="all"&gt;
-  ...
-&lt;/fig&gt;
-&lt;fig frame="topbot"&gt;
-  ...
-&lt;/fig&gt;
-&lt;fig frame="sides"&gt;
-  ...
-&lt;/fig&gt;
-&lt;fig frame="top"&gt;
-  ...
-&lt;/fig&gt;
-&lt;fig frame="bottom"&gt;
-  ...
-&lt;/fig&gt;
-    </codeblock>
+    <codeblock><coderef href="code/figures/bottom-border-only-2.xml"/></codeblock>
   </body>
 </topic>

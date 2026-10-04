@@ -1,0 +1,16 @@
+<xref href="#" outputclass="btn-solid theme-secondary tooltip-top">
+  <desc>Tooltip on top</desc>
+  Tooltip on top
+</xref>
+<xref href="#" outputclass="btn-solid theme-secondary tooltip-right">
+  <desc>Tooltip on right</desc>
+  Tooltip on right
+</xref>
+<xref href="#" outputclass="btn-solid theme-secondary tooltip-bottom">
+  <desc>Tooltip on bottom</desc>
+  Tooltip on bottom
+</xref>
+<xref href="#" outputclass="btn-solid theme-secondary tooltip-left">
+  <desc>Tooltip on left</desc>
+  Tooltip on left
+</xref>

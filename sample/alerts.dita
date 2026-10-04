@@ -34,20 +34,7 @@
     <bodydiv outputclass="p-3 border">
       <section outputclass="alert">A simple alert — check it out!</section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;section outputclass="alert"&gt;
-  A simple alert — check it out!
-&lt;/section&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;alert&gt;
-  A simple alert — check it out!
-&lt;/alert&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/alerts/basic.xml"/></codeblock>
 
     <section id="variants">
       <title>Variants</title>
@@ -69,57 +56,11 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;section outputclass="alert theme-primary fg-emphasis-primary"&gt;
-  A simple primary alert — check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert theme-secondary fg-emphasis-secondary"&gt;
-  A simple secondary alert — check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert theme-success fg-emphasis-success"&gt;
-  A simple success alert — check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert theme-danger fg-emphasis-danger"&gt;
-  A simple danger alert — check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert theme-warning fg-emphasis-warning"&gt;
-  A simple warning alert — check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert theme-info fg-emphasis-info"&gt;
-  A simple info alert — check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert theme-accent fg-emphasis-accent"&gt;
-  A simple accent alert — check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert theme-inverse fg-emphasis-inverse"&gt;
-  A simple inverse alert — check it out!
-&lt;/section&gt;</codeblock>
+          <codeblock><coderef href="code/alerts/variants-outputclass.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;alert theme="primary-subtle-border"&gt;
-  A simple primary alert — check it out!
-&lt;/alert&gt;
-&lt;alert theme="secondary-subtle-border"&gt;
-  A simple secondary alert — check it out!
-&lt;/alert&gt;
-&lt;alert theme="success-subtle-border"&gt;
-  A simple success alert — check it out!
-&lt;/alert&gt;
-&lt;alert theme="danger-subtle-border"&gt;
-  A simple danger alert — check it out!
-&lt;/alert&gt;
-&lt;alert theme="warning-subtle-border"&gt;
-  A simple warning alert — check it out!
-&lt;/alert&gt;
-&lt;alert theme="info-subtle-border"&gt;
-  A simple info alert — check it out!
-&lt;/alert&gt;
-&lt;alert theme="accent-subtle-border"&gt;
-  A simple accent alert — check it out!
-&lt;/alert&gt;
-&lt;alert theme="inverse-subtle-border"&gt;
-  A simple inverse alert — check it out!
-&lt;/alert&gt;</codeblock>
+        <codeblock><coderef href="code/alerts/variants-specialization.xml"/></codeblock>
       </section>
     </bodydiv>
 
@@ -136,36 +77,7 @@
         <p>Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
       </section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;section outputclass="alert theme-success vstack"&gt;
-  &lt;title&gt;&lt;i outputclass="bi bi-emoji-smile pe-2"/&gt;Well done!&lt;/title&gt;
-  &lt;p&gt;
-    Aww yeah, you successfully read this important alert message. This example text with a
-    &lt;xref href="#"&gt;link&lt;/xref&gt; is going to run a bit longer so that you can see
-    how spacing within an alert works with this kind of content.
-  &lt;/p&gt;
-  &lt;p&gt;
-    Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
-  &lt;/p&gt;
-&lt;/section&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;alert theme="success-contrast" outputclass="vstack"&gt;
-  &lt;title&gt;&lt;icon outputclass="bi-emoji-smile" padding="e2"/&gt;Well done!&lt;/title&gt;
-  &lt;p&gt;
-    Aww yeah, you successfully read this important alert message. This example text with a
-    &lt;xref href="#"&gt;link&lt;/xref&gt; is going to run a bit longer so that you can see
-    how spacing within an alert works with this kind of content.
-  &lt;/p&gt;
-  &lt;p&gt;
-    Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
-  &lt;/p&gt;
-&lt;/alert&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/alerts/additional-content.xml"/></codeblock>
 
     <section id="with-icons">
       <title>With icons</title>
@@ -180,17 +92,11 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;section outputclass="alert theme-primary d-flex align-items-center"&gt;
-  &lt;ph outputclass="bi bi-exclamation-triangle-fill flex-shrink-0 pe-2"/&gt;An example alert with an icon
-&lt;/section&gt;</codeblock>
+        <codeblock><coderef href="code/alerts/with-icons-outputclass.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;alert theme="primary-subtle-border"&gt;
-  &lt;div&gt;
-    &lt;icon outputclass="bi-exclamation-triangle-fill flex-shrink-0" padding="e2"/&gt;An example alert with an icon
-  &lt;/div&gt;
-&lt;/alert&gt;</codeblock>
+        <codeblock><coderef href="code/alerts/with-icons-specialization.xml"/></codeblock>
       </section>
     </bodydiv>
 
@@ -213,39 +119,7 @@
       <note type="danger">You may hurt yourself!</note>
       <note type="other" othertype="Another note">This is something other than a normal note.</note>
     </example>
-    <codeblock>&lt;note type="note"&gt;
-  This is just a note.
-&lt;/note&gt;
-&lt;note type="notice"&gt;
-  Notice this piece of information.
-&lt;/note&gt;
-&lt;note type="fastpath"&gt;
-  This note will speed you on your way.
-&lt;/note&gt;
-&lt;note type="remember"&gt;
-  Don't forget to do what this note says.
-&lt;/note&gt;
-&lt;note type="tip"&gt;
-  This is a fine little tip.
-&lt;/note&gt;
-&lt;note type="attention"&gt;
-  Please pay extra attention to this note.
-&lt;/note&gt;
-&lt;note type="caution"&gt;
-  Care is required when proceeding.
-&lt;/note&gt;
-&lt;note type="important"&gt;
-  This note is important.
-&lt;/note&gt;
-&lt;note type="restriction"&gt;
-  You can't do what this note says.
-&lt;/note&gt;
-&lt;note type="danger"&gt;
-  You may hurt yourself!
-&lt;/note&gt;
-&lt;note type="other" othertype="Another note"&gt;
-  This is something other than a normal note.
-&lt;/note&gt;</codeblock>
+    <codeblock><coderef href="code/alerts/notes.xml"/></codeblock>
     <p>The default colors can be overridden by using a <xmlatt>theme</xmlatt> attribute or an <xmlatt
       >outputclass</xmlatt>.</p>
     <example>
@@ -254,36 +128,7 @@
       <note outputclass="theme-accent">This is accent note.</note>
       <note outputclass="theme-inverse">This is inverse note.</note>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;note type="note" outputclass="theme-primary"&gt;
-  This is a primary note.&lt;/note&gt;
-&lt;note type="note" outputclass="theme-secondary"&gt;
-  This is a secondary note.&lt;/note&gt;
-&lt;note type="note" outputclass="theme-accent"&gt;
-  This is accent note.
-&lt;/note&gt;
-&lt;note type="note" outputclass="theme-inverse"&gt;
-  This is inverse note.
-&lt;/note&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;note theme="primary-contrast"&gt;
-  This is a high contrast primary note.
-&lt;/note&gt;
-&lt;note theme="secondary-contrast"&gt;
-  This is a high contrast secondary note.
-&lt;/note&gt;
-&lt;note theme="accent-contrast"&gt;
-  This is a high contrast accent note.
-&lt;/note&gt;
-&lt;note theme="inverse-contrast"&gt;
-  This is a high contrast inverse note.
-&lt;/note&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/alerts/note-colors.xml"/></codeblock>
 
     <p>Use an additional <xmlatt>icon</xmlatt> attribute or <xmlatt>otherprops</xmlatt> to alter the default icon.</p>
     <example>
@@ -293,25 +138,6 @@
         otherprops="icon(bi bi-emoji-smile) style(font-size: 2rem; color: cornflowerblue;)"
       >This note uses a styled smile emoji.</note>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;note otherprops="icon(bi-search)" type="other" othertype="Search"&gt;
-  This note has a search icon.
-&lt;/note&gt;
-&lt;note otherprops="icon(bi-emoji-smile), style(font-size: 2rem; color: cornflowerblue;)" type="note" othertype="Another note"&gt;
-  This note uses a styled smile emoji.
-&lt;/note&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;note icon="bi-search" type="other" othertype="Search"&gt;
-  This note has a search icon.
-&lt;/note&gt;
-&lt;note icon="bi bi-emoji-smile" style="font-size: 2rem; color: cornflowerblue;" type="note"&gt;
-  This note uses a styled smile emoji.
-&lt;/note&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/alerts/note-icons.xml"/></codeblock>
   </body>
 </topic>

@@ -40,28 +40,7 @@
         <li>And a fifth one</li>
       </ul>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ul outputclass="list-group"&gt;
-  &lt;li&gt;An item&lt;/li&gt;
-  &lt;li&gt;A second item&lt;/li&gt;
-  &lt;li&gt;A third item&lt;/li&gt;
-  &lt;li&gt;A fourth item&lt;/li&gt;
-  &lt;li&gt;And a fifth one&lt;/li&gt;
-&lt;/ul&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;list-group&gt;
-  &lt;li&gt;An item&lt;/li&gt;
-  &lt;li&gt;A second item&lt;/li&gt;
-  &lt;li&gt;A third item&lt;/li&gt;
-  &lt;li&gt;A fourth item&lt;/li&gt;
-  &lt;li&gt;And a fifth one&lt;/li&gt;
-&lt;/list-group&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/list-group/basic-example.xml"/></codeblock>
     <section id="compacted-list-group">
       <title>Compacted list group</title>
       <p>Add <xmlatt>compact="yes"</xmlatt> to reduce the padding of list items</p>
@@ -73,20 +52,7 @@
         <li>Item Three</li>
       </ul>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ul outputclass="list-group" compact="yes" &gt;
-  ...
-&lt;/ul&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;list-group compact="yes"&gt;
-  ...
-&lt;/list-group&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/list-group/compacted-list-group.xml"/></codeblock>
     <section id="expanded-list-group">
       <title>Expanded list group</title>
       <p>Add <xmlatt>compact="no"</xmlatt> to increase the padding of list items</p>
@@ -98,20 +64,7 @@
         <li>Item Three</li>
       </ul>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ul outputclass="list-group" compact="no" &gt;
-  ...
-&lt;/ul&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;list-group compact="no"&gt;
-  ...
-&lt;/list-group&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/list-group/expanded-list-group.xml"/></codeblock>
     <section id="flush">
       <title>Flush</title>
       <p>Add a <xmlatt>flush="yes"</xmlatt> to remove some borders and
@@ -126,27 +79,6 @@
         <li>And a fifth one</li>
       </ul>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ul outputclass="list-group-flush"&gt;
-  &lt;li&gt;An item&lt;/li&gt;
-  &lt;li&gt;A second item&lt;/li&gt;
-  &lt;li&gt;A third item&lt;/li&gt;
-  &lt;li&gt;A fourth item&lt;/li&gt;
-  &lt;li&gt;And a fifth one&lt;/li&gt;
-&lt;/ul&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;list-group flush="yes"&gt;
-  &lt;li&gt;An item&lt;/li&gt;
-  &lt;li&gt;A second item&lt;/li&gt;
-  &lt;li&gt;A third item&lt;/li&gt;
-  &lt;li&gt;A fourth item&lt;/li&gt;
-  &lt;li&gt;And a fifth one&lt;/li&gt;
-&lt;/list-group&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/list-group/flush.xml"/></codeblock>
   </body>
 </topic>

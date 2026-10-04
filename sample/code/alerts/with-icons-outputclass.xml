@@ -1,0 +1,3 @@
+<section outputclass="alert theme-primary d-flex align-items-center">
+  <ph outputclass="bi bi-exclamation-triangle-fill flex-shrink-0 pe-2"/>An example alert with an icon
+</section>

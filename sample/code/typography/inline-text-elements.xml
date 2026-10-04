@@ -1,0 +1,8 @@
+<p>You can use <xmlatt>outputclass="mark"</xmlatt> to <ph outputclass="mark">highlight</ph> text.</p>
+<p><line-through>This line of text is meant to be treated as deleted
+  text.</line-through></p>
+<p><u>This line of text will render as underlined.</u></p>
+<p outputclass="small">This line of text using <xmlatt>outputclass="small"</xmlatt>
+  is meant to be treated as fine print.</p>
+<p><b>This line rendered as bold text.</b></p>
+<p><i>This line rendered as italicized text.</i></p>

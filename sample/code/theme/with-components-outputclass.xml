@@ -1,0 +1,7 @@
+<div outputclass="theme-primary">
+  <div outputclass="d-flex gap-2 mb-3">
+    <ph outputclass="badge theme-contrast">Contrast badge</ph>
+    <ph outputclass="badge theme-subtle">Subtle badge</ph>
+    <ph outputclass="badge theme-muted">Muted badge</ph>
+  </div>
+</div>

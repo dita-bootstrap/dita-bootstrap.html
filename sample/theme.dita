@@ -57,25 +57,11 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="p-2 theme-primary theme-contrast"&gt;primary-contrast&lt;/div&gt;
-&lt;div outputclass="p-2 theme-accent theme-contrast"&gt;accent-contrast&lt;/div&gt;
-&lt;div outputclass="p-2 theme-success theme-contrast"&gt;success-contrast&lt;/div&gt;
-&lt;div outputclass="p-2 theme-danger theme-contrast"&gt;danger-contrast&lt;/div&gt;
-&lt;div outputclass="p-2 theme-warning theme-contrast"&gt;warning-contrast&lt;/div&gt;
-&lt;div outputclass="p-2 theme-info theme-contrast"&gt;info-contrast&lt;/div&gt;
-&lt;div outputclass="p-2 theme-inverse theme-contrast"&gt;inverse-contrast&lt;/div&gt;
-&lt;div outputclass="p-2 theme-secondary theme-contrast"&gt;secondary-contrast&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/contrast-outputclass.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div theme="primary-contrast" padding="2"&gt;primary-contrast&lt;/div&gt;
-&lt;div theme="accent-contrast" padding="2"&gt;accent-contrast&lt;/div&gt;
-&lt;div theme="success-contrast" padding="2"&gt;success-contrast&lt;/div&gt;
-&lt;div theme="danger-contrast" padding="2"&gt;danger-contrast&lt;/div&gt;
-&lt;div theme="warning-contrast" padding="2"&gt;warning-contrast&lt;/div&gt;
-&lt;div theme="info-contrast" padding="2"&gt;info-contrast&lt;/div&gt;
-&lt;div theme="inverse-contrast" padding="2"&gt;inverse-contrast&lt;/div&gt;
-&lt;div theme="secondary-contrast" padding="2"&gt;secondary-contrast&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/contrast-specialization.xml"/></codeblock>
       </section>
     </bodydiv>
 
@@ -103,13 +89,11 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="p-3 theme-primary theme-contrast"&gt;Theme Primary with a
-  &lt;xref href="#"&gt;nested link&lt;/xref&gt; inside.&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/contrast-outputclass-2.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div theme="primary-contrast" padding="3"&gt;Theme Primary with a
-  &lt;xref href="#"&gt;nested link&lt;/xref&gt; inside.&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/contrast-specialization-2.xml"/></codeblock>
       </section>
     </bodydiv>
 
@@ -142,25 +126,11 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="p-2 theme-primary theme-subtle"&gt;primary-subtle&lt;/div&gt;
-&lt;div outputclass="p-2 theme-accent theme-subtle"&gt;accent-subtle&lt;/div&gt;
-&lt;div outputclass="p-2 theme-success theme-subtle"&gt;success-subtle&lt;/div&gt;
-&lt;div outputclass="p-2 theme-danger theme-subtle"&gt;danger-subtle&lt;/div&gt;
-&lt;div outputclass="p-2 theme-warning theme-subtle"&gt;warning-subtle&lt;/div&gt;
-&lt;div outputclass="p-2 theme-info theme-subtle"&gt;info-subtle&lt;/div&gt;
-&lt;div outputclass="p-2 theme-inverse theme-subtle"&gt;inverse-subtle&lt;/div&gt;
-&lt;div outputclass="p-2 theme-secondary theme-subtle"&gt;secondary-subtle&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/subtle-outputclass.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div theme="primary-subtle" padding="2"&gt;primary-subtle&lt;/div&gt;
-&lt;div theme="accent-subtle" padding="2"&gt;accent-subtle&lt;/div&gt;
-&lt;div theme="success-subtle" padding="2"&gt;success-subtle&lt;/div&gt;
-&lt;div theme="danger-subtle" padding="2"&gt;danger-subtle&lt;/div&gt;
-&lt;div theme="warning-subtle" padding="2"&gt;warning-subtle&lt;/div&gt;
-&lt;div theme="info-subtle" padding="2"&gt;info-subtle&lt;/div&gt;
-&lt;div theme="inverse-subtle" padding="2"&gt;inverse-subtle&lt;/div&gt;
-&lt;div theme="secondary-subtle" padding="2"&gt;secondary-subtle&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/subtle-specialization.xml"/></codeblock>
       </section>
     </bodydiv>
 
@@ -189,25 +159,11 @@
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock
-        >&lt;div outputclass="p-2 theme-primary theme-subtle theme-border"&gt;primary-subtle-border&lt;/div&gt;
-&lt;div outputclass="p-2 theme-accent theme-subtle theme-border"&gt;accent-subtle-border&lt;/div&gt;
-&lt;div outputclass="p-2 theme-success theme-subtle theme-border"&gt;success-subtle-border&lt;/div&gt;
-&lt;div outputclass="p-2 theme-danger theme-subtle theme-border"&gt;danger-subtle-border&lt;/div&gt;
-&lt;div outputclass="p-2 theme-warning theme-subtle theme-border"&gt;warning-subtle-border&lt;/div&gt;
-&lt;div outputclass="p-2 theme-info theme-subtle theme-border"&gt;info-subtle-border&lt;/div&gt;
-&lt;div outputclass="p-2 theme-inverse theme-subtle theme-border"&gt;inverse-subtle-border&lt;/div&gt;
-&lt;div outputclass="p-2 theme-secondary theme-subtle theme-border"&gt;secondary-subtle-border&lt;/div&gt;</codeblock>
+        ><coderef href="code/theme/subtle-outputclass-2.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div theme="primary-subtle-border" padding="2"&gt;primary-subtle-border&lt;/div&gt;
-&lt;div theme="accent-subtle-border" padding="2"&gt;accent-subtle-border&lt;/div&gt;
-&lt;div theme="success-subtle-border" padding="2"&gt;success-subtle-border&lt;/div&gt;
-&lt;div theme="danger-subtle-border" padding="2"&gt;danger-subtle-border&lt;/div&gt;
-&lt;div theme="warning-subtle-border" padding="2"&gt;warning-subtle-border&lt;/div&gt;
-&lt;div theme="info-subtle-border" padding="2"&gt;info-subtle-border&lt;/div&gt;
-&lt;div theme="inverse-subtle-border" padding="2"&gt;inverse-subtle-border&lt;/div&gt;
-&lt;div theme="secondary-subtle-border" padding="2"&gt;secondary-subtle-border&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/subtle-specialization-2.xml"/></codeblock>
       </section>
     </bodydiv>
 
@@ -235,13 +191,11 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="p-3 theme-primary theme-subtle"&gt;Theme Primary with a
-  &lt;xref href="#"&gt;nested link&lt;/xref&gt; inside.&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/subtle-outputclass-3.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div theme="primary-subtle" padding="3"&gt;Theme Primary with a
-  &lt;xref href="#"&gt;nested link&lt;/xref&gt; inside.&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/subtle-specialization-3.xml"/></codeblock>
       </section>
     </bodydiv>
 
@@ -274,25 +228,11 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="p-2 theme-primary theme-muted"&gt;primary-muted&lt;/div&gt;
-&lt;div outputclass="p-2 theme-accent theme-muted"&gt;accent-muted&lt;/div&gt;
-&lt;div outputclass="p-2 theme-success theme-muted"&gt;success-muted&lt;/div&gt;
-&lt;div outputclass="p-2 theme-danger theme-muted"&gt;danger-muted&lt;/div&gt;
-&lt;div outputclass="p-2 theme-warning theme-muted"&gt;warning-muted&lt;/div&gt;
-&lt;div outputclass="p-2 theme-info theme-muted"&gt;info-muted&lt;/div&gt;
-&lt;div outputclass="p-2 theme-inverse theme-muted"&gt;inverse-muted&lt;/div&gt;
-&lt;div outputclass="p-2 theme-secondary theme-muted"&gt;secondary-muted&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/muted-outputclass.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div theme="primary-muted" padding="2"&gt;primary-muted&lt;/div&gt;
-&lt;div theme="accent-muted" padding="2"&gt;accent-muted&lt;/div&gt;
-&lt;div theme="success-muted" padding="2"&gt;success-muted&lt;/div&gt;
-&lt;div theme="danger-muted" padding="2"&gt;danger-muted&lt;/div&gt;
-&lt;div theme="warning-muted" padding="2"&gt;warning-muted&lt;/div&gt;
-&lt;div theme="info-muted" padding="2"&gt;info-muted&lt;/div&gt;
-&lt;div theme="inverse-muted" padding="2"&gt;inverse-muted&lt;/div&gt;
-&lt;div theme="secondary-muted" padding="2"&gt;secondary-muted&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/muted-specialization.xml"/></codeblock>
       </section>
     </bodydiv>
 
@@ -320,13 +260,11 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="p-3 theme-primary theme-muted"&gt;Theme Primary with a
-  &lt;xref href="#"&gt;nested link&lt;/xref&gt; inside.&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/muted-outputclass-2.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div theme="primary-muted" padding="3"&gt;Theme Primary with a
-  &lt;xref href="#"&gt;nested link&lt;/xref&gt; inside.&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/muted-specialization-2.xml"/></codeblock>
       </section>
     </bodydiv>
 
@@ -404,25 +342,11 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="d-flex gap-2 mb-2"&gt;
-  &lt;div outputclass="theme-primary theme-contrast p-3 flex-fill text-center rounded"&gt;Primary with a
-    &lt;xref href="#"&gt;link&lt;/xref&gt;&lt;/div&gt;
-  &lt;div outputclass="theme-primary theme-subtle p-3 flex-fill text-center rounded"&gt;Primary with a
-    &lt;xref href="#"&gt;link&lt;/xref&gt;&lt;/div&gt;
-  &lt;div outputclass="theme-primary theme-muted p-3 flex-fill text-center rounded"&gt;Primary with a
-    &lt;xref href="#"&gt;link&lt;/xref&gt;&lt;/div&gt;
-&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/comparison-outputclass.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div outputclass="d-flex gap-2" margin="b2"&gt;
-  &lt;div theme="primary-contrast" padding="3" rounded="yes" outputclass="flex-fill text-center"&gt;Primary with a
-    &lt;xref href="#"&gt;link&lt;/xref&gt;&lt;/div&gt;
-  &lt;div theme="primary-subtle" padding="3" rounded="yes" outputclass="flex-fill text-center"&gt;Primary with a
-    &lt;xref href="#"&gt;link&lt;/xref&gt;&lt;/div&gt;
-  &lt;div theme="primary-muted" padding="3" rounded="yes" outputclass="flex-fill text-center"&gt;Primary with a
-    &lt;xref href="#"&gt;link&lt;/xref&gt;&lt;/div&gt;
-&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/comparison-specialization.xml"/></codeblock>
       </section>
     </bodydiv>
 
@@ -450,21 +374,11 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="theme-primary"&gt;
-  &lt;div outputclass="d-flex gap-2 mb-3"&gt;
-    &lt;ph outputclass="badge theme-contrast"&gt;Contrast badge&lt;/ph&gt;
-    &lt;ph outputclass="badge theme-subtle"&gt;Subtle badge&lt;/ph&gt;
-    &lt;ph outputclass="badge theme-muted"&gt;Muted badge&lt;/ph&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/with-components-outputclass.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div outputclass="d-flex gap-2 mb-3"&gt;
-  &lt;badge theme="primary"&gt;Solid badge&lt;/badge&gt;
-  &lt;badge theme="primary-outline"&gt;Outline badge&lt;/badge&gt;
-  &lt;badge theme="primary-subtle"&gt;Subtle badge&lt;/badge&gt;
-&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/with-components-specialization.xml"/></codeblock>
       </section>
     </bodydiv>
 
@@ -480,19 +394,11 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="d-flex gap-2"&gt;
-  &lt;div outputclass="theme-success theme-contrast p-3 rounded"&gt;Success&lt;/div&gt;
-  &lt;div outputclass="theme-warning theme-contrast p-3 rounded"&gt;Warning&lt;/div&gt;
-  &lt;div outputclass="theme-danger theme-contrast p-3 rounded"&gt;Danger&lt;/div&gt;
-&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/with-components-outputclass-2.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div outputclass="d-flex gap-2"&gt;
-  &lt;div theme="success-contrast" padding="3" rounded="yes"&gt;Success&lt;/div&gt;
-  &lt;div theme="warning-contrast" padding="3" rounded="yes"&gt;Warning&lt;/div&gt;
-  &lt;div theme="danger-contrast" padding="3" rounded="yes"&gt;Danger&lt;/div&gt;
-&lt;/div&gt;</codeblock>
+        <codeblock><coderef href="code/theme/with-components-specialization-2.xml"/></codeblock>
       </section>
     </bodydiv>
 

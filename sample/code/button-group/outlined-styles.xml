@@ -1,0 +1,5 @@
+<div outputclass="btn-group">
+  <xref outputclass="btn-outline theme-primary" href="#">Left</xref>
+  <xref outputclass="btn-outline theme-primary" href="#">Middle</xref>
+  <xref outputclass="btn-outline theme-primary" href="#">Right</xref>
+</div>

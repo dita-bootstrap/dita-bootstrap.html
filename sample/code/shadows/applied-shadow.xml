@@ -1,0 +1,8 @@
+<section outputclass="card shadow-lg m-3 bg-subtle-accent">
+  <div outputclass="card-body">
+    <div outputclass="card-title h5">Shadowed Card</div>
+    <p outputclass="card-text">This card has a large shadow.</p>
+  </div>
+</section>
+
+<div outputclass="alert theme-accent m-3 shadow-sm">Alert with small shadow</div>

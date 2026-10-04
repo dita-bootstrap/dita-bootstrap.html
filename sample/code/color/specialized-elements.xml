@@ -1,0 +1,17 @@
+<img src="..." class="img-thumbnail bg-warning"/>
+
+<section outputclass="card theme-success w-50">
+  ...
+</section>
+
+<bodydiv outputclass="accordion theme-info">
+  ...
+</bodydiv>
+
+<ul outputclass="list-group theme-danger w-50">
+  ...
+</ul>
+
+<ul outputclass="carousel theme-inverse theme-muted w-50">
+  ...
+</ul>

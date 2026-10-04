@@ -1,0 +1,5 @@
+<div outputclass="d-flex gap-2">
+  <div outputclass="theme-success theme-contrast p-3 rounded">Success</div>
+  <div outputclass="theme-warning theme-contrast p-3 rounded">Warning</div>
+  <div outputclass="theme-danger theme-contrast p-3 rounded">Danger</div>
+</div>

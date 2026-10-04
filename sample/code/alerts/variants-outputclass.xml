@@ -1,0 +1,24 @@
+<section outputclass="alert theme-primary fg-emphasis-primary">
+  A simple primary alert — check it out!
+</section>
+<section outputclass="alert theme-secondary fg-emphasis-secondary">
+  A simple secondary alert — check it out!
+</section>
+<section outputclass="alert theme-success fg-emphasis-success">
+  A simple success alert — check it out!
+</section>
+<section outputclass="alert theme-danger fg-emphasis-danger">
+  A simple danger alert — check it out!
+</section>
+<section outputclass="alert theme-warning fg-emphasis-warning">
+  A simple warning alert — check it out!
+</section>
+<section outputclass="alert theme-info fg-emphasis-info">
+  A simple info alert — check it out!
+</section>
+<section outputclass="alert theme-accent fg-emphasis-accent">
+  A simple accent alert — check it out!
+</section>
+<section outputclass="alert theme-inverse fg-emphasis-inverse">
+  A simple inverse alert — check it out!
+</section>

@@ -37,28 +37,7 @@
       <div outputclass="theme-accent theme-contrast m-auto p-2 w-50">Margin Auto</div>
     </example>
 
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="theme-primary theme-contrast m-0 p-2"&gt;Margin 0&lt;/div&gt;
-&lt;div outputclass="theme-secondary theme-contrast m-1 p-2"&gt;Margin 1&lt;/div&gt;
-&lt;div outputclass="theme-success theme-contrast m-2 p-2"&gt;Margin 2&lt;/div&gt;
-&lt;div outputclass="theme-danger theme-contrast m-3 p-2"&gt;Margin 3&lt;/div&gt;
-&lt;div outputclass="theme-warning theme-contrast m-4 p-2"&gt;Margin 4&lt;/div&gt;
-&lt;div outputclass="theme-info theme-contrast m-5 p-2"&gt;Margin 5&lt;/div&gt;
-&lt;div outputclass="theme-accent theme-contrast m-auto p-2 w-50"&gt;Margin Auto&lt;/div&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;div theme="primary-contrast" margin="0" padding="2"&gt;Margin 0&lt;/div&gt;
-&lt;div theme="secondary-contrast" margin="1" padding="2"&gt;Margin 1&lt;/div&gt;
-&lt;div theme="success-contrast" margin="2" padding="2"&gt;Margin 2&lt;/div&gt;
-&lt;div theme="danger-contrast" margin="3" padding="2"&gt;Margin 3&lt;/div&gt;
-&lt;div theme="warning-contrast" margin="4" padding="2"&gt;Margin 4&lt;/div&gt;
-&lt;div theme="info-contrast" margin="5" padding="2"&gt;Margin 5&lt;/div&gt;
-&lt;div theme="accent-contrast" margin="auto" padding="2" width="50"&gt;Margin Auto&lt;/div&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/spacing/margin.xml"/></codeblock>
 
     <section id="padding">
       <title>Padding</title>
@@ -85,26 +64,7 @@
         >Padding 5</div></div>
     </example>
 
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="theme-primary theme-contrast p-0"&gt;Padding 0&lt;/div&gt;
-&lt;div outputclass="theme-secondary theme-contrast p-1 m-1"&gt;Padding 1&lt;/div&gt;
-&lt;div outputclass="theme-success theme-contrast p-2 m-1"&gt;Padding 2&lt;/div&gt;
-&lt;div outputclass="theme-danger theme-contrast p-3 m-1"&gt;Padding 3&lt;/div&gt;
-&lt;div outputclass="theme-warning theme-contrast p-4 m-1"&gt;Padding 4&lt;/div&gt;
-&lt;div outputclass="theme-info theme-contrast p-5 m-1"&gt;Padding 5&lt;/div&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;div theme="primary-contrast" padding="0"&gt;Padding 0&lt;/div&gt;
-&lt;div theme="secondary-contrast" padding="1" margin="1"&gt;Padding 1&lt;/div&gt;
-&lt;div theme="success-contrast" padding="2" margin="1"&gt;Padding 2&lt;/div&gt;
-&lt;div theme="danger-contrast" padding="3" margin="1"&gt;Padding 3&lt;/div&gt;
-&lt;div theme="warning-contrast" padding="4" margin="1"&gt;Padding 4&lt;/div&gt;
-&lt;div theme="info-contrast" padding="5" margin="1"&gt;Padding 5&lt;/div&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/spacing/padding.xml"/></codeblock>
 
     <section id="directional-spacing">
       <title>Directional Spacing</title>
@@ -132,21 +92,6 @@
         >Padding Start 3, End 1</div></div>
     </example>
 
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="bg-primary mt-5 mb-0"&gt;Margin Top 5, Bottom 0&lt;/div&gt;
-&lt;div outputclass="bg-secondary mx-3"&gt;Margin Horizontal 3&lt;/div&gt;
-&lt;div outputclass="bg-success py-5"&gt;Padding Vertical 5&lt;/div&gt;
-&lt;div outputclass="bg-danger ps-3 pe-1"&gt;Padding Start 3, End 1&lt;/div&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;div theme="primary-contrast" margin="t5 b0"&gt;Margin Top 5, Bottom 0&lt;/div&gt;
-&lt;div theme="secondary-contrast" margin="x3"&gt;Margin Horizontal 3&lt;/div&gt;
-&lt;div theme="success-contrast" padding="y5"&gt;Padding Vertical 5&lt;/div&gt;
-&lt;div theme="danger-contrast" padding="s3 e1"&gt;Padding Start 3, End 1&lt;/div&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/spacing/directional-spacing.xml"/></codeblock>
   </body>
 </topic>

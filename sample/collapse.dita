@@ -42,34 +42,7 @@
         </section>
       </bodydiv>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;p&gt;
-  &lt;xref outputclass="btn-solid theme-primary" props="collapse-toggle" href="#collapse1"&gt;
-    Toggle Collapse
-  &lt;/xref&gt;
-&lt;/p&gt;
-&lt;bodydiv outputclass="collapse" id="collapse1"&gt;
-  &lt;div outputclass="card card-body"&gt;
-      &lt;p&gt;Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/bodydiv&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;p&gt;
-  &lt;button props="collapse-toggle" href="#collapse1"&gt;
-    Toggle Collapse
-  &lt;/button&gt;
-&lt;/p&gt;
-&lt;collapse id="collapse1"&gt;
-  &lt;card outputclass="card-body"&gt;
-      &lt;p&gt;Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.&lt;/p&gt;
-  &lt;/card&gt;
-&lt;/collapse&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/collapse/example.xml"/></codeblock>
     <section id="horizontal">
       <title>Horizontal</title>
       <p>The collapse plugin also supports horizontal collapsing. Add <xmlatt>outputclass="collapse-horizontal"</xmlatt>
@@ -91,29 +64,6 @@
       </bodydiv>
     </bodydiv>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;p&gt;
-  &lt;xref outputclass="btn-solid theme-primary" props="collapse-toggle" href="#collapse2"&gt;Toggle Width Collapse&lt;/xref&gt;
-&lt;/p&gt;
-&lt;bodydiv outputclass="collapse-horizontal" id="collapse2" otherprops="style(min-height: 120px;)"&gt;
-  &lt;div outputclass="card card-body" otherprops="style(width: 300px;)"&gt;
-    &lt;p&gt;This is some placeholder content for a horizontal collapse. It’s hidden by default and shown when triggered.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/bodydiv&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;p&gt;
-  &lt;button props="collapse-toggle" href="#collapse2"&gt;Toggle Width Collapse&lt;/button&gt;
-&lt;/p&gt;
-&lt;collapse outputclass="collapse-horizontal" id="collapse2" otherprops="style(min-height: 120px;)"&gt;
-  &lt;bodydiv outputclass="card card-body" otherprops="style(width: 300px;)"&gt;
-    &lt;p&gt;This is some placeholder content for a horizontal collapse. It’s hidden by default and shown when triggered.&lt;/p&gt;
-  &lt;/bodydiv&gt;
-&lt;/collapse&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/collapse/horizontal.xml"/></codeblock>
   </body>
 </topic>

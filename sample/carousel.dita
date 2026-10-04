@@ -52,36 +52,7 @@
         </li>
       </ol>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ol outputclass="carousel"&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;carousel&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-&lt;/carousel&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/carousel/example.xml"/></codeblock>
     <section id="indicators">
       <title>Indicators</title>
       <p> Set <xmlatt>indicators="yes"</xmlatt> to add indicators to the carousel, alongside the
@@ -100,36 +71,7 @@
         </li>
       </ol>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ol outputclass="carousel" otherprops="indicators(true)"&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;carousel indicators="yes"&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-&lt;/carousel&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/carousel/indicators.xml"/></codeblock>
     <section id="with-captions">
       <title>With captions</title>
       <p>Add captions by using <xmlelement>fig</xmlelement> elements</p>
@@ -156,54 +98,7 @@
         </li>
       </ol>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ol outputclass="carousel"&gt;
-  &lt;li&gt;
-    &lt;fig&gt;
-      &lt;title&gt;The First Slide&lt;/title&gt;
-      &lt;image href="..." /&gt;
-    &lt;/fig&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;fig&gt;
-      &lt;title&gt;The Second Slide&lt;/title&gt;
-      &lt;image href="..." /&gt;
-    &lt;/fig&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;fig&gt;
-      &lt;title&gt;The Third Slide&lt;/title&gt;
-      &lt;image href="..." /&gt;
-    &lt;/fig&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;carousel&gt;
-  &lt;carousel-item&gt;
-    &lt;fig&gt;
-      &lt;title&gt;The First Slide&lt;/title&gt;
-      &lt;image href="..." /&gt;
-    &lt;/fig&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;fig&gt;
-      &lt;title&gt;The Second Slide&lt;/title&gt;
-      &lt;image href="..." /&gt;
-    &lt;/fig&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;fig&gt;
-      &lt;title&gt;The Third Slide&lt;/title&gt;
-      &lt;image href="..." /&gt;
-    &lt;/fig&gt;
-  &lt;/carousel-item&gt;
-&lt;/carousel&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/carousel/captions.xml"/></codeblock>
     <section id="with-non-image-elements">
       <title>With non-image elements</title>
       <p>Place additional DITA elements within a <xmlelement
@@ -264,66 +159,7 @@ And, kept unused, the user so destroys it.</lines>
         </li>
       </ol>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ol outputclass="carousel"&gt;
-  &lt;li&gt;
-    &lt;div outputclass="row"&gt;
-      &lt;div outputclass="col-1"/&gt;
-      &lt;div outputclass="col-10"&gt;
-      ...
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;div outputclass="row"&gt;
-      &lt;div outputclass="col-1"/&gt;
-      &lt;div outputclass="col-10"&gt;
-      ...
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;div outputclass="row"&gt;
-      &lt;div outputclass="col-1"/&gt;
-      &lt;div outputclass="col-10"&gt;
-      ...
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;carousel&gt;
-  &lt;carousel-item&gt;
-    &lt;grid-row&gt;
-      &lt;grid-col colspan="1"/&gt;
-      &lt;grid-col colspan="10"&gt;
-      ...
-      &lt;/grid-col&gt;
-    &lt;/grid-row&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;grid-row&gt;
-      &lt;grid-col colspan="1"/&gt;
-      &lt;grid-col colspan="10"&gt;
-      ...
-      &lt;/grid-col&gt;
-    &lt;/grid-row&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;grid-row&gt;
-      &lt;grid-col colspan="1"/&gt;
-      &lt;grid-col colspan="10"&gt;
-      ...
-      &lt;/grid-col&gt;
-    &lt;/grid-row&gt;
-  &lt;/carousel-item&gt;
-&lt;/carousel&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/carousel/non-image-elements.xml"/></codeblock>
 
     <section id="multiple-slides">
       <title>Multiple slides side-by-side</title>
@@ -348,48 +184,7 @@ And, kept unused, the user so destroys it.</lines>
         </li>
       </ol>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ol outputclass="carousel"&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-    &lt;image href="..." /&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-    &lt;image href="..." /&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-    &lt;image href="..." /&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;carousel&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-    &lt;image href="..." /&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-    &lt;image href="..." /&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-    &lt;image href="..." /&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-&lt;/carousel&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/carousel/side-by-side.xml"/></codeblock>
 
     <section id="multiple-slides-with-titles">
       <title>Multiple slides with titles</title>
@@ -448,26 +243,8 @@ And, kept unused, the user so destroys it.</lines>
           </div>
         </li>
       </ol>
-    </example>
-    <codeblock>&lt;carousel&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-    &lt;image href="..." /&gt;
-    &lt;image href="..." /&gt;
-    &lt;grid-row deliveryTarget="html"&gt;
-      &lt;grid-col colspan="4"&gt;
-        &lt;p outputclass="text-center figure figure-caption"&gt;...&lt;/p&gt;
-      &lt;/grid-col&gt;
-      &lt;grid-col colspan="4"&gt;
-        &lt;p outputclass="text-center figure figure-caption"&gt;...&lt;/p&gt;
-      &lt;/grid-col&gt;
-      &lt;grid-col colspan="4"&gt;
-        &lt;p outputclass="text-center figure figure-caption"&gt;...&lt;/p&gt;
-      &lt;/grid-col&gt;
-    &lt;/grid-row&gt;
-  &lt;/carousel-item&gt;
-  ...
-&lt;/carousel&gt;</codeblock>
+     </example>
+    <codeblock><coderef href="code/carousel/slides-with-titles.xml"/></codeblock>
     <section id="crossfade">
       <title>Crossfade</title>
       <p> Add <xmlatt>fade="yes"</xmlatt> to your carousel to animate slides with a fade transition
@@ -488,36 +265,7 @@ And, kept unused, the user so destroys it.</lines>
         </li>
       </ol>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ol outputclass="carousel-fade"&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;carousel fade="yes"&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-&lt;/carousel&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/carousel/crossfade.xml"/></codeblock>
     <section id="autoplaying-carousels">
       <title>Autoplaying carousels</title>
       <p>Carousels autoplay on page load by default. Autoplaying carousels automatically pause while hovered with the
@@ -539,36 +287,7 @@ And, kept unused, the user so destroys it.</lines>
         </li>
       </ol>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ol outputclass="carousel" otherprops="autoplay(false)"&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;carousel autoplay="no"&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-&lt;/carousel&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/carousel/autoplay.xml"/></codeblock>
 
     <section id="intervals">
       <title>Carousel interval</title>
@@ -586,9 +305,7 @@ And, kept unused, the user so destroys it.</lines>
         </li>
       </ol>
     </example>
-    <codeblock>&lt;carousel interval="2000"&gt;
-  ...
-&lt;/carousel&gt;</codeblock>
+    <codeblock><coderef href="code/carousel/carousel-interval.xml"/></codeblock>
 
     <section id="item-intervals">
       <title>Individual carousel item interval</title>
@@ -609,36 +326,7 @@ And, kept unused, the user so destroys it.</lines>
         </li>
       </ol>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ol outputclass="carousel"&gt;
-  &lt;li otherprops="interval(2000)"&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-  &lt;li otherprops="interval(1000)"&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-  &lt;li otherprops="interval(3000)"&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;carousel&gt;
-  &lt;carousel-item interval="2000"&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item interval="1000"&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item interval="3000"&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-&lt;/carousel&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/carousel/item-interval.xml"/></codeblock>
     <section id="disable-touch-swipe">
       <title>Disable touch swiping</title>
       <p>Carousels support swiping left/right on touchscreen devices to move between slides. Add
@@ -657,35 +345,6 @@ And, kept unused, the user so destroys it.</lines>
         </li>
       </ol>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ol outputclass="carousel" otherprops="touch(false)"&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;image href="..." /&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;carousel touch="no"&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..." /&gt;
-  &lt;/carousel-item&gt;
-&lt;/carousel&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/carousel/disable-touch.xml"/></codeblock>
   </body>
 </topic>

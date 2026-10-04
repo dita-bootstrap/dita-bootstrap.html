@@ -29,32 +29,7 @@
       <p>To add a color mode toggler to the menu bar, add a series of <xmlelement
         >button</xmlelement> elements with the attributes <xmlatt>data-bs-theme="light"</xmlatt> or <xmlatt
         >data-bs-theme="dark"</xmlatt> as shown here.</p>
-      <codeblock>&lt;ul class="navbar-nav ms-auto"&gt;
-  &lt;li class="nav-item dropdown"&gt;
-    &lt;a href="#" class="nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center show"
-      id="bd-color-mode" data-bs-toggle="dropdown" aria-expanded="false"
-      data-bs-display="static"&gt;Toggle theme&lt;/a&gt;
-    &lt;ul class="dropdown-menu dropdown-menu-end"
-      aria-labelledby="bd-color-mode" style="--bs-dropdown-min-width: 6rem;"
-      data-bs-popper="static"&gt;
-      &lt;li&gt;
-        &lt;button type="button" class="dropdown-item d-flex align-items-center"
-          data-bs-theme-value="light"&gt; Light
-        &lt;/button&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;button type="button" class="dropdown-item d-flex align-items-center"
-          data-bs-theme-value="dark"&gt; Dark
-        &lt;/button&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;button type="button" class="dropdown-item d-flex align-items-center"
-          data-bs-theme-value="auto"&gt; Auto
-        &lt;/button&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</codeblock>
+      <codeblock><coderef href="code/dark-mode/example.xml"/></codeblock>
     <p>The plug-in includes a sample color mode toggler in its
         <xref
           href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/hdr.navbar.example.xml"

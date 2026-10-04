@@ -59,32 +59,7 @@
         <p>Content for the drawer goes here. You can place just about any section elements here.</p>
       </section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref outputclass="btn-solid theme-primary" props="drawer-toggle" href="#drawer1"&gt;
-  Click here
-&lt;/xref&gt;
-&lt;section outputclass="drawer-start" id="drawer1"&gt;
-  &lt;title&gt;Drawer&lt;/title&gt;
-  &lt;p&gt;
-    Content for the drawer goes here. You can place just about any section elements here.
-  &lt;/p&gt;
-&lt;/section&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;button props="drawer-toggle" href="#drawer1"&gt;
-  Click here
-&lt;/button&gt;
-&lt;drawer id="drawer1" position="start"&gt;
-  &lt;title&gt;Drawer&lt;/title&gt;
-  &lt;p&gt;
-    Content for the drawer goes here. You can place just about any section elements here.
-  &lt;/p&gt;
-&lt;/drawer&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/drawer/drawer-components.xml"/></codeblock>
     <section id="placement">
       <title>Placement</title>
       <p>There’s no default placement for drawer components, so you must add one of the modifier outputclasses
@@ -111,20 +86,7 @@
         <p>Content for the drawer goes here. You can place just about any section elements here.</p>
       </section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;section outputclass="drawer-end" id="drawer2"&gt;
-  ...etc
-&lt;/section&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;drawer position="end"&gt;
-  ...etc
-&lt;/drawer&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/drawer/placement.xml"/></codeblock>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
             <xref
         props="drawer-toggle"
@@ -136,20 +98,7 @@
         <p>Content for the drawer goes here. You can place just about any section elements here.</p>
       </section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;section outputclass="drawer-bottom" id="drawer3"&gt;
-  ...etc
-&lt;/section&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;drawer position="bottom"&gt;
-  ...etc
-&lt;/drawer&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/drawer/placement-bottom.xml"/></codeblock>
     <section id="responsive">
       <title>Responsive</title>
       <p
@@ -178,37 +127,6 @@
       <li><xmlatt>outputclass="drawer-xl"</xmlatt></li>
       <li><xmlatt>outputclass="drawer-xxl"</xmlatt></li>
     </ul>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;note outputclass="d-none lg:d-block"&gt;
-  Resize your browser to show the responsive drawer toggle.
-&lt;/note&gt;
-&lt;xref outputclass="btn-solid theme-primary lg:d-none" props="drawer-toggle" href="#drawer4"&gt;
-  Toggle drawer
-&lt;/xref&gt;
-&lt;section outputclass="drawer-lg" id="drawer4"&gt;
-  &lt;title&gt;Drawer&lt;/title&gt;
-  &lt;p&gt;
-    This is content within an &lt;xmlatt&gt;outputclass="drawer-lg"&lt;/xmlatt&gt;.
-  &lt;/p&gt;
-&lt;/section&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;note theme="info-contrast" outputclass="d-none lg:d-block"&gt;
-  Resize your browser to show the responsive drawer toggle.
-&lt;/note&gt;
-&lt;button outputclass="lg:d-none" props="drawer-toggle" href="#drawer4"&gt;
-  Toggle drawer
-&lt;/button&gt;
-&lt;drawer outputclass="drawer-lg" id="drawer4"&gt;
-  &lt;title&gt;Drawer&lt;/title&gt;
-  &lt;p&gt;
-    This is content within an &lt;xmlatt&gt;outputclass="drawer-lg"&lt;/xmlatt&gt;.
-  &lt;/p&gt;
-&lt;/drawer&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/drawer/responsive.xml"/></codeblock>
   </body>
 </topic>

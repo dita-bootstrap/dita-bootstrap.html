@@ -1,0 +1,11 @@
+<section outputclass="alert theme-success vstack">
+  <title><i outputclass="bi bi-emoji-smile pe-2"/>Well done!</title>
+  <p>
+    Aww yeah, you successfully read this important alert message. This example text with a
+    <xref href="#">link</xref> is going to run a bit longer so that you can see
+    how spacing within an alert works with this kind of content.
+  </p>
+  <p>
+    Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+  </p>
+</section>

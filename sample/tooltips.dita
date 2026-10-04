@@ -60,30 +60,7 @@
         work in practice, once you use them on
         <xref href="#" outputclass="tooltip-top"> your own<desc>The last tip!</desc></xref> site or project.</p>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;p&gt;Placeholder text to demonstrate some
-  &lt;xref href="#" outputclass="tooltip-top"&gt; inline links &lt;desc&gt;Default tooltip&lt;/desc&gt;&lt;/xref&gt; with tooltips. This is
-  now just filler, no killer. Content placed here just to mimic the presence of
-  &lt;xref href="#" outputclass="tooltip-top"&gt; real text&lt;desc&gt;Another tooltip&lt;/desc&gt;&lt;/xref&gt;. And all that just to give
-  you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how
-  &lt;xref href="#" outputclass="tooltip-top"&gt; these tooltips on links&lt;desc&gt;Another one here too&lt;/desc&gt;&lt;/xref&gt; can
-  work in practice, once you use them on
-  &lt;xref href="#" outputclass="tooltip-top"&gt; your own&lt;desc&gt;The last tip!&lt;/desc&gt;&lt;/xref&gt; site or project.&lt;/p&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;p&gt;Placeholder text to demonstrate some
-  &lt;tooltip&gt; inline links &lt;desc&gt;Default tooltip&lt;/desc&gt;&lt;/tooltip&gt; with tooltips. This is
-  now just filler, no killer. Content placed here just to mimic the presence of
-  &lt;tooltip&gt; real text&lt;desc&gt;Another tooltip&lt;/desc&gt;&lt;/tooltip&gt;. And all that just to give
-  you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how
-  &lt;tooltip&gt; these tooltips on links&lt;desc&gt;Another one here too&lt;/desc&gt;&lt;/tooltip&gt; can
-  work in practice, once you use them on
-  &lt;tooltip&gt; your own&lt;desc&gt;The last tip!&lt;/desc&gt;&lt;/tooltip&gt; site or project.&lt;/p&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/tooltips/inline-links.xml"/></codeblock>
 
     <p>To enable tooltips, add <xmlatt>output-class="tooltip-*"</xmlatt> to the enclosing
       <xmlelement>xref</xmlelement>. For the <xmlelement>tooltip</xmlelement> element use the <xmlatt
@@ -101,46 +78,7 @@
       <xref href="#" outputclass="btn-solid theme-secondary tooltip-left">
         <desc>Tooltip on left</desc> Tooltip on left </xref>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-    <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;xref href="#" outputclass="btn-solid theme-secondary tooltip-top"&gt;
-  &lt;desc&gt;Tooltip on top&lt;/desc&gt;
-  Tooltip on top
-&lt;/xref&gt;
-&lt;xref href="#" outputclass="btn-solid theme-secondary tooltip-right"&gt;
-  &lt;desc&gt;Tooltip on right&lt;/desc&gt;
-  Tooltip on right
-&lt;/xref&gt;
-&lt;xref href="#" outputclass="btn-solid theme-secondary tooltip-bottom"&gt;
-  &lt;desc&gt;Tooltip on bottom&lt;/desc&gt;
-  Tooltip on bottom
-&lt;/xref&gt;
-&lt;xref href="#" outputclass="btn-solid theme-secondary tooltip-left"&gt;
-  &lt;desc&gt;Tooltip on left&lt;/desc&gt;
-  Tooltip on left
-&lt;/xref&gt;</codeblock>
-    </section>
-    <section>
-      <title>Specialization</title>
-        <codeblock>&lt;tooltip outputclass="btn-solid" theme="secondary-contrast" position="top"&gt;
-  &lt;desc&gt;Tooltip on top&lt;/desc&gt;
-  Tooltip on top
-&lt;/tooltip&gt;
-&lt;tooltip outputclass="btn-solid" theme="secondary-contrast" position="right"&gt;
-  &lt;desc&gt;Tooltip on right&lt;/desc&gt;
-  Tooltip on right
-&lt;/tooltip&gt;
-&lt;tooltip outputclass="btn-solid" theme="secondary-contrast" position="bottom"&gt;
-  &lt;desc&gt;Tooltip on bottom&lt;/desc&gt;
-  Tooltip on bottom
-&lt;/tooltip&gt;
-&lt;tooltip outputclass="btn-solid" theme="secondary-contrast" position="left"&gt;
-  &lt;desc&gt;Tooltip on left&lt;/desc&gt;
-  Tooltip on left
-&lt;/tooltip&gt;</codeblock>
-    </section>
-  </bodydiv>
+    <codeblock><coderef href="code/tooltips/examples.xml"/></codeblock>
   <p>Custom HTML can be added to tooltips using additional DITA elements within the <xmlelement>desc</xmlelement>
   </p>
   <example>
@@ -149,30 +87,13 @@
         <u>with</u>
         <b>DITA</b> elements</desc> Tooltip with embedded DITA </xref>
   </example>
-  <bodydiv outputclass="nav-pills mt-3">
-    <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;xref href="#" outputclass="btn-solid theme-secondary tooltip-top"&gt;
-&lt;desc&gt;&lt;b&gt;Tooltip&lt;/b&gt; &lt;u&gt;with&amp;lt;/u&gt; &lt;b&gt;DITA&lt;/b&gt; elements&lt;/desc&gt;
-Tooltip with embedded DITA
-&lt;/xref&gt;</codeblock>
-      </section>
-       <section>
-      <title>Specialization</title>
-        <codeblock>&lt;tooltip outputclass="btn-solid" theme="secondary-contrast"&gt;
-&lt;desc&gt;&lt;b&gt;Tooltip&lt;/b&gt; &lt;u&gt;with&amp;lt;/u&gt; &lt;b&gt;DITA&lt;/b&gt; elements&lt;/desc&gt;
-Tooltip with embedded DITA
-&lt;/tooltip&gt;</codeblock>
-      </section>
-    </bodydiv>
+  <codeblock><coderef href="code/tooltips/custom-html.xml"/></codeblock>
     <section id="custom-tooltips">
       <title>Custom tooltips</title>
       <p>You can customize the appearance of tooltips using CSS variables. We set a custom class with <codeph
         >&lt;data name="class"&gt;custom-tooltip&lt;data&gt;</codeph>  to scope our custom appearance and use it to override a local CSS variable.</p>
     </section>
-    <codeblock outputclass="language-css">.custom-tooltip {
-  --bs-tooltip-bg: var(--bs-primary);
-}</codeblock>
+    <codeblock outputclass="language-css"><coderef href="code/tooltips/custom-tooltips.css"/></codeblock>
     <example>
       <xref href="#" outputclass="btn-solid theme-secondary tooltip-top">
         <data name="class">custom-tooltip</data>
@@ -180,23 +101,6 @@ Tooltip with embedded DITA
         Custom tooltip
       </xref>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref href="#" outputclass="btn-solid theme-secondary tooltip-top"&gt;
-  &lt;data name="class"&gt;custom-tooltip&lt;/data&gt;
-  &lt;desc&gt;This top tooltip is themed via CSS variables.&lt;/desc&gt;
-  Custom tooltip
-&lt;/xref&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;tooltip outputclass="btn-solid" theme="secondary-contrast"&gt;
-  &lt;data name="class"&gt;custom-tooltip&lt;/data&gt;
-  &lt;desc&gt;This top tooltip is themed via CSS variables.&lt;/desc&gt;
-  Custom tooltip
-&lt;/tooltip&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/tooltips/custom-tooltips.xml"/></codeblock>
   </body>
 </topic>

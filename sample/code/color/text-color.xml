@@ -1,0 +1,6 @@
+<p outputclass="fg-primary">fg-primary</p>
+<p outputclass="fg-secondary">fg-secondary</p>
+<p outputclass="fg-success">fg-success</p>
+<p outputclass="fg-danger">fg-danger</p>
+<p outputclass="fg-warning">fg-warning</p>
+<p outputclass="fg-info">fg-info</p>

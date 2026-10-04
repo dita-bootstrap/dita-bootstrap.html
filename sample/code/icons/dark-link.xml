@@ -1,0 +1,24 @@
+<xref outputclass="link theme-primary" href="#">
+  <i outputclass="bi-link"/> Primary link
+</xref>
+<xref outputclass="link theme-secondary" href="#">
+  <i outputclass="bi-link"/> Secondary link
+</xref>
+<xref outputclass="link theme-success" href="#">
+  <i outputclass="bi-link"/> Success link
+</xref>
+<xref outputclass="link theme-danger" href="#">
+  <i outputclass="bi-link"/> Danger link
+</xref>
+<xref outputclass="link theme-warning" href="#">
+  <i outputclass="bi-link"/> Warning link
+</xref>
+<xref outputclass="link theme-info" href="#">
+  <i outputclass="bi-link"/> Info link
+</xref>
+<xref outputclass="link theme-accent" href="#">
+  <i outputclass="bi-link"/> Accent link
+</xref>
+<xref outputclass="link theme-inverse" href="#">
+  <i outputclass="bi-link"/> Inverse link
+</xref>

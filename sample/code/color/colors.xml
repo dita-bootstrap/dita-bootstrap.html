@@ -1,0 +1,8 @@
+<div outputclass="bg-primary fg-contrast-primary">bg-primary</div>
+<div outputclass="bg-secondary fg-contrast-secondary">bg-secondary</div>
+<div outputclass="bg-success fg-contrast-success">bg-success</div>
+<div outputclass="bg-danger fg-contrast-danger">bg-danger</div>
+<div outputclass="bg-warning fg-contrast-warning">bg-warning</div>
+<div outputclass="bg-info fg-contrast-info" >bg-info</div>
+<div outputclass="bg-accent fg-contrast-accent">bg-accent</div>
+<div outputclass="bg-inverse fg-contrast-inverse">bg-inverse</div>

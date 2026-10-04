@@ -34,30 +34,7 @@
       <div outputclass="bg-inverse fg-contrast-inverse">bg-inverse</div>
     </example>
 
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="bg-primary fg-contrast-primary"&gt;bg-primary&lt;/div&gt;
-&lt;div outputclass="bg-secondary fg-contrast-secondary"&gt;bg-secondary&lt;/div&gt;
-&lt;div outputclass="bg-success fg-contrast-success"&gt;bg-success&lt;/div&gt;
-&lt;div outputclass="bg-danger fg-contrast-danger"&gt;bg-danger&lt;/div&gt;
-&lt;div outputclass="bg-warning fg-contrast-warning"&gt;bg-warning&lt;/div&gt;
-&lt;div outputclass="bg-info fg-contrast-info" &gt;bg-info&lt;/div&gt;
-&lt;div outputclass="bg-accent fg-contrast-accent"&gt;bg-accent&lt;/div&gt;
-&lt;div outputclass="bg-inverse fg-contrast-inverse"&gt;bg-inverse&lt;/div&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;div theme="primary-contrast"&gt;bg-primary&lt;/div&gt;
-&lt;div theme="secondary-contrast"&gt;bg-secondary&lt;/div&gt;
-&lt;div theme="success-contrast"&gt;bg-success&lt;/div&gt;
-&lt;div theme="danger-contrast"&gt;bg-danger&lt;/div&gt;
-&lt;div theme="warning-contrast"&gt;bg-warning&lt;/div&gt;
-&lt;div theme="info-contrast"&gt;bg-info&lt;/div&gt;
-&lt;div theme="accent-contrast"&gt;bg-accent&lt;/div&gt;
-&lt;div theme="inverse-contrast"&gt;bg-inverse&lt;/div&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/color/colors.xml"/></codeblock>
 
     <section id="base-dita-elements">
       <title>Base DITA Elements</title>
@@ -117,107 +94,7 @@
       </note>
     </bodydiv>
 
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;section outputclass="bg-primary fg-contrast-primary"&gt;
-  &lt;title&gt;Section Decoration&lt;/title&gt;
-  &lt;p&gt;This section has a primary color background.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;div outputclass="bg-success fg-contrast-success p-3"&gt;
-  &lt;p&gt;This div has a success color background.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;pre outputclass="bg-warning fg-contrast-warning"&gt;
-  This pre has a warning color background.
-&lt;/pre&gt;
-
-&lt;lq outputclass="bg-danger fg-contrast-danger p-1"&gt;
-  ...
-&lt;/lq&gt;
-
-&lt;table outputclass="theme-primary p-1 w-100"&gt;
-  &lt;tgroup cols="2"&gt;
-    &lt;thead&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Animal&lt;/entry&gt;
-        &lt;entry&gt;Gestation&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;row outputclass="theme-info"&gt;
-       ...
-      &lt;/row&gt;
-      &lt;row outputclass="theme-success"&gt;
-       ...
-      &lt;/row&gt;
-      &lt;row&gt;
-        &lt;entry&gt;...&lt;/entry&gt;
-        &lt;entry outputclass="theme-danger"&gt;...&lt;/entry&gt;
-      &lt;/row&gt;
-      &lt;row&gt;
-        &lt;entry&gt;...&lt;/entry&gt;
-        &lt;entry&gt;...&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/tbody&gt;
-  &lt;/tgroup&gt;
-&lt;/table&gt;
-
-&lt;note outputclass="theme-primary theme-contrast"&gt;
-  ...
-&lt;/note&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;section theme="primary-contrast"&gt;
-  &lt;title&gt;Section Decoration&lt;/title&gt;
-  &lt;p&gt;This section has a primary color background.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;div theme="success-contrast" padding="3"&gt;
-  &lt;p&gt;This div has a success color background.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;pre theme="warning-contrast"&gt;
-  This pre has a warning color background.
-&lt;/pre&gt;
-
-&lt;lq theme="danger-contrast" padding="1"&gt;
-  This is a long quote with a danger color background.
-&lt;/lq&gt;
-
-&lt;table theme="primary" padding="1" width="100"&gt;
-  &lt;tgroup cols="2"&gt;
-    &lt;thead&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Animal&lt;/entry&gt;
-        &lt;entry&gt;Gestation&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;row theme="info"&gt;
-        ...
-      &lt;/row&gt;
-      &lt;row theme="success"&gt;
-        ...
-      &lt;/row&gt;
-      &lt;row&gt;
-        &lt;entry&gt;...&lt;/entry&gt;
-        &lt;entry theme="danger"&gt;...&lt;/entry&gt;
-      &lt;/row&gt;
-      &lt;row&gt;
-        ...
-      &lt;/row&gt;
-    &lt;/tbody&gt;
-  &lt;/tgroup&gt;
-&lt;/table&gt;
-
-&lt;note theme="primary-contrast"&gt;
-  This is a note with a primary color theme.
-&lt;/note&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/color/section-decoration.xml"/></codeblock>
 
     <section id="specialized-elements">
       <title>Specialized Elements</title>
@@ -258,61 +135,7 @@
       </ol>
     </bodydiv>
 
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;img src="..." class="img-thumbnail bg-warning"/&gt;
-
-&lt;section outputclass="card theme-success w-50"&gt;
-  ...
-&lt;/section&gt;
-
-&lt;bodydiv outputclass="accordion theme-info"&gt;
-  ...
-&lt;/bodydiv&gt;
-
-&lt;ul outputclass="list-group theme-danger w-50"&gt;
-  ...
-&lt;/ul&gt;
-
-&lt;ul outputclass="carousel theme-inverse theme-muted w-50"&gt;
-  ...
-&lt;/ul&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;thumbnail href="..." theme="warning"/&gt;
-
-&lt;card theme="success" width="50"&gt;
-  &lt;title&gt;Card Title&lt;/title&gt;
-  &lt;p&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
-&lt;/card&gt;
-
-&lt;accordion theme="info"&gt;
-  &lt;accordion-item open="yes"&gt;
-    &lt;title&gt;Accordion Item #1&lt;/title&gt;
-    &lt;p&gt;This is the first item's accordion body.&lt;/p&gt;
-  &lt;/accordion-item&gt;
-&lt;/accordion&gt;
-
-&lt;list-group width="50" theme="danger"&gt;
-  &lt;li&gt;An item&lt;/li&gt;
-  &lt;li&gt;A second item&lt;/li&gt;
-&lt;/list-group&gt;
-
-&lt;carousel theme="inverse-muted" width="50" indicators="yes"&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..."/&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..."/&gt;
-  &lt;/carousel-item&gt;
-  &lt;carousel-item&gt;
-    &lt;image href="..."/&gt;
-  &lt;/carousel-item&gt;
-&lt;/carousel&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/color/specialized-elements.xml"/></codeblock>
 
     <section id="text-color">
       <title>Text Color</title>
@@ -328,11 +151,6 @@
       <p outputclass="fg-info">fg-info</p>
     </example>
 
-    <codeblock>&lt;p outputclass="fg-primary"&gt;fg-primary&lt;/p&gt;
-&lt;p outputclass="fg-secondary"&gt;fg-secondary&lt;/p&gt;
-&lt;p outputclass="fg-success"&gt;fg-success&lt;/p&gt;
-&lt;p outputclass="fg-danger"&gt;fg-danger&lt;/p&gt;
-&lt;p outputclass="fg-warning"&gt;fg-warning&lt;/p&gt;
-&lt;p outputclass="fg-info"&gt;fg-info&lt;/p&gt;</codeblock>
+    <codeblock><coderef href="code/color/text-color.xml"/></codeblock>
   </body>
 </topic>

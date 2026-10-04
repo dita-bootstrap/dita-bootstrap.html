@@ -45,36 +45,7 @@
         </bodydiv>
       </bodydiv>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;bodydiv outputclass="row"&gt;
-  &lt;bodydiv outputclass="sm:col-3"&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/bodydiv&gt;
-  &lt;bodydiv outputclass="sm:col-3"&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/bodydiv&gt;
-  &lt;bodydiv outputclass="sm:col-3"&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/bodydiv&gt;
-&lt;/bodydiv&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;grid-row&gt;
-  &lt;grid-col breakpoint="sm" colspan="3"&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/grid-col&gt;
-  &lt;grid-col breakpoint="sm" colspan="3"&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/grid-col&gt;
-  &lt;grid-col breakpoint="sm" colspan="3"&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/grid-col&gt;
-&lt;/grid-row&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/grid/example.xml"/></codeblock>
     <section id="equal-width">
       <title>Equal-width</title>
       <p>For example, here are two grid layouts that apply to every device and viewport, from <codeph>xs</codeph> to
@@ -102,51 +73,6 @@
         </bodydiv>
       </bodydiv>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;bodydiv outputclass="row"&gt;
-  &lt;bodydiv outputclass="col"&gt;
-    &lt;p&gt;One of two columns&lt;/p&gt;
-  &lt;/bodydiv&gt;
-  &lt;bodydiv outputclass="col"&gt;
-    &lt;p&gt;One of two columns&lt;/p&gt;
-  &lt;/bodydiv&gt;
-&lt;/bodydiv&gt;
-&lt;bodydiv outputclass="row"&gt;
-  &lt;bodydiv outputclass="col"&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/bodydiv&gt;
-  &lt;bodydiv outputclass="col"&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/bodydiv&gt;
-  &lt;bodydiv outputclass="col"&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/bodydiv&gt;
-&lt;/bodydiv&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;grid-row&gt;
-  &lt;grid-col&gt;
-    &lt;p&gt;One of two columns&lt;/p&gt;
-  &lt;/grid-col&gt;
-  &lt;grid-col&gt;
-    &lt;p&gt;One of two columns&lt;/p&gt;
-  &lt;/grid-col&gt;
-&lt;/grid-row&gt;
-&lt;grid-row&gt;
-  &lt;grid-col&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/grid-col&gt;
-  &lt;grid-col&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/grid-col&gt;
-  &lt;grid-col&gt;
-    &lt;p&gt;One of three columns&lt;/p&gt;
-  &lt;/grid-col&gt;
-&lt;/grid-row&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/grid/equal-width.xml"/></codeblock>
   </body>
 </topic>

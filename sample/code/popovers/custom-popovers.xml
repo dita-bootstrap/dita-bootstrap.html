@@ -1,0 +1,6 @@
+<xref href="#" outputclass="btn-lg btn-solid theme-danger popover-top">
+  <data name="title">Popover title</data>
+  <data name="class">custom-popover</data>
+  <desc>And here’s some amazing content. It’s very engaging. Right?</desc>
+  Custom popover
+</xref>

@@ -1,0 +1,47 @@
+<section outputclass="bg-primary fg-contrast-primary">
+  <title>Section Decoration</title>
+  <p>This section has a primary color background.</p>
+</section>
+
+<div outputclass="bg-success fg-contrast-success p-3">
+  <p>This div has a success color background.</p>
+</div>
+
+<pre outputclass="bg-warning fg-contrast-warning">
+  This pre has a warning color background.
+</pre>
+
+<lq outputclass="bg-danger fg-contrast-danger p-1">
+  ...
+</lq>
+
+<table outputclass="theme-primary p-1 w-100">
+  <tgroup cols="2">
+    <thead>
+      <row>
+        <entry>Animal</entry>
+        <entry>Gestation</entry>
+      </row>
+    </thead>
+    <tbody>
+      <row outputclass="theme-info">
+       ...
+      </row>
+      <row outputclass="theme-success">
+       ...
+      </row>
+      <row>
+        <entry>...</entry>
+        <entry outputclass="theme-danger">...</entry>
+      </row>
+      <row>
+        <entry>...</entry>
+        <entry>...</entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+<note outputclass="theme-primary theme-contrast">
+  ...
+</note>

@@ -1,0 +1,26 @@
+<ul class="navbar-nav ms-auto">
+  <li class="nav-item dropdown">
+    <a href="#" class="nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center show"
+      id="bd-color-mode" data-bs-toggle="dropdown" aria-expanded="false"
+      data-bs-display="static">Toggle theme</a>
+    <ul class="dropdown-menu dropdown-menu-end"
+      aria-labelledby="bd-color-mode" style="--bs-dropdown-min-width: 6rem;"
+      data-bs-popper="static">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center"
+          data-bs-theme-value="light"> Light
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center"
+          data-bs-theme-value="dark"> Dark
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center"
+          data-bs-theme-value="auto"> Auto
+        </button>
+      </li>
+    </ul>
+  </li>
+</ul>

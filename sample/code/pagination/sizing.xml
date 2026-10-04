@@ -1,0 +1,10 @@
+<section>
+  <title>Page navigation example</title>
+  <ol outputclass="pagination pagination-lg">
+    <li><xref href="#">Previous</xref></li>
+    <li><xref href="#">1</xref></li>
+    <li><xref href="#">2</xref></li>
+    <li><xref href="#">3</xref></li>
+    <li><xref href="#">Next</xref></li>
+  </ol>
+</section>

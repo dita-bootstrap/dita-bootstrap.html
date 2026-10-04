@@ -1,0 +1,6 @@
+<section outputclass="card w-50">
+  <title outputclass="h5">Card Title</title>
+  <image outputclass="card-img-top" href="..." />
+  <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+  <xref outputclass="btn-solid theme-primary" href="#">Go Somewhere</xref>
+</section>

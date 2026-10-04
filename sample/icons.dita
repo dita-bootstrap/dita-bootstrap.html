@@ -42,18 +42,7 @@
         <ph outputclass="bi bi-alarm" otherprops="style(font-size: 2rem; color: cornflowerblue;)"/>
       </p>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;i outputclass="bi-alarm"/&gt;
-&lt;i outputclass="bi-alarm" otherprops="style(font-size: 2rem; color: cornflowerblue;)"/&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;icon outputclass="bi-alarm"/&gt;
-&lt;icon outputclass="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"/&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/icons/example.xml"/></codeblock>
   <p>Icons placed within an <xmlelement>xref</xmlelement> element are colorized appropriately:</p>
   <example>
     <p>
@@ -97,63 +86,7 @@
       </xref>
     </p>
   </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref outputclass="link theme-primary" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Primary link
-&lt;/xref&gt;
-&lt;xref outputclass="link theme-secondary" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Secondary link
-&lt;/xref&gt;
-&lt;xref outputclass="link theme-success" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Success link
-&lt;/xref&gt;
-&lt;xref outputclass="link theme-danger" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Danger link
-&lt;/xref&gt;
-&lt;xref outputclass="link theme-warning" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Warning link
-&lt;/xref&gt;
-&lt;xref outputclass="link theme-info" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Info link
-&lt;/xref&gt;
-&lt;xref outputclass="link theme-accent" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Accent link
-&lt;/xref&gt;
-&lt;xref outputclass="link theme-inverse" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Inverse link
-&lt;/xref&gt;
-</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;xref theme="primary" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Primary link
-&lt;/xref&gt;
-&lt;xref theme="secondary" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Secondary link
-&lt;/xref&gt;
-&lt;xref theme="success" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Success link
-&lt;/xref&gt;
-&lt;xref theme="danger" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Danger link
-&lt;/xref&gt;
-&lt;xref theme="warning" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Warning link
-&lt;/xref&gt;
-&lt;xref theme="info" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Info link
-&lt;/xref&gt;
-&lt;xref theme="accent" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Accent link
-&lt;/xref&gt;
-&lt;xref theme="inverse" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Inverse link
-&lt;/xref&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/icons/dark-link.xml"/></codeblock>
     <p>Icons can also be placed within buttons as shown:</p>
     <example>
       <xref outputclass="btn-icon theme-primary" href="#"><ph outputclass="bi bi-arrow-down-square-fill"/></xref>
@@ -163,50 +96,7 @@
       <xref outputclass="btn-icon theme-accent" href="#"><ph outputclass="bi bi-link"/></xref>
       <xref outputclass="btn-icon theme-danger" href="#"><ph outputclass="bi bi-share-fill"/></xref>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref outputclass="theme-primary btn-icon" href="#"&gt;
-  &lt;i outputclass="bi-arrow-down-square-fill"/&gt;
-&lt;/xref&gt;
-&lt;xref outputclass="theme-secondary btn-icon" href="#"&gt;
-  &lt;i outputclass="bi-chat-left-quote-fill"/&gt;
-&lt;/xref&gt;
-&lt;xref outputclass="theme-warning btn-icon" href="#"&gt;
-  &lt;i outputclass="bi-speedometer"/&gt;
-&lt;/xref&gt;
-&lt;xref outputclass="theme-info btn-icon" href="#"&gt;
-  &lt;i outputclass="bi-camera-fill"/&gt;
-&lt;/xref&gt;
-&lt;xref outputclass="theme-accent btn-icon" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt;
-&lt;/xref&gt;
-&lt;xref outputclass="theme-danger btn-icon" href="#"&gt;
-  &lt;i outputclass="bi-share-fill"/&gt;
-&lt;/xref&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;button theme="primary" outputclass="btn-icon" href="#"&gt;
-  &lt;icon outputclass="bi-arrow-down-square-fill"/&gt;
-&lt;/button&gt;
-&lt;button theme="secondary" outputclass="btn-icon" href="#"&gt;
-  &lt;icon outputclass="bi-chat-left-quote-fill"/&gt;
-&lt;/button&gt;
-&lt;button theme="warning" outputclass="btn-icon" href="#"&gt;
-  &lt;icon outputclass="bi-speedometer"/&gt;
-&lt;/button&gt;
-&lt;button theme="info" outputclass="btn-icon" href="#"&gt;
-  &lt;icon outputclass="bi-camera-fill"/&gt;
-&lt;/button&gt;
-&lt;button theme="accent" outputclass="btn-icon" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt;
-&lt;/button&gt;
-&lt;button theme="danger" outputclass="btn-icon" href="#"&gt;
-  &lt;icon outputclass="bi-share-fill"/&gt;
-&lt;/button&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/icons/icons-in-buttons.xml"/></codeblock>
     <p>Icons can also be used within <xmlelement>chapter</xmlelement> headings,
       and <xmlelement>topicref</xmlelement> elements by adding
       <xmlelement>othermeta name="icon"</xmlelement>  and
@@ -220,19 +110,7 @@
       <title>Icons elements within a menu bar</title>
       <image scalefit="yes" href="./src/icons-menubar.png"/>
     </fig>
-    <codeblock>&lt;chapter&gt;
-  &lt;topicmeta&gt;
-    &lt;navtitle&gt;Extend&lt;/navtitle&gt;
-    &lt;othermeta name="icon" content="bi-tools"/&gt;
-    &lt;othermeta name="icon-style" content="color: var(--bs-blue)"/&gt;
-  &lt;/topicmeta&gt;
-  &lt;topicref navtitle="Icons" format="dita" type="topic" href="icons.dita"&gt;
-    &lt;topicmeta&gt;
-      &lt;othermeta name="icon" content="bi-images"/&gt;
-    &lt;/topicmeta&gt;
-  &lt;/topicref&gt;
-  ...
-&lt;/chapter&gt;</codeblock>
+    <codeblock><coderef href="code/icons/icons-elements-within-a-menu-bar.xml"/></codeblock>
     <section id="installing-other-icons">
       <title>Installing other icons</title>
       <p>Other icon sets such as

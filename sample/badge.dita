@@ -40,15 +40,11 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;ph outputclass="badge theme-primary"&gt;New&lt;/ph&gt;
-&lt;ph outputclass="badge badge-subtle theme-primary"&gt;New&lt;/ph&gt;
-&lt;ph outputclass="badge badge-outline theme-primary"&gt;New&lt;/ph&gt;</codeblock>
+        <codeblock><coderef href="code/badge/examples-outputclass.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;badge theme="primary"&gt;New&lt;/badge&gt;
-&lt;badge theme="primary-subtle"&gt;New&lt;/badge&gt;
-&lt;badge theme="primary-outline"&gt;New&lt;/badge&gt;</codeblock>
+        <codeblock><coderef href="code/badge/examples-specialization.xml"/></codeblock>
       </section>
     </bodydiv>
 
@@ -66,18 +62,7 @@
         <p outputclass="h6">Example heading <ph outputclass="badge">New</ph></p>
       </section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;title&gt;Example Heading &lt;ph outputclass="badge"&gt;New&lt;/ph&gt;&lt;/title&gt;
-&lt;p&gt;Example Text &lt;ph outputclass="badge"&gt;New&lt;/ph&gt;&lt;/p&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;title&gt;Example Heading &lt;badge&gt;New&lt;/badge&gt;&lt;/title&gt;
-&lt;p&gt;Example Text &lt;badge&gt;New&lt;/badge&gt;&lt;/p&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/badge/example.xml"/></codeblock>
     <section id="variants">
       <title>Variants</title>
       <p>Use the contextual <codeph>theme-{color}</codeph> outputclass to apply a semantic theme color to badges, in
@@ -115,65 +100,6 @@
         <ph outputclass="badge badge-outline theme-inverse">Inverse</ph>
       </p>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ph outputclass="badge theme-primary"&gt;Primary&lt;/ph&gt;
-&lt;ph outputclass="badge theme-secondary"&gt;Secondary&lt;/ph&gt;
-&lt;ph outputclass="badge theme-success"&gt;Success&lt;/ph&gt;
-&lt;ph outputclass="badge theme-danger"&gt;Danger&lt;/ph&gt;
-&lt;ph outputclass="badge theme-warning"&gt;Warning&lt;/ph&gt;
-&lt;ph outputclass="badge theme-info"&gt;Info&lt;/ph&gt;
-&lt;ph outputclass="badge theme-accent"&gt;Accent&lt;/ph&gt;
-&lt;ph outputclass="badge theme-inverse"&gt;Inverse&lt;/ph&gt;
-
-&lt;ph outputclass="badge badge-subtle theme-primary"&gt;Primary&lt;/ph&gt;
-&lt;ph outputclass="badge badge-subtle theme-secondary"&gt;Secondary&lt;/ph&gt;
-&lt;ph outputclass="badge badge-subtle theme-success"&gt;Success&lt;/ph&gt;
-&lt;ph outputclass="badge badge-subtle theme-danger"&gt;Danger&lt;/ph&gt;
-&lt;ph outputclass="badge badge-subtle theme-warning"&gt;Warning&lt;/ph&gt;
-&lt;ph outputclass="badge badge-subtle theme-info"&gt;Info&lt;/ph&gt;
-&lt;ph outputclass="badge badge-subtle theme-accent"&gt;Accent&lt;/ph&gt;
-&lt;ph outputclass="badge badge-subtle theme-inverse"&gt;Inverse&lt;/ph&gt;
-
-&lt;ph outputclass="badge badge-outline theme-primary"&gt;Primary&lt;/ph&gt;
-&lt;ph outputclass="badge badge-outline theme-secondary"&gt;Secondary&lt;/ph&gt;
-&lt;ph outputclass="badge badge-outline theme-success"&gt;Success&lt;/ph&gt;
-&lt;ph outputclass="badge badge-outline theme-danger"&gt;Danger&lt;/ph&gt;
-&lt;ph outputclass="badge badge-outline theme-warning"&gt;Warning&lt;/ph&gt;
-&lt;ph outputclass="badge badge-outline theme-info"&gt;Info&lt;/ph&gt;
-&lt;ph outputclass="badge badge-outline theme-accent"&gt;Accent&lt;/ph&gt;
-&lt;ph outputclass="badge badge-outline theme-inverse"&gt;Inverse&lt;/ph&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;badge theme="primary"&gt;Primary&lt;/badge&gt;
-&lt;badge theme="secondary"&gt;Secondary&lt;/badge&gt;
-&lt;badge theme="success"&gt;Success&lt;/badge&gt;
-&lt;badge theme="danger"&gt;Danger&lt;/badge&gt;
-&lt;badge theme="warning"&gt;Warning&lt;/badge&gt;
-&lt;badge theme="info"&gt;Info&lt;/badge&gt;
-&lt;badge theme="accent"&gt;Accent&lt;/badge&gt;
-&lt;badge theme="inverse"&gt;Inverse&lt;/badge&gt;
-
-&lt;badge theme="primary-subtle"&gt;Primary&lt;/badge&gt;
-&lt;badge theme="secondary-subtle"&gt;Secondary&lt;/badge&gt;
-&lt;badge theme="success-subtle"&gt;Success&lt;/badge&gt;
-&lt;badge theme="danger-subtle"&gt;Danger&lt;/badge&gt;
-&lt;badge theme="warning-subtle"&gt;Warning&lt;/badge&gt;
-&lt;badge theme="info-subtle"&gt;Info&lt;/badge&gt;
-&lt;badge theme="accent-subtle"&gt;Accent&lt;/badge&gt;
-&lt;badge theme="inverse-subtle"&gt;Inverse&lt;/badge&gt;
-
-&lt;badge theme="primary-outline"&gt;Primary&lt;/badge&gt;
-&lt;badge theme="secondary-outline"&gt;Secondary&lt;/badge&gt;
-&lt;badge theme="success-outline"&gt;Success&lt;/badge&gt;
-&lt;badge theme="danger-outline"&gt;Danger&lt;/badge&gt;
-&lt;badge theme="warning-outline"&gt;Warning&lt;/badge&gt;
-&lt;badge theme="info-outline"&gt;Info&lt;/badge&gt;
-&lt;badge theme="accent-outline"&gt;Accent&lt;/badge&gt;
-&lt;badge theme="inverse-outline"&gt;Inverse&lt;/badge&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/badge/background-colors.xml"/></codeblock>
   </body>
 </topic>

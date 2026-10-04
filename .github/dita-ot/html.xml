@@ -20,6 +20,7 @@
       <param name="args.faviconroot" path="."/>
       <param name="args.hdr" href="header.xml"/>
       <param name="args.ftr" href="footer.xml"/>
+      <param name="bootstrap.sidebar.ftr" href="sidebar-footer.xml"/>
       <param name="html5.toc.generate" value="no"/>
       <param name="args.rellinks" value="none"/>
       <param name="nav-toc" value="collapsible"/>

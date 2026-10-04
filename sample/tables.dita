@@ -67,45 +67,7 @@
       </table>
     </example>
 
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table&gt;
-  ...etc
-&lt;/table&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;table&gt;
-  &lt;tgroup cols="2"&gt;
-    &lt;thead&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Animal&lt;/entry&gt;
-        &lt;entry&gt;Gestation&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Elephant (African and Asian)&lt;/entry&gt;
-        &lt;entry&gt;19-22 months&lt;/entry&gt;
-      &lt;/row&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Giraffe&lt;/entry&gt;
-        &lt;entry&gt;15 months&lt;/entry&gt;
-      &lt;/row&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Rhinoceros&lt;/entry&gt;
-        &lt;entry&gt;14-16 months&lt;/entry&gt;
-      &lt;/row&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Hippopotamus&lt;/entry&gt;
-        &lt;entry&gt;7 1/2 months&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/tbody&gt;
-  &lt;/tgroup&gt;
-&lt;/table&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/tables/overview.xml"/></codeblock>
     <section id="variants">
       <title>Variants</title>
       <p>Use contextual classes to color tables, table rows or individual cells.</p>
@@ -141,70 +103,7 @@
       </table>
     </example>
 
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table outputclass="theme-primary p-1 w-100"&gt;
-  &lt;tgroup cols="2"&gt;
-    &lt;thead&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Animal&lt;/entry&gt;
-        &lt;entry&gt;Gestation&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;row outputclass="theme-info"&gt;
-        &lt;entry&gt;Elephant (African and Asian)&lt;/entry&gt;
-        &lt;entry&gt;19-22 months&lt;/entry&gt;
-      &lt;/row&gt;
-      &lt;row outputclass="theme-success"&gt;
-        &lt;entry&gt;Giraffe&lt;/entry&gt;
-        &lt;entry&gt;15 months&lt;/entry&gt;
-      &lt;/row&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Rhinoceros&lt;/entry&gt;
-        &lt;entry outputclass="theme-danger"&gt;14-16 months&lt;/entry&gt;
-      &lt;/row&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Hippopotamus&lt;/entry&gt;
-        &lt;entry&gt;7 1/2 months&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/tbody&gt;
-  &lt;/tgroup&gt;
-&lt;/table&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;table theme="primary" padding="1" width="100"&gt;
-  &lt;tgroup cols="2"&gt;
-    &lt;thead&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Animal&lt;/entry&gt;
-        &lt;entry&gt;Gestation&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;row theme="info"&gt;
-        &lt;entry&gt;Elephant (African and Asian)&lt;/entry&gt;
-        &lt;entry&gt;19-22 months&lt;/entry&gt;
-      &lt;/row&gt;
-      &lt;row theme="success"&gt;
-        &lt;entry&gt;Giraffe&lt;/entry&gt;
-        &lt;entry&gt;15 months&lt;/entry&gt;
-      &lt;/row&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Rhinoceros&lt;/entry&gt;
-        &lt;entry theme="danger"&gt;14-16 months&lt;/entry&gt;
-      &lt;/row&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Hippopotamus&lt;/entry&gt;
-        &lt;entry&gt;7 1/2 months&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/tbody&gt;
-  &lt;/tgroup&gt;
-&lt;/table&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/tables/variants.xml"/></codeblock>
     <section id="striped-rows">
       <title>Striped rows</title>
       <p>Use <xmlatt>striped="yes"</xmlatt> to add zebra-striping to any table row
@@ -242,20 +141,7 @@
         </tgroup>
       </table>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table outputclass="table-striped"&gt;
-  ...etc
-&lt;/table&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;table striped="yes"&gt;
-  ...etc
-&lt;/table&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/tables/striped-rows.xml"/></codeblock>
     <section id="striped-columns">
       <title>Striped columns</title>
       <p>Use <xmlatt>striped-columns="yes"</xmlatt> to add zebra-striping to any table column
@@ -293,20 +179,7 @@
         </tgroup>
       </table>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table outputclass="table-striped-columns"&gt;
-  ...etc
-&lt;/table&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;table striped-columns="yes"&gt;
-  ...etc
-&lt;/table&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/tables/striped-columns.xml"/></codeblock>
     <section id="bordered-tables">
       <title>Bordered tables</title>
       <p>Add <xmlatt>rowsep="1"</xmlatt> and <xmlatt
@@ -344,20 +217,7 @@
         </tgroup>
       </table>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table rowsep="1" colsep="1"&gt;
-  ...etc
-&lt;/table&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;table rowsep="1" colsep="1"&gt;
-  ...etc
-&lt;/table&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/tables/bordered-tables.xml"/></codeblock>
     <section id="tables-without-borders">
       <title>Tables without borders</title>
       <p>Add <xmlatt>rowsep="0"</xmlatt> and <xmlatt>colsep="0"</xmlatt> for a table without borders.</p>
@@ -394,20 +254,7 @@
         </tgroup>
       </table>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table rowsep="0" colsep="0"&gt;
-  ...etc
-&lt;/table&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;table rowsep="0" colsep="0"&gt;
-  ...etc
-&lt;/table&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/tables/tables-without-borders.xml"/></codeblock>
     <section id="small-tables">
       <title>Small tables</title>
       <p>Add <xmlatt>compact="yes"</xmlatt> to make any table more compact by cutting all cell <codeph
@@ -445,20 +292,7 @@
         </tgroup>
       </table>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table outputclass="table-sm"&gt;
-  ...etc
-&lt;/table&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;table compact="yes"&gt;
-  ...etc
-&lt;/table&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/tables/small-tables.xml"/></codeblock>
     <section id="table-group-dividers">
       <title>Table group dividers</title>
       <p>Add a thicker border, darker between table groups—<xmlelement>thead</xmlelement> and <xmlelement
@@ -496,23 +330,7 @@
         </tgroup>
       </table>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;tbody outputclass="table-group-divider"&gt;
-  ...etc
-&lt;/tbody&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;table divider="yes"&gt;
-  ...
-  &lt;tbody&gt;
-  ...etc
-  &lt;/tbody&gt;
-&lt;/table&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/tables/table-group-dividers.xml"/></codeblock>
     <section id="vertical-alignment">
       <title>Vertical alignment</title>
       <p>Table cells of <xmlelement
@@ -565,66 +383,7 @@
         </tgroup>
       </table>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table outputclass="align-middle"&gt;
-  &lt;tgroup cols="4"&gt;
-    &lt;thead&gt;
-      &lt;row&gt;
-        &lt;entry valign="top"&gt;...&lt;/entry&gt;
-        &lt;entry valign="bottom"&gt;...&lt;/entry&gt;
-        &lt;entry valign="middle"&gt;...&lt;/entry&gt;
-        &lt;entry&gt;...&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;row&gt;
-        ...
-      &lt;/row&gt;
-      &lt;row valign="bottom"&gt;
-        ...
-      &lt;/row&gt;
-      &lt;row&gt;
-        &lt;entry&gt;...&lt;/entry&gt;
-        &lt;entry&gt;...&lt;/entry&gt;
-        &lt;entry valign="top"&gt;...&lt;/entry&gt;
-        &lt;entry&gt;...&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/tbody&gt;
-  &lt;/tgroup&gt;
-&lt;/table&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;table outputclass="align-middle"&gt;
-  &lt;tgroup cols="4"&gt;
-    &lt;thead&gt;
-      &lt;row&gt;
-        &lt;entry valign="top"&gt;...&lt;/entry&gt;
-        &lt;entry valign="bottom"&gt;...&lt;/entry&gt;
-        &lt;entry valign="middle"&gt;...&lt;/entry&gt;
-        &lt;entry&gt;...&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;row&gt;
-        ...
-      &lt;/row&gt;
-      &lt;row valign="bottom"&gt;
-        ...
-      &lt;/row&gt;
-      &lt;row&gt;
-        &lt;entry&gt;...&lt;/entry&gt;
-        &lt;entry&gt;...&lt;/entry&gt;
-        &lt;entry valign="top"&gt;...&lt;/entry&gt;
-        &lt;entry&gt;...&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/tbody&gt;
-  &lt;/tgroup&gt;
-&lt;/table&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/tables/vertical-alignment.xml"/></codeblock>
     <section id="table-head">
       <title>Table head</title>
       <p>Similar to tables and dark tables, use the modifier <xmlatt>theme="secondary"</xmlatt> or
@@ -663,28 +422,7 @@
         </tgroup>
       </table>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table&gt;
-  &lt;tgroup&gt;
-    &lt;thead outputclass="theme-secondary"&gt;
-      ...etc
-    &lt;/thead&gt;
-  &lt;/tgroup&gt;
-&lt;/table&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;table&gt;
-  &lt;tgroup&gt;
-    &lt;thead theme="secondary"&gt;
-      ...etc
-    &lt;/thead&gt;
-  &lt;/tgroup&gt;
-&lt;/table&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/tables/table-head.xml"/></codeblock>
     <example>
       <table>
         <tgroup cols="2">
@@ -717,27 +455,6 @@
         </tgroup>
       </table>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table&gt;
-  &lt;tgroup&gt;
-    &lt;thead outputclass="theme-inverse"&gt;
-      ...etc
-    &lt;/thead&gt;
-  &lt;/tgroup&gt;
-&lt;/table&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;table&gt;
-  &lt;tgroup&gt;
-    &lt;thead theme="inverse"&gt;
-      ...etc
-    &lt;/thead&gt;
-  &lt;/tgroup&gt;
-&lt;/table&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/tables/table-head-colors.xml"/></codeblock>
   </body>
 </topic>

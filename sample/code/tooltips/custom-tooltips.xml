@@ -1,0 +1,5 @@
+<xref href="#" outputclass="btn-solid theme-secondary tooltip-top">
+  <data name="class">custom-tooltip</data>
+  <desc>This top tooltip is themed via CSS variables.</desc>
+  Custom tooltip
+</xref>
