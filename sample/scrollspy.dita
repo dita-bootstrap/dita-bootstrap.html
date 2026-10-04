@@ -79,7 +79,7 @@
           and every <xmlelement>section</xmlelement> element has an <xmlatt>id</xmlatt> and <xmlelement
         >title</xmlelement>.
         </p>
-        <codeblock><coderef href="code/scrollspy/including-topic-and-section-elements-in-the-navigation.xml"/></codeblock>
+        <codeblock><coderef href="code/scrollspy/include-topics-and-sections.xml"/></codeblock>
     </section>
     <section id="excluding-sections">
       <title>Excluding <xmlelement>section</xmlelement> elements from the navigation</title>
@@ -90,7 +90,7 @@
           format="dita"
         >drawer components</xref> are ignored automatically.
       </p>
-      <codeblock><coderef href="code/scrollspy/excluding-section-elements-from-the-navigation.xml"/></codeblock>
+      <codeblock><coderef href="code/scrollspy/exclude-sections.xml"/></codeblock>
     </section>
   </body>
 </topic>

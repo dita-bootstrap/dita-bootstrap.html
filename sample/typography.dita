@@ -136,7 +136,7 @@
         </lq>
       </fig>
     </example>
-    <codeblock><coderef href="code/typography/someone-famous-in-source-title.xml"/></codeblock>
+    <codeblock><coderef href="code/typography/blockquote-attribution.xml"/></codeblock>
     <section id="alignment">
       <title>Alignment</title>
       <p>Use text utilities such as <xmlatt>outputclass="text-center"</xmlatt> as needed to change the alignment of your
@@ -150,7 +150,7 @@
         </lq>
       </fig>
     </example>
-    <codeblock><coderef href="code/typography/someone-famous-in-source-title-2.xml"/></codeblock>
+    <codeblock><coderef href="code/typography/blockquote-attribution-centered.xml"/></codeblock>
     <example>
       <fig outputclass="text-end">
         <title>Someone famous in <cite>Source Title</cite></title>
@@ -159,7 +159,7 @@
         </lq>
       </fig>
     </example>
-    <codeblock><coderef href="code/typography/someone-famous-in-source-title-3.xml"/></codeblock>
+    <codeblock><coderef href="code/typography/blockquote-attribution-right-aligned.xml"/></codeblock>
 
     <section id="lists">
       <title outputclass="h2">Lists</title>

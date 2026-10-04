@@ -39,7 +39,7 @@
       <p>The overall layout is always defined by the <parmname>--defaultLanguage</parmname> parameter.</p>
       <p>To render an article as RTL across the page, set the <xmlelement>topic xml:lang=".."</xmlelement> to an RTL
         language.</p>
-      <codeblock dir="ltr" outputclass="language-xml small"><coderef href="code/rtl/using-ltr-and-rtl-languages-in-the-same-topic.xml"/></codeblock>
+      <codeblock dir="ltr" outputclass="language-xml small"><coderef href="code/rtl/mixed-direction.xml"/></codeblock>
       <p>Additionally, within any <xmlelement>topic</xmlelement>, setting the <xmlatt>dir</xmlatt> attribute on any DITA
         element thereafter will cause the layout to be recalculated for the enclosed block only.</p>
     </section>

@@ -89,11 +89,11 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/theme/contrast-outputclass-2.xml"/></codeblock>
+        <codeblock><coderef href="code/theme/contrast-nested-link-outputclass.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock><coderef href="code/theme/contrast-specialization-2.xml"/></codeblock>
+        <codeblock><coderef href="code/theme/contrast-nested-link-specialization.xml"/></codeblock>
       </section>
     </bodydiv>
 
@@ -159,11 +159,11 @@
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock
-        ><coderef href="code/theme/subtle-outputclass-2.xml"/></codeblock>
+        ><coderef href="code/theme/subtle-border-outputclass.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock><coderef href="code/theme/subtle-specialization-2.xml"/></codeblock>
+        <codeblock><coderef href="code/theme/subtle-border-specialization.xml"/></codeblock>
       </section>
     </bodydiv>
 
@@ -191,11 +191,11 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/theme/subtle-outputclass-3.xml"/></codeblock>
+        <codeblock><coderef href="code/theme/subtle-nested-link-outputclass.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock><coderef href="code/theme/subtle-specialization-3.xml"/></codeblock>
+        <codeblock><coderef href="code/theme/subtle-nested-link-specialization.xml"/></codeblock>
       </section>
     </bodydiv>
 
@@ -260,11 +260,11 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/theme/muted-outputclass-2.xml"/></codeblock>
+        <codeblock><coderef href="code/theme/muted-nested-link-outputclass.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock><coderef href="code/theme/muted-specialization-2.xml"/></codeblock>
+        <codeblock><coderef href="code/theme/muted-nested-link-specialization.xml"/></codeblock>
       </section>
     </bodydiv>
 
@@ -394,11 +394,11 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/theme/with-components-outputclass-2.xml"/></codeblock>
+        <codeblock><coderef href="code/theme/status-colors-outputclass.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>
-        <codeblock><coderef href="code/theme/with-components-specialization-2.xml"/></codeblock>
+        <codeblock><coderef href="code/theme/status-colors-specialization.xml"/></codeblock>
       </section>
     </bodydiv>
 

@@ -54,7 +54,7 @@
         <image scope="external" href="https://picsum.photos/1200/600?b"/>
       </fig>
     </example>
-    <codeblock><coderef href="code/figures/a-caption-for-the-image-2.xml"/></codeblock>
+    <codeblock><coderef href="code/figures/caption-right-aligned.xml"/></codeblock>
 
     <section id="adding-borders">
       <title>Adding borders</title>
@@ -87,6 +87,6 @@
         <codeblock><coderef href="code/figures/bottom-border-only.xml"/></codeblock>
       </fig>
     </example>
-    <codeblock><coderef href="code/figures/bottom-border-only-2.xml"/></codeblock>
+    <codeblock><coderef href="code/figures/fig-frame.xml"/></codeblock>
   </body>
 </topic>

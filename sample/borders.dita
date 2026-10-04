@@ -41,7 +41,7 @@
         <ph outputclass="border-start p-3 border-accent">&#xA0;border-start</ph>
       </div>
     </example>
-    <codeblock><coderef href="code/borders/borders.xml"/></codeblock>
+    <codeblock><coderef href="code/borders/border-utilities.xml"/></codeblock>
 
     <section id="border-specialization">
       <title>Border Specialization</title>

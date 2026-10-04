@@ -129,7 +129,7 @@
         >data-bs-target="#bdSidebar"</xmlatt>
         and <xmlatt>data-bs-toggle="drawer"</xmlatt>:
       </p>
-      <codeblock outputclass="language-xml" deliveryTarget="html"><coderef href="code/nav/collapsible-styled-full-toc-with-collapsible-elements.xml"/></codeblock>
+      <codeblock outputclass="language-xml" deliveryTarget="html"><coderef href="code/nav/collapsible-toc.xml"/></codeblock>
 
       <p>The look and feel of the mobile sidebar header can be altered using the <parmname
         >--bootstrap.sidebar.hdr</parmname> parameter and supplying an HTML header file:</p>
