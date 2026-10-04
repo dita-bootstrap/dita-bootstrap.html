@@ -129,7 +129,9 @@
         >data-bs-target="#bdSidebar"</xmlatt>
         and <xmlatt>data-bs-toggle="drawer"</xmlatt>:
       </p>
-      <codeblock outputclass="language-xml" deliveryTarget="html"><coderef href="code/nav/collapsible-toc.xml"/></codeblock>
+      <codeblock outputclass="language-xml" deliveryTarget="html"><coderef
+          href="code/nav/collapsible-toc.xml"
+        /></codeblock>
 
       <p>The look and feel of the mobile sidebar header can be altered using the <parmname
         >--bootstrap.sidebar.hdr</parmname> parameter and supplying an HTML header file:</p>
@@ -222,9 +224,6 @@
          <xmlatt>content</xmlatt> attribute on the <xmlelement>othermeta</xmlelement> element.
       </p>
     </section>
-    <codeblock
-      outputclass="language-xml"
-      deliveryTarget="html"
-    ><coderef href="code/nav/dividers.xml"/></codeblock>
+    <codeblock outputclass="language-xml" deliveryTarget="html"><coderef href="code/nav/dividers.xml"/></codeblock>
   </body>
 </topic>

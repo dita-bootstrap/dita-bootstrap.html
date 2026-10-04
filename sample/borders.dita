@@ -127,7 +127,9 @@
     </section>
     <example>
       <p/>
-      <codeblock outputclass="language-cpp" frame="sides"><coderef href="code/borders/frame-attribute-support.cpp"/></codeblock>
+      <codeblock outputclass="language-cpp" frame="sides"><coderef
+          href="code/borders/frame-attribute-support.cpp"
+        /></codeblock>
       <p/>
       <lines
         outputclass="bg-subtle-accent fg-emphasis-accent p-3"

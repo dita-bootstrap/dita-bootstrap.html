@@ -158,8 +158,7 @@
     <bodydiv outputclass="nav-pills mt-3">
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock
-        ><coderef href="code/theme/subtle-border-outputclass.xml"/></codeblock>
+        <codeblock><coderef href="code/theme/subtle-border-outputclass.xml"/></codeblock>
       </section>
       <section>
         <title>Specialization</title>

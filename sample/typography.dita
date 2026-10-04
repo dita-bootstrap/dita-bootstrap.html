@@ -46,8 +46,7 @@
     <example deliveryTarget="html">
       <p outputclass="h3">Fancy display heading <ph outputclass="fs-md fg-secondary">with faded secondary text</ph></p>
     </example>
-    <codeblock
-    ><coderef href="code/typography/customizing-headings.xml"/></codeblock>
+    <codeblock><coderef href="code/typography/customizing-headings.xml"/></codeblock>
     <section id="display-headings">
       <title>Display headings</title>
       <p>Traditional heading elements are designed to work best in the meat of your page content. When you need a
@@ -85,8 +84,7 @@
       <p><b>This line rendered as bold text.</b></p>
       <p><i>This line rendered as italicized text.</i></p>
     </example>
-    <codeblock
-    ><coderef href="code/typography/inline-text-elements.xml"/></codeblock>
+    <codeblock><coderef href="code/typography/inline-text-elements.xml"/></codeblock>
     <section id="text-utilities">
       <title>Text utilities</title>
       <p>Change text alignment, transform, style, weight, line-height, decoration and color with Bootstrap’s
