@@ -1,0 +1,4 @@
+<div outputclass="bg-primary mt-5 mb-0">Margin Top 5, Bottom 0</div>
+<div outputclass="bg-secondary mx-3">Margin Horizontal 3</div>
+<div outputclass="bg-success py-5">Padding Vertical 5</div>
+<div outputclass="bg-danger ps-3 pe-1">Padding Start 3, End 1</div>

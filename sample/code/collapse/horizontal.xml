@@ -1,0 +1,8 @@
+<p>
+  <xref outputclass="btn-solid theme-primary" props="collapse-toggle" href="#collapse2">Toggle Width Collapse</xref>
+</p>
+<bodydiv outputclass="collapse-horizontal" id="collapse2" otherprops="style(min-height: 120px;)">
+  <div outputclass="card card-body" otherprops="style(width: 300px;)">
+    <p>This is some placeholder content for a horizontal collapse. It’s hidden by default and shown when triggered.</p>
+  </div>
+</bodydiv>

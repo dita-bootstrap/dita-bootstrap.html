@@ -1,0 +1,4 @@
+<div outputclass="shadow-none m-3 p-3 border">No shadow</div>
+<div outputclass="shadow-sm m-3 p-3 border">Small shadow</div>
+<div outputclass="shadow m-3 p-3 border">Regular shadow</div>
+<div outputclass="shadow-lg m-3 p-3 border">Larger shadow</div>

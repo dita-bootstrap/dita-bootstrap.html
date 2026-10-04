@@ -1,0 +1,18 @@
+<xref outputclass="theme-primary btn-icon" href="#">
+  <i outputclass="bi-arrow-down-square-fill"/>
+</xref>
+<xref outputclass="theme-secondary btn-icon" href="#">
+  <i outputclass="bi-chat-left-quote-fill"/>
+</xref>
+<xref outputclass="theme-warning btn-icon" href="#">
+  <i outputclass="bi-speedometer"/>
+</xref>
+<xref outputclass="theme-info btn-icon" href="#">
+  <i outputclass="bi-camera-fill"/>
+</xref>
+<xref outputclass="theme-accent btn-icon" href="#">
+  <i outputclass="bi-link"/>
+</xref>
+<xref outputclass="theme-danger btn-icon" href="#">
+  <i outputclass="bi-share-fill"/>
+</xref>

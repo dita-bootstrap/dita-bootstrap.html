@@ -1,0 +1,8 @@
+<div outputclass="d-flex gap-2" margin="b2">
+  <div theme="primary-contrast" padding="3" rounded="yes" outputclass="flex-fill text-center">Primary with a
+    <xref href="#">link</xref></div>
+  <div theme="primary-subtle" padding="3" rounded="yes" outputclass="flex-fill text-center">Primary with a
+    <xref href="#">link</xref></div>
+  <div theme="primary-muted" padding="3" rounded="yes" outputclass="flex-fill text-center">Primary with a
+    <xref href="#">link</xref></div>
+</div>

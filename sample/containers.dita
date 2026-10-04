@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <topic id="containers">
@@ -22,7 +22,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="how-they-work">
       <title>How they work</title>
       <p>Containers are the most basic layout element in Bootstrap and are required when using the default grid system.
         Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be
@@ -33,7 +33,7 @@
           <option>container</option>, which sets a <codeph>max-width</codeph> at each responsive breakpoint
         </li>
         <li>
-          <option>container-{breakpoint}</option>, which is <codeph>width: 100%</codeph> until the specified breakpoint
+          <option>{breakpoint}:container</option>, which is <codeph>width: 100%</codeph> until the specified breakpoint
         </li>
         <li>
           <option>container-fluid</option>, which is <codeph>width: 100%</codeph> at all breakpoints
@@ -83,7 +83,7 @@
               <option>container</option>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>540px</entry>
             <entry>720px</entry>
@@ -93,10 +93,10 @@
           </row>
           <row>
             <entry>
-              <option>container-sm</option>
+              <option>sm:container</option>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>540px</entry>
             <entry>720px</entry>
@@ -106,13 +106,13 @@
           </row>
           <row>
             <entry>
-              <option>container-md</option>
+              <option>md:container</option>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>720px</entry>
             <entry>960px</entry>
@@ -121,16 +121,16 @@
           </row>
           <row>
             <entry>
-              <option>container-lg</option>
+              <option>lg:container</option>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>960px</entry>
             <entry>1140px</entry>
@@ -138,41 +138,41 @@
           </row>
           <row>
             <entry>
-              <option>container-xl</option>
+              <option>xl:container</option>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>1140px</entry>
             <entry>1320px</entry>
           </row>
           <row>
             <entry>
-              <option>container-xxl</option>
+              <option>xxl:container</option>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>1320px</entry>
           </row>
@@ -181,28 +181,28 @@
               <option>container-fluid</option>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
             <entry>
-              <ph outputclass="text-body-secondary">100%</ph>
+              <ph outputclass="fg-2">100%</ph>
             </entry>
           </row>
         </tbody>
       </tgroup>
     </table>
-    <note type="note">The DITA Bootstrap plug-in uses the responsive <option>container-xxl</option> by default to fill
+    <note type="note">The DITA Bootstrap plug-in uses the responsive <option>xxl:container</option> by default to fill
       the viewport width with page content up to the extra extra large breakpoint. At 1400px or wider, content width is
       constrained to 1320px to ensure lines remain readable.</note>
     <p>To use different size, pass the desired value to the <cmdname>dita</cmdname> command via the

@@ -1,0 +1,7 @@
+<div class="bd-navbar-toggle">
+  <button class="lg:d-none p-2" type="button"
+    data-bs-toggle="drawer" data-bs-target="#bdSidebar"
+    aria-controls="bdSidebar" aria-label="Toggle docs navigation">
+    <i class="bi bi-list"/>
+  </button>
+</div>

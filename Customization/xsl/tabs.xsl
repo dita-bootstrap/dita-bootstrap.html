@@ -12,14 +12,14 @@
   exclude-result-prefixes="xs xhtml dita-ot"
 >
   <!-- Customization to add Bootstrap Tabbed Dialog Component -->
-  <!-- https://getbootstrap.com/docs/5.3/components/navs-tabs/#tabs -->
+  <!-- https://getbootstrap.com/docs/6.0/components/navs-tabs/#tabs -->
 
   <xsl:template
     match="*[contains(@class, ' bootstrap-d/tabbed-dialog ')] | *[contains(@class,' topic/bodydiv ') and (contains(@outputclass, 'nav-tabs') or contains(@outputclass, 'nav-pills'))]"
   >
     <xsl:choose>
       <!-- Pills with Vertical alignment -->
-      <!-- https://getbootstrap.com/docs/5.3/components/navs-tabs/#vertical -->
+      <!-- https://getbootstrap.com/docs/6.0/components/navs-tabs/#vertical -->
       <xsl:when test="@style = 'vertical-pills' or contains(@outputclass, 'nav-pills-vertical')">
         <div class="d-flex align-items-start">
           <div role="tablist" aria-orientation="vertical">

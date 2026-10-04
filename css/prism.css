@@ -1,0 +1,14 @@
+html:root {
+  --prism-background: transparent;
+  --prism-maintext: light-dark(var(--bs-gray-900), var(--bs-white));
+  --prism-text: light-dark(var(--bs-gray-600), var(--bs-gray-400));
+  --prism-punctuation: light-dark(var(--bs-gray-600), var(--bs-gray-400));
+  --prism-namespace: var(--prism-text);
+  --prism-keywords: light-dark(var(--bs-blue-600), var(--bs-blue-400));
+  --prism-strings: light-dark(var(--bs-green-600), var(--bs-green-400));
+  --prism-symbol: light-dark(var(--bs-pink-600), var(--bs-pink-400));
+  --prism-type: light-dark(var(--bs-red-600), var(--bs-red-400));
+  --prism-regex: light-dark(var(--bs-orange-600), var(--bs-orange-400));
+  --prism-deleted: light-dark(var(--bs-red-600), var(--bs-red-400));
+  --prism-url: light-dark(var(--bs-yellow-600), var(--bs-yellow-400));
+}

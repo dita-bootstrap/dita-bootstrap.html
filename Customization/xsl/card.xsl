@@ -12,10 +12,12 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 >
   <!-- Customization to add Bootstrap Card Component -->
-  <!-- https://getbootstrap.com/docs/5.3/components/card/ -->
+  <!-- https://getbootstrap.com/docs/6.0/components/card/ -->
 
   <xsl:template
-    match="*[contains(@class, ' bootstrap-d/card ')] | *[contains(@class,' topic/section ') and contains(@outputclass, 'card')]"
+    match="*[contains(@class, ' bootstrap-d/card ')]
+           | *[contains(@class,' topic/section ') and tokenize(@outputclass, '\s+') = 'card']
+           | *[contains(@class,' topic/div ') and tokenize(@outputclass, '\s+') = 'card']"
   >
     <xsl:variable name="images" select="*[contains(@class, ' topic/image ')]"/>
     <xsl:variable
@@ -74,7 +76,7 @@
     <xsl:variable
       name="bootstrap-class"
       select="
-        if (count(preceding-sibling::*[contains(@class, ' topic/title ')]) > 0) then 'sectiontitle card-subtitle text-body-secondary'
+        if (count(preceding-sibling::*[contains(@class, ' topic/title ')]) > 0) then 'sectiontitle card-subtitle fg-2'
         else 'sectiontitle card-title'"
     />
     <xsl:element name="{$headLevel}">
@@ -90,7 +92,9 @@
   <xsl:template match="*[contains(@class, ' topic/image ')]" mode="get-output-class" priority="10">
     <xsl:variable
       name="card"
-      select="parent::*[contains(@class, ' bootstrap-d/card ') or (contains(@class,' topic/section ') and contains(@outputclass, 'card'))]"
+      select="parent::*[contains(@class, ' bootstrap-d/card ')
+                        or (contains(@class,' topic/section ') and tokenize(@outputclass, '\s+') = 'card')
+                        or (contains(@class,' topic/div ') and tokenize(@outputclass, '\s+') = 'card')]"
     />
     <xsl:if test="$card">
       <xsl:variable name="totalImages" select="count($card/*[contains(@class, ' topic/image ')])"/>

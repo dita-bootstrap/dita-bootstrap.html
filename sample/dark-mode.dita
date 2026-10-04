@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <topic id="dark-mode">
@@ -24,37 +24,12 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="example">
       <title>Example</title>
       <p>To add a color mode toggler to the menu bar, add a series of <xmlelement
         >button</xmlelement> elements with the attributes <xmlatt>data-bs-theme="light"</xmlatt> or <xmlatt
         >data-bs-theme="dark"</xmlatt> as shown here.</p>
-      <codeblock>&lt;ul class="navbar-nav ms-auto"&gt;
-  &lt;li class="nav-item dropdown"&gt;
-    &lt;a href="#" class="nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center show"
-      id="bd-color-mode" data-bs-toggle="dropdown" aria-expanded="false"
-      data-bs-display="static"&gt;Toggle theme&lt;/a&gt;
-    &lt;ul class="dropdown-menu dropdown-menu-end"
-      aria-labelledby="bd-color-mode" style="--bs-dropdown-min-width: 6rem;"
-      data-bs-popper="static"&gt;
-      &lt;li&gt;
-        &lt;button type="button" class="dropdown-item d-flex align-items-center"
-          data-bs-theme-value="light"&gt; Light
-        &lt;/button&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;button type="button" class="dropdown-item d-flex align-items-center"
-          data-bs-theme-value="dark"&gt; Dark
-        &lt;/button&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;button type="button" class="dropdown-item d-flex align-items-center"
-          data-bs-theme-value="auto"&gt; Auto
-        &lt;/button&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</codeblock>
+      <codeblock><coderef href="code/dark-mode/example.xml"/></codeblock>
     <p>The plug-in includes a sample color mode toggler in its
         <xref
           href="https://github.com/dita-bootstrap/dita-bootstrap.html/blob/develop/includes/hdr.navbar.example.xml"

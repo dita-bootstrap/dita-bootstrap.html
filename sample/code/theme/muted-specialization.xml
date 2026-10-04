@@ -1,0 +1,8 @@
+<div theme="primary-muted" padding="2">primary-muted</div>
+<div theme="accent-muted" padding="2">accent-muted</div>
+<div theme="success-muted" padding="2">success-muted</div>
+<div theme="danger-muted" padding="2">danger-muted</div>
+<div theme="warning-muted" padding="2">warning-muted</div>
+<div theme="info-muted" padding="2">info-muted</div>
+<div theme="inverse-muted" padding="2">inverse-muted</div>
+<div theme="secondary-muted" padding="2">secondary-muted</div>

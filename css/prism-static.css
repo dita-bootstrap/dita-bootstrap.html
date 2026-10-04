@@ -1,0 +1,28 @@
+html:root {
+  --prism-maintext: var(--bs-fg-body);
+  --prism-background: transparent;
+  --prism-text: var(--bs-gray-500);
+  --prism-punctuation: var(--bs-gray-500);
+  --prism-namespace: var(--prism-text);
+  --prism-keywords: var(--bs-blue-500);
+  --prism-strings: var(--bs-green-500);
+  --prism-symbol: var(--bs-pink-500);
+  --prism-type: var(--bs-red-500);
+  --prism-regex: var(--bs-orange-500);
+  --prism-deleted: var(--bs-red-500);
+  --prism-url: var(--bs-yellow-500);
+}
+
+[data-bs-theme='dark'] {
+  --prism-keywords: var(--dita-prussian-blue);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --prism-keywords: var(--dita-prussian-blue);
+  }
+
+  [data-bs-theme='light'] {
+    --prism-keywords: var(--bs-blue-500);
+  }
+}

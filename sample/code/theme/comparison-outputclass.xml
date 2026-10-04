@@ -1,0 +1,8 @@
+<div outputclass="d-flex gap-2 mb-2">
+  <div outputclass="theme-primary theme-contrast p-3 flex-fill text-center rounded">Primary with a
+    <xref href="#">link</xref></div>
+  <div outputclass="theme-primary theme-subtle p-3 flex-fill text-center rounded">Primary with a
+    <xref href="#">link</xref></div>
+  <div outputclass="theme-primary theme-muted p-3 flex-fill text-center rounded">Primary with a
+    <xref href="#">link</xref></div>
+</div>

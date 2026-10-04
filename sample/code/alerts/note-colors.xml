@@ -1,0 +1,10 @@
+<note type="note" outputclass="theme-primary">
+  This is a primary note.</note>
+<note type="note" outputclass="theme-secondary">
+  This is a secondary note.</note>
+<note type="note" outputclass="theme-accent">
+  This is accent note.
+</note>
+<note type="note" outputclass="theme-inverse">
+  This is inverse note.
+</note>

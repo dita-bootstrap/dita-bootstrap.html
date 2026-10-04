@@ -1,0 +1,33 @@
+<note type="note">
+  This is just a note.
+</note>
+<note type="notice">
+  Notice this piece of information.
+</note>
+<note type="fastpath">
+  This note will speed you on your way.
+</note>
+<note type="remember">
+  Don't forget to do what this note says.
+</note>
+<note type="tip">
+  This is a fine little tip.
+</note>
+<note type="attention">
+  Please pay extra attention to this note.
+</note>
+<note type="caution">
+  Care is required when proceeding.
+</note>
+<note type="important">
+  This note is important.
+</note>
+<note type="restriction">
+  You can't do what this note says.
+</note>
+<note type="danger">
+  You may hurt yourself!
+</note>
+<note type="other" othertype="Another note">
+  This is something other than a normal note.
+</note>

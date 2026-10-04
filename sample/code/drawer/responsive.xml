@@ -1,0 +1,12 @@
+<note outputclass="d-none lg:d-block">
+  Resize your browser to show the responsive drawer toggle.
+</note>
+<xref outputclass="btn-solid theme-primary lg:d-none" props="drawer-toggle" href="#drawer4">
+  Toggle drawer
+</xref>
+<section outputclass="drawer-lg" id="drawer4">
+  <title>Drawer</title>
+  <p>
+    This is content within an <xmlatt>outputclass="drawer-lg"</xmlatt>.
+  </p>
+</section>

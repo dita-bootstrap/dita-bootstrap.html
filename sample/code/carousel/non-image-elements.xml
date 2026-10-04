@@ -1,0 +1,26 @@
+<ol outputclass="carousel">
+  <li>
+    <div outputclass="row">
+      <div outputclass="col-1"/>
+      <div outputclass="col-10">
+      ...
+      </div>
+    </div>
+  </li>
+  <li>
+    <div outputclass="row">
+      <div outputclass="col-1"/>
+      <div outputclass="col-10">
+      ...
+      </div>
+    </div>
+  </li>
+  <li>
+    <div outputclass="row">
+      <div outputclass="col-1"/>
+      <div outputclass="col-10">
+      ...
+      </div>
+    </div>
+  </li>
+</ol>

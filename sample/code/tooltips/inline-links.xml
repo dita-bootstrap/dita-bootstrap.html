@@ -1,0 +1,8 @@
+<p>Placeholder text to demonstrate some
+  <xref href="#" outputclass="tooltip-top"> inline links <desc>Default tooltip</desc></xref> with tooltips. This is
+  now just filler, no killer. Content placed here just to mimic the presence of
+  <xref href="#" outputclass="tooltip-top"> real text<desc>Another tooltip</desc></xref>. And all that just to give
+  you an idea of how tooltips would look when used in real-world situations. So hopefully you've now seen how
+  <xref href="#" outputclass="tooltip-top"> these tooltips on links<desc>Another one here too</desc></xref> can
+  work in practice, once you use them on
+  <xref href="#" outputclass="tooltip-top"> your own<desc>The last tip!</desc></xref> site or project.</p>

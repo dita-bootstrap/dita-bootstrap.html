@@ -1,0 +1,28 @@
+<table outputclass="theme-primary p-1 w-100">
+  <tgroup cols="2">
+    <thead>
+      <row>
+        <entry>Animal</entry>
+        <entry>Gestation</entry>
+      </row>
+    </thead>
+    <tbody>
+      <row outputclass="theme-info">
+        <entry>Elephant (African and Asian)</entry>
+        <entry>19-22 months</entry>
+      </row>
+      <row outputclass="theme-success">
+        <entry>Giraffe</entry>
+        <entry>15 months</entry>
+      </row>
+      <row>
+        <entry>Rhinoceros</entry>
+        <entry outputclass="theme-danger">14-16 months</entry>
+      </row>
+      <row>
+        <entry>Hippopotamus</entry>
+        <entry>7 1/2 months</entry>
+      </row>
+    </tbody>
+  </tgroup>
+</table>

@@ -1,0 +1,33 @@
+<dl>
+  <dlentry>
+    <dt>Description lists</dt>
+    <dd>A description list is perfect for defining terms.</dd>
+  </dlentry>
+  <dlentry>
+    <dt>Term</dt>
+    <dd>
+      <p>Definition for the term.</p>
+      <p>And some more placeholder definition text.</p>
+    </dd>
+  </dlentry>
+  <dlentry>
+    <dt>Another term</dt>
+    <dd>This definition is short, so no extra paragraphs or anything.</dd>
+  </dlentry>
+  <dlentry>
+    <dt>Truncated term is truncated</dt>
+    <dd>This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+  </dlentry>
+  <dlentry>
+    <dt>Nesting</dt>
+    <dd>
+      <dl>
+        <dlentry>
+          <dt>Nested definition list</dt>
+          <dd>I heard you like definition lists. Let me put a definition list
+            inside your definition list.</dd>
+        </dlentry>
+      </dl>
+    </dd>
+  </dlentry>
+</dl>

@@ -1,0 +1,19 @@
+<carousel>
+  <carousel-item>
+    <image href="..." />
+    <image href="..." />
+    <image href="..." />
+    <grid-row deliveryTarget="html">
+      <grid-col colspan="4">
+        <p outputclass="text-center figure figure-caption">...</p>
+      </grid-col>
+      <grid-col colspan="4">
+        <p outputclass="text-center figure figure-caption">...</p>
+      </grid-col>
+      <grid-col colspan="4">
+        <p outputclass="text-center figure figure-caption">...</p>
+      </grid-col>
+    </grid-row>
+  </carousel-item>
+  ...
+</carousel>

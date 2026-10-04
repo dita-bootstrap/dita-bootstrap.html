@@ -12,7 +12,7 @@
   exclude-result-prefixes="xs xhtml dita-ot"
 >
   <!-- Customization to add Bootstrap Popover component -->
-  <!-- https://getbootstrap.com/docs/5.3/components/popovers/ -->
+  <!-- https://getbootstrap.com/docs/6.0/components/popovers/ -->
 
   <xsl:template match="*" mode="add-bootstrap-popover">
     <xsl:attribute name="data-bs-toggle">

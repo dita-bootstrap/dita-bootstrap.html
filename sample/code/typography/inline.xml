@@ -1,0 +1,5 @@
+<ul outputclass="list-inline">
+  <li>This is a list item.</li>
+  <li>And another one.</li>
+  <li>But they're displayed inline.</li>
+</ul>

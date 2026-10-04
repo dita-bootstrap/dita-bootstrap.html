@@ -1,0 +1,4 @@
+<ph outputclass="border border-primary">Primary</ph>
+<ph outputclass="border border-primary-subtle">Primary subtle</ph>
+<ph outputclass="border border-success">Success</ph>
+<ph outputclass="border border-danger">Danger</ph>

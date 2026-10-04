@@ -1,0 +1,9 @@
+<xref outputclass="btn-solid theme-primary" props="drawer-toggle" href="#drawer1">
+  Click here
+</xref>
+<section outputclass="drawer-start" id="drawer1">
+  <title>Drawer</title>
+  <p>
+    Content for the drawer goes here. You can place just about any section elements here.
+  </p>
+</section>

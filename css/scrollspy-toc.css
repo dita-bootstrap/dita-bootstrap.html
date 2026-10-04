@@ -2,7 +2,7 @@
   grid-area: scrollspy;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1023.98px) {
   .bs-main {
     grid-template-areas: 'content';
   }
@@ -12,18 +12,20 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .bs-main {
     grid-template-areas: 'content scrollspy';
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: minmax(0, 4fr) minmax(280px, 1fr);
   }
 
   .bs-scrollspy {
+    --bs-scrollspy-top: calc(var(--bs-navbar-min-height, 3.5rem) + 1.75rem);
     position: sticky;
-    top: 5.25rem;
+    top: var(--bs-scrollspy-top);
     right: 0;
     z-index: 2;
-    height: calc(100vh - 6rem);
+    height: calc(100vh - var(--bs-scrollspy-top) - 0.75rem);
+    padding-inline: 0.5rem;
     overflow-y: auto;
   }
 }
@@ -49,21 +51,23 @@
 
 .bs-scrollspy nav a {
   display: block;
-  padding: 0.125rem 0 0.125rem 0.75rem;
-  color: var(--bs-body-color);
+  padding: 0.125rem 0.75rem;
+  color: var(--bs-fg-body);
   text-decoration: none;
+  overflow-wrap: break-word;
+  white-space: normal;
   border-left: 0.125rem solid transparent;
 }
 
 .bs-scrollspy nav a:hover,
 .bs-scrollspy nav a.active {
-  color: var(--bs-link-hover-color);
-  border-left-color: var(--bs-primary);
+  color: var(--bs-theme-fg-emphasis, var(--bs-link-hover-color));
+  border-left-color: var(--bs-theme-fg-emphasis, var(--bs-primary-base));
 }
 
 .bs-scrollspy nav[dir='rtl'] a.active,
 .bs-scrollspy nav[dir='rtl'] a:hover {
-  border-right-color: var(--bs-primary);
+  border-right-color: var(--bs-theme-fg-emphasis, var(--bs-primary-base));
   border-right-style: solid;
   border-left-color: transparent;
 }
@@ -72,6 +76,21 @@
 .bs-scrollspy nav a.nav-link.active {
   border-right-color: transparent;
   border-left-color: transparent;
+}
+
+.bs-scrollspy nav a.nav-link.active {
+  color: var(--bs-theme-fg-emphasis, var(--bs-nav-pills-link-active-color));
+}
+
+.bs-scrollspy .list-group-item.active {
+  background-color: var(--bs-theme-fg-emphasis, var(--bs-list-group-active-bg));
+  border-color: var(--bs-theme-base, var(--bs-list-group-active-border-color));
+}
+
+.bs-scrollspy .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: var(--bs-theme-fg-contrast, var(--bs-nav-pills-link-active-color));
+  background-color: var(--bs-theme-base, var(--bs-nav-pills-link-active-bg));
 }
 
 .bs-scrollspy nav a.active {

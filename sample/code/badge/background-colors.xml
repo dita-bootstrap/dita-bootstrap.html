@@ -1,0 +1,26 @@
+<ph outputclass="badge theme-primary">Primary</ph>
+<ph outputclass="badge theme-secondary">Secondary</ph>
+<ph outputclass="badge theme-success">Success</ph>
+<ph outputclass="badge theme-danger">Danger</ph>
+<ph outputclass="badge theme-warning">Warning</ph>
+<ph outputclass="badge theme-info">Info</ph>
+<ph outputclass="badge theme-accent">Accent</ph>
+<ph outputclass="badge theme-inverse">Inverse</ph>
+
+<ph outputclass="badge badge-subtle theme-primary">Primary</ph>
+<ph outputclass="badge badge-subtle theme-secondary">Secondary</ph>
+<ph outputclass="badge badge-subtle theme-success">Success</ph>
+<ph outputclass="badge badge-subtle theme-danger">Danger</ph>
+<ph outputclass="badge badge-subtle theme-warning">Warning</ph>
+<ph outputclass="badge badge-subtle theme-info">Info</ph>
+<ph outputclass="badge badge-subtle theme-accent">Accent</ph>
+<ph outputclass="badge badge-subtle theme-inverse">Inverse</ph>
+
+<ph outputclass="badge badge-outline theme-primary">Primary</ph>
+<ph outputclass="badge badge-outline theme-secondary">Secondary</ph>
+<ph outputclass="badge badge-outline theme-success">Success</ph>
+<ph outputclass="badge badge-outline theme-danger">Danger</ph>
+<ph outputclass="badge badge-outline theme-warning">Warning</ph>
+<ph outputclass="badge badge-outline theme-info">Info</ph>
+<ph outputclass="badge badge-outline theme-accent">Accent</ph>
+<ph outputclass="badge badge-outline theme-inverse">Inverse</ph>

@@ -1,0 +1,24 @@
+<alert theme="primary-subtle-border">
+  A simple primary alert — check it out!
+</alert>
+<alert theme="secondary-subtle-border">
+  A simple secondary alert — check it out!
+</alert>
+<alert theme="success-subtle-border">
+  A simple success alert — check it out!
+</alert>
+<alert theme="danger-subtle-border">
+  A simple danger alert — check it out!
+</alert>
+<alert theme="warning-subtle-border">
+  A simple warning alert — check it out!
+</alert>
+<alert theme="info-subtle-border">
+  A simple info alert — check it out!
+</alert>
+<alert theme="accent-subtle-border">
+  A simple accent alert — check it out!
+</alert>
+<alert theme="inverse-subtle-border">
+  A simple inverse alert — check it out!
+</alert>

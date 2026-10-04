@@ -1,0 +1,5 @@
+<div outputclass="btn-group">
+  <xref outputclass="btn theme-danger" href="#">Left</xref>
+  <xref outputclass="btn theme-warning" href="#">Middle</xref>
+  <xref outputclass="btn theme-success" href="#">Right</xref>
+</div>

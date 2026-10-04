@@ -55,6 +55,16 @@
     if:set="bootstrap.css.section.title"
   />
   <param
+    name="BOOTSTRAP_CSS_BADGE"
+    expression="${bootstrap.css.badge}"
+    if:set="bootstrap.css.badge"
+  />
+  <param
+    name="BOOTSTRAP_CSS_BUTTON"
+    expression="${bootstrap.css.button}"
+    if:set="bootstrap.css.button"
+  />
+  <param
     name="BOOTSTRAP_CSS_CARD"
     expression="${bootstrap.css.card}"
     if:set="bootstrap.css.card"
@@ -85,9 +95,39 @@
     if:set="bootstrap.css.carousel.caption"
   />
   <param
-    name="BOOTSTRAP_CSS_FOOTER"
-    expression="${bootstrap.css.footer}"
-    if:set="bootstrap.css.footer"
+    name="BOOTSTRAP_THEME_FOOTER"
+    expression="${bootstrap.theme.footer}"
+    if:set="bootstrap.theme.footer"
+  />
+  <param
+    name="BOOTSTRAP_THEME_HEADER"
+    expression="${bootstrap.theme.header}"
+    if:set="bootstrap.theme.header"
+  />
+  <param
+    name="BOOTSTRAP_THEME_SIDEBAR"
+    expression="${bootstrap.theme.sidebar}"
+    if:set="bootstrap.theme.sidebar"
+  />
+  <param
+    name="BOOTSTRAP_THEME_TOPBAR"
+    expression="${bootstrap.theme.topbar}"
+    if:set="bootstrap.theme.topbar"
+  />
+  <param
+    name="BOOTSTRAP_THEME_CONTENT"
+    expression="${bootstrap.theme.content}"
+    if:set="bootstrap.theme.content"
+  />
+  <param
+    name="BOOTSTRAP_THEME_BODY"
+    expression="${bootstrap.theme.body}"
+    if:set="bootstrap.theme.body"
+  />
+  <param
+    name="BOOTSTRAP_THEME_SCROLLSPY"
+    expression="${bootstrap.theme.scrollspy}"
+    if:set="bootstrap.theme.scrollspy"
   />
   <param
     name="BOOTSTRAP_CSS_TABS"
@@ -110,14 +150,19 @@
     if:set="menubar-toc.include"
   />
   <param
-    name="BOOTSTRAP_CSS_ACCESSIBILITY_NAV"
-    expression="${bootstrap.css.accessibility.nav}"
-    if:set="bootstrap.css.accessibility.nav"
+    name="BOOTSTRAP_THEME_ACCESSIBILITY"
+    expression="${bootstrap.theme.accessibility}"
+    if:set="bootstrap.theme.accessibility"
   />
   <param
     name="BOOTSTRAP_CSS_ACCESSIBILITY_LINK"
     expression="${bootstrap.css.accessibility.link}"
     if:set="bootstrap.css.accessibility.link"
+  />
+  <param
+    name="BOOTSTRAP_CSS_EXAMPLE"
+    expression="${bootstrap.css.example}"
+    if:set="bootstrap.css.example"
   />
   <param
     name="BOOTSTRAP_CSS_FIGURE"
@@ -153,6 +198,16 @@
     name="BOOTSTRAP_CSS_PAGINATION"
     expression="${bootstrap.css.pagination}"
     if:set="bootstrap.css.pagination"
+  />
+  <param
+    name="BOOTSTRAP_CSS_POPOVER"
+    expression="${bootstrap.css.popover}"
+    if:set="bootstrap.css.popover"
+  />
+  <param
+    name="BOOTSTRAP_CSS_TOOLTIP"
+    expression="${bootstrap.css.tooltip}"
+    if:set="bootstrap.css.tooltip"
   />
   <param
     name="BOOTSTRAP_CSS_ACTIVE_NAV_PARENT"
@@ -258,5 +313,10 @@
     name="BOOTSTRAP_CSS_CONTAINER_SIZE"
     expression="${bootstrap.css.container.size}"
     if:set="bootstrap.css.container.size"
+  />
+  <param
+    name="BOOTSTRAP_CSS_MENUBAR_TOC"
+    expression="${bootstrap.css.menubar.toc}"
+    if:set="bootstrap.css.menubar.toc"
   />
 </dummy>

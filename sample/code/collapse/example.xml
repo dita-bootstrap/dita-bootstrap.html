@@ -1,0 +1,10 @@
+<p>
+  <xref outputclass="btn-solid theme-primary" props="collapse-toggle" href="#collapse1">
+    Toggle Collapse
+  </xref>
+</p>
+<bodydiv outputclass="collapse" id="collapse1">
+  <div outputclass="card card-body">
+      <p>Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</p>
+  </div>
+</bodydiv>

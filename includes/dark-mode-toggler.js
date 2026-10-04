@@ -36,16 +36,24 @@
       return;
     }
 
-    const activeThemeIcon = document.querySelector('.theme-icon-active use');
+    const activeThemeIcon = document.querySelector(`i[data-bs-theme="${theme}"]`);
     const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
 
     document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+      element.classList.remove('selected');
       element.classList.remove('active');
       element.setAttribute('aria-pressed', 'false');
     });
 
+    btnToActive.classList.add('selected');
     btnToActive.classList.add('active');
     btnToActive.setAttribute('aria-pressed', 'true');
+
+    document.querySelectorAll('i[data-bs-theme]').forEach(element => {
+      element.classList.add('d-none');
+    });
+    activeThemeIcon.classList.remove('d-none');
+
 
     if (focus) {
       themeSwitcher.focus();

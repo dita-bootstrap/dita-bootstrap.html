@@ -1,0 +1,10 @@
+<bodydiv outputclass="row" dir="rtl">
+  <bodydiv outputclass="col">
+    <section outputclass="card" xml:lang="ar">
+      <title outputclass="h5">عنوان البطاقة</title>
+      <image outputclass="card-img-top" href="..." />
+      <p>بعض الأمثلة السريعة للنص الذي سيتم بناؤه على عنوان البطاقة وتشكيل الجزء الأكبر من محتوى البطاقة.</p>
+      <xref href="#" outputclass="btn theme-primary">اذهب لمكان ما</xref>
+    </section>
+  </bodydiv>
+</bodydiv>

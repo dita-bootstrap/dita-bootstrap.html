@@ -7,138 +7,138 @@
       <p class="pt-3">
         <!-- Bluesky -->
         <a
-          class="btn m-1"
+          class="btn btn-icon"
           href="#!"
           role="button"
-          style="background-color: #0085ff;"
+          style="color: #ffffff; background-color: #0085ff;"
         >
-          <i class="bi bi-bluesky text-white"/>
+          <i class="bi bi-bluesky"/>
         </a>
         <!-- Dribbble -->
         <a
-          class="btn m-1"
-          style="background-color: #ec4a89;"
+          class="btn btn-icon"
+          style="color: #ffffff; background-color: #ec4a89;"
           href="#!"
           role="button"
         >
-          <i class="bi bi-dribbble text-white"/>
+          <i class="bi bi-dribbble"/>
         </a>
         <!-- Facebook -->
         <a
-          class="btn m-1"
-          style="background-color: #3b5998;"
+          class="btn btn-icon"
+          style="color: #ffffff; background-color: #3b5998;"
           href="#!"
           role="button"
         >
-          <i class="bi bi-facebook text-white"/>
+          <i class="bi bi-facebook"/>
         </a>
         <!-- GitHub -->
         <a
-          class="btn m-1"
+          class="btn btn-icon"
           href="#!"
           role="button"
-          style="background-color: #333333;"
+          style="color: #ffffff; background-color: #333333;"
         >
-          <i class="bi bi-github text-white"/>
+          <i class="bi bi-github"/>
         </a>
         <!-- Google -->
         <a
-          class="btn m-1"
-          style="background-color: #dd4b39;"
+          class="btn btn-icon"
+          style="color: #ffffff; background-color: #dd4b39;"
           href="#!"
           role="button"
         >
-          <i class="bi bi-google text-white"/>
+          <i class="bi bi-google"/>
         </a>
         <!-- Instagram -->
         <a
-          class="btn m-1"
-          style="background-color: #ac2bac;"
+          class="btn btn-icon"
+          style="color: #ffffff; background-color: #ac2bac;"
           href="#!"
           role="button"
         >
-          <i class="bi bi-instagram text-white"/>
+          <i class="bi bi-instagram"/>
         </a>
         <!-- LinkedIn -->
         <a
-          class="btn m-1"
+          class="btn btn-icon"
           href="#!"
           role="button"
-          style="background-color: #0082ca;"
+          style="color: #ffffff; background-color: #0082ca;"
         >
-          <i class="bi bi-linkedin text-white"/>
+          <i class="bi bi-linkedin"/>
         </a>
         <!-- Mastodon -->
         <a
-          class="btn m-1"
+          class="btn btn-icon"
           href="#!"
           role="button"
-          style="background-color: #563acc;"
+          style="color: #ffffff; background-color: #563acc;"
         >
-          <i class="bi bi-mastodon text-white"/>
+          <i class="bi bi-mastodon"/>
         </a>
         <!-- Pinterest -->
         <a
-          class="btn m-1"
-          style="background-color: #c61118;"
+          class="btn btn-icon"
+          style="color: #ffffff; background-color: #c61118;"
           href="#!"
           role="button"
         >
-          <i class="bi bi-pinterest text-white"/>
+          <i class="bi bi-pinterest"/>
         </a>
         <!-- Reddit -->
         <a
-          class="btn m-1"
-          style="background-color: #ff4500;"
+          class="btn btn-icon"
+          style="color: #ffffff; background-color: #ff4500;"
           href="#!"
           role="button"
         >
-          <i class="bi bi-reddit text-white"/>
+          <i class="bi bi-reddit"/>
         </a>
         <!-- Slack -->
         <a
-          class="btn m-1"
-          style="background-color: #481449;"
+          class="btn btn-icon"
+          style="color: #ffffff; background-color: #481449;"
           href="#!"
           role="button"
         >
-          <i class="bi bi-slack text-white"/>
+          <i class="bi bi-slack"/>
         </a>
         <!-- Stack Overflow -->
         <a
-          class="btn m-1"
-          style="background-color: #ffac44;"
+          class="btn btn-icon"
+          style="color: #ffffff; background-color: #ffac44;"
           href="#!"
           role="button"
         >
-          <i class="bi bi-stack-overflow text-white"/>
+          <i class="bi bi-stack-overflow"/>
         </a>
         <!-- Twitter -->
         <a
-          class="btn m-1"
+          class="btn btn-icon"
           href="#!"
           role="button"
-          style="background-color: #55acee;"
+          style="color: #ffffff; background-color: #55acee;"
         >
-          <i class="bi bi-twitter text-white"/>
+          <i class="bi bi-twitter"/>
         </a>
         <!-- Youtube -->
         <a
-          class="btn m-1"
-          style="background-color: #ed302f;"
+          class="btn btn-icon"
+          style="color: #ffffff; background-color: #ed302f;"
           href="#!"
           role="button"
         >
-          <i class="bi bi-youtube text-white"/>
+          <i class="bi bi-youtube"/>
         </a>
         <!-- WhatsApp -->
         <a
-          class="btn m-1"
-          style="background-color: #25d366;"
+          class="btn btn-icon"
+          style="color: #ffffff; background-color: #25d366;"
           href="#!"
           role="button"
         >
-          <i class="bi bi-whatsapp text-white"/>
+          <i class="bi bi-whatsapp"/>
         </a>
       </p>
       <p class="p-3">
@@ -147,7 +147,7 @@
         commodi optio pariatur est quia magnam eum harum corrupti dicta,
         aliquam sequi voluptate quas.</p>
       <p class="p-3">
-        <small>© 2025</small>
+        <small>© 2026</small>
       </p>
     </div>
   </div>

@@ -6,44 +6,44 @@
       <p class="pt-3">
         <!-- GitHub -->
         <a
-          class="btn m-1"
+          class="btn btn-icon"
           href="https://github.com/dita-bootstrap/dita-bootstrap.html"
           role="button"
-          style="background-color: #333333;"
+          style="color: #ffffff; background-color: #333333;"
         >
           <i class="bi bi-github text-white"/>
         </a>
         <!-- LinkedIn -->
         <a
-          class="btn m-1"
+          class="btn btn-icon"
           href="https://www.linkedin.com/in/infotexture/"
           role="button"
-          style="background-color: #0082ca;"
+          style="color: #ffffff; background-color: #0082ca;"
         >
           <i class="bi bi-linkedin text-white"/>
         </a>
         <!-- Mastodon -->
         <a
-          class="btn m-1"
+          class="btn btn-icon"
           href="https://indieweb.social/@infotexture"
           role="button"
-          style="background-color: #563acc;"
+          style="color: #ffffff; background-color: #563acc;"
         >
           <i class="bi bi-mastodon text-white"/>
         </a>
         <!-- Bluesky -->
         <a
-          class="btn m-1"
+          class="btn btn-icon"
           href="https://bsky.app/profile/infotexture.net"
           role="button"
-          style="background-color: #0085ff;"
+          style="color: #ffffff; background-color: #0085ff;"
         >
           <i class="bi bi-bluesky text-white"/>
         </a>
       </p>
       <p>
         <small>
-          © 2017–2025
+          © 2017–2026
           <a href="https://infotexture.net/">infotexture</a>
         </small>
       </p>

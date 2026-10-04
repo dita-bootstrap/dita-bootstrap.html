@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
@@ -26,12 +26,12 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="basic-example">
       <title>Basic example</title>
       <p>The most basic list group is an unordered list with list items and the proper classes. Build upon it with the
         options that follow, or with your own CSS as needed.</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ul outputclass="list-group">
         <li>An item</li>
         <li>A second item</li>
@@ -39,85 +39,38 @@
         <li>A fourth item</li>
         <li>And a fifth one</li>
       </ul>
-    </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ul outputclass="list-group"&gt;
-  &lt;li&gt;An item&lt;/li&gt;
-  &lt;li&gt;A second item&lt;/li&gt;
-  &lt;li&gt;A third item&lt;/li&gt;
-  &lt;li&gt;A fourth item&lt;/li&gt;
-  &lt;li&gt;And a fifth one&lt;/li&gt;
-&lt;/ul&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;list-group&gt;
-  &lt;li&gt;An item&lt;/li&gt;
-  &lt;li&gt;A second item&lt;/li&gt;
-  &lt;li&gt;A third item&lt;/li&gt;
-  &lt;li&gt;A fourth item&lt;/li&gt;
-  &lt;li&gt;And a fifth one&lt;/li&gt;
-&lt;/list-group&gt;</codeblock>
-        </section>
-      </bodydiv>
-    <section>
+    </example>
+    <codeblock><coderef href="code/list-group/basic-example.xml"/></codeblock>
+    <section id="compacted-list-group">
       <title>Compacted list group</title>
       <p>Add <xmlatt>compact="yes"</xmlatt> to reduce the padding of list items</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ul outputclass="list-group list-group-compact">
         <li>Item One</li>
         <li>Item Two</li>
         <li>Item Three</li>
       </ul>
-    </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ul outputclass="list-group" compact="yes" &gt;
-  ...
-&lt;/ul&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;list-group compact="yes"&gt;
-  ...
-&lt;/list-group&gt;</codeblock>
-        </section>
-      </bodydiv>
-    <section>
+    </example>
+    <codeblock><coderef href="code/list-group/compacted-list-group.xml"/></codeblock>
+    <section id="expanded-list-group">
       <title>Expanded list group</title>
       <p>Add <xmlatt>compact="no"</xmlatt> to increase the padding of list items</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ul outputclass="list-group">
         <li>Item One</li>
         <li>Item Two</li>
         <li>Item Three</li>
       </ul>
-    </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ul outputclass="list-group" compact="no" &gt;
-  ...
-&lt;/ul&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;list-group compact="no"&gt;
-  ...
-&lt;/list-group&gt;</codeblock>
-        </section>
-      </bodydiv>
-    <section>
+    </example>
+    <codeblock><coderef href="code/list-group/expanded-list-group.xml"/></codeblock>
+    <section id="flush">
       <title>Flush</title>
       <p>Add a <xmlatt>flush="yes"</xmlatt> to remove some borders and
         rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
     </section>
-    <bodydiv outputclass="p-3 border">
+    <example>
       <ul outputclass="list-group list-group-flush">
         <li>An item</li>
         <li>A second item</li>
@@ -125,28 +78,7 @@
         <li>A fourth item</li>
         <li>And a fifth one</li>
       </ul>
-    </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ul outputclass="list-group-flush"&gt;
-  &lt;li&gt;An item&lt;/li&gt;
-  &lt;li&gt;A second item&lt;/li&gt;
-  &lt;li&gt;A third item&lt;/li&gt;
-  &lt;li&gt;A fourth item&lt;/li&gt;
-  &lt;li&gt;And a fifth one&lt;/li&gt;
-&lt;/ul&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;list-group flush="yes"&gt;
-  &lt;li&gt;An item&lt;/li&gt;
-  &lt;li&gt;A second item&lt;/li&gt;
-  &lt;li&gt;A third item&lt;/li&gt;
-  &lt;li&gt;A fourth item&lt;/li&gt;
-  &lt;li&gt;And a fifth one&lt;/li&gt;
-&lt;/list-group&gt;</codeblock>
-        </section>
-      </bodydiv>
+    </example>
+    <codeblock><coderef href="code/list-group/flush.xml"/></codeblock>
   </body>
 </topic>
