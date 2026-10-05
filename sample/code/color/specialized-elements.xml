@@ -1,0 +1,17 @@
+<img src="..." class="img-thumbnail bg-warning"/>
+
+<section outputclass="card text-bg-success w-50">
+  ...
+</section>
+
+<bodydiv outputclass="accordion accordion-info">
+  ...
+</bodydiv>
+
+<ul outputclass="list-group list-group-item-danger w-50">
+  ...
+</ul>
+
+<ul outputclass="carousel carousel-dark w-50">
+  ...
+</ul>

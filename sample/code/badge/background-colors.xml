@@ -1,0 +1,8 @@
+<ph outputclass="badge text-bg-primary">Primary</ph>
+<ph outputclass="badge text-bg-secondary">Secondary</ph>
+<ph outputclass="badge text-bg-success">Success</ph>
+<ph outputclass="badge text-bg-danger">Danger</ph>
+<ph outputclass="badge text-bg-warning">Warning</ph>
+<ph outputclass="badge text-bg-info">Info</ph>
+<ph outputclass="badge text-bg-light">Light</ph>
+<ph outputclass="badge text-bg-dark">Dark</ph>

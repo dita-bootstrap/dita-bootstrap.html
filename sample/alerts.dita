@@ -42,62 +42,7 @@
       <section outputclass="alert alert-light">A simple light alert—check it out!</section>
       <section outputclass="alert alert-dark">A simple dark alert—check it out!</section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-            <codeblock>&lt;section outputclass="alert-primary"&gt;
-  A simple primary alert—check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert-secondary"&gt;
-  A simple secondary alert—check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert-success"&gt;
-  A simple success alert—check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert-danger"&gt;
-  A simple danger alert—check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert-warning"&gt;
-  A simple warning alert—check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert-info"&gt;
-  A simple info alert—check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert-light"&gt;
-  A simple light alert—check it out!
-&lt;/section&gt;
-&lt;section outputclass="alert-dark"&gt;
-  A simple dark alert—check it out!
-&lt;/section&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;alert color="primary"&gt;
-  A simple primary alert—check it out!
-&lt;/alert&gt;
-&lt;alert color="secondary"&gt;
-  A simple secondary alert—check it out!
-&lt;/alert&gt;
-&lt;alert color="success"&gt;
-  A simple success alert—check it out!
-&lt;/alert&gt;
-&lt;alert color="danger"&gt;
-  A simple danger alert—check it out!
-&lt;/alert&gt;
-&lt;alert color="warning"&gt;
-  A simple warning alert—check it out!
-&lt;/alert&gt;
-&lt;alert color="info"&gt;
-  A simple info alert—check it out!
-&lt;/alert&gt;
-&lt;alert color="light"&gt;
-  A simple light alert—check it out!
-&lt;/alert&gt;
-&lt;alert color="dark"&gt;
-  A simple dark alert—check it out!
-&lt;/alert&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/alerts/basic.xml"/></codeblock>
 
     <section>
       <title>Additional content</title>
@@ -112,36 +57,7 @@
         <p>Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
       </section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;section outputclass="alert alert-success"&gt;
-  &lt;title&gt;&lt;i outputclass="bi bi-emoji-smile pe-2"/&gt;Well done!&lt;/title&gt;
-  &lt;p&gt;
-    Aww yeah, you successfully read this important alert message. This example text with a
-    &lt;xref href="#"&gt;link&lt;/xref&gt; is going to run a bit longer so that you can see
-    how spacing within an alert works with this kind of content.
-  &lt;/p&gt;
-  &lt;p&gt;
-    Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
-  &lt;/p&gt;
-&lt;/section&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;alert color="success"&gt;
-  &lt;title&gt;&lt;icon outputclass="bi-emoji-smile" padding="e2"/&gt;Well done!&lt;/title&gt;
-  &lt;p&gt;
-    Aww yeah, you successfully read this important alert message. This example text with a
-    &lt;xref href="#"&gt;link&lt;/xref&gt; is going to run a bit longer so that you can see
-    how spacing within an alert works with this kind of content.
-  &lt;/p&gt;
-  &lt;p&gt;
-    Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
-  &lt;/p&gt;
-&lt;/alert&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/alerts/additional-content.xml"/></codeblock>
 
     <section>
       <title>Notes</title>
@@ -203,36 +119,7 @@
       <note outputclass="text-bg-light">This is light note.</note>
       <note outputclass="text-bg-dark">This is dark note.</note>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;note type="note" outputclass="alert-primary"&gt;
-  This is a primary note.&lt;/note&gt;
-&lt;note type="note" outputclass="alert-secondary"&gt;
-  This is a secondary note.&lt;/note&gt;
-&lt;note type="note" outputclass="alert-light"&gt;
-  This is light note.
-&lt;/note&gt;
-&lt;note type="note" outputclass="alert-dark"&gt;
-  This is dark note.
-&lt;/note&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;note color="primary"&gt;
-  This is a primary note.
-&lt;/note&gt;
-&lt;note color="secondary"&gt;
-  This is a secondary note.
-&lt;/note&gt;
-&lt;note color="light"&gt;
-  This is light note.
-&lt;/note&gt;
-&lt;note color="dark"&gt;
-  This is dark note.
-&lt;/note&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/alerts/note-colors.xml"/></codeblock>
 
     <p>Use an additional <xmlatt>icon</xmlatt> attribute or <xmlatt>otherprops</xmlatt> to alter the default icon.</p>
     <bodydiv outputclass="p-3 border">
@@ -242,25 +129,6 @@
         otherprops="icon(bi bi-emoji-smile) style(font-size: 2rem; color: cornflowerblue;)"
       >This note uses a styled smile emoji.</note>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;note otherprops="icon(bi-search)" type="other" othertype="Search"&gt;
-  This note has a search icon.
-&lt;/note&gt;
-&lt;note otherprops="icon(bi-emoji-smile), style(font-size: 2rem; color: cornflowerblue;)" type="note" othertype="Another note"&gt;
-  This note uses a styled smile emoji.
-&lt;/note&gt;</codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;note icon="bi-search" type="other" othertype="Search"&gt;
-  This note has a search icon.
-&lt;/note&gt;
-&lt;note icon="bi bi-emoji-smile" style="font-size: 2rem; color: cornflowerblue;" type="note"&gt;
-  This note uses a styled smile emoji.
-&lt;/note&gt;</codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/alerts/note-icons.xml"/></codeblock>
   </body>
 </topic>

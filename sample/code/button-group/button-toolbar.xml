@@ -1,0 +1,16 @@
+<div outputclass="btn-toolbar">
+  <div outputclass="btn-group me-2">
+    <xref outputclass="btn-primary" href="#">1</xref>
+    <xref outputclass="btn-primary" href="#">2</xref>
+    <xref outputclass="btn-primary" href="#">3</xref>
+    <xref outputclass="btn-primary" href="#">4</xref>
+  </div>
+  <div outputclass="btn-group me-2">
+    <xref outputclass="btn-secondary" href="#">5</xref>
+    <xref outputclass="btn-secondary" href="#">6</xref>
+    <xref outputclass="btn-secondary" href="#">7</xref>
+  </div>
+  <div outputclass="btn-group me-2">
+    <xref outputclass="btn-info" href="#">8</xref>
+  </div>
+</div>

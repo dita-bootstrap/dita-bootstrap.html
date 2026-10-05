@@ -59,32 +59,7 @@
         <p>Content for the offcanvas goes here. You can place just about any section elements here.</p>
       </section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref outputclass="btn-primary" props="offcanvas-toggle" href="#offcanvas1"&gt;
-  Click here
-&lt;/xref&gt;
-&lt;section outputclass="offcanvas-start" id="offcanvas1"&gt;
-  &lt;title&gt;Offcanvas&lt;/title&gt;
-  &lt;p&gt;
-    Content for the offcanvas goes here. You can place just about any section elements here.
-  &lt;/p&gt;
-&lt;/section&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;button props="offcanvas-toggle" href="#offcanvas1"&gt;
-  Click here
-&lt;/button&gt;
-&lt;offcanvas id="offcanvas1" position="start"&gt;
-  &lt;title&gt;Offcanvas&lt;/title&gt;
-  &lt;p&gt;
-    Content for the offcanvas goes here. You can place just about any section elements here.
-  &lt;/p&gt;
-&lt;/offcanvas&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/offcanvas/offcanvas-components.xml"/></codeblock>
     <section>
       <title>Placement</title>
       <p>There’s no default placement for offcanvas components, so you must add one of the modifier outputclasses
@@ -111,20 +86,7 @@
         <p>Content for the offcanvas goes here. You can place just about any section elements here.</p>
       </section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;section outputclass="offcanvas-end" id="offcanvas2"&gt;
-  ...etc
-&lt;/section&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;offcanvas position="end"&gt;
-  ...etc
-&lt;/offcanvas&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/offcanvas/placement.xml"/></codeblock>
     <bodydiv deliveryTarget="html" outputclass="p-3 border">
             <xref props="offcanvas-toggle" href="#offcanvas3" outputclass="btn-primary">Toggle bottom offcanvas</xref>
       <section id="offcanvas3" outputclass="offcanvas offcanvas-bottom">
@@ -132,20 +94,7 @@
         <p>Content for the offcanvas goes here. You can place just about any section elements here.</p>
       </section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;section outputclass="offcanvas-bottom" id="offcanvas3"&gt;
-  ...etc
-&lt;/section&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;offcanvas position="bottom"&gt;
-  ...etc
-&lt;/offcanvas&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/offcanvas/placement-bottom.xml"/></codeblock>
     <section>
       <title>Responsive</title>
       <p
@@ -176,37 +125,6 @@
       <li><xmlatt>outputclass="offcanvas-xl"</xmlatt></li>
       <li><xmlatt>outputclass="offcanvas-xxl"</xmlatt></li>
     </ul>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;note outputclass="alert-info d-none d-lg-block"&gt;
-  Resize your browser to show the responsive offcanvas toggle.
-&lt;/note&gt;
-&lt;xref outputclass="btn-primary d-lg-none" props="offcanvas-toggle" href="#offcanvas4"&gt;
-  Toggle offcanvas
-&lt;/xref&gt;
-&lt;section outputclass="offcanvas-lg" id="offcanvas4"&gt;
-  &lt;title&gt;Offcanvas&lt;/title&gt;
-  &lt;p&gt;
-    This is content within an &lt;xmlatt&gt;outputclass="offcanvas-lg"&lt;/xmlatt&gt;.
-  &lt;/p&gt;
-&lt;/section&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;note color="info" outputclass="d-none d-lg-block"&gt;
-  Resize your browser to show the responsive offcanvas toggle.
-&lt;/note&gt;
-&lt;button outputclass="d-lg-none" props="offcanvas-toggle" href="#offcanvas4"&gt;
-  Toggle offcanvas
-&lt;/button&gt;
-&lt;offcanvas outputclass="offcanvas-lg" id="offcanvas4"&gt;
-  &lt;title&gt;Offcanvas&lt;/title&gt;
-  &lt;p&gt;
-    This is content within an &lt;xmlatt&gt;outputclass="offcanvas-lg"&lt;/xmlatt&gt;.
-  &lt;/p&gt;
-&lt;/offcanvas&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/offcanvas/responsive.xml"/></codeblock>
   </body>
 </topic>

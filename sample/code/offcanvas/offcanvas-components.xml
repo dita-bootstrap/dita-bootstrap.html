@@ -1,0 +1,9 @@
+<xref outputclass="btn-primary" props="offcanvas-toggle" href="#offcanvas1">
+  Click here
+</xref>
+<section outputclass="offcanvas-start" id="offcanvas1">
+  <title>Offcanvas</title>
+  <p>
+    Content for the offcanvas goes here. You can place just about any section elements here.
+  </p>
+</section>

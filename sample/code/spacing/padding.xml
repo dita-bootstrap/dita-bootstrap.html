@@ -1,0 +1,6 @@
+<div outputclass="text-bg-primary p-0">Padding 0</div>
+<div outputclass="text-bg-secondary p-1 m-1">Padding 1</div>
+<div outputclass="text-bg-success p-2 m-1">Padding 2</div>
+<div outputclass="text-bg-danger p-3 m-1">Padding 3</div>
+<div outputclass="text-bg-warning p-4 m-1">Padding 4</div>
+<div outputclass="text-bg-info p-5 m-1">Padding 5</div>

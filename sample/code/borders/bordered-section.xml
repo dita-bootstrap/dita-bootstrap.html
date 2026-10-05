@@ -1,0 +1,11 @@
+<section outputclass="border p-2">
+  ...
+</section>
+
+<div outputclass="border rounded p-2 m-2">
+  ...
+</div>
+
+<ul outputclass="carousel border rounded m-2 w-50">
+  ...
+</ul>

@@ -1,0 +1,14 @@
+<bodydiv outputclass="nav-tabs">
+  <section>
+    <title>Home</title>
+    ...etc
+  </section>
+  <section>
+    <title>Profile</title>
+    ...etc
+  </section>
+  <section>
+    <title>Contact</title>
+    ...etc
+  </section>
+</bodydiv>

@@ -1,0 +1,6 @@
+<note otherprops="icon(bi-search)" type="other" othertype="Search">
+  This note has a search icon.
+</note>
+<note otherprops="icon(bi-emoji-smile), style(font-size: 2rem; color: cornflowerblue;)" type="note" othertype="Another note">
+  This note uses a styled smile emoji.
+</note>

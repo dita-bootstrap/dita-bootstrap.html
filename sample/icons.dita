@@ -42,18 +42,7 @@
         <ph outputclass="bi bi-alarm" otherprops="style(font-size: 2rem; color: cornflowerblue;)"/>
       </p>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;i outputclass="bi-alarm"/&gt;
-&lt;i outputclass="bi-alarm" otherprops="style(font-size: 2rem; color: cornflowerblue;)"/&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;icon outputclass="bi-alarm"/&gt;
-&lt;icon outputclass="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"/&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/icons/example.xml"/></codeblock>
   <p>Icons placed within an <xmlelement>xref</xmlelement> element are colorized appropriately:</p>
   <bodydiv outputclass="p-3 border">
     <p>
@@ -97,65 +86,7 @@
       </xref>
     </p>
   </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref outputclass="link-primary" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Primary link
-&lt;/xref&gt;
-&lt;xref outputclass="link-secondary" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Secondary link
-&lt;/xref&gt;
-&lt;xref outputclass="link-success" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Success link
-&lt;/xref&gt;
-&lt;xref outputclass="link-danger" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Danger link
-&lt;/xref&gt;
-&lt;xref outputclass="link-warning" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Warning link
-&lt;/xref&gt;
-&lt;xref outputclass="link-info" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Info link
-&lt;/xref&gt;
-&lt;xref outputclass="link-light" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Light link
-&lt;/xref&gt;
-&lt;xref outputclass="link-dark" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Dark link
-&lt;/xref&gt;
-&lt;xref outputclass="link-body-emphasis" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Emphasis link
-&lt;/xref&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;xref color="primary" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Primary link
-&lt;/xref&gt;
-&lt;xref color="secondary" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Secondary link
-&lt;/xref&gt;
-&lt;xref color="success" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Success link
-&lt;/xref&gt;
-&lt;xref color="danger" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Danger link
-&lt;/xref&gt;
-&lt;xref color="warning" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Warning link
-&lt;/xref&gt;
-&lt;xref color="info" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Info link
-&lt;/xref&gt;
-&lt;xref color="light" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Light link
-&lt;/xref&gt;
-&lt;xref color="dark" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Dark link
-&lt;/xref&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/icons/dark-link.xml"/></codeblock>
     <p>Icons can also be placed within buttons as shown:</p>
     <bodydiv outputclass="p-3 border">
       <xref outputclass="btn-floating m-1 btn-primary" href="#"><ph outputclass="bi bi-arrow-down-square-fill"/></xref>
@@ -165,50 +96,7 @@
       <xref outputclass="btn-floating m-1 btn-primary" href="#"><ph outputclass="bi bi-link"/></xref>
       <xref outputclass="btn-floating m-1 btn-primary" href="#"><ph outputclass="bi bi-share-fill"/></xref>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
-  &lt;i outputclass="bi-arrow-down-square-fill"/&gt;
-&lt;/xref&gt;
-&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
-  &lt;i outputclass="bi-chat-left-quote-fill"/&gt;
-&lt;/xref&gt;
-&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
-  &lt;i outputclass="bi-speedometer"/&gt;
-&lt;/xref&gt;
-&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
-  &lt;i outputclass="bi-camera-fill"/&gt;
-&lt;/xref&gt;
-&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt;
-&lt;/xref&gt;
-&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
-  &lt;i outputclass="bi-share-fill"/&gt;
-&lt;/xref&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;button outputclass="btn-floating m-1" href="#"&gt;
-  &lt;icon outputclass="bi-arrow-down-square-fill"/&gt;
-&lt;/button&gt;
-&lt;button outputclass="btn-floating m-1" href="#"&gt;
-  &lt;icon outputclass="bi-chat-left-quote-fill"/&gt;
-&lt;/button&gt;
-&lt;button outputclass="btn-floating m-1" href="#"&gt;
-  &lt;icon outputclass="bi-speedometer"/&gt;
-&lt;/button&gt;
-&lt;button outputclass="btn-floating m-1" href="#"&gt;
-  &lt;icon outputclass="bi-camera-fill"/&gt;
-&lt;/button&gt;
-&lt;button outputclass="btn-floating m-1" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt;
-&lt;/button&gt;
-&lt;button outputclass="btn-floating m-1" href="#"&gt;
-  &lt;icon outputclass="bi-share-fill"/&gt;
-&lt;/button&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/icons/icons-in-buttons.xml"/></codeblock>
     <p>Icons can also be used within <xmlelement>chapter</xmlelement> headings,
       and <xmlelement>topicref</xmlelement> elements by adding
       <xmlelement>othermeta name="icon"</xmlelement>  and

@@ -1,0 +1,8 @@
+<div outputclass="text-bg-primary">.text-bg-primary</div>
+<div outputclass="text-bg-secondary">.text-bg-secondary</div>
+<div outputclass="text-bg-success">.text-bg-success</div>
+<div outputclass="text-bg-danger">.text-bg-danger</div>
+<div outputclass="text-bg-warning">.text-bg-warning</div>
+<div outputclass="text-bg-info">.text-bg-info</div>
+<div outputclass="text-bg-light">.text-bg-light</div>
+<div outputclass="text-bg-dark">.text-bg-dark</div>

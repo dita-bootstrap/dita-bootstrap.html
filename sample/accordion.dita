@@ -68,78 +68,7 @@
         </section>
       </bodydiv>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;bodydiv outputclass="accordion"&gt;
-  &lt;section id="accordion1" outputclass="show"&gt;
-    &lt;title&gt;Accordion Item #1&lt;/title&gt;
-    &lt;p&gt;
-      &lt;b&gt;This is the first item’s accordion body.&lt;/b&gt; It is shown by default,
-        until the collapse plugin adds the appropriate classes that we use to style each element.
-        These classes control the overall appearance, as well as the showing and hiding via CSS
-        transitions. You can modify any of this with custom CSS or overriding Bootstrap’s default
-        variables.
-    &lt;/p&gt;
-  &lt;/section&gt;
-  &lt;section id="accordion2"&gt;
-    &lt;title&gt;Accordion Item #2&lt;/title&gt;
-    &lt;p&gt;
-      &lt;b&gt;This is the second item’s accordion body.&lt;/b&gt; It is hidden by default,
-        until the collapse plugin adds the appropriate classes that we use to style each element.
-        These classes control the overall appearance, as well as the showing and hiding via CSS
-        transitions. You can modify any of this with custom CSS or overriding Bootstrap’s default
-        variables.
-    &lt;/p&gt;
-  &lt;/section&gt;
-  &lt;section id="accordion3"&gt;
-    &lt;title&gt;Accordion Item #3&lt;/title&gt;
-    &lt;p&gt;
-      &lt;b&gt;This is the third item’s accordion body.&lt;/b&gt; It is hidden by default,
-        until the collapse plugin adds the appropriate classes that we use to style each element.
-        These classes control the overall appearance, as well as the showing and hiding via CSS
-        transitions. You can modify any of this with custom CSS or overriding Bootstrap’s default
-        variables.
-    &lt;/p&gt;
-  &lt;/section&gt;
-&lt;/bodydiv&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;accordion&gt;
-  &lt;accordion-item id="accordion1" open="yes"&gt;
-    &lt;title&gt;Accordion Item #1&lt;/title&gt;
-    &lt;p&gt;
-      &lt;b&gt;This is the first item’s accordion body.&lt;/b&gt; It is shown by default,
-        until the collapse plugin adds the appropriate classes that we use to style each element.
-        These classes control the overall appearance, as well as the showing and hiding via CSS
-        transitions. You can modify any of this with custom CSS or overriding Bootstrap’s default
-        variables.
-    &lt;/p&gt;
-  &lt;/accordion-item&gt;
-  &lt;accordion-item id="accordion2"&gt;
-    &lt;title&gt;Accordion Item #2&lt;/title&gt;
-    &lt;p&gt;
-      &lt;b&gt;This is the second item’s accordion body.&lt;/b&gt; It is hidden by default,
-        until the collapse plugin adds the appropriate classes that we use to style each element.
-        These classes control the overall appearance, as well as the showing and hiding via CSS
-        transitions. You can modify any of this with custom CSS or overriding Bootstrap’s default
-        variables.
-    &lt;/p&gt;
-  &lt;/accordion-item&gt;
-  &lt;accordion-item id="accordion3"&gt;
-    &lt;title&gt;Accordion Item #3&lt;/title&gt;
-    &lt;p&gt;
-      &lt;b&gt;This is the third item’s accordion body.&lt;/b&gt; It is hidden by default,
-        until the collapse plugin adds the appropriate classes that we use to style each element.
-        These classes control the overall appearance, as well as the showing and hiding via CSS
-        transitions. You can modify any of this with custom CSS or overriding Bootstrap’s default
-        variables.
-    &lt;/p&gt;
-  &lt;/accordion-item&gt;
-&lt;/accordion&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/accordion/example.xml"/></codeblock>
     <section>
       <title>Flush</title>
       <p>Set <xmlatt>flush="yes"</xmlatt> to remove the default
@@ -168,20 +97,7 @@
         </section>
       </bodydiv>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;bodydiv outputclass="accordion-flush"&gt;
-  ...etc
-&lt;/bodydiv&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;accordion flush="yes"&gt;
-  ...etc
-&lt;/accordion&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/accordion/flush.xml"/></codeblock>
 
     <section>
       <title>Always open</title>
@@ -215,19 +131,6 @@
         </section>
       </bodydiv>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;bodydiv outputclass="accordion-open"&gt;
-  ...etc
-&lt;/bodydiv&gt;</codeblock>
-        </section>
-         <section>
-        <title>Specialization</title>
-          <codeblock>&lt;accordion open="yes"&gt;
-  ...etc
-&lt;/accordion&gt;</codeblock>
-        </section>
-      </bodydiv>
+    <codeblock><coderef href="code/accordion/always-open.xml"/></codeblock>
   </body>
 </topic>

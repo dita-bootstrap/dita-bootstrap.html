@@ -1,0 +1,27 @@
+<xref outputclass="link-primary" href="#">
+  <i outputclass="bi-link"/> Primary link
+</xref>
+<xref outputclass="link-secondary" href="#">
+  <i outputclass="bi-link"/> Secondary link
+</xref>
+<xref outputclass="link-success" href="#">
+  <i outputclass="bi-link"/> Success link
+</xref>
+<xref outputclass="link-danger" href="#">
+  <i outputclass="bi-link"/> Danger link
+</xref>
+<xref outputclass="link-warning" href="#">
+  <i outputclass="bi-link"/> Warning link
+</xref>
+<xref outputclass="link-info" href="#">
+  <i outputclass="bi-link"/> Info link
+</xref>
+<xref outputclass="link-light" href="#">
+  <i outputclass="bi-link"/> Light link
+</xref>
+<xref outputclass="link-dark" href="#">
+  <i outputclass="bi-link"/> Dark link
+</xref>
+<xref outputclass="link-body-emphasis" href="#">
+  <i outputclass="bi-link"/> Emphasis link
+</xref>

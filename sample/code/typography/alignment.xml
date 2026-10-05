@@ -1,0 +1,13 @@
+<dl otherprops="cols(2)">
+  <dlentry>
+    <dt>Description lists</dt>
+    <dd>A description list is perfect for defining terms.</dd>
+  </dlentry>
+  <dlentry>
+    <dt>Term</dt>
+    <dd>
+      <p>Definition for the term.</p>
+      <p>And some more placeholder definition text.</p>
+    </dd>
+  </dlentry>
+</dl>

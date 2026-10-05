@@ -1,0 +1,18 @@
+<xref outputclass="btn-primary btn-floating m-1" href="#">
+  <i outputclass="bi-arrow-down-square-fill"/>
+</xref>
+<xref outputclass="btn-primary btn-floating m-1" href="#">
+  <i outputclass="bi-chat-left-quote-fill"/>
+</xref>
+<xref outputclass="btn-primary btn-floating m-1" href="#">
+  <i outputclass="bi-speedometer"/>
+</xref>
+<xref outputclass="btn-primary btn-floating m-1" href="#">
+  <i outputclass="bi-camera-fill"/>
+</xref>
+<xref outputclass="btn-primary btn-floating m-1" href="#">
+  <i outputclass="bi-link"/>
+</xref>
+<xref outputclass="btn-primary btn-floating m-1" href="#">
+  <i outputclass="bi-share-fill"/>
+</xref>

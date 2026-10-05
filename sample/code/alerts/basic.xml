@@ -1,0 +1,24 @@
+<section outputclass="alert-primary">
+  A simple primary alert—check it out!
+</section>
+<section outputclass="alert-secondary">
+  A simple secondary alert—check it out!
+</section>
+<section outputclass="alert-success">
+  A simple success alert—check it out!
+</section>
+<section outputclass="alert-danger">
+  A simple danger alert—check it out!
+</section>
+<section outputclass="alert-warning">
+  A simple warning alert—check it out!
+</section>
+<section outputclass="alert-info">
+  A simple info alert—check it out!
+</section>
+<section outputclass="alert-light">
+  A simple light alert—check it out!
+</section>
+<section outputclass="alert-dark">
+  A simple dark alert—check it out!
+</section>
