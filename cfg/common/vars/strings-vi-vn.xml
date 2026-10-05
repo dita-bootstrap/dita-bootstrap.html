@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Kế tiếp</variable>
   <variable id="Previous">Trước</variable>
+  <variable id="On this page">Trên trang này</variable>
   <variable id="Skip to main content">Chuyển đến nội dung chính</variable>
   <variable id="Skip to docs navigation">Chuyển đến điều hướng tài liệu</variable>
   <variable id="Skip to topic navigation">Chuyển đến điều hướng chủ đề</variable>

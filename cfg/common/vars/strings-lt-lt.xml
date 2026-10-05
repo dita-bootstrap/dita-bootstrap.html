@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Kitas</variable>
   <variable id="Previous">Ankstesnis</variable>
+  <variable id="On this page">Šiame puslapyje</variable>
   <variable id="Skip to main content">Pereiti prie pagrindinio turinio</variable>
   <variable id="Skip to docs navigation">Pereiti prie dokumentų naršymo</variable>
   <variable id="Skip to topic navigation">Pereiti prie temos naršymo</variable>

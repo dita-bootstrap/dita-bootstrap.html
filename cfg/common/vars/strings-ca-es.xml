@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Pròxim</variable>
   <variable id="Previous">Anterior</variable>
+  <variable id="On this page">En aquesta pàgina</variable>
   <variable id="Skip to main content">Saltar al contingut principal</variable>
   <variable id="Skip to docs navigation">Saltar a la navegació de documents</variable>
   <variable id="Skip to topic navigation">Saltar a la navegació per temes</variable>

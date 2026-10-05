@@ -34,6 +34,12 @@
           <xsl:if test="$BIDIRECTIONAL_DOCUMENT = 'yes'">
             <xsl:attribute name="dir" select="'rtl'"/>
           </xsl:if>
+          <strong class="d-none d-md-block h6 my-2 ms-3">
+            <xsl:call-template name="getVariable">
+              <xsl:with-param name="id" select="'On this page'"/>
+            </xsl:call-template>
+          </strong>
+          <hr class="d-none d-md-block my-2 ms-3"/>
           <ul>
             <xsl:apply-templates mode="scrollspy"/>
           </ul>
@@ -83,28 +89,31 @@
   </xsl:template>
 
   <xsl:template match="*[contains(@class, ' topic/title ')]" mode="scrollspy">
-    <xsl:choose>
-      <xsl:when test="$BOOTSTRAP_SCROLLSPY_TOC = ('list-group')">
-        <a class="list-group-item list-group-item-action">
-          <xsl:call-template name="scrollspy-href"/>
-          <xsl:apply-templates/>
-        </a>
-      </xsl:when>
-      <xsl:when test="$BOOTSTRAP_SCROLLSPY_TOC = ('nav-pill')">
-        <a class="my-1 ps-2 nav-link">
-          <xsl:call-template name="scrollspy-href"/>
-          <xsl:apply-templates/>
-        </a>
-      </xsl:when>
-      <xsl:otherwise>
-        <li>
-          <a class="ps-2">
+    <!-- Skip the root topic's own title; scrollspy nav should start below it -->
+    <xsl:if test="parent::*/ancestor::*[contains(@class, ' topic/topic ')]">
+      <xsl:choose>
+        <xsl:when test="$BOOTSTRAP_SCROLLSPY_TOC = ('list-group')">
+          <a class="list-group-item list-group-item-action">
             <xsl:call-template name="scrollspy-href"/>
             <xsl:apply-templates/>
           </a>
-        </li>
-      </xsl:otherwise>
-    </xsl:choose>
+        </xsl:when>
+        <xsl:when test="$BOOTSTRAP_SCROLLSPY_TOC = ('nav-pill')">
+          <a class="my-1 ps-2 nav-link">
+            <xsl:call-template name="scrollspy-href"/>
+            <xsl:apply-templates/>
+          </a>
+        </xsl:when>
+        <xsl:otherwise>
+          <li>
+            <a class="ps-2">
+              <xsl:call-template name="scrollspy-href"/>
+              <xsl:apply-templates/>
+            </a>
+          </li>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="*[contains(@class, ' topic/body ')]" mode="scrollspy">

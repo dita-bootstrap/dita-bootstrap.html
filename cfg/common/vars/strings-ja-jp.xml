@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">次</variable>
   <variable id="Previous">前</variable>
+  <variable id="On this page">このページ</variable>
   <variable id="Skip to main content">メインコンテンツにスキップ</variable>
   <variable id="Skip to docs navigation">ドキュメントナビゲーションにスキップ</variable>
   <variable id="Skip to topic navigation">トピックナビゲーションにスキップ</variable>

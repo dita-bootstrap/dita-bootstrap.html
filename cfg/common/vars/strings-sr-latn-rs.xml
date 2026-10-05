@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Следећи</variable>
   <variable id="Previous">Претходна</variable>
+  <variable id="On this page">Na ovoj stranici</variable>
   <variable id="Skip to main content">Пређи на главни садржај</variable>
   <variable id="Skip to docs navigation">Прескочи на навигацију докумената</variable>
   <variable id="Skip to topic navigation">Пређи на навигацију по теми</variable>

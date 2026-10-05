@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Næste</variable>
   <variable id="Previous">Tidligere</variable>
+  <variable id="On this page">På denne side</variable>
   <variable id="Skip to main content">Spring til hovedindhold</variable>
   <variable id="Skip to docs navigation">Spring til dokumentnavigation</variable>
   <variable id="Skip to topic navigation">Spring til emnenavigation</variable>

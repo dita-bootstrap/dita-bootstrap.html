@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Următorul</variable>
   <variable id="Previous">Anterior</variable>
+  <variable id="On this page">Pe această pagină</variable>
   <variable id="Skip to main content">Treci la conținutul principal</variable>
   <variable id="Skip to docs navigation">Treceți la navigarea documentelor</variable>
   <variable id="Skip to topic navigation">Sari la navigarea subiectului</variable>

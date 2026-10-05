@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Nākamais</variable>
   <variable id="Previous">Iepriekšējais</variable>
+  <variable id="On this page">Šajā lapā</variable>
   <variable id="Skip to main content">Pāriet uz galveno saturu</variable>
   <variable id="Skip to docs navigation">Pāriet uz dokumentu navigāciju</variable>
   <variable id="Skip to topic navigation">Pāriet uz tēmas navigāciju</variable>

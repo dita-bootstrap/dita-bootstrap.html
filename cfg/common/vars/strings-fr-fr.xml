@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Suivante</variable>
   <variable id="Previous">Précédente</variable>
+  <variable id="On this page">Sur cette page</variable>
   <variable id="Skip to main content">Passer au contenu principal</variable>
   <variable id="Skip to docs navigation">Passer à la navigation dans les documents</variable>
   <variable id="Skip to topic navigation">Passer à la navigation du sujet</variable>

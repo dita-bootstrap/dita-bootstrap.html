@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Επόμενο</variable>
   <variable id="Previous">Προηγούμενος</variable>
+  <variable id="On this page">Σε αυτήν τη σελίδα</variable>
   <variable id="Skip to main content">Μετάβαση στο κύριο περιεχόμενο</variable>
   <variable id="Skip to docs navigation">Μετάβαση στην πλοήγηση εγγράφων</variable>
   <variable id="Skip to topic navigation">Μετάβαση στην πλοήγηση θέματος</variable>

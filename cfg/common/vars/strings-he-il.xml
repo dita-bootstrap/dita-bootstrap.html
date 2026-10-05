@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">הַבָּא</variable>
   <variable id="Previous">קודם</variable>
+  <variable id="On this page">בדף זה</variable>
   <variable id="Skip to main content">דלג לתוכן הראשי</variable>
   <variable id="Skip to docs navigation">דלג לניווט בתיעוד</variable>
   <variable id="Skip to topic navigation">דלג לניווט בנושא</variable>

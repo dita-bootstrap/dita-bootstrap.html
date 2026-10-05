@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">ถัดไป</variable>
   <variable id="Previous">ก่อนหน้า</variable>
+  <variable id="On this page">ในหน้านี้</variable>
   <variable id="Skip to main content">ข้ามไปที่เนื้อหาหลัก</variable>
   <variable id="Skip to docs navigation">ข้ามไปที่การนำทางเอกสาร</variable>
   <variable id="Skip to topic navigation">ข้ามไปที่การนำทางหัวข้อ</variable>

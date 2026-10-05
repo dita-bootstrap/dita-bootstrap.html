@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Ďalšie</variable>
   <variable id="Previous">Predchádzajúce</variable>
+  <variable id="On this page">Na tejto stránke</variable>
   <variable id="Skip to main content">Preskočiť na hlavný obsah</variable>
   <variable id="Skip to docs navigation">Preskočiť na navigáciu v dokumentoch</variable>
   <variable id="Skip to topic navigation">Preskočiť na navigáciu v téme</variable>

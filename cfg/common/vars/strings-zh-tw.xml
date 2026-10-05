@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">下一個</variable>
   <variable id="Previous">以前的</variable>
+  <variable id="On this page">本頁內容</variable>
   <variable id="Skip to main content">跳到主要內容</variable>
   <variable id="Skip to docs navigation">跳到文檔導航</variable>
   <variable id="Skip to topic navigation">跳到主題導航</variable>

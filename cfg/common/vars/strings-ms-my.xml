@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Seterusnya</variable>
   <variable id="Previous">Sebelumnya</variable>
+  <variable id="On this page">Pada halaman ini</variable>
   <variable id="Skip to main content">Langkau ke kandungan utama</variable>
   <variable id="Skip to docs navigation">Langkau ke navigasi dokumen</variable>
   <variable id="Skip to topic navigation">Langkau ke navigasi topik</variable>

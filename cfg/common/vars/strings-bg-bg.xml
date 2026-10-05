@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Следващия</variable>
   <variable id="Previous">Предишна</variable>
+  <variable id="On this page">На тази страница</variable>
   <variable id="Skip to main content">Преминете към основното съдържание</variable>
   <variable id="Skip to docs navigation">Преминете към навигацията на документи</variable>
   <variable id="Skip to topic navigation">Преминете към навигация по теми</variable>

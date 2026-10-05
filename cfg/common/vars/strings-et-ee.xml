@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Edasi</variable>
   <variable id="Previous">Eelmine</variable>
+  <variable id="On this page">Sellel lehel</variable>
   <variable id="Skip to main content">Mine põhisisu juurde</variable>
   <variable id="Skip to docs navigation">Jätke dokumentide navigeerimise juurde</variable>
   <variable id="Skip to topic navigation">Liikuge teema navigeerimise juurde</variable>

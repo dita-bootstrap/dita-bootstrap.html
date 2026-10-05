@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Další</variable>
   <variable id="Previous">Předchozí</variable>
+  <variable id="On this page">Na této stránce</variable>
   <variable id="Skip to main content">Přejít na hlavní obsah</variable>
   <variable id="Skip to docs navigation">Přejít na navigaci v dokumentech</variable>
   <variable id="Skip to topic navigation">Přejít na navigaci k tématu</variable>

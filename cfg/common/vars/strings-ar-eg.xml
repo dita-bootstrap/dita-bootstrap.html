@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">التالي</variable>
   <variable id="Previous">سابق</variable>
+  <variable id="On this page">في هذه الصفحة</variable>
   <variable id="Skip to main content">تخطي إلى المحتوى الرئيسي</variable>
   <variable id="Skip to docs navigation">انتقل إلى ملاحة المستندات</variable>
   <variable id="Skip to topic navigation">تخطي إلى موضوع الملاحة</variable>

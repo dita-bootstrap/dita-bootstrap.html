@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Næst</variable>
   <variable id="Previous">Fyrri</variable>
+  <variable id="On this page">Á þessari síðu</variable>
   <variable id="Skip to main content">Fara í aðalefni</variable>
   <variable id="Skip to docs navigation">Farðu í skjalaleiðsögn</variable>
   <variable id="Skip to topic navigation">Fara í flakk um efni</variable>

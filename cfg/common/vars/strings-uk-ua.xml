@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Далі</variable>
   <variable id="Previous">Попередній</variable>
+  <variable id="On this page">На цій сторінці</variable>
   <variable id="Skip to main content">Перейти до основного вмісту</variable>
   <variable id="Skip to docs navigation">Перейти до навігації з документами</variable>
   <variable id="Skip to topic navigation">Перейти до навігації по темі</variable>

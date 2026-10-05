@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Sonraki</variable>
   <variable id="Previous">Öncesi</variable>
+  <variable id="On this page">Bu sayfada</variable>
   <variable id="Skip to main content">Ana içeriğe geç</variable>
   <variable id="Skip to docs navigation">Dokümanlar navigasyonuna atla</variable>
   <variable id="Skip to topic navigation">Konu navigasyonuna atla</variable>

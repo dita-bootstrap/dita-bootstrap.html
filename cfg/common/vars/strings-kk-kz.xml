@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">Келесі</variable>
   <variable id="Previous">Алдыңғы</variable>
+  <variable id="On this page">Осы бетте</variable>
   <variable id="Skip to main content">Негізгі мазмұнға өту</variable>
   <variable id="Skip to docs navigation">Құжаттар шарлауына өту</variable>
   <variable id="Skip to topic navigation">Тақырыпты шарлауға өту</variable>

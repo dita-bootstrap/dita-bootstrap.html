@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">다음</variable>
   <variable id="Previous">이전의</variable>
+  <variable id="On this page">이 페이지에서</variable>
   <variable id="Skip to main content">주요 콘텐츠로 건너뛰기</variable>
   <variable id="Skip to docs navigation">문서 탐색으로 건너뛰기</variable>
   <variable id="Skip to topic navigation">주제 탐색으로 건너뛰기</variable>

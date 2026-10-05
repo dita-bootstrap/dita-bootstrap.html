@@ -7,6 +7,7 @@
 <variables>
   <variable id="Next">اگلے</variable>
   <variable id="Previous">پچھلا</variable>
+  <variable id="On this page">اس صفحے پر</variable>
   <variable id="Skip to main content">مرکزی مواد پر جائیں۔</variable>
   <variable id="Skip to docs navigation">ڈاکس نیویگیشن پر جائیں۔</variable>
   <variable id="Skip to topic navigation">موضوع نیویگیشن پر جائیں۔</variable>
