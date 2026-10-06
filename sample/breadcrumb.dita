@@ -23,7 +23,7 @@
   </prolog>
   <body outputclass="language-markup">
     <fig>
-      <image scalefit="yes" href="./src/breadcrumb.png"/>
+      <image scalefit="yes" href="./src/breadcrumb/breadcrumb.png"/>
     </fig>
     <section id="adding-breadcrumbs">
       <title>Adding breadcrumbs</title>
@@ -40,7 +40,7 @@
       <p>Dividers are automatically added via CSS. They can be changed by setting the parameter
           <parmname>--bootstrap.breadcrumb.divider</parmname>. </p>
       <fig>
-        <image scalefit="yes" href="./src/breadcrumb-divider.png"/>
+        <image scalefit="yes" href="./src/breadcrumb/divider.png"/>
       </fig>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
         >path/to/your.ditamap</filepath> \

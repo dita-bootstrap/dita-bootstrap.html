@@ -81,43 +81,43 @@
         <li id="full">
           <fig>
             <title><option>full</option> – DITA-OT default unstyled full ToC</title>
-            <image href="./src/full.png"/>
+            <image href="./src/nav/full.png"/>
           </fig>
         </li>
         <li id="partial">
           <fig>
             <title><option>partial</option> – DITA-OT default unstyled partial ToC</title>
-          <image href="./src/partial.png"/>
+          <image href="./src/nav/partial.png"/>
           </fig>
         </li>
         <li id="nav-pill-full">
           <fig>
             <title><option>nav-pill-full</option> – Styled full ToC using nav-pills</title>
-            <image href="./src/nav-pill-full.png"/>
+            <image href="./src/nav/pill-full.png"/>
           </fig>
         </li>
         <li id="nav-pill-partial">
           <fig>
             <title><option>nav-pill-partial</option> – Styled partial ToC using nav-pills</title>
-            <image href="./src/nav-pill-partial.png"/>
+            <image href="./src/nav/pill-partial.png"/>
           </fig>
         </li>
         <li id="list-group-full">
           <fig>
             <title><option>list-group-full</option> – Styled full ToC within a list group</title>
-            <image href="./src/list-group-full.png"/>
+            <image href="./src/nav/list-group-full.png"/>
           </fig>
         </li>
         <li id="list-group-partial">
           <fig>
             <title><option>list-group-partial</option> – Styled partial ToC within a list group</title>
-            <image href="./src/list-group-partial.png"/>
+            <image href="./src/nav/list-group-partial.png"/>
           </fig>
         </li>
         <li id="collapsible">
           <fig>
             <title><option>collapsible</option> – Styled full ToC with collapsible elements</title>
-            <image href="./src/collapsible.png"/>
+            <image href="./src/nav/collapsible.png"/>
           </fig>
         </li>
       </ol>
@@ -177,7 +177,7 @@
      <parmname>--nav-toc</parmname>=<option>list-group-partial</option> \
      <parmname>--menubar-toc.include</parmname>=<option>yes</option></codeblock>
       <fig>
-        <image scalefit="yes" href="./src/menubar-toc.png"/>
+        <image scalefit="yes" href="./src/nav/menubar-toc.png"/>
       </fig>
       <p>The menu bar's CSS class defaults to Bootstrap's <option>sticky-top</option> and
         <option>bg-body</option> utility classes, keeping it pinned to the top of the viewport
@@ -202,7 +202,7 @@
      <parmname>--nav-toc</parmname>=<option>&lt;sidebar-style&gt;</option> \
      <parmname>--bootstrap.topbar.hdr</parmname>=<filepath>path/to/your.header</filepath></codeblock>
       <fig>
-        <image scalefit="yes" href="./src/topbar.png"/>
+        <image scalefit="yes" href="./src/nav/topbar.png"/>
       </fig>
       <p>The plug-in also includes a sample
         <xref

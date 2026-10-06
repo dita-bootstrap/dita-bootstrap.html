@@ -26,7 +26,7 @@
           .active</codeph>, its parents will also be <codeph>.active</codeph>. An animation of an example ToC navbar is
         shown below.</p>
       <fig>
-        <image scalefit="yes" href="./src/scrollspy-nav-pill.webp"/>
+        <image scalefit="yes" href="./src/scrollspy/nav-pill.webp"/>
       </fig>
       <p>To use this option, embed the subtopics and add the parameters
           <parmname>--nav-toc</parmname>=<option>nav-pill-partial</option> and
@@ -43,7 +43,7 @@
         <xref href="./list-group.dita" format="dita">list-groups</xref>. An animation of an example ToC menu is shown
         below.</p>
       <fig>
-        <image scalefit="yes" href="./src/scrollspy-list-group.webp"/>
+        <image scalefit="yes" href="./src/scrollspy/list-group.webp"/>
       </fig>
       <p>To use this option, embed the subtopics and add the parameters
           <parmname>--nav-toc</parmname>=<option>list-group-partial</option> and
@@ -58,7 +58,7 @@
       <title>Example with list</title>
       <p>Bootstrap’s Scrollspy also works with a series of simple <xmlelement>li</xmlelement> list elements.</p>
       <fig>
-        <image scalefit="yes" href="./src/scrollspy-list.webp"/>
+        <image scalefit="yes" href="./src/scrollspy/list.webp"/>
       </fig>
       <p>To use this option, embed the subtopics and add the parameters
           <parmname>--nav-toc</parmname>=<option>collapsible</option> and

@@ -104,11 +104,11 @@
     </p>
     <fig>
       <title>Collapsible ToC with icon elements</title>
-      <image scalefit="yes" href="./src/icons-collapsible.png"/>
+      <image scalefit="yes" href="./src/icons/collapsible.png"/>
     </fig>
     <fig>
       <title>Icons elements within a menu bar</title>
-      <image scalefit="yes" href="./src/icons-menubar.png"/>
+      <image scalefit="yes" href="./src/icons/menubar.png"/>
     </fig>
     <codeblock><coderef href="code/icons/icons-elements-within-a-menu-bar.xml"/></codeblock>
     <section id="installing-other-icons">
