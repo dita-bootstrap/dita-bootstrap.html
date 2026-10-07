@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
+  markup is used throughout the examples describing how to implement these components correctly using outputclass.
+
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
+  and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
+-->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="stepper">
+  <title>Stepper</title>
+  <abstract>
+    <shortdesc>Documentation and examples for creating timelines, wizards, or step-by-step progress indicators.</shortdesc>
+    <p>Steppers are built with CSS Grid on ordered lists and display vertically by default. Add <codeph>outputclass="stepper"</codeph> to an <xmlelement>ol</xmlelement>.
+      Mark completed or current steps by adding <codeph>active</codeph> to the <xmlatt>outputclass</xmlatt> of the
+      <xmlelement>li</xmlelement>.</p>
+  </abstract>
+  <prolog>
+    <metadata>
+      <keywords>
+        <indexterm>Stepper</indexterm>
+        <indexterm>CSS
+          <indexterm><xmlatt>outputclass</xmlatt></indexterm>
+        </indexterm>
+        <indexterm><xmlelement>ol</xmlelement></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <body outputclass="language-markup">
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+      <ol outputclass="stepper">
+        <li outputclass="active">Create account</li>
+        <li outputclass="active">Confirm email</li>
+        <li>Update profile</li>
+        <li>Finish</li>
+      </ol>
+    </bodydiv>
+    <codeblock><coderef href="code/stepper/example.xml"/></codeblock>
+    <section id="horizontal">
+      <title>Horizontal</title>
+      <p>Add <codeph>stepper-horizontal</codeph> to the <xmlatt>outputclass</xmlatt> for a horizontal layout.</p>
+    </section>
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+      <ol outputclass="stepper stepper-horizontal">
+        <li outputclass="active">Create account</li>
+        <li outputclass="active">Confirm email</li>
+        <li>Update profile</li>
+        <li>Finish</li>
+      </ol>
+    </bodydiv>
+    <codeblock><coderef href="code/stepper/horizontal.xml"/></codeblock>
+    <section id="vertical">
+      <title>Vertical</title>
+      <p>Add <codeph>stepper-vertical</codeph> to the <xmlatt>outputclass</xmlatt> to force a vertical layout.</p>
+    </section>
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+      <ol outputclass="stepper stepper-vertical">
+        <li outputclass="active">Create account</li>
+        <li outputclass="active">Confirm email</li>
+        <li>Update profile</li>
+        <li>Finish</li>
+      </ol>
+    </bodydiv>
+    <codeblock><coderef href="code/stepper/vertical.xml"/></codeblock>
+    <section id="responsive">
+      <title>Responsive</title>
+      <p>Prefix the class with a breakpoint, for example <codeph>sm:stepper-horizontal</codeph>, to switch layout at that breakpoint.</p>
+    </section>
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+      <ol outputclass="stepper sm:stepper-horizontal">
+        <li outputclass="active">Create account</li>
+        <li outputclass="active">Confirm email</li>
+        <li>Update profile</li>
+        <li>Finish</li>
+      </ol>
+    </bodydiv>
+    <codeblock><coderef href="code/stepper/responsive.xml"/></codeblock>
+    <section id="variants">
+      <title>Variants</title>
+      <p>Add a <codeph>theme-{color}</codeph> outputclass to individual <xmlelement>li</xmlelement> items.</p>
+    </section>
+    <bodydiv deliveryTarget="html" outputclass="p-3 border">
+      <ol outputclass="stepper">
+        <li outputclass="theme-success active">Create account</li>
+        <li outputclass="theme-danger active">Confirm email</li>
+        <li outputclass="theme-primary active">Update profile</li>
+        <li outputclass="theme-accent active">Finish</li>
+      </ol>
+    </bodydiv>
+    <codeblock><coderef href="code/stepper/variants.xml"/></codeblock>
+  </body>
+</topic>

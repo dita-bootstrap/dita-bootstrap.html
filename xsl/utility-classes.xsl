@@ -35,6 +35,7 @@
   <xsl:param name="BOOTSTRAP_CSS_DT" select="'text-truncate '"/>
   <xsl:param name="BOOTSTRAP_CSS_DD" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_PAGINATION" select="''"/>
+  <xsl:param name="BOOTSTRAP_CSS_STEPPER" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_POPOVER" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_TOOLTIP" select="''"/>
   <xsl:param name="BOOTSTRAP_CSS_TABLE" select="''"/>
@@ -299,6 +300,41 @@
     </xsl:if>
     <xsl:value-of select="ancestor::*[contains(@outputclass, 'pagination')][1]/@outputclass"/>
     <xsl:value-of select="concat(' ', $BOOTSTRAP_CSS_PAGINATION)"/>
+    <xsl:next-match/>
+  </xsl:template>
+
+  <!-- Change the default Bootstrap CSS classes of steppers -->
+  <xsl:template
+    match="*[contains(@class, ' topic/ol ') and tokenize(@outputclass, '\s+') = 'stepper']"
+    mode="get-output-class"
+  >
+    <xsl:value-of select="$BOOTSTRAP_CSS_STEPPER"/>
+    <xsl:next-match/>
+  </xsl:template>
+
+  <xsl:template match="*[contains(@class, ' bootstrap-d/stepper ')]" mode="get-output-class" priority="10">
+    <xsl:if test="@orientation = 'vertical'">stepper-vertical </xsl:if>
+    <xsl:if test="@orientation = 'horizontal'">
+      <xsl:value-of select="concat(if (@breakpoint) then concat(@breakpoint, ':') else '', 'stepper-horizontal ')"/>
+    </xsl:if>
+    <xsl:if test="@theme">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="@theme"/>
+      </xsl:call-template>
+      <xsl:text> </xsl:text>
+    </xsl:if>
+    <xsl:value-of select="$BOOTSTRAP_CSS_STEPPER"/>
+    <xsl:next-match/>
+  </xsl:template>
+
+  <xsl:template match="*[contains(@class, ' bootstrap-d/stepper-item ')]" mode="get-output-class" priority="10">
+    <xsl:if test="@active = 'yes'">active </xsl:if>
+    <xsl:if test="@theme">
+      <xsl:call-template name="theme-classes">
+        <xsl:with-param name="value" select="@theme"/>
+      </xsl:call-template>
+      <xsl:text> </xsl:text>
+    </xsl:if>
     <xsl:next-match/>
   </xsl:template>
 
@@ -600,6 +636,7 @@
             else if (contains(@class, ' topic/xref ') and ancestor::*[tokenize(@outputclass, '\s+') = 'alert']) then 'alert-link'
             else if (contains(@class, ' topic/li ') and (ancestor::*[contains(@class, ' bootstrap-d/list-group ')] or ancestor::ul[contains(@outputclass, 'list-group')] or ancestor::ol[contains(@outputclass, 'list-group')])) then 'list-group-item'
             else if (contains(@class, ' topic/li ') and (ancestor::ul[contains(@outputclass, 'list-inline')] or ancestor::ol[contains(@outputclass, 'list-inline')])) then 'list-inline-item'
+            else if (contains(@class, ' topic/li ') and ancestor::*[contains(@class, ' bootstrap-d/stepper ') or tokenize(@outputclass, '\s+') = 'stepper']) then 'stepper-item'
             else if (contains(@outputclass, 'pagination-')) then 'pagination'
             else if (contains(@class, ' topic/li ') and (ancestor::*[contains(@class, ' bootstrap-d/pagination ')] or ancestor::*[contains(@outputclass, 'pagination')])) then 'page-item'
             else if (contains(@class, ' topic/xref ') and (ancestor::*[contains(@class, ' bootstrap-d/pagination ')] or ancestor::*[contains(@outputclass, 'pagination')])) then 'page-link'

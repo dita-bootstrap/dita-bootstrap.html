@@ -1,0 +1,6 @@
+<ol outputclass="stepper">
+  <li outputclass="theme-success active">Create account</li>
+  <li outputclass="theme-danger active">Confirm email</li>
+  <li outputclass="theme-primary active">Update profile</li>
+  <li outputclass="theme-accent active">Finish</li>
+</ol>

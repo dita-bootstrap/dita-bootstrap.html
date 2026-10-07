@@ -200,6 +200,11 @@
     if:set="bootstrap.css.pagination"
   />
   <param
+    name="BOOTSTRAP_CSS_STEPPER"
+    expression="${bootstrap.css.stepper}"
+    if:set="bootstrap.css.stepper"
+  />
+  <param
     name="BOOTSTRAP_CSS_POPOVER"
     expression="${bootstrap.css.popover}"
     if:set="bootstrap.css.popover"

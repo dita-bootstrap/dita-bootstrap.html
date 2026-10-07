@@ -642,6 +642,7 @@
       <indexterm><parmname>--bootstrap.css.nav.parent</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.pagination</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.popover</parmname></indexterm>
+      <indexterm><parmname>--bootstrap.css.stepper</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.tabs</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.tabs.vertical</parmname></indexterm>
       <indexterm><parmname>--bootstrap.css.thead</parmname></indexterm>
@@ -767,6 +768,15 @@
           <pd>
             Common utility classes for Bootstrap
             <xref href="./popovers.dita" format="dita">popover components</xref>
+          </pd>
+        </plentry>
+        <plentry>
+          <pt>
+            <parmname>--bootstrap.css&#8203;.stepper</parmname>
+          </pt>
+          <pd>
+            Common utility classes for Bootstrap
+            <xref href="./stepper.dita" format="dita">stepper components</xref>
           </pd>
         </plentry>
         <plentry>

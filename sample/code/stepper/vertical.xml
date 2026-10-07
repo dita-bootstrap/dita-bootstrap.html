@@ -1,0 +1,6 @@
+<ol outputclass="stepper stepper-vertical">
+  <li outputclass="active">Create account</li>
+  <li outputclass="active">Confirm email</li>
+  <li>Update profile</li>
+  <li>Finish</li>
+</ol>

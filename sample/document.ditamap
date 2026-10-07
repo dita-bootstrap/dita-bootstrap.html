@@ -57,6 +57,7 @@
     <topicref href="pagination.dita"/>
     <topicref href="popovers.dita"/>
     <topicref href="scrollspy.dita"/>
+    <topicref href="stepper.dita"/>
     <topicref href="tabs.dita"/>
     <topicref href="tooltips.dita"/>
   </chapter>

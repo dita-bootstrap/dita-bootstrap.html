@@ -190,6 +190,7 @@ The HTML output for the following Bootstrap components can be annotated with com
 - `bootstrap.css.nav.parent` – Common utility classes for ancestors of active nav-pill elements
 - `bootstrap.css.pagination` – Common utility classes for Bootstrap pagination components
 - `bootstrap.css.popover` – Common utility classes for Bootstrap popover components
+- `bootstrap.css.stepper` – Common utility classes for Bootstrap stepper components
 - `bootstrap.css.tabs` – Common utility classes for Bootstrap horizontal tab components
 - `bootstrap.css.tabs.vertical` – Common utility classes for Bootstrap vertical tabs
 - `bootstrap.css.tooltip` – Common utility classes for Bootstrap tooltip components

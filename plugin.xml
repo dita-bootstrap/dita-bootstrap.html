@@ -539,6 +539,11 @@
       desc="Bootstrap classes for pagination components"
     />
     <param
+      name="bootstrap.css.stepper"
+      type="string"
+      desc="Bootstrap classes for stepper components"
+    />
+    <param
       name="bootstrap.css.popover"
       type="string"
       desc="Bootstrap classes for popover components"
