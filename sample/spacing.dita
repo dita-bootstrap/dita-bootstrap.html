@@ -23,7 +23,7 @@
     <section id="margin">
       <title>Margin</title>
       <p>The <xmlatt
-        >margin</xmlatt> attribute controls the distance between elements, supporting values from 0 to 5 and <codeph
+        >margin</xmlatt> attribute controls the distance between elements, supporting values from 0 to 12 and <codeph
         >auto</codeph>.</p>
     </section>
 
@@ -34,6 +34,8 @@
       <div outputclass="theme-danger theme-contrast m-3 p-2">Margin 3</div>
       <div outputclass="theme-warning theme-contrast m-4 p-2">Margin 4</div>
       <div outputclass="theme-info theme-contrast m-5 p-2">Margin 5</div>
+      <div outputclass="theme-primary theme-contrast m-6 p-2">Margin 6</div>
+      <div outputclass="theme-secondary theme-contrast m-12 p-2">Margin 12</div>
       <div outputclass="theme-accent theme-contrast m-auto p-2 w-50">Margin Auto</div>
     </example>
 
@@ -42,7 +44,7 @@
     <section id="padding">
       <title>Padding</title>
       <p>The <xmlatt
-        >padding</xmlatt> attribute controls the internal spacing of an element, supporting values from 0 to 5.</p>
+        >padding</xmlatt> attribute controls the internal spacing of an element, supporting values from 0 to 12.</p>
     </section>
 
     <example>
@@ -62,6 +64,12 @@
       <div outputclass="theme-info theme-contrast p-5 m-1"><div
           outputclass="theme-info theme-subtle w-100"
         >Padding 5</div></div>
+      <div outputclass="theme-primary theme-contrast p-6 m-1"><div
+          outputclass="theme-primary theme-subtle w-100"
+        >Padding 6</div></div>
+      <div outputclass="theme-secondary theme-contrast p-12 m-1"><div
+          outputclass="theme-secondary theme-subtle w-100"
+        >Padding 12</div></div>
     </example>
 
     <codeblock><coderef href="code/spacing/padding.xml"/></codeblock>

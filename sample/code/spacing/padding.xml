@@ -4,3 +4,5 @@
 <div outputclass="theme-danger theme-contrast p-3 m-1">Padding 3</div>
 <div outputclass="theme-warning theme-contrast p-4 m-1">Padding 4</div>
 <div outputclass="theme-info theme-contrast p-5 m-1">Padding 5</div>
+<div outputclass="theme-primary theme-contrast p-6 m-1">Padding 6</div>
+<div outputclass="theme-secondary theme-contrast p-12 m-1">Padding 12</div>

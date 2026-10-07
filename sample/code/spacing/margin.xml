@@ -4,4 +4,6 @@
 <div outputclass="theme-danger theme-contrast m-3 p-2">Margin 3</div>
 <div outputclass="theme-warning theme-contrast m-4 p-2">Margin 4</div>
 <div outputclass="theme-info theme-contrast m-5 p-2">Margin 5</div>
+<div outputclass="theme-primary theme-contrast m-6 p-2">Margin 6</div>
+<div outputclass="theme-secondary theme-contrast m-12 p-2">Margin 12</div>
 <div outputclass="theme-accent theme-contrast m-auto p-2 w-50">Margin Auto</div>

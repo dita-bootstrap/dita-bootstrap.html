@@ -764,15 +764,20 @@
       select="(@margin, (if (@shadow and @shadow != 'no' and @shadow != 'none' and not(contains(@outputclass, 'm-'))) then '3' else ()))[1]"
     />
     <xsl:for-each select="tokenize(normalize-space($margin), '\s+')">
+      <xsl:variable name="bp" select="if (contains(., ':')) then concat(substring-before(., ':'), ':') else ''"/>
+      <xsl:variable name="val" select="substring-after(., $bp)"/>
       <xsl:choose>
-        <xsl:when test="matches(., '^[etbsxy]([n-]?\d+|auto)$')">
-          <xsl:value-of select="concat('m', substring(., 1, 1), '-', translate(substring(., 2), '-', 'n'))"/>
+        <xsl:when test="matches($val, '^[etbsxy][n-]\d+$')">
+          <xsl:value-of select="concat($bp, 'm', substring($val, 1, 1), '--', substring($val, 3))"/>
         </xsl:when>
-        <xsl:when test="contains(., '-')">
-          <xsl:value-of select="."/>
+        <xsl:when test="matches($val, '^[etbsxy](\d+|auto)$')">
+          <xsl:value-of select="concat($bp, 'm', substring($val, 1, 1), '-', substring($val, 2))"/>
+        </xsl:when>
+        <xsl:when test="contains($val, '-')">
+          <xsl:value-of select="concat($bp, $val)"/>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="concat('m-', .)"/>
+          <xsl:value-of select="concat($bp, 'm-', $val)"/>
         </xsl:otherwise>
       </xsl:choose>
       <xsl:text> </xsl:text>
@@ -859,6 +864,9 @@
        <xsl:choose>
           <xsl:when test="@border='no'">
              <xsl:text>border-0 </xsl:text>
+          </xsl:when>
+          <xsl:when test="@border='yes'">
+             <xsl:text>border </xsl:text>
           </xsl:when>
           <xsl:otherwise>
              <xsl:text>border border-</xsl:text>

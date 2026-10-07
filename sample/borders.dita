@@ -72,15 +72,16 @@
     <codeblock><coderef href="code/borders/bordered-section.xml"/></codeblock>
     <section id="border-styling">
       <title>Border Styling</title>
-      <p>The <xmlatt>border</xmlatt> attribute also accepts numeric values 1-5 for width. The <xmlatt
+      <p>The <codeph>border-keyline</codeph> class gives a hairline border, and <codeph>border-1</codeph> to <codeph>border-5</codeph> set the width. The <xmlatt
         >rounded</xmlatt> attribute 
-        supports values 0-5, <codeph>circle</codeph> and <codeph>pill</codeph>.
+        supports values 0-9, <codeph>circle</codeph> and <codeph>pill</codeph>.
         The <codeph>-border</codeph> theme suffix (e.g. <codeph>theme="primary-border"</codeph>) can be used to set
         the color of the border.</p>
     </section>
 
     <example>
       <div outputclass="mb-3">
+        <ph outputclass="me-2 p-2 border border-keyline">Keyline</ph>
         <ph outputclass="me-2 p-2 border border-1">Width 1</ph>
         <ph outputclass="me-2 p-2 border border-2">Width 2</ph>
         <ph outputclass="me-2 p-2 border border-3">Width 3</ph>
@@ -108,6 +109,10 @@
         <ph outputclass="me-2 p-2 border rounded-3">Rounded 3</ph>
         <ph outputclass="me-2 p-2 border rounded-4">Rounded 4</ph>
         <ph outputclass="me-2 p-2 border rounded-5">Rounded 5</ph>
+        <ph outputclass="me-2 p-2 border rounded-6">Rounded 6</ph>
+        <ph outputclass="me-2 p-2 border rounded-7">Rounded 7</ph>
+        <ph outputclass="me-2 p-2 border rounded-8">Rounded 8</ph>
+        <ph outputclass="me-2 p-2 border rounded-9">Rounded 9</ph>
       </div>
     </example>
     <codeblock><coderef href="code/borders/border-rounding.xml"/></codeblock>
