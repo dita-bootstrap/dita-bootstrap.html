@@ -1,7 +1,7 @@
 {
   "name": "dita-bootstrap",
   "description": "DITA Open Toolkit plug-in for HTML5 output with extensible Bootstrap style",
-  "homepage": "https://dita-bootstrap.github.io",
+  "homepage": "https://dita-bootstrap.org/html",
   "repository": {
     "type": "git",
     "url": "https://github.com/dita-bootstrap/dita-bootstrap.html.git"
