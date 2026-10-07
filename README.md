@@ -145,7 +145,7 @@ dita --input=path/to/your.ditamap \
      --nav-toc=list-group-partial
 ```
 
-For an example of `collapsible` styling, see the output at [dita-bootstrap.github.io][15].
+For an example of `collapsible` styling, see the output at [dita-bootstrap.org][15].
 
 Additionally, the first-level navigation menu can be switched to a horizontal Bootstrap menu bar to reduce the depth of the ToC.
 
@@ -262,7 +262,7 @@ The generated HTML created by this software includes the following additional so
 [12]: https://getbootstrap.com/docs/5.3/components/list-group/
 [13]: https://getbootstrap.com/docs/5.3/components/collapse/
 [14]: https://getbootstrap.com/docs/5.3/customize/color-modes/#dark-mode
-[15]: https://dita-bootstrap.github.io
+[15]: https://dita-bootstrap.org
 [16]: ./xsl/html5-bootstrap-template.xsl
 [17]: https://getbootstrap.com/docs/5.3/components/scrollspy/
 [18]: https://indieweb.social/@infotexture
