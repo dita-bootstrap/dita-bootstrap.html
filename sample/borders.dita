@@ -101,7 +101,7 @@
     </example>
     <codeblock><coderef href="code/borders/border-colors.xml"/></codeblock>
 
-    <example outputclass="mt-3">
+    <bodydiv outputclass="mt-3">
       <bodydiv outputclass="row">
         <bodydiv outputclass="col">
           <ph outputclass="me-2 p-2 border rounded-0">Rounded 0</ph>
@@ -120,7 +120,7 @@
           <ph outputclass="me-2 p-2 border rounded-9">Rounded 9</ph>
         </bodydiv>
       </bodydiv>
-    </example>
+    </bodydiv>
     <codeblock><coderef href="code/borders/border-rounding.xml"/></codeblock>
 
     <example outputclass="mt-3">
