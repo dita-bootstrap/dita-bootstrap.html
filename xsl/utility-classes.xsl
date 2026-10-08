@@ -367,7 +367,16 @@
 
   <!-- Change the default Bootstrap CSS classes of offcanvas -->
   <xsl:template match="*[contains(@class, ' bootstrap-d/offcanvas ')]" mode="bootstrap-class" priority="10">
-    <xsl:text>offcanvas </xsl:text>
+    <xsl:choose>
+      <xsl:when test="@breakpoint">
+        <xsl:text>offcanvas-</xsl:text>
+        <xsl:value-of select="@breakpoint"/>
+        <xsl:text> </xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:text>offcanvas </xsl:text>
+      </xsl:otherwise>
+    </xsl:choose>
     <xsl:choose>
       <xsl:when test="@position">
         <xsl:text>offcanvas-</xsl:text>
