@@ -5,7 +5,7 @@
 <plugin id="org.dita-bootstrap.html">
   <feature extension="package.version" value="5.3.8"/>
   <require plugin="org.dita.html5"/>
-  <!--require plugin="com.dita-bootstrap.specialization"/-->
+  <!--require plugin="com.dita-bootstrap.dtd/-->
   <require plugin="fox.jason.extend.css"/>
   <!-- extension points -->
   <extension-point
