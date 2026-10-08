@@ -138,12 +138,10 @@
 
 .note {
   border-left: 6px solid;
-  border-left-color: var(--bs-alert-border-color, transparent);
 }
 
 [dir='rtl'] .note {
   border-right: 6px solid;
-  border-right-color: var(--bs-alert-border-color, transparent);
   border-left: 0;
 }
 
