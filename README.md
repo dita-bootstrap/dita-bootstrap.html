@@ -45,7 +45,7 @@ DITA-OT 3.2 and older:
 dita --install \
        https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
 dita --install \
-       https://github.com/dita-bootstrap/dita-bootstrap.html/archive/master.zip
+       https://github.com/dita-bootstrap/dita-bootstrap.html/archive/develop.zip
 ```
 
 ## Using
