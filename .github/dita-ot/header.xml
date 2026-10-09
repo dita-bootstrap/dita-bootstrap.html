@@ -160,7 +160,7 @@
             <button
                   type="button"
                   class="menu-item"
-                  data-bs-css-href="https://v6-dev--twbs-bootstrap.netlify.app/docs/6.0/dist/css/bootstrap.min.css"
+                  data-bs-css-href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
                 >
                 Default
               </button>
