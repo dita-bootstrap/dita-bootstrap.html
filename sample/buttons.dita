@@ -33,16 +33,7 @@
     <example>
       <ph outputclass="btn">Base class</ph>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/buttons/base-class-outputclass.xml"/></codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock><coderef href="code/buttons/base-class-specialization.xml"/></codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/buttons/base-class-outputclass.xml"/></codeblock>
 
     <section id="example">
       <title>Example</title>

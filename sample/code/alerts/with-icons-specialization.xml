@@ -1,5 +1,0 @@
-<alert theme="primary-subtle-border">
-  <div>
-    <icon outputclass="bi-exclamation-triangle-fill flex-shrink-0" padding="e2"/>An example alert with an icon
-  </div>
-</alert>

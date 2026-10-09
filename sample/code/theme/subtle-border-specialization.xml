@@ -1,8 +1,0 @@
-<div theme="primary-subtle-border" padding="2">primary-subtle-border</div>
-<div theme="accent-subtle-border" padding="2">accent-subtle-border</div>
-<div theme="success-subtle-border" padding="2">success-subtle-border</div>
-<div theme="danger-subtle-border" padding="2">danger-subtle-border</div>
-<div theme="warning-subtle-border" padding="2">warning-subtle-border</div>
-<div theme="info-subtle-border" padding="2">info-subtle-border</div>
-<div theme="inverse-subtle-border" padding="2">inverse-subtle-border</div>
-<div theme="secondary-subtle-border" padding="2">secondary-subtle-border</div>

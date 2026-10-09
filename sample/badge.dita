@@ -37,16 +37,7 @@
         <ph outputclass="badge badge-outline theme-primary">New</ph>
       </p>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/badge/examples-outputclass.xml"/></codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock><coderef href="code/badge/examples-specialization.xml"/></codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/badge/examples-outputclass.xml"/></codeblock>
 
     <section id="headings">
       <title>Headings</title>

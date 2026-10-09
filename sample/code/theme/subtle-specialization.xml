@@ -1,8 +1,0 @@
-<div theme="primary-subtle" padding="2">primary-subtle</div>
-<div theme="accent-subtle" padding="2">accent-subtle</div>
-<div theme="success-subtle" padding="2">success-subtle</div>
-<div theme="danger-subtle" padding="2">danger-subtle</div>
-<div theme="warning-subtle" padding="2">warning-subtle</div>
-<div theme="info-subtle" padding="2">info-subtle</div>
-<div theme="inverse-subtle" padding="2">inverse-subtle</div>
-<div theme="secondary-subtle" padding="2">secondary-subtle</div>

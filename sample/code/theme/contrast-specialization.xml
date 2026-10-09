@@ -1,8 +1,0 @@
-<div theme="primary-contrast" padding="2">primary-contrast</div>
-<div theme="accent-contrast" padding="2">accent-contrast</div>
-<div theme="success-contrast" padding="2">success-contrast</div>
-<div theme="danger-contrast" padding="2">danger-contrast</div>
-<div theme="warning-contrast" padding="2">warning-contrast</div>
-<div theme="info-contrast" padding="2">info-contrast</div>
-<div theme="inverse-contrast" padding="2">inverse-contrast</div>
-<div theme="secondary-contrast" padding="2">secondary-contrast</div>

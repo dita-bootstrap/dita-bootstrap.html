@@ -54,16 +54,7 @@
         <div outputclass="p-2 theme-secondary theme-contrast">secondary-contrast</div>
       </div>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/theme/contrast-outputclass.xml"/></codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock><coderef href="code/theme/contrast-specialization.xml"/></codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/theme/contrast-outputclass.xml"/></codeblock>
 
     <p>Nested links inherit the contrast foreground so they stay legible on the solid background:</p>
     <example>
@@ -86,16 +77,7 @@
           <xref href="#">nested link</xref> inside.</div>
       </div>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/theme/contrast-nested-link-outputclass.xml"/></codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock><coderef href="code/theme/contrast-nested-link-specialization.xml"/></codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/theme/contrast-nested-link-outputclass.xml"/></codeblock>
 
     <section id="subtle">
       <title>Subtle</title>
@@ -123,16 +105,7 @@
           secondary-subtle</div>
       </div>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/theme/subtle-outputclass.xml"/></codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock><coderef href="code/theme/subtle-specialization.xml"/></codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/theme/subtle-outputclass.xml"/></codeblock>
 
     <p>And with borders:</p>
     <example>
@@ -155,16 +128,7 @@
         secondary-subtle-border</div>
       </div>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/theme/subtle-border-outputclass.xml"/></codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock><coderef href="code/theme/subtle-border-specialization.xml"/></codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/theme/subtle-border-outputclass.xml"/></codeblock>
 
     <p>Nested links inherit the subtle foreground so they stay legible on the subtle background:</p>
     <example>
@@ -187,16 +151,7 @@
           <xref href="#">nested link</xref> inside.</div>
       </div>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/theme/subtle-nested-link-outputclass.xml"/></codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock><coderef href="code/theme/subtle-nested-link-specialization.xml"/></codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/theme/subtle-nested-link-outputclass.xml"/></codeblock>
 
     <section id="muted">
       <title>Muted</title>
@@ -224,16 +179,7 @@
           secondary-muted</div>
       </div>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/theme/muted-outputclass.xml"/></codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock><coderef href="code/theme/muted-specialization.xml"/></codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/theme/muted-outputclass.xml"/></codeblock>
 
     <p>Nested links inherit the muted foreground so they stay legible on the muted background:</p>
     <example>
@@ -256,16 +202,7 @@
           <xref href="#">nested link</xref> inside.</div>
       </div>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/theme/muted-nested-link-outputclass.xml"/></codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock><coderef href="code/theme/muted-nested-link-specialization.xml"/></codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/theme/muted-nested-link-outputclass.xml"/></codeblock>
 
     <section id="comparison">
       <title>Comparison</title>
@@ -338,16 +275,7 @@
           <xref href="#">link</xref></div>
       </div>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/theme/comparison-outputclass.xml"/></codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock><coderef href="code/theme/comparison-specialization.xml"/></codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/theme/comparison-outputclass.xml"/></codeblock>
 
     <section id="with-components">
       <title>With components</title>
@@ -370,16 +298,7 @@
         </div>
       </div>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/theme/with-components-outputclass.xml"/></codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock><coderef href="code/theme/with-components-specialization.xml"/></codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/theme/with-components-outputclass.xml"/></codeblock>
 
     <p>You can also mix theme colors within the same container by applying different
       <codeph>theme-{color}</codeph> classes to child elements:</p>
@@ -390,16 +309,7 @@
         <div outputclass="theme-danger theme-contrast p-3 rounded">Danger</div>
       </div>
     </example>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/theme/status-colors-outputclass.xml"/></codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock><coderef href="code/theme/status-colors-specialization.xml"/></codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/theme/status-colors-outputclass.xml"/></codeblock>
 
     <section id="how-theme-values-are-built-up">
       <title>How theme values are built up</title>

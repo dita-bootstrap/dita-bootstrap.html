@@ -53,16 +53,7 @@
       <section outputclass="alert theme-accent fg-emphasis-accent">A simple accent alert — check it out!</section>
       <section outputclass="alert theme-inverse fg-emphasis-inverse">A simple inverse alert — check it out!</section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock><coderef href="code/alerts/variants-outputclass.xml"/></codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock><coderef href="code/alerts/variants-specialization.xml"/></codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/alerts/variants-outputclass.xml"/></codeblock>
 
     <section id="additional-content">
       <title>Additional content</title>
@@ -89,16 +80,7 @@
         <ph outputclass="bi bi-exclamation-triangle-fill flex-shrink-0 pe-2"/>An example alert with an icon
       </section>
     </bodydiv>
-    <bodydiv outputclass="nav-pills mt-3">
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock><coderef href="code/alerts/with-icons-outputclass.xml"/></codeblock>
-      </section>
-      <section>
-        <title>Specialization</title>
-        <codeblock><coderef href="code/alerts/with-icons-specialization.xml"/></codeblock>
-      </section>
-    </bodydiv>
+    <codeblock><coderef href="code/alerts/with-icons-outputclass.xml"/></codeblock>
 
     <section id="notes">
       <title>Notes</title>

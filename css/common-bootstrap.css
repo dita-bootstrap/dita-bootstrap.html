@@ -103,11 +103,6 @@
   color: var(--bs-red-400);
 }
 
-.navbar-brand > svg {
-  margin: 4px 6px;
-  vertical-align: text-top;
-}
-
 .bs-container {
   margin: 1rem auto;
 }
@@ -144,6 +139,7 @@
   border-right: 6px solid;
   border-left: 0;
 }
+
 
 .navbar .menu {
   --bs-theme-fg: initial;

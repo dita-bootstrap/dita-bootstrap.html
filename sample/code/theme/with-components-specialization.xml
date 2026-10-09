@@ -1,5 +1,0 @@
-<div outputclass="d-flex gap-2 mb-3">
-  <badge theme="primary">Solid badge</badge>
-  <badge theme="primary-outline">Outline badge</badge>
-  <badge theme="primary-subtle">Subtle badge</badge>
-</div>

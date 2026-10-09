@@ -1,5 +1,0 @@
-<div outputclass="d-flex gap-2">
-  <div theme="success-contrast" padding="3" rounded="yes">Success</div>
-  <div theme="warning-contrast" padding="3" rounded="yes">Warning</div>
-  <div theme="danger-contrast" padding="3" rounded="yes">Danger</div>
-</div>
