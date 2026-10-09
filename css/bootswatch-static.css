@@ -3,6 +3,11 @@
  *  See the accompanying LICENSE file for applicable licenses.
  */
 
+html:root,
+html:root[data-bs-theme] {
+  color-scheme: dark;
+}
+
 :root {
   --dita-prussian-blue: #6a91cf;
   --dita-violet: #cc99cd;
