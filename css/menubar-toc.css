@@ -6,13 +6,13 @@
 /*! This value keeps the menubar-toc below the nav-bar
  */
 .bs-menubar-toc.sticky-top {
-  top: calc(var(--bs-navbar-min-height, 3.5rem) + 0px);
+  top: var(--bs-navbar-min-height, 3.5rem);
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .bs-sidebar,
   .bs-scrollspy {
-    --bs-menubar-toc-offset: calc(2 * var(--bs-navbar-min-height, 3.5rem) + 2rem);
+    --bs-menubar-toc-offset: calc(2 * var(--bs-navbar-min-height, 3.5rem) + var(--bs-spacer-9));
     top: var(--bs-menubar-toc-offset);
     height: calc(100vh - var(--bs-menubar-toc-offset) - 4rem);
   }
@@ -29,6 +29,6 @@ article h3,
 article h4,
 article [tabindex='0'],
 section {
-  scroll-margin-top: calc(2 * var(--bs-navbar-min-height, 3.5rem) + 2rem);
+  scroll-margin-top: calc(2 * var(--bs-navbar-min-height, 3.5rem) + var(--bs-spacer-9));
   scroll-margin-bottom: 100px;
 }

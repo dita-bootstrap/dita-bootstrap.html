@@ -10,12 +10,12 @@
 .bd-links {
   padding-left: 0;
   overflow: auto;
-  font-weight: 600;
+  font-weight: var(--bs-font-weight-semibold);
 }
 
 .bd-links a {
-  padding: 0.1875rem 0.5rem;
-  margin-top: 0.125rem;
+  padding: calc(var(--bs-spacer-1) * 0.75) var(--bs-spacer-3);
+  margin-top: calc(var(--bs-spacer-1) / 2);
   color: var(--bs-fg-body);
   text-decoration: none;
 }
@@ -36,33 +36,33 @@
   color: var(--bs-theme-fg-emphasis, var(--bs-link-hover-color)) !important;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .bd-links {
     position: sticky;
     display: block !important;
-    padding: 0 0.25rem;
+    padding: 0 var(--bs-spacer-1);
   }
 }
 
-@media (max-width: 767.98px) {
+@media (width < 768px) {
   .bd-links > ul {
-    padding: 1.5rem 0.75rem;
+    padding: var(--bs-spacer-7) var(--bs-spacer-4);
     background-color: var(--bs-bg-body);
   }
 }
 
 .bd-links li li a {
-  font-size: 0.875em;
+  font-size: var(--bs-font-size-sm);
 }
 
 .bd-divider {
-  font-size: 0.875em;
-  font-weight: 600;
+  font-size: var(--bs-font-size-sm);
+  font-weight: var(--bs-font-weight-semibold);
 }
 
 .bd-links .btn {
-  padding: 0.25rem !important;
-  font-weight: 600;
+  padding: var(--bs-spacer-1) !important;
+  font-weight: var(--bs-font-weight-semibold);
   color: var(--bs-fg-body);
   background-color: transparent;
   border: 0;
@@ -74,29 +74,29 @@
 }
 
 .bd-links .ps-2 {
-  padding-left: 0.5rem !important;
+  padding-left: var(--bs-spacer-3) !important;
 }
 
 [dir='rtl'] .bd-links .ps-2 {
-  padding-right: 0.5rem !important;
+  padding-right: var(--bs-spacer-3) !important;
   padding-left: 0 !important;
 }
 
 .bd-links .ps-3 {
-  padding-left: 0.75rem !important;
+  padding-left: var(--bs-spacer-4) !important;
 }
 
 [dir='rtl'] .bd-links .ps-3 {
-  padding-right: 0.75rem !important;
+  padding-right: var(--bs-spacer-4) !important;
   padding-left: 0 !important;
 }
 
 .bd-links .ps-4 {
-  padding-left: 1rem !important;
+  padding-left: var(--bs-spacer-5) !important;
 }
 
 [dir='rtl'] .bd-links .ps-4 {
-  padding-right: 1rem !important;
+  padding-right: var(--bs-spacer-5) !important;
   padding-left: 0 !important;
 }
 
@@ -109,6 +109,6 @@
 }
 
 .bd-links .active {
-  font-weight: 600;
+  font-weight: var(--bs-font-weight-semibold);
   color: var(--bs-fg-body);
 }

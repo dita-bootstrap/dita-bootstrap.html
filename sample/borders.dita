@@ -91,7 +91,7 @@
     </example>
     <codeblock><coderef href="code/borders/border-styling.xml"/></codeblock>
 
-    <example outputclass="mt-3">
+    <example>
       <div outputclass="mb-3">
         <ph outputclass="me-2 p-2 border-primary">Primary</ph>
         <ph outputclass="me-2 p-2 border-primary-subtle">Primary subtle</ph>
@@ -101,9 +101,9 @@
     </example>
     <codeblock><coderef href="code/borders/border-colors.xml"/></codeblock>
 
-    <bodydiv outputclass="mt-3">
+    <bodydiv outputclass="p-3 border mt-3">
       <bodydiv outputclass="row">
-        <bodydiv outputclass="col">
+        <bodydiv outputclass="col mb-5">
           <ph outputclass="me-2 p-2 border rounded-0">Rounded 0</ph>
           <ph outputclass="me-2 p-2 border rounded-1">Rounded 1</ph>
           <ph outputclass="me-2 p-2 border rounded-2">Rounded 2</ph>
@@ -123,7 +123,7 @@
     </bodydiv>
     <codeblock><coderef href="code/borders/border-rounding.xml"/></codeblock>
 
-    <example outputclass="mt-3">
+    <example>
       <div outputclass="mb-3 pt-3">
         <ph outputclass="me-5 p-4 border border-info rounded-circle">Circle</ph>
         <ph outputclass="me-2 px-4 py-2 border border-warning rounded-pill">Pill</ph>

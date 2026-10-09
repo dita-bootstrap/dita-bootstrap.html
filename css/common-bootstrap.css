@@ -44,6 +44,7 @@
 .xmlnsname,
 .xmlpi {
   font-family: var(--bs-font-mono);
+  font-size: var(--bs-code-font-size);
   color: var(--dita-violet);
   overflow-wrap: break-word;
 }
@@ -60,7 +61,7 @@
 
 .cmdname,
 .parmname {
-  font-weight: 700;
+  font-weight: var(--bs-font-weight-bold);
   color: var(--dita-prussian-blue);
 }
 
@@ -88,7 +89,7 @@
 }
 
 .bs-container {
-  margin: 1rem auto;
+  margin: var(--bs-spacer-5) auto;
 }
 
 #bs-sidebar-nav .navbar-brand {
@@ -116,11 +117,11 @@
 }
 
 .note {
-  border-left: 6px solid;
+  border-left: calc(var(--bs-border-width) * 6) solid;
 }
 
 [dir='rtl'] .note {
-  border-right: 6px solid;
+  border-right: calc(var(--bs-border-width) * 6) solid;
   border-left: 0;
 }
 

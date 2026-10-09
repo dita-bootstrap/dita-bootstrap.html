@@ -2,7 +2,7 @@
   grid-area: scrollspy;
 }
 
-@media (max-width: 1023.98px) {
+@media (width < 1024px) {
   .bs-main {
     grid-template-areas: 'content';
   }
@@ -12,26 +12,26 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   .bs-main {
     grid-template-areas: 'content scrollspy';
     grid-template-columns: minmax(0, 4fr) minmax(280px, 1fr);
   }
 
   .bs-scrollspy {
-    --bs-scrollspy-top: calc(var(--bs-navbar-min-height, 3.5rem) + 1.75rem);
+    --bs-scrollspy-top: calc(var(--bs-navbar-min-height, 3.5rem) + var(--bs-spacer-8));
     position: sticky;
     top: var(--bs-scrollspy-top);
     right: 0;
     z-index: 2;
-    height: calc(100vh - var(--bs-scrollspy-top) - 0.75rem);
-    padding-inline: 0.5rem;
+    height: calc(100vh - var(--bs-scrollspy-top) - var(--bs-spacer-4));
+    padding-inline: var(--bs-spacer-3);
     overflow-y: auto;
   }
 }
 
 .bs-scrollspy nav {
-  font-size: 0.875rem;
+  font-size: var(--bs-font-size-sm);
 }
 
 .bs-scrollspy nav ul {
@@ -41,22 +41,22 @@
 }
 
 .bs-scrollspy nav ul ul {
-  padding-left: 1rem;
+  padding-left: var(--bs-spacer-5);
 }
 
 .bs-scrollspy nav[dir='rtl'] ul ul {
-  padding-right: 1rem;
+  padding-right: var(--bs-spacer-5);
   padding-left: 0;
 }
 
 .bs-scrollspy nav a {
   display: block;
-  padding: 0.125rem 0.75rem;
+  padding: calc(var(--bs-spacer-1) / 2) var(--bs-spacer-4);
   color: var(--bs-fg-body);
   text-decoration: none;
   overflow-wrap: break-word;
   white-space: normal;
-  border-left: 0.125rem solid transparent;
+  border-left: calc(var(--bs-border-width) * 2) solid transparent;
 }
 
 .bs-scrollspy nav a:hover,
@@ -94,7 +94,7 @@
 }
 
 .bs-scrollspy nav a.active {
-  font-weight: 500;
+  font-weight: var(--bs-font-weight-medium);
 }
 
 .bs-scrollspy nav a code {
