@@ -34,8 +34,13 @@
         <equals arg1="${bootstrap.theme}" arg2="solar"/>
         <equals arg1="${bootstrap.theme}" arg2="superhero"/>
         <equals arg1="${bootstrap.theme}" arg2="vapor"/>
-        <equals arg1="${bootstrap.theme}" arg2="quartz"/>
       </or>
+    </condition>
+    <condition
+      property="dita-bootstrap.bootswatch.css.file"
+      value="${dita-bootstrap.css.dir}/bootswatch-quartz.css"
+    >
+      <equals arg1="${bootstrap.theme}" arg2="quartz"/>
     </condition>
     <property
       name="dita-bootstrap.bootswatch.css.file"

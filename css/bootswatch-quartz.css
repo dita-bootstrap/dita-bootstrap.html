@@ -1,0 +1,17 @@
+/*!
+ *  This file is part of the DITA Bootstrap plug-in for DITA Open Toolkit.
+ *  See the accompanying LICENSE file for applicable licenses.
+ */
+
+html:root,
+html:root[data-bs-theme] {
+  color-scheme: dark;
+}
+
+:root {
+  --dita-prussian-blue: var(--bs-primary-fg-emphasis);
+  --dita-maroon: var(--bs-danger-fg-emphasis);
+  /* light-mode branch of --bs-accent-fg; the dark branch is too pale on glass */
+  --dita-violet: var(--bs-indigo-600);
+  --bs-code-color: color-mix(in srgb, var(--bs-danger-base) 45%, black);
+}

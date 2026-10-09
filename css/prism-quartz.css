@@ -1,18 +1,14 @@
 html:root {
   --prism-maintext: var(--bs-fg-body);
   --prism-background: transparent;
-  --prism-text: color-mix(in srgb, var(--bs-gray-500) 60%, white);
-  --prism-punctuation: color-mix(in srgb, var(--bs-gray-500) 60%, white);
+  --prism-text: color-mix(in srgb, var(--bs-gray-500) 40%, white);
+  --prism-punctuation: color-mix(in srgb, var(--bs-gray-500) 40%, white);
   --prism-namespace: var(--prism-text);
-  --prism-keywords: color-mix(in srgb, var(--bs-blue-500) 50%, white);
-  --prism-strings: color-mix(in srgb, var(--bs-green-500) 50%, white);
-  --prism-symbol: color-mix(in srgb, var(--bs-pink-500) 50%, white);
-  --prism-type: color-mix(in srgb, var(--bs-red-500) 50%, white);
-  --prism-regex: color-mix(in srgb, var(--bs-orange-500) 50%, white);
-  --prism-deleted: color-mix(in srgb, var(--bs-red-500) 50%, white);
-  --prism-url: color-mix(in srgb, var(--bs-yellow-500) 50%, white);
-}
-
-.card:has(pre.codeblock) {
-  background-image: linear-gradient(125deg, rgba(0, 0, 0, .55), rgba(0, 0, 0, .45) 70%);
+  --prism-keywords: color-mix(in srgb, var(--bs-accent-base) 70%, black);
+  --prism-strings: color-mix(in srgb, var(--bs-success-base) 45%, black);
+  --prism-symbol: color-mix(in srgb, var(--bs-primary-base) 55%, black);
+  --prism-type: color-mix(in srgb, var(--bs-danger-base) 45%, black);
+  --prism-regex: color-mix(in srgb, var(--bs-warning-base) 45%, black);
+  --prism-deleted: color-mix(in srgb, var(--bs-danger-base) 45%, black);
+  --prism-url: color-mix(in srgb, var(--bs-info-base) 45%, black);
 }
