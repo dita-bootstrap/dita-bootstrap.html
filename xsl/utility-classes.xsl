@@ -875,7 +875,7 @@
   <xsl:template match="*[@theme or @border or @rounded or @width]" mode="get-output-class" priority="-2">
     <xsl:if
       test="@theme and not(contains(@class, ' topic/note ') or
-                                 contains(@class, ' topic/pre ') or
+                                 contains(@class, ' pr-d/codeblock ') or
                                  contains(@class, ' topic/xref ') or
                                  contains(@class, ' topic/link ') or
                                  contains(@class, ' bootstrap-d/card ') or
