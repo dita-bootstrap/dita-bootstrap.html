@@ -1,22 +1,18 @@
 :root {
   --prism-skew: black;
   --prism-bg-skew: white;
-  --prism-maintext: var(--bs-theme-fg-emphasis, var(--bs-secondary-text-emphasis, #000));
-  --prism-background: color-mix(
-    in srgb,
-    var(--bs-theme-bg, var(--bs-bg-transparent, var(--bs-secondary-bg-subtle, #f5f2f0))) 85%,
-    var(--prism-bg-skew)
-  );
-  --prism-text: color-mix(in srgb, var(--bs-gray-500, #999) 70%, var(--prism-skew));
-  --prism-punctuation: color-mix(in srgb, var(--bs-gray-500, var(--bs-gray, #999)) 70%, var(--prism-skew));
+  --prism-maintext: var(--bs-fg-body);
+  --prism-background: color-mix(in srgb, var(--bs-bg-transparent) 85%, var(--prism-bg-skew));
+  --prism-text: color-mix(in srgb, var(--bs-gray-500) 70%, var(--prism-skew));
+  --prism-punctuation: color-mix(in srgb, var(--bs-gray-500) 70%, var(--prism-skew));
   --prism-namespace: var(--prism-text);
-  --prism-keywords: color-mix(in srgb, var(--bs-blue-500, var(--bs-blue, #07a)) 70%, var(--prism-skew));
-  --prism-strings: color-mix(in srgb, var(--bs-green-500, var(--bs-green, #690)) 70%, var(--prism-skew));
-  --prism-symbol: color-mix(in srgb, var(--bs-pink-500, var(--bs-pink, #905)) 70%, var(--prism-skew));
-  --prism-type: color-mix(in srgb, var(--bs-red-500, var(--bs-red, #dd4a68)) 70%, var(--prism-skew));
-  --prism-regex: color-mix(in srgb, var(--bs-orange-500, var(--bs-orange, #e90)) 70%, var(--prism-skew));
-  --prism-deleted: color-mix(in srgb, var(--bs-red-500, var(--bs-red, red)) 70%, var(--prism-skew));
-  --prism-url: color-mix(in srgb, var(--bs-warning-text-emphasis, #9a6e3a) 70%, var(--prism-skew));
+  --prism-keywords: color-mix(in srgb, var(--bs-blue-500) 70%, var(--prism-skew));
+  --prism-strings: color-mix(in srgb, var(--bs-green-500) 70%, var(--prism-skew));
+  --prism-symbol: color-mix(in srgb, var(--bs-pink-500) 70%, var(--prism-skew));
+  --prism-type: color-mix(in srgb, var(--bs-red-500) 70%, var(--prism-skew));
+  --prism-regex: color-mix(in srgb, var(--bs-orange-500) 70%, var(--prism-skew));
+  --prism-deleted: color-mix(in srgb, var(--bs-red-500) 70%, var(--prism-skew));
+  --prism-url: color-mix(in srgb, var(--bs-warning-fg-emphasis) 70%, var(--prism-skew));
 }
 
 [data-bs-theme='dark'] {
