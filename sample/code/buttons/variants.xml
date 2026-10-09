@@ -2,30 +2,37 @@
 <xref href="#" outputclass="btn-outline theme-primary">Primary</xref>
 <xref href="#" outputclass="btn-subtle theme-primary">Primary</xref>
 <xref href="#" outputclass="btn-text theme-primary">Primary</xref>
+
 <xref href="#" outputclass="btn-solid theme-secondary">Secondary</xref>
 <xref href="#" outputclass="btn-outline theme-secondary">Secondary</xref>
 <xref href="#" outputclass="btn-subtle theme-secondary">Secondary</xref>
 <xref href="#" outputclass="btn-text theme-secondary">Secondary</xref>
+
 <xref href="#" outputclass="btn-solid theme-success">Success</xref>
 <xref href="#" outputclass="btn-outline theme-success">Success</xref>
 <xref href="#" outputclass="btn-subtle theme-success">Success</xref>
 <xref href="#" outputclass="btn-text theme-success">Success</xref>
+
 <xref href="#" outputclass="btn-solid theme-danger">Danger</xref>
 <xref href="#" outputclass="btn-outline theme-danger">Danger</xref>
 <xref href="#" outputclass="btn-subtle theme-danger">Danger</xref>
 <xref href="#" outputclass="btn-text theme-danger">Danger</xref>
+
 <xref href="#" outputclass="btn-solid theme-warning">Warning</xref>
 <xref href="#" outputclass="btn-outline theme-warning">Warning</xref>
 <xref href="#" outputclass="btn-subtle theme-warning">Warning</xref>
 <xref href="#" outputclass="btn-text theme-warning">Warning</xref>
+
 <xref href="#" outputclass="btn-solid theme-info">Info</xref>
 <xref href="#" outputclass="btn-outline theme-info">Info</xref>
 <xref href="#" outputclass="btn-subtle theme-info">Info</xref>
 <xref href="#" outputclass="btn-text theme-info">Info</xref>
+
 <xref href="#" outputclass="btn-solid theme-accent">Accent</xref>
 <xref href="#" outputclass="btn-outline theme-accent">Accent</xref>
 <xref href="#" outputclass="btn-subtle theme-accent">Accent</xref>
 <xref href="#" outputclass="btn-text theme-accent">Accent</xref>
+
 <xref href="#" outputclass="btn-solid theme-inverse">Inverse</xref>
 <xref href="#" outputclass="btn-outline theme-inverse">Inverse</xref>
 <xref href="#" outputclass="btn-subtle theme-inverse">Inverse</xref>
