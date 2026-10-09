@@ -6,6 +6,6 @@
 :root {
   --dita-prussian-blue: var(--bs-primary-fg-emphasis);
   --dita-maroon: var(--bs-danger-fg-emphasis);
-  --dita-violet: var(--bs-purple-400);
+  --dita-violet: var(--bs-accent-fg);
   --bs-code-color: rgb(from var(--bs-danger-base) r g calc(b + 63));
 }

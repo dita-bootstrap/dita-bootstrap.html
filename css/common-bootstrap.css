@@ -3,12 +3,6 @@
  *  See the accompanying LICENSE file for applicable licenses.
  */
 
-.list-group-item.active,
-.nav-link.active,
-[data-bs-theme='dark'] {
-  --dita-violet: color-mix(in oklch, var(--bs-purple-400), var(--bs-white) 30%);
-}
-
 .list-group-item {
   border-radius: 0;
 }
@@ -36,16 +30,6 @@
 
 [data-bs-theme='dark'] .d-auto {
   display: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --dita-violet: color-mix(in oklch, var(--bs-purple-400), var(--bs-white) 30%);
-  }
-
-  [data-bs-theme='light'] {
-    --dita-violet: var(--bs-purple-400);
-  }
 }
 
 .syntaxdiagram {
@@ -96,11 +80,11 @@
 }
 
 .boolean {
-  color: var(--bs-green-400);
+  color: var(--bs-success-fg);
 }
 
 .state {
-  color: var(--bs-red-400);
+  color: var(--bs-danger-fg);
 }
 
 .bs-container {
