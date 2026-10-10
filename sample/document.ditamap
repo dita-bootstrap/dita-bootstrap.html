@@ -11,7 +11,7 @@
     <topicmeta>
       <navtitle>Getting Started</navtitle>
       <othermeta name="icon" content="bi-book-half"/>
-      <othermeta name="icon-style" content="color: var(--bs-accent-base)"/>
+      <othermeta name="icon-style" content="color: var(--bs-accent-fg)"/>
     </topicmeta>
     <topicref navtitle="Introduction" href="index.dita" locktitle="yes"/>
   </chapter>
@@ -19,7 +19,7 @@
     <topicmeta>
       <navtitle>Layout</navtitle>
       <othermeta name="icon" content="bi-grid-fill"/>
-      <othermeta name="icon-style" content="color: var(--bs-success-base)"/>
+      <othermeta name="icon-style" content="color: var(--bs-success-fg)"/>
     </topicmeta>
     <topicref href="nav.dita"/>
     <topicref href="containers.dita"/>
@@ -41,7 +41,7 @@
     <topicmeta>
       <navtitle>Components</navtitle>
       <othermeta name="icon" content="bi-menu-button-wide-fill"/>
-      <othermeta name="icon-style" content="color: var(--bs-info-base)"/>
+      <othermeta name="icon-style" content="color: var(--bs-info-fg)"/>
     </topicmeta>
     <topicref href="accordion.dita"/>
     <topicref href="alerts.dita"/>
@@ -77,7 +77,7 @@
     <topicmeta>
       <navtitle>Extend</navtitle>
       <othermeta name="icon" content="bi-tools"/>
-      <othermeta name="icon-style" content="color: var(--bs-primary-base)"/>
+      <othermeta name="icon-style" content="color: var(--bs-primary-fg)"/>
     </topicmeta>
     <topicref navtitle="Icons" href="icons.dita">
       <topicmeta>
