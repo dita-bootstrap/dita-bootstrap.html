@@ -2,7 +2,7 @@
   --prism-skew: black;
   --prism-bg-skew: white;
   --prism-maintext: var(--bs-fg-body);
-  --prism-background: color-mix(in srgb, var(--bs-bg-transparent) 85%, var(--prism-bg-skew));
+  --prism-background: transparent;
   --prism-text: color-mix(in srgb, var(--bs-gray-500) 70%, var(--prism-skew));
   --prism-punctuation: color-mix(in srgb, var(--bs-gray-500) 70%, var(--prism-skew));
   --prism-namespace: var(--prism-text);
