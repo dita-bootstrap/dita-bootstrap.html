@@ -392,10 +392,10 @@ article [tabindex='0'] {
 :root {
   --prism-skew: black;
   --prism-bg-skew: white;
-  --prism-maintext: var(--bs-theme-fg-emphasis, var(--bs-secondary-text-emphasis, #000));
+  --prism-maintext: var(--bs-secondary-fg-emphasis, var(--bs-secondary-text-emphasis, #000));
   --prism-background: color-mix(
     in srgb,
-    var(--bs-theme-bg, var(--bs-bg-transparent, var(--bs-secondary-bg-subtle, #f5f2f0))) 85%,
+    var(--bs-secondary-bg-subtle, #f5f2f0) 85%,
     var(--prism-bg-skew)
   );
   --prism-text: color-mix(in srgb, var(--bs-gray-500, #999) 70%, var(--prism-skew));
@@ -407,12 +407,16 @@ article [tabindex='0'] {
   --prism-type: color-mix(in srgb, var(--bs-red-500, var(--bs-red, #dd4a68)) 70%, var(--prism-skew));
   --prism-regex: color-mix(in srgb, var(--bs-orange-500, var(--bs-orange, #e90)) 70%, var(--prism-skew));
   --prism-deleted: color-mix(in srgb, var(--bs-red-500, var(--bs-red, red)) 70%, var(--prism-skew));
-  --prism-url: color-mix(in srgb, var(--bs-warning-text-emphasis, #9a6e3a) 70%, var(--prism-skew));
+  --prism-url: color-mix(in srgb, var(--bs-warning-fg-emphasis, var(--bs-warning-text-emphasis, #9a6e3a)) 70%, var(--prism-skew));
 }
 
 [data-bs-theme='dark'] {
   --prism-skew: white;
   --prism-bg-skew: black;
+}
+
+.card pre[class*="language-"] {
+  border: none;
 }
 
 /**
